@@ -1,0 +1,15 @@
+INFORMAZIONI SUL CAPITOLATO
+	-nome
+	-proponente
+	-committente
+
+DESCRIZIONE
+
+STUDIO DEL DOMINIO
+	-dominio applicativo
+	-dominio tecnologico
+
+CONSIDERAZIONI DEL GRUPPO
+	-aspetti positivi
+	-fattori di rischio
+	-conclusioni
