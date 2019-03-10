@@ -1,0 +1,41 @@
+INFORMAZIONI SUL CAPITOLATO
+	-nome: MegAlexa;
+	-proponente: ZERO12;
+	-committente: Prof Tullio Vardanega, Prof. Riccardo Cardin.
+
+DESCRIZIONE
+Il capitolato ha come scopo lo sviluppo di skill per Alexa di Amazon in grado di avviare dei workflow (routine di micro-funzioni) creati dagli utenti tramite interfaccia web o
+mobile app per iOS e Android. I workflow sono personalizzabili completamente dagli utenti, in modo tale che una volta creati possono soddisfare a pieno tutte
+le varie esigenze dell'utente finale senza che ci sia la necessità di dover fare manualmente la routine tutte le volte. Per poter avviare i workflow creati (da web o mobile)
+basta pronunciare "Alexa, esegui la routine {nome workflow}" dove il nome del workflow viene assegnato nel momento della sua creazione. Il workflow può eseguire le micro-funzioni
+anche in modo combinato, per esempio si può utilizzare una micro-funzione che legge un feed rss combinata con un'altra micro-funzione che filtra le notizie del feed rss interessate.
+Per fare ciò è necessario creare una piattaforma (web e mobile) che offre delle micro-funzioni che possono essere collegate tra di loro creando il workflow voluto dall'utente.
+
+
+STUDIO DEL DOMINIO
+	-dominio applicativo: il capitolato fa riferimento all'interazione con i servizi di Amazon;
+	-dominio tecnologico:
+		-Amazon Web Services: è un insieme di servizi di cloud computing che compongono la piattaforma on demand offerta dall'azienda Amazon;
+		-API Gateway: è un servizio completamente gestito che semplifica agli sviluppatori la creazione, la pubblicazione, la manutenzione, il monitoraggio e la protezione
+		delle API su qualsiasi scala;
+		-Lambda: consente di eseguire codice senza dover effettuare il provisioning né gestire server;
+		-DynamoDB: è un database che supporta i modelli di dati di tipo documento e di tipo chiave-valore che offre prestazioni di pochi millisecondi a qualsiasi livello;
+		-Node.js: è una piattaforma Open source event-driven per l'esecuzione di codice JavaScript Server-side;
+		-Framework Node.js Express: web framework per Node.js;
+		-Twitter bootstrap: è una raccolta di strumenti liberi per la creazione di siti e applicazioni per il Web. Essa contiene modelli di progettazione basati su HTML, CSS
+		e JavaScript;
+		-Alexa developer: il capitolato si basa sullo sviluppo di una skill per Alexa;
+
+CONSIDERAZIONI DEL GRUPPO
+	-aspetti positivi:
+		-Gradevole l'idea di creare una skill per Amazon Alexa.
+		-Lo studio e l'utilizzo dei servizi Amazon è reputato molto interessante dai componenti del gruppo;
+		-L'utilizzo dei framework Node.js Express e bootstrap facilitano lo sviluppo del codice;
+		-Interessante l'utilizzo del codice lato server.
+	-fattori di rischio:
+		-La maggior parte delle tecnologie risulta sconosciuta ai componenti del gruppo, inoltre si presentano innumerevoli casi d'uso da gestire per poter offrire all'utente
+		un'ampia gamma di micro-funzioni.
+	-conclusioni
+		-Sebbene il capitolato sia stato giudicato comlplessivamente molto interessante dai componenti del gruppo, il tempo necessario per la gestione di tutti i casi d'uso
+		per gestire le micro-funzioni è stato considerato non sostenibile;
+		-Scelta:rigettato.
