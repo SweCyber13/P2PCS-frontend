@@ -1,2 +1,4 @@
 1) Pensando ai premi, oltre a punti virtuali e badge, c'è la possibilità di implementare anche premi di tipo "economico"? Ad esempio, riconoscere un bonus al fornitore dell'auto se la presta per lunghe tratte o ad un utente nuovo che non ha ancora un rank? (La fiducia viene premiata)
-2) 
+2) Elenco dettagliato delle tecnologie e dei linguaggi da utilizzare? (Attualmente sappiamo di Amazon/piattaforma car sharing, SDK proprietario ????, Kotlin come linguaggio, desiderano lo sviluppo di una app android, bitrise per test e CI con integrazione ad espresso ????)
+3) Richiesta differenziazione tra utente privato e aziende (o altri tipi di utenti)? Se si, con che differenze?
+4)
