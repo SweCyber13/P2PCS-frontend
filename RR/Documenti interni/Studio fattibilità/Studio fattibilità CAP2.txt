@@ -1,11 +1,11 @@
 CAPITOLATO C5
 INFORMAZIONI SUL CAPITOLATO
-Nome: Colletta: piattaforma per raccolatadati mediante esercizi di grammatica;
+Nome: Colletta: piattaforma per raccolta dati mediante esercizi grammaticali;
 Proponente: mivaq;
 Committente: Prof. Tullio Vardanega, Prof. Riccardo Cardin.
 
 DESCRIZIONE
-L'obbiettivo del capitotolato è lo sviluppo di una piattaforma collaborativa di raccolta dati in cui gli utenti possano creare e/o
+L'obiettivo del capitotolato è lo sviluppo di una piattaforma collaborativa di raccolta dati in cui gli utenti possano creare e/o
 svogere esercizi di grammatica (per esempio esercizi di analisi grammaticale). I  dati  raccolti  devono essere utilizzabili da sviluppatori e 
 ricercatori al fine di insegnare ad un elaboratore a svolgere i medesimi esercizi mediante tecniche di apprendimento automatico supervisionato.
    
