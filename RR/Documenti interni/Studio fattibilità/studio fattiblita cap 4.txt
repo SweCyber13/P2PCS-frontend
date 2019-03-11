@@ -28,7 +28,7 @@ STUDIO DEL DOMINIO
 
 CONSIDERAZIONI DEL GRUPPO
 	-aspetti positivi:
-		-Gradevole l'idea di creare una skill per Amazon Alexa.
+		-Apprezzata l'idea di creare una skill per Amazon Alexa.
 		-Lo studio e l'utilizzo dei servizi Amazon è reputato molto interessante dai componenti del gruppo;
 		-L'utilizzo dei framework Node.js Express e bootstrap facilitano lo sviluppo del codice;
 		-Interessante l'utilizzo del codice lato server.
