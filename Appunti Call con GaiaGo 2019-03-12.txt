@@ -1,0 +1,25 @@
+- Valutare se la login va fatta autonoma o meno
+- Inserimento patente, gestione danni, fattori bloccanti per l'utente non sono richiesti
+- Usare la geolocalizzazioe solo se serve per la gamification
+- Potremmo usare "cognito" di AWS fornito da loro
+- Potremmo prevedere vari tipi di utenti con scontistiche diverse
+- Definire zone in cui l'utente vuole che gli venga restituita l'auto
+- Per semplicità il pagamento è gestito a mano (non tramite app), al massimo si concorda la cifra tramite essa
+- Henshin Movens(domanda 4) è la piattaforma online che ha fatto vedere in funzione nelle due videochiamate
+- Prevedere un eventuale filtro che permetta all'utente l'accesso solo a determinati tipi di veicoli
+- Confermato android studio per lo sviluppo.
+- Controllare Figma come piattaforma per i MOKUP
+- Studiare il modello Octalysis per capire come incentivare l'utente a fare cose
+- Tabella bontà dell'idea/difficoltà di implementazione per decidere cosa implementare
+- Discovery: scoperta dell'applicazione; Onboarding: appena entrato, il tutorial, l'aiuto iniziale per capire l'app; Scaffolding: dopo un certo periodo d'uso, incentivare l'utente con badge, premi ecc; Endgame: dopo un lungo periodo d'uso, promuovere l'utente a master, o comunque fargli percepire che in qualche modo ha raggiunto "il massimo livello"
+- Se utilizziamo Movens, è su google cloud ma su macchina virtuale, quindi spostabile. Usa Postgres e usa un framework opensource su cloud di cui non ricorda il nome. Per il front end usa JS con Angular (però il front end non ci interessa). Se dovremo far qualcosa sarà in C#, probabilmente dovremo fare un servizio nostro di backend.
+- Test UI importanti e da passare dal punto di vista del committente (GaiaGo), possono aiutare a ogni release per vedere se si sono fatti danni all'interfaccia precedentemente funzionante
+- Più complessi i test unitari, che saranno il punto di partenza se facciamo Test Driven Programming
+- Da decidere noi se vogliamo fare uno o l'altro tipo di test o entrambi
+- Consigliato Bitrise per tenere traccia dello sviluppo (Continuos integration)
+- Verrà a Padova a fare un incontro per spiegare un po' di cose che ci serviranno
+- Loro stanno già facendo un app riguardanti le black box per le auto, che non riguarda il car sharing in sè. Stanno lavorando al car sharing condominiale, azienda, hotel. Vorrebbero integrare alle auto di GaiaGo anche quelle dei privati che partecipano con l'app.
+- Non è necessario distingure un'azienda dal privato (rischiamo di saperne poco): consiglia di concentrarsi solo sull'utente standard privato, al massimo prevedendo delle varianti di esso (studente, anziano ecc)
+- Al momento non si sono posti il problema di grafica e animazioni, quindi non ha risposta
+- Seguire la gamification per i dati da chiedergli: farlo solo se ha senso, se ci sono degli scopi. Ad esempio chiedere subito facebook non ha senso, ma magari per la condivisione successiva sui social può andare in un secondo momento.
+Ha più senso chiedere dove sta, per dirgli le auto che ha vicine, ecc. Magari solo dopo invitarlo a registrarsi quando ha visto che l'app lo interessa davvero.
