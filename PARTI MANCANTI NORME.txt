@@ -2,19 +2,19 @@ NORME
   1. FATTA
   2.
 	2.1 FATTA
-	2.2 DA FARE
+	2.2 ASSEGNATO
 	
   3.
 	3.1 FATTA
 	3.2 DA FARE
 	3.3 FATTA
 	3.4 DA FARE
-	3.5 DA FARE -->assegnato eleonora 
+	3.5 FATTA 
   4.
 	4.1 ASSEGNATO
 	4.2 
 	  4.2.1 FATTA
 	  4.2.2 DA FARE
 	4.3 DA FARE
-	4.4 DA FARE
+	4.4 ASSEGNATO
 	4.5 DA FARE
