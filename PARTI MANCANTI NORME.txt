@@ -2,7 +2,7 @@ NORME
   1. FATTA
   2.
 	2.1 FATTA
-	2.2 ASSEGNATO
+	2.2 FATTA
 	
   3.
 	3.1 FATTA
