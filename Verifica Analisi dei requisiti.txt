@@ -2,8 +2,27 @@ fatto-----Segnalati sull'indice i casi d'uso da mettere separati
 
 fatto----In UC5 in "scopo e descrizione" ed in "precondizione" oltre che ad "inserire" ed "eliminare" bisogna inserire anche MODIFICA.
 
-Inserire il sottocaso d'uso "modifica auto" in UC5
-
 fatto------Postcondizione di aggiungi macchina (UC 5.4) non corretta... bisogna dire che l'utente ha aggiunto l'auto e non che ha accesso alla sezione di inserimento dati dell'auto
 
 fatto------In UC6 (ricerca macchina) vengono indicati dei sotto casi d'uso con il numero 15.X non dovrebbe essere 6.X? (Stessa cosa in UC 6.1, UC 6.2, UC 6.3, UC 6.4 nella sezione estensioni)
+
+
+
+
+
+
+
+Inserire i sottocasi d'uso di "modifica macchina" in UC5.3
+
+modifica targa
+modifica marca
+modifica modello
+modifica anno di produzione
+modifica cavalli motore
+modifica cilindrata motore
+modifica raggio
+
+inserire le estensioni (errori) in modifica e aggiungi macchina
+UC 5.4.8-Visualizzazione messaggio errore campi di compila-zione vuoti deve essere messo come estensione
+
+in UC 5.4-Aggiungi macchina e UC 5.5-Eliminazione macchina -----------> inserire scenario secondario
