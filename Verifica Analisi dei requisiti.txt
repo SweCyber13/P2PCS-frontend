@@ -6,7 +6,7 @@ fatto------Postcondizione di aggiungi macchina (UC 5.4) non corretta... bisogna 
 
 fatto------In UC6 (ricerca macchina) vengono indicati dei sotto casi d'uso con il numero 15.X non dovrebbe essere 6.X? (Stessa cosa in UC 6.1, UC 6.2, UC 6.3, UC 6.4 nella sezione estensioni)
 
-
+fatto------Inserire il sottocaso d'uso "modifica macchina"
 
 
 
