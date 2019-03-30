@@ -8,6 +8,7 @@ fatto------In UC6 (ricerca macchina) vengono indicati dei sotto casi d'uso con i
 
 fatto------Inserire il sottocaso d'uso "modifica macchina"
 
+fatto------in UC 5.4-Aggiungi macchina e UC 5.5-Eliminazione macchina -----------> inserire scenario secondario
 
 
 
@@ -25,4 +26,4 @@ modifica raggio
 inserire le estensioni (errori) in modifica e aggiungi macchina
 UC 5.4.8-Visualizzazione messaggio errore campi di compila-zione vuoti deve essere messo come estensione
 
-in UC 5.4-Aggiungi macchina e UC 5.5-Eliminazione macchina -----------> inserire scenario secondario
+
