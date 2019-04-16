@@ -1,6 +1,19 @@
 ﻿Andrea elevator pitch 
+utenti applicazione
+definizione su cos'è car sharing e funzionalità base dell'app (senza gamification)
+
 Daniel capitolati + gamification
+conclusione: interessante per la querstione gamification...
+spiegare cos'è gamification brevemente e dire che noi implemnetiamo quella di secondo livello..
+
 Elena analisi requisiti (gamification)
+inizio: "le nostre idee per implemnetare ottiche di gioco e incentivare l'utente all'uso dell'applicazione sono:"
+	-sistema a punti
+	-partenership con aziende terze (buoni)
+	-sezione esplora netc che non danno propriamente punti ma che fanno parte gamification
+quali punti octalysis copriamo e perchè (incentiviamo e non penalizziamo)
+
+
 Ilaria piano qualifica 
 Fabio norme, strumenti: parte iniziale norme
 	-3.1.3,3.1.4 (se c'è tempo)
