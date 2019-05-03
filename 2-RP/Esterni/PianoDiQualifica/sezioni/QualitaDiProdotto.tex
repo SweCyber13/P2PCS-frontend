@@ -1,0 +1,176 @@
+\subsection{Scopo}
+A seguito dello studio dello standard ISO/IEC 9126 il gruppo ha deciso di adottarne alcuni concetti per garantire la qualità del prodotto, esaminata di seguito con obiettivi e metriche corrispondenti.
+
+\subsection{Qualità dei documenti}
+I documenti devono essere corretti dal punto di vista ortografico, sintattico, logico, e a livello di leggibilità e comprensibilità.
+
+\subsubsection{Obiettivi: Comprensione}
+Il documento deve presentarsi corretto dal punto di vista ortografico e con una leggibilità almeno per persone con licenza media.
+\subsubsection{Metriche per documenti}
+\paragraph{M[PROD][D][0001]: Indice di \citgl{Gulpease}}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 50-100;
+    \item \textbf{Range ottimale}: 60-100.
+\end{itemize}
+\paragraph{M[PROD][D][0002]: Errori ortografici}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 100\% corretto;
+    \item \textbf{Range ottimale}: 100\% corretto.
+\end{itemize}
+
+\subsection{Qualità del software}
+\subsubsection{Obiettivi} 
+Lo standard ISO/IEC 9126 scelto dal gruppo stabilisce che il modello di qualità sia rappresentato dalle seguenti sei caratteristiche generali, e dalle loro sotto categorie:
+\paragraph{Funzionalità}
+~\\
+Il gruppo si impegna a creare un prodotto software in grado di soddisfare al 100\% i requisiti obbligatori previsti in \AdR  (Accuratezza) fornendo un appropriato insieme di funzionalità (Appropriatezza).
+\subparagraph{M[PROD][S][0001]: Copertura requisiti obbligatori}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 100\%
+    \item \textbf{Range ottimale}: 100\%
+\end{itemize}
+\subparagraph{M[PROD][S][0002]: Copertura requisiti accettati}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 0-100\%
+    \item \textbf{Range ottimale}: 100\%
+\end{itemize}
+\subparagraph{M[PROD][S][0003]: Accuratezza rispetto alle attese}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 75-100\%
+    \item \textbf{Range ottimale}: 100\%
+\end{itemize}
+
+\paragraph{Affidabilità}
+~\\
+Allo scopo di creare un prodotto software affidabile verranno presi in considerazione i seguenti parametri. Maturità, intesa come capacità dell'applicativo di evitare più possibile errori e malfunzionamenti. Tolleranza agli errori, intesa come capacità invece di gestire tali errori e malfunzionamenti qualora si verificassero.
+
+\subparagraph{M[PROD][S][0004]: Densità di \citgl{failure}}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 0-10\%
+    \item \textbf{Range ottimale}: 0\%
+\end{itemize}
+\subparagraph{M[PROD][S][0005]: Blocco di operazioni non corrette}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 80-100\%
+    \item \textbf{Range ottimale}:: 100\%
+\end{itemize}
+
+\paragraph{Efficienza}
+~\\
+Il software deve essere nel miglior modo prestante includendo l'utilizzo di quantità e tipo di risorse in maniera adeguata (Utilizzo delle risorse); inoltre deve fornire adeguati tempi di risposta (Comportamento rispetto al tempo);
+\subparagraph{M[PROD][S][0006]: Tempo di risposta}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 0-8 sec;
+    \item \textbf{Range ottimale}: 0-3 sec.
+\end{itemize}
+
+\paragraph{Usabilità}
+~\\
+Il prodotto deve essere facilmente comprensibile dall'utente e allo stesso tempo soddisfare le sue esigenze. Nello specifico deve essere chiaro lo scopo di ogni funzionalità e il modo per utilizzarla  (Comprensibilità); l'apprendimento dell'uso dell'app deve essere facile e intuibile(Apprendibilità); le funzioni presenti devono soddisfare le aspettative dell'utente (Operabilità) ed infine l'applicazione deve essere interessante per l'utente (Attrativa). 
+\subparagraph{M[PROD][S][0007]: Comprensibilità delle funzioni offerte}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 80-100\%;
+    \item \textbf{Range ottimale}: 90-100\%.
+\end{itemize}
+\subparagraph{M[PROD][S][0008]: Facilità di apprendimento delle funzionalità} 
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 0-20 min;
+    \item \textbf{Range ottimale}: 0-10 min.
+\end{itemize}
+\subparagraph{M[PROD][S][0009]: Utilizzo effettivo delle funzionalità}
+\begin{itemize}
+\item \textbf{Range di accettazione}: 50-100\%;
+\item \textbf{Range ottimale}: 60-100\%.
+\end{itemize}
+
+\paragraph{Manutenibilità}
+~\\
+È la capacità del codice di essere modificato per correzioni e miglioramenti futuri. Per questo motivo il software deve presentare una facilità di analisi per trovare l'errore (Analizzabilità), la possibilità di implementare una modifica (Modificabilità), la capacità di essere facilmente testato (Testabilità) e di non provocare errori dopo la modifica (Stabilità).
+\subparagraph{M[PROD][S][0010]: Capacità di analisi di failure}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 60-100\%;
+    \item \textbf{Range ottimale}: 80-100\%.
+\end{itemize}
+\subparagraph{M[PROD][S][0011]: Impatto delle modifiche}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 0-20\%;
+    \item \textbf{Range ottimale}: 0-10\%.
+\end{itemize}
+
+\paragraph{M[PROD][S][0012]: Rapporto linee di commento su linee di codice}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: >= 25\%;
+    \item \textbf{Range ottimale}: >= 30\%.
+\end{itemize}
+
+\subsubsection{M[PROD][S][0013]: Versioni di Android supportate}
+\begin{itemize}
+    \item \textbf{Range di accettazione}: 1-5;
+    \item \textbf{Range ottimale}: 3-5;
+\end{itemize}
+\subsubsection{Gamification e framework Octalysis}
+Sebbene il progetto P2PCS (Peer-To-Peer Car Sharing) sia incentrato sullo sviluppo di un applicazione \citgl{Android} di \citgl{car sharing}, come suggerisce il suo nome, in realtà una parte importante del progetto è l'implementazione e integrazione di dinamiche di gamification all'interno di un applicativo di questo tipo.
+\paragraph{Cos'è la gamification}
+~\\Gamification è un termine che indica l'implementazione di dinamiche tipiche di giochi e videogiochi in ambiti che per loro natura giochi non sono, con l'intento di incentivare l'utente finale a fare cose che non farebbe altrimenti o che non farebbe per un periodo di tempo particolarmente lungo.
+Sebbene le dinamiche di gamification siano ancora ad uno stadio piuttosto sperimentale, negli ultimi anni essa è stata utilizzata in diversi ambienti (commerciali, pubblicitari, informatici, sociali).
+
+\paragraph{Il framework Octalysis}
+~\\Octalysys è un \citgl{framework} che analizza, identifica e organizza in 8 macro categorie chiamate \citgl{Core Drives} tutte le tipiche dinamiche implementabili attraverso la gamification. Ogni macro categoria a sua volta è un insieme di sotto-categorie chiamate Components.
+Core Drives e Components sono definiti in modo generico tali da essere applicabili e identificabili in qualsiasi ambito si intenda ricorrere alla gamification.
+Per conoscere in modo dettagliato tutti i possibili Components e il loro significato un buon punto di partenza è il sito youkaichou.com, più precisamente le indicazioni presenti all'indirizzo: \\
+\url{https://yukaichou.com/gamification-examples/} \\
+Per comodo riferimento invece riportiamo di seguito gli 8 Core Drives di Octalysis seguiti da una breve definizione:
+\begin{enumerate}
+    \item \textbf{Epic Meaning \& Calling:} Questo Core Drive riguarda dinamiche per le quali il giocatore si sente come un eletto, un predestinato a qualche grande impresa. Ad esempio il giocatore viene incaricato di creare nuovo materiale e contenuti, oppure viene elargito di un qualche "dono" iniziale.
+    \item \textbf{Development \& Accomplishment:} Solitamente è un Core Drive interno, per tutto ciò che riguarda il fare progressi, sviluppare abilità, eventualmente affrontare delle sfide.
+    \item \textbf{Empowerment of Creativity \& Feedback:} consiste nel coinvolgere l'utente in processi creativi, a tentare diverse combinazioni e a farlo pensare alle cose che fa. Vengono inoltre utilizzati attentamente meccanismi di feedback, allo scopo di dare all'utente una chiara visione di quello che sta facendo e delle ricompense che ne derivano.
+    \item \textbf{Ownership \& Possession:} Questo Core Drive riguarda tutto ciò che dà all'utente la sensazione di possedere qualcosa. L'idea è che se l'utente percepisce di possedere qualcosa da un lato cercherà di far sì che ciò che ha migliori, dall'altro sarà portato a fare qualcosa per possederne ancora di più.
+    \item \textbf{Social Influence \& Relatedness:} In questo Core Drive è raggruppato tutto ciò che riguarda la componente di interazione sociale, sia collaborativa (condivisione, missioni di gruppo, comunicazione) sia competitiva (invidia, classifiche, gare di gruppo). Ampiamente utilizzata in tempi moderni da moltissime compagnie.
+    \item \textbf{Scarcity \& Impatience:} Octalysis definisce questo Core Drive come "volere qualcosa perché non lo puoi avere". Per fare un esempio, un utente vorrebbe avere subito qualcosa che però sarà disponibile solo più tardi nel tempo. L'attesa della cosa aumenta il desiderio per la cosa stessa. Funzionalità relative a questo Core Drive devono però essere implementate con cautela, poiché una loro presenza troppo massiccia potrebbe frustrare l'utente ed allontanarlo dal servizio.
+    \item \textbf{Unpredictability \& Curiosity:} Sostanzialmente è il Core Drive che interviene quando l'utente non sa cosa lo aspetta successivamente. Tale meccanismo è fortemente utilizzato, ad esempio, nel gioco d'azzardo, dove la curiosità di vedere come andrà la giocata successiva spinge il giocatore a continuare. Il concetto è applicabile comunque anche ad ambiti più "innocui", come ad esempio la lettura di un libro o la visione di un film, dove vogliamo andare avanti spinti dalla curiosità di sapere cosa accadrà dopo.
+    \item \textbf{Loss \& Avoidance:} L'obbiettivo di questo Core Drive è di spingere l'utente a compiere determinate azioni per evitare che accada qualcosa di negativo. Ad esempio, evitare penalizzazioni che lo portino a perdere risultati perseguiti fino a questo momento, oppure spingerlo a credere che se non agirà immediatamente perderà l'occasione di farlo in seguito.
+\end{enumerate}
+
+\paragraph{Gamification applicata al progetto P2PCS}
+Nel nostro caso specifico il progetto prevede di fornire una piattaforma di Car Sharing peer to peer di base (la gestione di particolari complessità che andrebbero previste su una applicazione completa di questo tipo verranno infatti ignorate) sulla quale implementare una serie di idee studiate per i due tipi di utenti cui si rivolgerà l'applicazione: l'utente che affitta un veicolo e l'utente che lo prende in prestito. Per entrambe le categorie sono sorte diverse domande a cui abbiamo cercato di dare risposta implementando funzionalità relative a specifici Core Drives della gamifications:
+\begin{itemize}
+    \item \textbf{L'utente che presta l'auto: }Come incentivare l'utente che presta l'auto a farlo spesso, per fasce orarie abbastanza ampie, anche per lunghe tratte? Come far sì che l'utente sia spinto ad affittare il proprio veicolo a più persone diverse possibile, sia nuovi utenti che veterani, a prezzi bassi o possibilmente addirittura gratuitamente?
+    \item \textbf{L'utente che chiede un auto: }Come incentivare un utente a sfruttare il servizio di Car Sharing il più possibile, sia per brevi che per lunghe tratte? Come far si che oltre ad usufruirne egli stesso convinca anche nuovi utenti ad utilizzarlo?
+\end{itemize}
+Dopo aver raccolto varie idee e in seguito a numerosi confronti, siamo giunti alle seguenti conclusioni:
+\begin{itemize}
+    \item P2PCS farà largo uso dei Core Drives 2 e 5: il primo ponendo costantemente l'utente di fronte ad obiettivi da raggiungere, missioni da concludere e riconoscimenti continui per le varie azioni compiute tramite l'applicazione; il secondo implementando varie componenti social, sia interne all'applicazione (come il continuo confronto e l'interazione con gli altri utenti) sia esterne (come la condivisione delle cose fatte sui social network come Facebook).
+    \item Anche per il Core Drive 4 non è stato eccessivamente approfondito, ma alcuni dei suoi elementi di interazione sono stati reputati interessanti per il progetto.
+    \item Le due idee che sono state maggiormente perseguite nell'implementazione della gamification sono state:
+    \begin{enumerate}
+        \item Incentivare l'utente a "diventare qualcuno di importante all'interno della community" guadagnando riconoscimenti per il buon comportamento e l'andare incontro alle necessità degli altri utenti il più possibile.
+        \item Spingere l'utente ad usare l'applicazione attraverso incentivi (sia virtuali che economici), convenzioni esterne e riconoscimenti ad uso personale di vario genere.
+    \end{enumerate} 
+    \item I Core Drives 6 e 8 sono i meno presi in considerazione, in quanto ritenuti poco utili o addirittura lesivi per i nostri obiettivi: non è nostra intenzione penalizzare l'utente che non compie azioni, ma trovare un modo positivo e premiante perché lui sia spinto a farle. Inoltre, trattandosi di un'applicazione che si basa su un bisogno dell'utente, ovvero il bisogno di un mezzo di trasporto, si è ritenuto che spingere l'utente ad utilizzarla maggiormente fosse difficilmente "forzabile" con espedienti come quelli del Core Drive 7.
+\end{itemize}
+    In definitiva l'approccio adottato ai principi della gamification è stato più indirizzato nel dare all'utente una percezione di continuità e miglioramento, come conseguenza dell'utilizzo prolungato dell'applicazione, piuttosto che ad obbligare l'utente a particolari attese o impedire l'accesso ad alcune funzionalità, previo il completamento di specifici obbiettivi. Questa scelta è stata motivata dalla natura stessa dell'applicazione, che vede l'utente mettere in gioco il proprio veicolo, ovvero un oggetto di un certo valore economico: la presenza di funzionalità che vengano percepite come limitanti, piuttosto che migliorative, per l'esperienza è stata ritenuta non necessaria.
+\paragraph{M[PROD][S][0014]: Copertura del framework Octalysis}
+\begin{itemize} 
+    \item \textbf{Range di accettazione}: Ciascun Core Drive del framework ha un proprio range di accettazione:
+        \begin{itemize}
+            \item \textbf{Epic Meaning \& Calling}: 1-5; 
+            \item \textbf{Development \& Accomplishment}: 5-10;
+            \item \textbf{Empowerment of Creativity \& Feedback}: 1-5;
+            \item \textbf{Ownership \& Possession}: 1-5;
+            \item \textbf{Social Influence \& Relatedness}: 3-10;
+            \item \textbf{Scarcity \& Impatience}: 0-2;
+            \item \textbf{Unpredictability \& Curiosity:} 1-3;
+            \item \textbf{Loss \& Avoidance:} 0-2;
+        \end{itemize}
+    \item \textbf{Range ottimale}: Ciascun Core Drive del framework ha un proprio range ottimale:
+        \begin{itemize}
+            \item \textbf{Epic Meaning \& Calling}: 3-5; 
+            \item \textbf{Development \& Accomplishment}: 8-10;
+            \item \textbf{Empowerment of Creativity \& Feedback}: 3-5;
+            \item \textbf{Ownership \& Possession}: 3-5;
+            \item \textbf{Social Influence \& Relatedness}: 5-10;
+            \item \textbf{Scarcity \& Impatience}: 0-1;
+            \item \textbf{Unpredictability \& Curiosity:} 1-2;
+            \item \textbf{Loss \& Avoidance:} 0-1;
+        \end{itemize}
+\end{itemize}

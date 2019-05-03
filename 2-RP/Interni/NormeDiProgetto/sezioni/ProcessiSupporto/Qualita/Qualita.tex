@@ -1,0 +1,246 @@
+\subsubsection{Scopo}
+Ivi sono descritte le norme alle quali i componenti del gruppo devono sottostare in sede di redazione del \PdQ.
+
+
+\subsubsection{Aspettative}
+Il gruppo desidera redarre il documento \PdQ in modo coerente con quanto riportato nelle norme ivi indicate. 
+
+
+
+\subsubsection{Classificazione dei processi}
+La qualità del lavoro è garantita dalla suddivisione di quest'ultimo in vari processi, riportati all'interno del Piano di Qualifica.\\
+Ad occuparsi di tale suddivisione sono gli Amministratori, che dovranno rispettare la seguente notazione: \\
+    \begin{center}
+        PROC[num]
+    \end{center}
+Dove num è un numero positivo, intero di quattro cifre che identifica univocamente il determinato processo. La numerazione parte da "0001".
+
+\subsubsection{Classificazione delle metriche}
+La rilevazione della qualità del lavoro è effettuata dagli amministratori attraverso metriche riportate nel \PdQ. Onde evitare ambiguità le metriche dovranno seguire la seguente notazione:
+    \begin{center}
+        M[categ][sottocateg][num]
+    \end{center}
+All'interno della quale:
+    \begin{itemize}
+        \item \textbf{categ}: Indica la categoria della metrica riferendosi a prodotti, processi o test. Può assumere i seguenti valori:
+            \begin{itemize}
+                \item PROC: Per indicare i processi;
+                \item PROD: Per indicare i prodotti;
+            \end{itemize}
+        \item \textbf{sottocateg}: Indica la sotto-categoria della metrica, se esiste, in caso contrario non è presente.
+            \begin{itemize}
+                \item Per quanto riguarda la categoria PROC, solo nel caso in cui si tratti di processi di test, possono assumere i seguenti valori:
+                    \begin{itemize}
+                        \item TA: per indicare tutti i tipi di test
+                        \item TM: per indicare i test di modulo
+                        \item TH: per indicare i test ad alto livello
+                    \end{itemize}
+                \item Per quanto riguarda la categoria PROD, possono assumere i seguenti valori:
+                    \begin{itemize}
+                        \item D: per indicare i documenti;
+                        \item S: per indicare il software.
+                    \end{itemize}
+            \end{itemize}
+
+        \item \textbf{num}: Numero positivo, intero di quattro cifre che identifica univocamente la determinata metrica. La numerazione parte da "0001".
+    \end{itemize}
+
+\subsubsection{Procedure}
+L'implementazione di metriche tramite procedure verrà studiato con l'avanzare del progetto.
+
+\subsubsection{Metriche per la qualità di processo}
+Di seguito sono spiegate nel dettaglio le metriche utilizzate per valutare la qualità dei processi.
+
+\paragraph{M[PROC][0001] - Schedule Variance} ~\\Indica a che livello di avanzamento del progetto rispetto alla pianificazione delle attività.
+~\\\\
+\centerline{SV = BCWP - BCWS}
+\\\\dove BCWP indica le attività svolte e BCWS le attività che dovrebbero essere state svolte finora.
+
+\paragraph{M[PROC][0002] - Budget Variance}
+~\\Indica se attualmente si è speso meno o più di quanto previsto.
+~\\\\
+\centerline{BV = BCWS - ACWP}
+\\\\dove BCWS indica il costo pianificato delle attività svolte ad una certa data e ACWP indica il costo effettivo delle attività svolte a tale data.
+
+\paragraph{M[PROC][0003] - Rischi non individuati}
+~\\Indice del numero di rischi non individuati nella fase di analisi: è indicato con un numero intero incrementato partendo da zero per ogni rischio rilevato che non fosse stato individuato precedentemente in fase di analisi dei rischi. Viene resettato all'inizio di ogni fase di progetto.
+
+\paragraph{M[PROC][0004]: Numero campi dati per classe}
+~\\Indice del numero di campi definiti in una classe. Un numero eccessivo di campi dati rischia di rendere la classe poco specializzata e indica una cattiva progettazione.
+
+\paragraph{M[PROC][0005] - Metodi per classe}
+~\\Indice del numero di metodi definiti in una classe.
+
+\paragraph{M[PROC][0006] - Parametri per metodo}
+~\\Indice del numero di parametri definiti in un metodo. Un numero eccessivo di parametri per metodo potrebbe sovraccaricare lo \citgl{stack} e comprometterne la funzionalità.
+
+\paragraph{M[PROC][0007]: Grado di instabilità}
+~\\È un modo per misurare l'instabilità delle componenti di un sistema, in particolare la possibilità di effettuare modifiche ad un elemento del sistema senza influenzarne altri all'interno dell'applicazione. Questo risultato dipende dall'indice afferente (numero di classi esterne dipendenti da quelle interne) ed efferente (numero di classi interne dipendenti da quelle esterne).
+    \\\\
+    \centerline{I=${\displaistyle({\frac{Ce}{Ca+Ce}})*100}$}
+    \\\\
+    dove Ce è indice efferente e Ca è indice afferente.
+
+\paragraph{M[PROC][0008] - Complessità Ciclomatica}
+~\\Indica la complessità di funzioni, moduli, metodi o classi di un programma contando il numero di cammini linearmente indipendenti attraverso il grafo di controllo di flusso.
+
+\paragraph{M[PROC][0009] - Linee di codice per linee di comando}
+~\\Indica la percentuale di linee di commento presenti all'interno del codice sorgente.
+\\\\
+\centerline{P = ${\displaystyle({\frac {Nc}{Nsloc}})*100}$}
+\\\\dove Nc è il numero di linee di commento e Nsloc è il numero di linee di codice prodotte.
+
+\paragraph{M[PROC][0010] - Halstead Difficulty per-function}
+~\\Misura il livello di complessità di una funzione.
+\\\\
+\centerline{DIF = ${\displaystyle({\frac {UOP}{2}})*{\frac {OD}{UOD}}}$}
+\\\\dove UOP è il numero di operatori distinti, OD è il numero totale di operandi e UOD è il numero di operandi distinti.
+
+\paragraph{M[PROC][0011] - Halstead Volume per-function}
+~\\Indica la dimensione dell'implementazione di un algoritmo basandosi sul numero di operazioni eseguite e sugli operandi di una funzione.
+\\\\
+\centerline{VOL = (OP+OD)* ${\log_2 (UOP+UOD)}$}
+
+\\\\dove OP è il numero totale di operatori, OD è il numero totale di operandi, UOP è il numero di operatori distinti e UOD è il numero di operandi distinti.
+
+\paragraph{M[PROC][0012] - Halstead Effort per-function}
+~\\Rappresenta il costo necessario per scrivere il codice di una funzione.
+\\\\
+\centerline{E = DIF*VOL}
+\\\\dove DIF indica l'Halstead Difficulty e VOL è l'Halstead Volume.
+
+\paragraph{M[PROC][0013] - Indice di manutenibilità}
+~\\Permette di stabilire quanto sarà semplice mantenere il codice prodotto.
+\\\\
+\centerline{MI = 171-3.42*ln(aveE)-0.23*ln(aveV)-1616.2*ln(aveLOC)}
+\\\\dove aveE è l'Halstead Effort medio per modulo, aveV è la complessità ciclomatica media per modulo, e aveLOC è il numero medio di linee di codice per modulo.
+
+\paragraph{M[PROC][TM][0001] - Percentuale di codice coperto da test}
+~\\Indica il rapporto tra linee di codice per le quali è previsto un test di verifica su linee di codice totale in percentuale.
+\\\\
+\centerline{PLcc = ${\displaystyle({\frac {Lcc}{Lct}})}$*100}
+\\\\dove Lcc indica linee codice coperte e Lct le linee totali di codice.
+
+\paragraph{M[PROC][TM][0002] - Percentuale di test passati}
+~\\Indica il rapporto tra i test passati e i test totali nella fase di sviluppo.
+\\\\
+\centerline{PTp = ${\displaystyle({\frac {Tp}{Tt}})}$*100}
+\\\\dove Tp indica i test passati e Tt i test totali.
+
+\paragraph{M[PROC][TM][0003] - Percentuale di test non passati}
+~\\Indica il rapporto tra i test non passati e i test totali nella fase di sviluppo
+\\\\
+\centerline{PTnp = ${\displaystyle({\frac {Tnp}{Tt}})}$*100}
+\\\\dove Tnp indica i test non passati mentre Tt sono i test totali.
+
+\subsubsection{Metriche per la qualità di prodotto}
+Di seguito sono spiegate nel dettaglio le metriche utilizzate per valutare la qualità di prodotto.
+
+\paragraph{Metriche per i documenti}
+\subparagraph{M[PROD][D][0001]: Indice di \citgl{Gulpease}}
+~\\È un indice di leggibilità per la lingua italiana, con il vantaggio di contare le singole lettere e non le sillabe per definire la lunghezza delle parole. 
+L'indice prende in considerazione la lunghezza delle parole e la lunghezza delle frasi rispetto al numero totale delle lettere. Come descritto nella seguente formula, restituisce poi un valore che indica l'indice di difficoltà della leggibilità del testo.
+\\\\
+\centerline{ ${\displaystyle 89+{\frac {300*(numero\ delle\ frasi)-10*(numero\ delle\ lettere)}{numero\ delle\ parole}}}$}
+\\\\ Risultati:
+\begin{itemize}
+    \item Minore di 80: difficile da leggere per chi ha licenza elementare;
+    \item Minore di 60: difficile da leggere per chi ha licenza media;
+    \item Minore di 40: difficile da leggere per chi ha un diploma superiore.
+    \end{itemize}
+Ai fini di rendere il testo il più comprensibile possibile, si è deciso di porre importanza anche ad un'analisi diretta da parte di una persona, in quanto l'indice di leggibilità fornito dalla formula sopra riportata non garantisce un buon testo sotto tutti gli aspetti ritenuti importanti. Uno dei motivi che ha spinto il gruppo a questa scelta è dato dal fatto che un risultato considerato non buono secondo l'indice di Gulpease, potrebbe essere conseguenza di un testo con frasi complesse utilizzate per non ricadere in contenuti poco formali; inoltre il risultato non dà informazioni sulla logica del contenuto.\\
+Per calcolare l'indice di Gulpease il gruppo ha tenuto conto solo dei contenuti testuali informativi, tralasciando contenuti come indice, intestazione e tabelle.
+
+\subparagraph{M[PROD][D][0002]: Errori ortografici}
+~\\\citgl{Overleaf}, l'editor utilizzato per redigere la documentazione, fa uso di un correttore ortografico per mettere in evidenza gli errori di ortografia. Sarà compito del Verificatore correggerli attraverso l'uso di tale strumento.
+
+\paragraph{Metriche per il Software}
+\subparagraph{M[PROD][S][0001]: Copertura requisiti obbligatori}
+~\\Una volta eseguita l'analisi dei requisiti, essi vengono organizzati in unità di dimensioni gestibili e quelli obbligatori messi in evidenza. Tale metrica indica la percentuale di requisiti obbligatori implementati fino a un dato momento. La formula che la misura è dunque:
+    \\\\
+    \centerline{CRo = ${\displaystyle{\frac {NRoS}{NRoT}}*100}$}
+    \\\\
+dove NRoS è il numero dei requisiti obbligatori soddisfatti e NRoT è il numero dei requisiti obbligatori totali
+
+\subparagraph{M[PROD][S][0002]: Copertura requisiti accettati}
+~\\Una volta eseguita l'analisi dei requisiti, essi vengono organizzati in unità di dimensioni gestibili e una parte di essi viene identificata come accettati ma non obbligatori. Tale metrica indica la percentuale di implementazione di questi requisiti fino a un dato momento. La formula che la misura è dunque:
+    \\\\
+    \centerline{CRa = ${\displaystyle{\frac {NRaS}{NRaT}}*100}$}
+    \\\\
+dove NRaS è il numero dei requisiti accettati che sono stati soddisfatti e NRaT è il numero totale dei requisiti accettati.
+
+\subparagraph{M[PROD][S][0003]: Accuratezza rispetto alle attese}
+~\\In fase di testing tale metrica misura la percentuale dei test che hanno restituito i risultati attesi. La formula è la seguente:
+    \\\\
+    \centerline{AC = ${\displaystyle (1-{\frac {NTf}{NTt}})*100}$}
+    \\\\
+dove NTf è il numero di test case falliti e NTt è il numero di test case totali.
+
+\subparagraph{M[PROD][S][0004]: Densità di \citgl{failure}}
+~\\Rappresenta un dato opposto a quello dell'Accuratezza rispetto alle attese. Indica infatti la percentuale di test conclusi con un esito di failure, quindi negativo, rispetto al totale di test eseguiti.
+    \\\\
+    \centerline{DF=${\displaystyle({\frac {Nfr}{Nte}})*100}$}
+    \\\\
+dove Nfr indica il numero di failure rilevati e Nte il numero di test case eseguiti.
+    
+\subparagraph{M[PROD][S][0005]: Blocco di operazioni non corrette}
+~\\È un valore espresso in percentuale che indica il livello di funzionalità con cui si gestiscono correttamente i fault.
+    \\\\
+    \centerline{BNC=${\dispalystyle({\frac{Nfe}{Non}})*100}$} Nfe: numero di failure evitati durante i test;
+    Non: nunmero di test case eseguiti che prevedono l'esecuzione di operazioni non corrette.
+    \\\\
+   
+
+\subparagraph{M[PROD][S][0006]: Tempo di risposta}
+~\\Consiste nel tempo che intercorre tra la domanda al software per una precisa funzionalità e il risultato restituito all'utente.
+    \\\\
+    \centerline{TR=${\dispalystyle{\frac{\sum_{k=1}^N Tk}{n}}}$}
+    \\\\
+dove a partire dalla richiesta di n funzionalità, Tk è il tempo trascorso tra una richiesta k per una determinata funzionalità e il termine delle operazioni necessarie a dare seguito a tale richiesta.
+
+\subparagraph{M[PROD][S][0007]: Comprensibilità delle funzioni offerte}
+~\\Consiste nella percentuale di operazioni comprese nell'immediato senza il bisogno di consultare il manuale.
+    \\\\
+    \centerline{CFC=${\displaystyle({\frac{Nfc}{Nfo}})*100}$}
+    \\\\
+dove Nfc è il numero di funzionalità comprese dall'utente e Nfo è il numero di funzionalità offerte ad esso offerte.
+
+\subparagraph{M[PROD][S][0008]: Facilità di apprendimento delle funzionalità}
+~\\Indica il tempo, misurato in minuti, utilizzato dall'utente per apprendere nello specifico una determinata funzionalità e il modo di utilizzarla correttamente.
+
+\subparagraph{M[PROD][S][0009]: Utilizzo effettivo delle funzionalità}
+~\\Percentuale che indica il livello di apprezzamento dell'utente rispetto alle funzionalità offerte dall'applicazione.
+     \\\\
+    \centerline{PA=${\displaystyle({\frac{Nfu}{Nfo}})*100}$}
+    \\\\
+dove Nfu è il numero funzionalità utilizzate dall'utente e Nfo è il numero funzionalità offerte dall'app.
+
+\subparagraph{M[PROD][S][0010]: Capacità di analisi di failure}
+~\\Rapporto, espresso in percentuale, delle failure di cui si conosce la causa rispetto al numero totale di failure attualmente rilevate.
+    \\\\
+    \centerline{CF=${\displaystyle({\frac{Nfi}{Nft}})*100}$}
+    \\\\
+dove Nfi è il numero di failure di cui si è identificata la causa e Nft è il numero di failure totali trovate.
+
+\subparagraph{M[PROD][S][0011]: Impatto delle modifiche}
+~\\
+Dato il numero di failure risolte, questo indice calcola, in percentuale, il rapporto tra quante di esse hanno generato nuove failure in seguito alla loro risoluzione e il loro numero totale.
+    \\\\
+    \centerline{IM=${\displaistyle({\frac{Nfg}{Nfr}})*100}$}
+    \\\\
+dove Nfg è il numero di failure generanti (che generano altre failure) e Nfr è il totale di failure risolte.
+
+\subparagraph{M[PROD][S][0012]: Rapporto linee di commento su linee di codice}
+~\\Si considera di grande importanza la presenza di commenti che descrivono il codice, in quanto aumentano la leggibilità e l'intelligibilità dello stesso e ne favoriscono la manutenzione, soprattutto in previsione di interventi di più persone.
+    \\\\
+    \centerline{RLC=${\displaistyle({\frac{Nlcom}{Nlcod}})*100}$}
+    \\\\
+  dove Nlcom è il numero di linee di commenti e Nlcod è il numero di linee di codice
+
+\subparagraph{M[PROD][S][0013]: Versioni di Android supportate}
+~\\È considerato prioritario il supporto delle versioni più recenti del sistema operativo Android, tuttavia è considerato migliorativo un numero maggiore di versioni supportate dall'applicazione.
+
+\subparagraph{M[PROD][S][0014]: Copertura del framework \citgl{Octalysis}}
+~\\Il prodotto include funzionalità che seguono i principi del framework di \citgl{gamification} Octalysis.
+\\Per misurare la distribuzione di tali funzionalità vengono contate per ogni \citgl{Core Drive} quante appartengono ad ognuno di essi, e rapportati i valori su una scala da 0 a 10. Nel \PdQ{} sono definiti i valori accettabili per ciascun Core Drive. Per la visualizzazione grafica della distribuzione delle funzionalità viene utilizzato il software online Octalysis Tool.
+\\Per una breve panoramica sulla gamification e sul framework Octalysis fare riferimento al paragrafo 3.3.3 del \PdQ.
