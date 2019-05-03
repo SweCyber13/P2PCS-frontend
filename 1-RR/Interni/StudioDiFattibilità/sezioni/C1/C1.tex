@@ -1,0 +1,41 @@
+\subsection{Informazioni sul capitolato}
+    \begin{itemize}
+        \item Nome del progetto: Butterfly
+        \item \textbf{\citgl{Proponente}}: Imola Informatica
+        \item \textbf{\citgl{Committente}}: Prof. Tullio Vardanega, Prof. Riccardo Cardin
+    \end{itemize}
+\subsection{Descrizione}
+L'obiettivo del capitolato è lo sviluppo di una piattaforma software che permetta l'accentramento e la standardizzazione delle segnalazioni generate da software utilizzati nell'ambito dello sviluppo, più precisamente in quello delle pratiche di \citgl{Continuous Integration} e \citgl{Continuous Delivery}. Il problema sollevato dal proponente risiede nella necessità di accedere a molteplici piattaforme diverse per visionare tali segnalazioni, ciascuna con una propria struttura specifica e in alcuni casi con limitate capacità di configurazione. Al fine di facilitare la gestione e l'accesso alle informazioni contenute nelle segnalazioni è quindi stato proposto il progetto oggetto del capitolato. Viene proposto di realizzare, attraverso un \citgl{design pattern} di tipo \citgl{publisher-subscriber}, una serie di componenti che si interfaccino direttamente con i diversi strumenti software da cui vengono generate le segnalazioni, per poi procedere a redistribuirle agli utenti destinatari nella forma da loro desiderata, come ad esempio una e-mail.
+\subsection{Studio del dominio}
+     \begin{itemize}
+        \item \textbf{\citgl{Dominio applicativo}}: Il capitolato fa riferimento all'ambito dello sviluppo software tramite l'utilizzo di strumenti per l'implementazione delle pratiche di \citgl{Continuous Integration} e \citgl{Continuous Delivery}. Tali strumenti producono statistiche e segnalazioni automatiche contenenti informazioni riguardanti problemi riscontrati durante lo sviluppo. Queste sono solitamente di interesse per specifici utenti, i quali hanno la necessità di consultarle in modo rapido.
+        \item \textbf{\citgl{Dominio tecnologico}}:
+        \begin{itemize}
+        \item RedMine: Software per la pianificazione di progetti e gestione delle segnalazioni tramite \citgl{interfaccia web};
+        \item GitLab: Piattaforma per la gestione di \citgl{repository} \citgl{Git};
+        \item SonarQube: Strumento per l'analisi statica del codice;
+        \item Telegram e Slack: Applicazioni per invio e ricezione di messaggi tra utenti, i messaggi generati dal prodotto devono poter essere inoltrati ad entrambi i software;
+        \item Linguaggi Java, Python o Node.js per lo sviluppo del software;
+        \item Apache Kafka: Una piattaforma \citgl{open source} utilizzabile come Broker, ovvero il componente dell'applicativo che si occupa di raccogliere le segnalazioni come messaggi e inoltrarli all'utente nel software scelto.
+        \end{itemize}
+    \end{itemize}
+\subsection{Esito finale}
+    \begin{itemize}
+        \item Aspetti positivi:
+        \begin{itemize}
+        \item La stretta relazione del progetto con strumenti molto utilizzati nello sviluppo software come SonarQube e GitLab è stata vista come un ottima opportunità per acquisire conoscenze che potrebbero tornare utili in futuro;
+        \item La possibilità di utilizzare il linguaggio Java, con cui tutti i membri del gruppo hanno già una discreta familiarità;
+        \item Lo studio e la messa in pratica del design pattern; \citgl{publisher-subscriber} per i componenti del software è stato ritenuto interessante.
+        \end{itemize}
+        \item Fattori di rischio:
+        \begin{itemize}
+        \item La gestione della grande quantità di software esterni con cui si deve interfacciare l'applicativo potrebbe risultare troppo onerosa in termini di sviluppo;
+        \item Alcune Tecnologie come Apache Kafka sono completamente sconosciute ai membri del gruppo. Lo studio necessario per apprenderle ed utilizzarle in modo sufficientemente efficace potrebbe richiedere troppo tempo.
+        \end{itemize}
+        \item Conclusioni:
+        \begin{itemize}
+        \item Sebbene il capitolato sia stato giudicato positivamente dai componenti del gruppo, i fattori di rischio elencati precedentemente hanno portato i membri del team a reputarlo non sostenibile;
+        \item Scelta: rigettato.
+        \end{itemize}
+        
+    \end{itemize}
