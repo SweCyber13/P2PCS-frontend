@@ -1,0 +1,11 @@
+security:
+    providers:
+        app_user_provider:
+            id: App\Security\UserProvider
+    firewalls:
+        # ...
+        main:
+            anonymous: true
+            guard:
+                authenticators:
+                    - App\Security\CognitoAuthenticator
