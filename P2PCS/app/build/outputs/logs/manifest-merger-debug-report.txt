@@ -1,0 +1,183 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7bf621d83fc8a09de452dc136edc2d35\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\5c71c9e7cf5b497af500dd06145808e0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\24d42948a4a77ae79b5948f9d3f5d8b7\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7aaa6437a1fc656c958c251df101d68e\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\817e4c943a4f2bbcd3c10e176921d112\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\e7e14d3640872529f8e1db66f3d3ff3d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\03f036087a576f8f6630fe3704174070\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\39a0489da2c9c725d4198707688228d2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\34f7d663e64c7aa0f86c37c3cc79c1f2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7338d23f5bf27e8a2dc674065f2531bb\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\69ed99c7db2a28e4e55854b926fe624a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\c620a0ec322ecca56503c334ca6a7039\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6c007fad3bf8cf8f2b67c3ee3dce381d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\fa69e37579e2f4c03990df4021d1fda0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\135cba53b3e153c2a89ac01d1757a394\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\2dd57a8793013d18f9960095c1f9fbdc\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6bc77f0155ca7f06ec192c894e5d45cb\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\f6dd7c4ea122b10e3663e102e6a5e642\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\e46b65a8ca46465e11da317882b6de21\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6d99fe4488cbed19d327ed5a86d16635\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\072aafda70948668085bcce9a2f29bf8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\660b8cce1a52f53d82d6f3ddaeaa7d68\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\28300c6f24db1f1bc38ee479d24a7c38\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\3c6473de4ed4d878fd956e36354606ab\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\3aa33ea1bc5ec8736338f095cd605a3b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\245ce7b2384640a407e1bb659f232849\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\36814e48dc049a98494237da50b8b889\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\c58927d7784428084a9b1e3239684d42\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\989ee1b72739c151796c02325052796a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\4f9dc13bcb2085e111b35254116131a7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\b5800e19ca40b953772622720b335f8b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\97e90734ca26feaac72d4fc07a797dc7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\82f4ae7a3e6a65c20a20f2a84d8c468b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6c8a75969af9d9c28003f4ba55c560ba\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:3:11-44
+		INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:5:5-22:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7bf621d83fc8a09de452dc136edc2d35\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7bf621d83fc8a09de452dc136edc2d35\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7aaa6437a1fc656c958c251df101d68e\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7aaa6437a1fc656c958c251df101d68e\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\28300c6f24db1f1bc38ee479d24a7c38\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\28300c6f24db1f1bc38ee479d24a7c38\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\3c6473de4ed4d878fd956e36354606ab\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\3c6473de4ed4d878fd956e36354606ab\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\28300c6f24db1f1bc38ee479d24a7c38\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:10:13-39
+	android:label
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:8:13-45
+	android:roundIcon
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:9:13-58
+	android:icon
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:7:13-47
+	android:allowBackup
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:6:13-39
+	android:theme
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:11:13-44
+activity#com.example.p2pcs_cyber.MainActivity
+ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:12:9-20:20
+	android:label
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:14:17-60
+	android:name
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:13:17-45
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:16:17-68
+	android:name
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:18:17-76
+	android:name
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:18:27-74
+activity#com.example.p2pcs_cyber.HobbiesActivity
+ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:21:9-52
+	android:name
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml:21:19-50
+uses-sdk
+INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7bf621d83fc8a09de452dc136edc2d35\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7bf621d83fc8a09de452dc136edc2d35\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\5c71c9e7cf5b497af500dd06145808e0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\5c71c9e7cf5b497af500dd06145808e0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\24d42948a4a77ae79b5948f9d3f5d8b7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\24d42948a4a77ae79b5948f9d3f5d8b7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7aaa6437a1fc656c958c251df101d68e\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7aaa6437a1fc656c958c251df101d68e\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\817e4c943a4f2bbcd3c10e176921d112\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\817e4c943a4f2bbcd3c10e176921d112\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\e7e14d3640872529f8e1db66f3d3ff3d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\e7e14d3640872529f8e1db66f3d3ff3d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\03f036087a576f8f6630fe3704174070\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\03f036087a576f8f6630fe3704174070\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\39a0489da2c9c725d4198707688228d2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\39a0489da2c9c725d4198707688228d2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\34f7d663e64c7aa0f86c37c3cc79c1f2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\34f7d663e64c7aa0f86c37c3cc79c1f2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7338d23f5bf27e8a2dc674065f2531bb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\7338d23f5bf27e8a2dc674065f2531bb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\69ed99c7db2a28e4e55854b926fe624a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\69ed99c7db2a28e4e55854b926fe624a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\c620a0ec322ecca56503c334ca6a7039\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\c620a0ec322ecca56503c334ca6a7039\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6c007fad3bf8cf8f2b67c3ee3dce381d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6c007fad3bf8cf8f2b67c3ee3dce381d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\fa69e37579e2f4c03990df4021d1fda0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\fa69e37579e2f4c03990df4021d1fda0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\135cba53b3e153c2a89ac01d1757a394\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\135cba53b3e153c2a89ac01d1757a394\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\2dd57a8793013d18f9960095c1f9fbdc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\2dd57a8793013d18f9960095c1f9fbdc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6bc77f0155ca7f06ec192c894e5d45cb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6bc77f0155ca7f06ec192c894e5d45cb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\f6dd7c4ea122b10e3663e102e6a5e642\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\f6dd7c4ea122b10e3663e102e6a5e642\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\e46b65a8ca46465e11da317882b6de21\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\e46b65a8ca46465e11da317882b6de21\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6d99fe4488cbed19d327ed5a86d16635\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6d99fe4488cbed19d327ed5a86d16635\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\072aafda70948668085bcce9a2f29bf8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\072aafda70948668085bcce9a2f29bf8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\660b8cce1a52f53d82d6f3ddaeaa7d68\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\660b8cce1a52f53d82d6f3ddaeaa7d68\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\28300c6f24db1f1bc38ee479d24a7c38\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\28300c6f24db1f1bc38ee479d24a7c38\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\3c6473de4ed4d878fd956e36354606ab\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\3c6473de4ed4d878fd956e36354606ab\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\3aa33ea1bc5ec8736338f095cd605a3b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\3aa33ea1bc5ec8736338f095cd605a3b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\245ce7b2384640a407e1bb659f232849\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\245ce7b2384640a407e1bb659f232849\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\36814e48dc049a98494237da50b8b889\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\36814e48dc049a98494237da50b8b889\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\c58927d7784428084a9b1e3239684d42\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\c58927d7784428084a9b1e3239684d42\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\989ee1b72739c151796c02325052796a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\989ee1b72739c151796c02325052796a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\4f9dc13bcb2085e111b35254116131a7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\4f9dc13bcb2085e111b35254116131a7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\b5800e19ca40b953772622720b335f8b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\b5800e19ca40b953772622720b335f8b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\97e90734ca26feaac72d4fc07a797dc7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\97e90734ca26feaac72d4fc07a797dc7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\82f4ae7a3e6a65c20a20f2a84d8c468b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\82f4ae7a3e6a65c20a20f2a84d8c468b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6c8a75969af9d9c28003f4ba55c560ba\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\elepo\.gradle\caches\transforms-2\files-2.1\6c8a75969af9d9c28003f4ba55c560ba\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\elepo\Desktop\P2PCS\P2PCS\app\src\main\AndroidManifest.xml
