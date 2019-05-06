@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingRight="16dp"
+              android:paddingTop="16dp"
+              android:paddingLeft="16dp"
+              android:paddingBottom="16dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center" android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp" android:layout_alignParentStart="true" android:layout_marginStart="0dp">
+
+        <Button
+                android:id="@+id/startDateBtn"
+                android:text="Start date"
+                android:layout_width="196dp"
+                android:layout_marginStart="0dp"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                android:id="@+id/dateTv"
+                android:text="Date"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="597dp" android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp">
+
+        <Button
+                android:id="@+id/endDateBtn"
+                android:text="End date"
+                android:layout_width="196dp"
+                android:layout_marginStart="0dp"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                android:id="@+id/dateTp"
+                android:text="Date"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
