@@ -13,6 +13,15 @@ import android.widget.Button
 
 class ProfileFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_profile, null)
+        val view = inflater.inflate(R.layout.fragment_profile, null)
+        val button = view.findViewById<Button>(R.id.button)
+        button.setOnClickListener{
+            val intent= Intent(requireContext(), PersonalData::class.java)
+            startActivity(intent)
+        }
+        return view
+
     }
+
+
 }

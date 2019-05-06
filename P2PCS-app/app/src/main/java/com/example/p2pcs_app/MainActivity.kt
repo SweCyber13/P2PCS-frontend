@@ -39,15 +39,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     //load different fragment when a navigation button is pressed
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.navigation_profile -> {
-                loadFragment(ProfileFragment())
-                val button = findViewById<Button>(R.id.button)
-                button.setOnClickListener{
-                    val intent = Intent(this, PersonalData::class.java)
-                    startActivity(intent)
-
-                }
-            }
+            R.id.navigation_profile -> loadFragment(ProfileFragment())
             R.id.navigation_search -> loadFragment(SearchFragment())
             R.id.navigation_cars -> loadFragment(CarsFragment())
             R.id.navigation_explore -> loadFragment(ExploreFragment())
