@@ -9,7 +9,8 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="200dp" android:background="#009688" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/linearLayout">
         <ImageView
                 android:src="@mipmap/ic_launcher_round"
                 android:layout_marginTop="50dp"
@@ -23,4 +24,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView"/>
     </LinearLayout>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
 </android.support.constraint.ConstraintLayout>

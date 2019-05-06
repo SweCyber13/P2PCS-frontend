@@ -1,11 +1,15 @@
 package com.example.p2pcs_app
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import android.support.v4.app.Fragment
+import android.support.v4.app.Person
+import android.widget.Button
+//import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -60,7 +64,12 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
+        /*val button = findViewById<Button>(R.id.button)
+        button.setOnClickListener{
+            val intent = Intent(this, PersonalData::class.java)
+            startActivity(intent)
 
+        }*/
         //textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(this)
     }
