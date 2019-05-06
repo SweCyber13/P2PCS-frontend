@@ -64,12 +64,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
-        val button = findViewById<Button>(R.id.button)
-        button.setOnClickListener{
-            val intent = Intent(this, PersonalData::class.java)
-            startActivity(intent)
-
-        }
+        
         //textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(this)
     }
