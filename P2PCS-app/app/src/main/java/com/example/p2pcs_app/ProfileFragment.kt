@@ -19,6 +19,12 @@ class ProfileFragment : Fragment() {
             val intent= Intent(requireContext(), PersonalData::class.java)
             startActivity(intent)
         }
+
+        val button2 = view.findViewById<Button>(R.id.classifiche)
+        button2.setOnClickListener{
+            val intent= Intent(requireContext(), volley_test::class.java)
+            startActivity(intent)
+        }
         return view
     }
     
