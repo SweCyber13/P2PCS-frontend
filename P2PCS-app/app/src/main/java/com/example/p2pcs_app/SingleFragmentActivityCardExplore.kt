@@ -19,7 +19,7 @@ abstract class SingleFragmentActivityCardExplore : AppCompatActivity() {
         setContentView(layoutResId)
 
         val fm = supportFragmentManager
-        var fragment = fm.findFragmentById(R.id.fragment_container)
+        var fragment = fm.findFragmentById(R.id.fragment_container_explore)
 
         // ensures fragments already created will not be created
         if (fragment == null) {
