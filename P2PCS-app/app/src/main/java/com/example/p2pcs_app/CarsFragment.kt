@@ -1,8 +1,6 @@
 package com.example.p2pcs_app
 
-import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -16,7 +14,7 @@ class CarsFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_cars, null)
         val button = view.findViewById<Button>(R.id.InfoCar)
         button.setOnClickListener{
-            val intent= Intent(requireContext(), visualizza_macchina::class.java)
+            val intent= Intent(requireContext(), VisualizzaMacchinaActivity::class.java)
             startActivity(intent)
         }
 

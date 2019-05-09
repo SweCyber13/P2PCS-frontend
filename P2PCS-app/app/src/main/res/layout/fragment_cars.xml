@@ -4,6 +4,7 @@
                                                    xmlns:tools="http://schemas.android.com/tools"
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
+                                                   android:background="@drawable/background"
                                                    tools:context=".CarsFragment" android:id="@+id/frameLayout4">
 <ScrollView
 android:layout_width="match_parent"
@@ -20,8 +21,8 @@ android:layout_height="match_parent">
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="@drawable/black_gradient"
-                app:srcCompat="@drawable/ic_cars"
+                android:background="@color/white"
+                app:srcCompat="@drawable/car"
                 android:id="@+id/ImgCar1"/>
         <FrameLayout
                 android:layout_width="match_parent"

@@ -14,7 +14,9 @@
             android:theme="@style/AppTheme">
         <activity android:name=".volley_test">
         </activity>
-        <activity android:name=".visualizza_macchina">
+        <activity android:name=".ClassificaActivity">
+        </activity>
+        <activity android:name=".VisualizzaMacchinaActivity">
         </activity>
         <activity android:name=".EditCar">
         </activity>

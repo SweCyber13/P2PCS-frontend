@@ -1,40 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+                                             android:layout_height="match_parent"
+android:background="@drawable/background">
 
     <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+                android:id="@+id/back"/>
         <LinearLayout
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <TextView
-                    android:text="Classifica punit rank"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/title"
-            />
-            <TextView
-                    android:text="TextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/classifica"
-            />
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <TextView
-                    android:text="Classifica punti buoni"
+                android:layout_height="match_parent"
+        android:layout_margin="15dp">
+            <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/title2"/>
-            <TextView
-                    android:text="TextView"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Classifica punti rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/TitlePuntiRank"
+                />
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/classifica"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/classifica2"/>
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Classifica punti buoni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/title2"/>
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/classifica2"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

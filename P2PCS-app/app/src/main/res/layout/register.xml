@@ -89,7 +89,7 @@
                 android:textColorHint="@color/hint_color"
                 android:textSize="21sp"/>
         <EditText
-                android:id="@+id/password"
+                android:id="@+id/code"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="10dp"
@@ -121,10 +121,10 @@
                 android:textSize="21sp"/>
 
         <Button
-                android:id="@+id/login"
+                android:id="@+id/confirm"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:layout_alignBottom="@+id/null"
+                android:layout_alignBottom="@+id/confirm"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/button_background"
                 android:text="REGISTER"

@@ -5,7 +5,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/background"
-              >
+>
 
 
     <LinearLayout
@@ -24,23 +24,6 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_user_signin" />
 
-
-        <EditText
-                android:id="@+id/username"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/edit_text_background"
-                android:drawableStart="@drawable/ic_user"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:hint="User Name"
-                android:inputType="textPersonName"
-                android:padding="10dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/hint_color"
-                android:textSize="21sp" />
-
         <EditText
                 android:id="@+id/code"
                 android:layout_width="match_parent"
@@ -50,12 +33,12 @@
                 android:drawableStart="@drawable/ic_password"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="Password"
+                android:hint="confirmation code"
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/hint_color"
-                android:textSize="21sp" />
+                android:textSize="21sp"/>
 
         <TextView
                 android:layout_width="match_parent"
@@ -71,19 +54,11 @@
                 android:layout_height="48dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/button_background"
-                android:text="Log in"
+                android:text="Confirm"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="21sp" />
+                android:textSize="21sp"/>
 
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:gravity="center"
-                android:text="Sign Up"
-                android:textColor="@color/white"
-                android:textSize="21sp" />
     </LinearLayout>
 
 </RelativeLayout>
