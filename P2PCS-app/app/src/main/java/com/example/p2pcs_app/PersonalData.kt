@@ -64,11 +64,11 @@ class PersonalData : AppCompatActivity() {
                 var str_password: String=""
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
-                    str_name =  "\n" + jsonInner.get("Nome")
-                    str_surname= "\n" + jsonInner.get("Cognome")
-                    str_username= "\n" + jsonInner.get("Username")
-                    str_email= "\n" + jsonInner.get("Mail")
-                    str_password= "\n" + jsonInner.get("Password")
+                    str_name= "" + jsonInner.get("Nome")
+                    str_surname= "" + jsonInner.get("Cognome")
+                    str_username= "" + jsonInner.get("Username")
+                    str_email= "" + jsonInner.get("Mail")
+                    str_password= "" + jsonInner.get("Password")
 
                 }
                 name!!.text = "$str_name "
@@ -119,12 +119,12 @@ class PersonalData : AppCompatActivity() {
 
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
-                    str_age =  "\n" + jsonInner.get("Eta")
-                    str_sex =  "\n" + jsonInner.get("Sesso")
-                    str_city =  "\n" + jsonInner.get("Citta")
-                    str_driving_license =  "\n" + jsonInner.get("Numero_patente")
-                    str_date_driving_license =  "\n" + jsonInner.get("Data_rilascio_p")
-                    str_job="\n" + jsonInner.get("Occupazione")
+                    str_age =  "" + jsonInner.get("Eta")
+                    str_sex =  "" + jsonInner.get("Sesso")
+                    str_city =  "" + jsonInner.get("Citta")
+                    str_driving_license =  "" + jsonInner.get("Numero_patente")
+                    str_date_driving_license =  "" + jsonInner.get("Data_rilascio_p")
+                    str_job="" + jsonInner.get("Occupazione")
 
                 }
                 age!!.text = "$str_age"

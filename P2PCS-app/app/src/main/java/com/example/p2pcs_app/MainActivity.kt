@@ -66,6 +66,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
         //textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(this)
-        //loadFragment(SearchFragment())
+        loadFragment(SearchFragment())
     }
 }

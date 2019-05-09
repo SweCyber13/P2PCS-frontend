@@ -1,83 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
                                              android:layout_height="match_parent"
                                              tools:context=".PersonalData"
-                                             android:background="@drawable/background">
-    <LinearLayout
-            android:orientation="vertical"
+                                             android:background="@color/white"
+>
+
+
+    <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <ScrollView
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_margin="10dp" app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+                  app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="110dp"
+                  app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp">
+
+
+        <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                          android:orientation="vertical"
-            android:layout_margin="5dp">
+                android:layout_height="80dp" app:srcCompat="@drawable/avatar" android:id="@+id/imageView5"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
 
-
-                <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars"
-                        android:id="@+id/imageView5"
-                        android:layout_margin="5dp"/>
                 <TextView
                         android:text="Nome"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/Name"
-                        android:layout_margin="5dp"/>
+                        android:layout_height="wrap_content"
+                        android:id="@+id/titleName"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                />
+                <TextView
+                        android:text="Nome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Name"
+                        android:layout_marginBottom="5dp"
+                />
+
+
+                <TextView
+                        android:text="Cognome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/titleSurname"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
                 <TextView
                         android:text="Cognome"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/Surname"
-                        android:layout_margin="5dp"/>
-                <TextView
-                        android:text="Username"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/Username"
-                        android:layout_margin="5dp"/>
-                <TextView
-                        android:text="Email"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/Email"
-                        android:layout_margin="5dp"/>
-                <TextView
-                        android:text="Password"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/Password"
-                        android:layout_margin="5dp"/>
-                <TextView
-                        android:text="Età"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/Age"
-                        android:layout_margin="5dp"/>
-                <TextView
-                        android:text="Sesso"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/Sex"
-                        android:layout_margin="5dp"/>
-                <TextView
-                        android:text="Città"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/City"
-                        android:layout_margin="5dp"/>
-                <TextView
-                        android:text="Numero Patente"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/DrivingLicense"
-                        android:layout_margin="5dp"/>
-                <TextView
-                        android:text="Data Patente"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/DateDrivingLicense"
-                        android:layout_margin="5dp"/>
-                <TextView
-                        android:text="Occupazione"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/Job"
-                        android:layout_margin="5dp"/>
+                        android:layout_marginBottom="5dp"
+                    />
 
-            </LinearLayout>
-        </ScrollView>
+
+            <TextView
+                android:text="Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/titleUsername"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Username"
+                android:layout_marginBottom="5dp"
+                />
+        <TextView
+                android:text="Mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/titleMail"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Email"
+                android:layout_marginBottom="5dp"
+                />
+        <TextView
+                android:text="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/titlePassword"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Password"
+                android:layout_marginBottom="5dp"
+       />
+        <TextView
+                android:text="Età"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/titleAge"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="inserisci età"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Age"
+                android:layout_marginBottom="5dp"
+                />
+        <TextView
+                android:text="Sesso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/titleSex"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="Inserisci sesso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Sex"
+                android:layout_marginBottom="5dp"
+                />
+        <TextView
+                android:text="Città"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/titleCity"
+                android:textSize="25dp"
+                android:textStyle="bold"
+            />
+        <TextView
+                android:text="Inserisci città"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/City"
+                android:layout_marginBottom="5dp"
+                />
+        <TextView
+                android:text="Numero patente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/titleDrivingLicense"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="Inserisci numero patente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/DrivingLicense"
+                android:layout_marginBottom="5dp"
+                />
+        <TextView
+                android:text="Data scadenza patente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/titleDateDrivingLicense"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+        <TextView
+                android:text="Inserisci data scadenza patente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/DateDrivingLicense"
+                android:layout_marginBottom="5dp"
+                />
+        <TextView
+                android:text="Occupazione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/titleJob"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+        <TextView
+                android:text="Inserisci occupazione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Job"
+                android:layout_marginBottom="5dp"
+                />
+
     </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>
