@@ -23,6 +23,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/edit_text_background"
                 android:scaleType="fitCenter"
+                android:alpha="0.8"
                 android:src="@drawable/ic_user_signin" />
 
 
@@ -74,6 +75,7 @@
                 android:background="@drawable/button_background"
                 android:text="Log in"
                 android:textAllCaps="false"
+                android:alpha="0.9"
                 android:textColor="@color/white"
                 android:textSize="21sp" />
 

@@ -22,7 +22,7 @@
                 <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        app:srcCompat="@color/colorAccent"
+                        app:srcCompat="@drawable/offerta"
                         android:id="@+id/ImgCar1"/>
                 <FrameLayout
                         android:layout_width="match_parent"
@@ -88,7 +88,7 @@
                 <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        app:srcCompat="@color/colorAccent"
+                        app:srcCompat="@drawable/offerta"
                         android:id="@+id/ImgOffer2"/>
                 <FrameLayout
                         android:layout_width="match_parent"
@@ -154,7 +154,7 @@
                 <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        app:srcCompat="@color/colorAccent"
+                        app:srcCompat="@drawable/offerta"
                         android:id="@+id/ImgOffer3"/>
                 <FrameLayout
                         android:layout_width="match_parent"

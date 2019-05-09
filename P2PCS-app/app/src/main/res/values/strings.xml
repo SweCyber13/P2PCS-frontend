@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">P2PCS_app</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_search">Search</string>
-    <string name="title_cars">Cars</string>
-    <string name="title_explore">Explore</string>
-    <string name="title_profile">Profile</string>
+    <string name="title_search">Cerca</string>
+    <string name="title_cars">Auto</string>
+    <string name="title_explore">Esplora</string>
+    <string name="title_profile">Profilo</string>
     <string name="shared_preferences">com.p2pcs_app.userdetails.prefs</string>
 
     <!-- TODO: Remove or change this placeholder text -->
