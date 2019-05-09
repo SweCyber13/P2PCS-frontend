@@ -21,11 +21,11 @@ class ClassificaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_classifica)
         classificaRank = findViewById<TextView>(R.id.classifica)
 
-        getUsers()
+        getBoard()
     }
 
     // function for network call
-    fun getUsers() {
+    fun getBoard() {
         // Instantiate the RequestQueue.
         val queue = Volley.newRequestQueue(this)
         val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/classifica.php"

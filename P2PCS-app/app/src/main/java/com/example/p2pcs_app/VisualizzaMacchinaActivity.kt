@@ -28,11 +28,11 @@ class VisualizzaMacchinaActivity : AppCompatActivity() {
         anno = findViewById<TextView>(R.id.AnnoProduzione)
 
 
-        getUsers()
+        getCar()
     }
 
     // function for network call
-    fun getUsers() {
+    fun getCar() {
         // Instantiate the RequestQueue.
         val queue = Volley.newRequestQueue(this)
         val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/visualizzamacchina.php"
