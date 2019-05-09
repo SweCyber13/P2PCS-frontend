@@ -17,13 +17,13 @@
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp" android:id="@+id/car1"
+                    android:layout_height="250dp" android:id="@+id/Offer1"
             android:layout_margin="10dp">
                 <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         app:srcCompat="@drawable/offerta"
-                        android:id="@+id/ImgCar1"/>
+                        android:id="@+id/ImgOffer1"/>
                 <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
@@ -63,14 +63,14 @@
                                         android:textColor="#ffffff"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:id="@+id/Title1"/>
+                                        android:id="@+id/TitleOffer1"/>
                             </LinearLayout>
                             <Button
                                     android:background="@drawable/button_info_style"
                                     android:text="Info"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/InfoCar"
+                                    android:id="@+id/InfoOffer"
                                     android:layout_marginEnd="1dp"
                                     android:layout_marginRight="1dp"
                                     android:layout_marginBottom="1dp"
@@ -83,7 +83,7 @@
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp" android:id="@+id/card2"
+                    android:layout_height="250dp" android:id="@+id/Offer2"
                     android:layout_margin="10dp">
                 <ImageView
                         android:layout_width="match_parent"
@@ -129,14 +129,14 @@
                                         android:textColor="#ffffff"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:id="@+id/Title2"/>
+                                        android:id="@+id/TitleOffer2"/>
                             </LinearLayout>
                             <Button
                                     android:background="@drawable/button_info_style"
                                     android:text="Info"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/InfoButton2"
+                                    android:id="@+id/InfoOffer2"
                                     android:layout_marginEnd="1dp"
                                     android:layout_marginRight="1dp"
                                     android:layout_marginBottom="1dp"
@@ -149,7 +149,7 @@
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp" android:id="@+id/card3"
+                    android:layout_height="250dp" android:id="@+id/Offer3"
                     android:layout_margin="10dp">
                 <ImageView
                         android:layout_width="match_parent"
@@ -195,7 +195,7 @@
                                         android:textColor="#ffffff"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:id="@+id/Title3"/>
+                                        android:id="@+id/TitleOffer3"/>
                             </LinearLayout>
                             <Button
                                     android:background="@drawable/button_info_style"

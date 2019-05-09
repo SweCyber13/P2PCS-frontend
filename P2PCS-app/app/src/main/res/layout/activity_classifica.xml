@@ -8,11 +8,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
-                android:id="@+id/back"/>
+
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -34,19 +30,6 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/classifica"
                 />
-            </LinearLayout>
-            <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                <TextView
-                        android:text="Classifica punti buoni"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/title2"/>
-                <TextView
-                        android:text="TextView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/classifica2"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

@@ -16,14 +16,14 @@ android:layout_height="match_parent">
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="250dp" android:id="@+id/car1"
+            android:layout_height="250dp" android:id="@+id/Offer1"
             android:layout_margin="10dp">
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="@color/white"
                 app:srcCompat="@drawable/car"
-                android:id="@+id/ImgCar1"/>
+                android:id="@+id/ImgOffer1"/>
         <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -63,7 +63,7 @@ android:layout_height="match_parent">
                                 android:textColor="#ffffff"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/Title1"/>
+                                android:id="@+id/TitleOffer1"/>
 
                     </LinearLayout>
                     <Button
@@ -71,7 +71,7 @@ android:layout_height="match_parent">
                             android:text="Info"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/InfoCar"
+                            android:id="@+id/InfoOffer"
                             android:layout_marginEnd="1dp"
                             android:layout_marginRight="1dp"
                             android:layout_marginBottom="1dp"

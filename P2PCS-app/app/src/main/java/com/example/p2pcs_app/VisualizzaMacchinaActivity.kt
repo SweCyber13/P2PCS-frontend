@@ -1,10 +1,7 @@
 package com.example.p2pcs_app
 
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Button
 import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.Response
@@ -22,8 +19,8 @@ class VisualizzaMacchinaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_car)
-        modello = findViewById<TextView>(R.id.Modello)
-        marca = findViewById<TextView>(R.id.Marca)
+        modello = findViewById<TextView>(R.id.Company1)
+        marca = findViewById<TextView>(R.id.TitleOffer1)
         targa = findViewById<TextView>(R.id.Targa)
         anno = findViewById<TextView>(R.id.AnnoProduzione)
 
