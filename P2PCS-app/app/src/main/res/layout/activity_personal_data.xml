@@ -22,12 +22,12 @@
                         android:id="@+id/imageView5"
                         android:layout_margin="5dp"/>
                 <TextView
-                        android:text="Name"
+                        android:text="Nome"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/Name"
                         android:layout_margin="5dp"/>
                 <TextView
-                        android:text="Surname"
+                        android:text="Cognome"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/Surname"
                         android:layout_margin="5dp"/>
@@ -45,6 +45,36 @@
                         android:text="Password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/Password"
+                        android:layout_margin="5dp"/>
+                <TextView
+                        android:text="Età"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/Age"
+                        android:layout_margin="5dp"/>
+                <TextView
+                        android:text="Sesso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/Sex"
+                        android:layout_margin="5dp"/>
+                <TextView
+                        android:text="Città"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/City"
+                        android:layout_margin="5dp"/>
+                <TextView
+                        android:text="Numero Patente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/DrivingLicense"
+                        android:layout_margin="5dp"/>
+                <TextView
+                        android:text="Data Patente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/DateDrivingLicense"
+                        android:layout_margin="5dp"/>
+                <TextView
+                        android:text="Occupazione"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/Job"
                         android:layout_margin="5dp"/>
 
             </LinearLayout>
