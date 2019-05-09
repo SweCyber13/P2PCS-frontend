@@ -5,7 +5,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/background"
-                tools:context=".LoginActivity"
+                tools:context=".login_register_cognito.LoginActivity"
               >
 
 
@@ -43,7 +43,7 @@
                 android:textSize="21sp" />
 
         <EditText
-                android:id="@+id/code"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="10dp"
@@ -84,7 +84,7 @@
                 android:gravity="center"
                 android:text="Sign Up"
                 android:textColor="@color/white"
-                android:textSize="21sp" />
+                android:textSize="21sp" android:id="@+id/signup"/>
     </LinearLayout>
 
 </RelativeLayout>
