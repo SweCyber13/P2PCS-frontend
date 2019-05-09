@@ -65,8 +65,7 @@ android:layout_height="match_parent">
                                 android:id="@+id/Title1"/>
 
                     </LinearLayout>
-                    <ImageButton
-                            android:src="@android:drawable/ic_menu_info_details"
+                    <Button
                             android:background="@drawable/button_info_style"
                             android:text="Info"
                             android:layout_width="wrap_content"
