@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class PersonalData : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    /*override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personal_data)
         val button = findViewById<ImageView>(R.id.provapopup)
@@ -22,7 +22,7 @@ class PersonalData : AppCompatActivity() {
     }
 
 
-
+*/
 
 
 }

@@ -25,7 +25,8 @@ android:background="@drawable/background">
                 <TextView
                         android:text="Classifica punti rank"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/TitlePuntiRank"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TitlePuntiRank"
                 />
                 <TextView
                         android:text="TextView"

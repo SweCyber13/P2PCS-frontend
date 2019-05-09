@@ -20,7 +20,6 @@ class ClassificaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_classifica)
         classificaRank = findViewById<TextView>(R.id.classifica)
-        classificaBuoni = findViewById<TextView>(R.id.classifica2)
 
         getUsers()
     }

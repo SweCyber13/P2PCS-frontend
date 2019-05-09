@@ -5,6 +5,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/background"
+                tools:context=".RegisterActivity"
                 >
 
 
@@ -42,7 +43,7 @@
                 android:textColorHint="@color/hint_color"
                 android:textSize="21sp"/>
         <EditText
-                android:id="@+id/nome"
+                android:id="@+id/FName"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="10dp"
@@ -50,7 +51,7 @@
                 android:drawableStart="@drawable/ic_user"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="Nome"
+                android:hint="Name"
                 android:inputType="textPersonName"
                 android:padding="10dp"
                 android:textColor="@color/white"
@@ -58,7 +59,7 @@
                 android:textSize="21sp"/>
 
         <EditText
-                android:id="@+id/cognome"
+                android:id="@+id/Surname"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginBottom="10dp"
@@ -66,7 +67,7 @@
                 android:drawableStart="@drawable/ic_user"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="Cognome"
+                android:hint="Surname"
                 android:inputType="textPersonName"
                 android:padding="10dp"
                 android:textColor="@color/white"
@@ -113,7 +114,7 @@
                 android:drawableStart="@drawable/ic_password"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="Conferma Password"
+                android:hint="Confirm Password"
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:textColor="@color/white"
