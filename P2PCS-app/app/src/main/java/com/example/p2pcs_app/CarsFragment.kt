@@ -16,7 +16,7 @@ class CarsFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_cars, null)
         val button = view.findViewById<Button>(R.id.InfoCar)
         button.setOnClickListener{
-            val intent= Intent(requireContext(), EditCar::class.java)
+            val intent= Intent(requireContext(), visualizza_macchina::class.java)
             startActivity(intent)
         }
 

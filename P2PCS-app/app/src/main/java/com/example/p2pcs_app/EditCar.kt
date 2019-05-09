@@ -8,8 +8,6 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 
-import kotlinx.android.synthetic.main.activity_main.*
-
 
 class EditCar : AppCompatActivity() {
 
@@ -19,10 +17,10 @@ class EditCar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_car)
 
-        val textView = findViewById<View>(R.id.textView3) as TextView
-        val textView1= findViewById<View>(R.id.textView4) as TextView
-        val textView2 = findViewById<View>(R.id.textView5) as TextView
-        val textView3 = findViewById<View>(R.id.textView6) as TextView
+        val textView = findViewById<View>(R.id.Marca) as TextView
+        val textView1= findViewById<View>(R.id.Modello) as TextView
+        val textView2 = findViewById<View>(R.id.Targa) as TextView
+        val textView3 = findViewById<View>(R.id.AnnoProduzione) as TextView
 
         val dialog = AlertDialog.Builder(this).create()
         val dialog1 = AlertDialog.Builder(this).create()
