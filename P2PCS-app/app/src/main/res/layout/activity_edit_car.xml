@@ -11,67 +11,113 @@
 
     <ImageView
             android:layout_width="match_parent"
-            android:layout_height="320dp"
+            android:layout_height="193dp"
             android:layout_margin="10dp"
             app:srcCompat="@drawable/car"
             android:id="@+id/imageView4" tools:ignore="ContentDescription"/>
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                       android:orientation="vertical">
 
-            <RelativeLayout android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp">
-
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
                 <TextView
-                        android:hint="TextView"
-                        android:textSize="20dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="296dp"
-                        android:id="@+id/TitleOffer1" tools:ignore="MissingConstraints"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.619"
-                        android:layout_alignParentStart="true" android:layout_alignParentTop="true"
-                        android:layout_marginTop="0dp" android:layout_marginStart="0dp"/>
-                <ImageView
-                        android:layout_width="20dp"
+                        android:text="Marca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/TitleMarca"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+                    <TextView
+                            android:hint="TextView"
+                            android:textSize="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" tools:layout_editor_absoluteY="296dp"
+                            android:id="@+id/Marca" tools:ignore="MissingConstraints"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.619"
+                            android:layout_alignParentStart="true" android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp" android:layout_marginStart="0dp"/>
+                    <ImageView
+                            android:layout_width="20dp"
 
-                        android:layout_height="20dp" app:srcCompat="@drawable/ic_border_color_black"
-                        tools:layout_editor_absoluteY="296dp" android:id="@+id/imageView"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" android:layout_alignParentTop="true"
-                        android:layout_marginTop="0dp" android:layout_alignParentEnd="true"/>
-            </RelativeLayout>
+                            android:layout_height="20dp" app:srcCompat="@drawable/ic_border_color_black"
+                            tools:layout_editor_absoluteY="296dp" android:id="@+id/imageView"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:ignore="MissingConstraints" android:layout_alignParentTop="true"
+                            android:layout_marginTop="7dp" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
 
-            <RelativeLayout android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
                 <TextView
-                        android:hint="TextView"
-                        android:textSize="20dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" tools:layout_editor_absoluteY="296dp"
-                        android:id="@+id/Company1" tools:ignore="MissingConstraints"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.619"
-                        android:layout_alignParentStart="true" android:layout_alignParentTop="true"
-                        android:layout_marginTop="0dp" android:layout_marginStart="0dp"/>
-                <ImageView
-                        android:layout_width="20dp"
+                        android:text="Modello"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/TitleModello"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"/>
 
-                        android:layout_height="20dp" app:srcCompat="@drawable/ic_border_color_black"
-                        tools:layout_editor_absoluteY="296dp" android:id="@+id/imageView1"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        tools:ignore="MissingConstraints" android:layout_alignParentTop="true"
-                        android:layout_marginTop="0dp" android:layout_alignParentEnd="true"/>
-            </RelativeLayout>
 
+
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp">
+                    <TextView
+                            android:hint="TextView"
+                            android:textSize="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" tools:layout_editor_absoluteY="296dp"
+                            android:id="@+id/Modello" tools:ignore="MissingConstraints"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.619"
+                            android:layout_alignParentStart="true" android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp" android:layout_marginStart="0dp"/>
+                    <ImageView
+                            android:layout_width="20dp"
+
+                            android:layout_height="20dp" app:srcCompat="@drawable/ic_border_color_black"
+                            tools:layout_editor_absoluteY="296dp" android:id="@+id/imageView1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:ignore="MissingConstraints" android:layout_alignParentTop="true"
+                            android:layout_marginTop="7dp" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:text="Targa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/TitleTarga"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"/>
 
             <RelativeLayout android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp">
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp">
                 <TextView
                         android:hint="TextView"
                         android:textSize="20dp"
@@ -89,13 +135,28 @@
                         tools:layout_editor_absoluteY="296dp" android:id="@+id/imageView2"
                         app:layout_constraintEnd_toEndOf="parent"
                         tools:ignore="MissingConstraints" android:layout_alignParentTop="true"
-                        android:layout_marginTop="0dp" android:layout_alignParentEnd="true"/>
+                        android:layout_marginTop="7dp" android:layout_alignParentEnd="true"/>
             </RelativeLayout>
 
+        </LinearLayout>
 
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:text="Anno di produzione"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/TitleAnno"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"/>
             <RelativeLayout android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp">
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp">
                 <TextView
                         android:hint="TextView"
                         android:textSize="20dp"
@@ -113,23 +174,24 @@
                         tools:layout_editor_absoluteY="296dp" android:id="@+id/imageView3"
                         app:layout_constraintEnd_toEndOf="parent"
                         tools:ignore="ContentDescription,MissingConstraints" android:layout_alignParentTop="true"
-                        android:layout_marginTop="0dp" android:layout_alignParentEnd="true"/>
+                        android:layout_marginTop="7dp" android:layout_alignParentEnd="true"/>
             </RelativeLayout>
         </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+
+                <Button android:layout_width="wrap_content"
+                        android:text="Calendario"
+                        android:layout_height="wrap_content" tools:ignore="ButtonStyle,HardcodedText"/>
+                <Button android:layout_width="wrap_content"
+                        android:text="Elimina"
+
+                        android:layout_height="match_parent" tools:ignore="ButtonStyle,HardcodedText"/>
+
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
-
-
-    <LinearLayout android:layout_width="wrap_content"
-                  android:orientation="horizontal"
-                  android:layout_height="wrap_content">
-
-        <Button android:layout_width="match_parent"
-                android:text="Calendario"
-                android:layout_height="match_parent" tools:ignore="ButtonStyle,HardcodedText"/>
-        <Button android:layout_width="match_parent"
-                android:text="Elimina"
-
-                android:layout_height="match_parent" tools:ignore="ButtonStyle,HardcodedText"/>
-
-    </LinearLayout>
 </LinearLayout>

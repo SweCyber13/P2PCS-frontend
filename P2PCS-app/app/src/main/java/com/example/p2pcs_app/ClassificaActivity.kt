@@ -13,13 +13,16 @@ import org.json.JSONObject
 
 class ClassificaActivity : AppCompatActivity() {
     private var classificaRank: TextView? = null
-    private var classificaBuoni: TextView? = null
+    private var posizione: TextView? = null
+    private var punteggio: TextView? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_classifica)
         classificaRank = findViewById<TextView>(R.id.classifica)
+        posizione= findViewById<TextView>(R.id.posizione)
+        punteggio=findViewById<TextView>(R.id.punteggio)
 
         getBoard()
     }
@@ -39,14 +42,22 @@ class ClassificaActivity : AppCompatActivity() {
                 val jsonArray: JSONArray = JSONArray(strResp)
                 //val jsonArray: JSONArray = jsonObj.getJSONArray() //devo mettere un nome in qualche modo all'array su php
                 var str_classificarank: String = ""
+                var str_posizione: String = ""
+                var str_punteggio: String = ""
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
-                    str_classificarank = str_classificarank + "\n" + jsonInner.get("Nome")
+                    str_posizione=str_posizione+"\n"+ (i+1)
+                    str_classificarank = str_classificarank +"\n" + jsonInner.get("Nome")
+                    str_punteggio=str_punteggio+"\n"+jsonInner.get("Punti_rank")
                 }
                 classificaRank!!.text = "$str_classificarank "
+                posizione!!.text = "$str_posizione "
+                punteggio!!.text = "$str_punteggio "
             },
             Response.ErrorListener {
                 classificaRank!!.text = it.toString()
+                posizione!!.text = it.toString()
+                punteggio!!.text = it.toString()
             })
         //need to override getparams to get the post request
         {

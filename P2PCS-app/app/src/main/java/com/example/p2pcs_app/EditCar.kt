@@ -17,8 +17,8 @@ class EditCar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_car)
 
-        val textView = findViewById<View>(R.id.TitleOffer1) as TextView
-        val textView1= findViewById<View>(R.id.Company1) as TextView
+        val textView = findViewById<View>(R.id.Marca) as TextView
+        val textView1= findViewById<View>(R.id.Modello) as TextView
         val textView2 = findViewById<View>(R.id.Targa) as TextView
         val textView3 = findViewById<View>(R.id.AnnoProduzione) as TextView
 

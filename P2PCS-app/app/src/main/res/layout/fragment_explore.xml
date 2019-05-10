@@ -53,17 +53,14 @@
                                     app:layout_constraintBottom_toBottomOf="parent" android:gravity="center_vertical">
                                 <TextView
                                         android:text="TextView"
-                                        android:textStyle="bold"
                                         android:textColor="#ffffff"
-                                        android:layout_width="wrap_content"
+                                        android:layout_width="match_parent"
                                         android:layout_height="wrap_content" android:id="@+id/Company1"/>
                                 <TextView
                                         android:text="TextView"
-                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
                                         android:textColor="#ffffff"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:id="@+id/TitleOffer1"/>
+                                        android:layout_height="wrap_content" android:id="@+id/TitleOffer1"/>
                             </LinearLayout>
                             <Button
                                     android:background="@drawable/button_info_style"

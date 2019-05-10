@@ -19,8 +19,8 @@ class VisualizzaMacchinaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_car)
-        modello = findViewById<TextView>(R.id.Company1)
-        marca = findViewById<TextView>(R.id.TitleOffer1)
+        marca = findViewById<TextView>(R.id.Marca)
+        modello = findViewById<TextView>(R.id.Modello)
         targa = findViewById<TextView>(R.id.Targa)
         anno = findViewById<TextView>(R.id.AnnoProduzione)
 
@@ -70,7 +70,7 @@ class VisualizzaMacchinaActivity : AppCompatActivity() {
         {
             override fun getParams() : Map<String,String> {
                 val params = HashMap<String, String>()
-                params.put("USER","admin")
+                params.put("USER","Ele")
                 return params
             }
         }

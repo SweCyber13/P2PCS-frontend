@@ -22,7 +22,7 @@
             android:textStyle="bold"/>
 
     <TextView
-            android:id="@+id/TitleOffer1"
+            android:id="@+id/Marca"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"

@@ -25,8 +25,8 @@ class CarsFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_cars, null)
-        modello = view.findViewById<TextView>(R.id.Company1)
-        marca = view.findViewById<TextView>(R.id.TitleOffer1)
+        modello = view.findViewById<TextView>(R.id.Modello)
+        marca = view.findViewById<TextView>(R.id.Marca)
         val button = view.findViewById<Button>(R.id.InfoOffer)
         button.setOnClickListener{
             val intent= Intent(requireContext(), VisualizzaMacchinaActivity::class.java)
@@ -57,9 +57,9 @@ class CarsFragment : Fragment() {
 
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
-                    str_modello =  "\n" + jsonInner.get("Modello")
-                    str_marca = "\n" + jsonInner.get("Marca")
-                    //str_targa = "\n" + jsonInner.get("Targa")
+                    str_modello =  "" + jsonInner.get("Modello")
+                    str_marca = "" + jsonInner.get("Marca")
+                    //str_targa = "" + jsonInner.get("Targa")
 
                 }
                 modello!!.text = "$str_modello "
@@ -78,7 +78,7 @@ class CarsFragment : Fragment() {
         {
             override fun getParams() : Map<String,String> {
                 val params = HashMap<String, String>()
-                params.put("USER","admin")
+                params.put("USER","Ele")
                 return params
             }
         }

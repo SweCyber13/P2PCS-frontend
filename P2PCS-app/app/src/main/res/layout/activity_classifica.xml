@@ -19,17 +19,44 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                 <TextView
-                        android:text="Classifica punti rank"
-                        android:layout_width="wrap_content"
+                        android:text="Tabellone utenti migliori"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/TitlePuntiRank"
+                        android:textSize="40dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="25dp"
+
                 />
-                <TextView
-                        android:text="TextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/classifica"
-                />
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/posizione" android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="25dp"/>
+                    <TextView
+                            android:textSize="25dp"
+                            android:textAlignment="center"
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/classifica"
+                            android:textStyle="bold"
+                    />
+                    <TextView
+                            android:text="TextView"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/punteggio" android:layout_weight="1"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

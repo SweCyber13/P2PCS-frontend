@@ -1,6 +1,5 @@
 package com.example.p2pcs_app
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -9,12 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import com.android.volley.Request
-import com.android.volley.Response
-import com.android.volley.toolbox.StringRequest
-import com.android.volley.toolbox.Volley
-import org.json.JSONArray
-import org.json.JSONObject
 
 class ExploreFragment : Fragment() {
     private var company1: TextView? = null
@@ -28,17 +21,14 @@ class ExploreFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_explore, null)
-        company1 = view.findViewById<TextView>(R.id.Company1)
-        offer1 = view.findViewById<TextView>(R.id.TitleOffer1)
+        company1 = view.findViewById<TextView>(R.id.Modello)
+        offer1 = view.findViewById<TextView>(R.id.Marca)
         company2 = view.findViewById<TextView>(R.id.Company2)
         offer2 = view.findViewById<TextView>(R.id.TitleOffer2)
         company3 = view.findViewById<TextView>(R.id.Company3)
         offer3 = view.findViewById<TextView>(R.id.TitleOffer3)
         val button = view.findViewById<Button>(R.id.InfoOffer)
-        button.setOnClickListener{
-            val intent= Intent(requireContext(), VisualizzaMacchinaActivity::class.java)
-            startActivity(intent)
-        }
+        
 
         //val context=requireContext()
         //getOffer(context)
