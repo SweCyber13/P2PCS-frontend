@@ -35,8 +35,11 @@ class LoginActivity : AppCompatActivity() {
 
         //here skip if already logged
         val cognitosettings= CognitoSettings(this)
+
+        //debug!!!!!!!!!!!!!!!!!!!!!! signout
         cognitosettings.getUserPool().currentUser.signOut()
-        /*if(cognitosettings.getUserPool().currentUser!=null) {
+
+        if(cognitosettings.getUserPool().currentUser.thisDevice()!=null) {
             //Crea sharedpreferences con username
             val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
             prefs.edit().putString("username",cognitosettings.getUserPool().currentUser.userId).apply()
@@ -45,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
             //kill login so no returning back
             this.finish()
-        }*/
+        }
 
         //user not already logged
 
@@ -82,17 +85,27 @@ class LoginActivity : AppCompatActivity() {
                 //move to mainactivity
                 val intent= Intent(context, MainActivity::class.java)
                 startActivity(intent)
+
                 //kill login so no returning back
                 (context as AppCompatActivity).finish()
             }
 
             override fun onFailure(exception: Exception?) {
-                if(exception!= null)
-                    Toast.makeText(context, exception.localizedMessage , Toast.LENGTH_LONG).show()
-                    //(context as Activity).findViewById<TextView>(R.id.textView5).text= "fail".plus(exception.localizedMessage)
+                if(exception!= null) {
+                    Toast.makeText(context, exception.localizedMessage, Toast.LENGTH_LONG).show()
+                    //check if error is user not confirmed with pattern since there is no way to know without
+                    val pattern = "User is not confirmed".toRegex()
+                    val text= exception.toString()
+                    if(pattern.find(text)!=null){
+                        val prefs = context.getSharedPreferences(R.string.shared_preferences.toString(), 0)
+                        prefs.edit().putString("username",username).apply()
+                        //send to confirmation code
+                        val intent= Intent(context, ConfirmRegisterActivity::class.java)
+                        startActivity(intent)
+                    }
+                }
                 else
                     Toast.makeText(context, "MEGA ERRORE" , Toast.LENGTH_LONG).show()
-                    //(context as Activity).findViewById<TextView>(R.id.textView5).text= "massive failure"
             }
 
             override fun authenticationChallenge(continuation: ChallengeContinuation?) {

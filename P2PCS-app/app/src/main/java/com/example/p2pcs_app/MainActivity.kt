@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.support.v4.app.Fragment
 import android.support.v4.app.Person
 import android.widget.Button
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
@@ -66,6 +67,13 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
         //textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(this)
+        //load search default
         loadFragment(SearchFragment())
+
+
+
+        //test userpreference
+        val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
+        Toast.makeText(this, prefs.getString("username","vuoto") , Toast.LENGTH_LONG).show()
     }
 }
