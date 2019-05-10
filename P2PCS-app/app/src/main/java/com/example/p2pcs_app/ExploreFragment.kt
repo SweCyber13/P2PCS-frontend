@@ -1,5 +1,6 @@
 package com.example.p2pcs_app
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -8,6 +9,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
+import org.json.JSONArray
+import org.json.JSONObject
 
 class ExploreFragment : Fragment() {
     private var company1: TextView? = null
@@ -30,14 +37,14 @@ class ExploreFragment : Fragment() {
         val button = view.findViewById<Button>(R.id.InfoOffer)
 
 
-        //val context=requireContext()
-        //getOffer(context)
+        val context=requireContext()
+        getOffer(context)
 
         return view
-    }/*
+    }
 fun getOffer(context: Context){
     val queue = Volley.newRequestQueue(context)
-    val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/offerte.php"
+    val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/esplora.php"
 
     // Request a string response from the provided URL.
     //object property needed to override getparams
@@ -54,27 +61,35 @@ fun getOffer(context: Context){
             var str_offer2: String = ""
             var str_company3: String = ""
             var str_offer3: String = ""
-
-
-//da continuare
+            
             for (i in 0 until jsonArray.length()) {
                 val jsonInner: JSONObject = jsonArray.getJSONObject(i)
-                str_modello =  "\n" + jsonInner.get("Modello")
-                str_marca = "\n" + jsonInner.get("Marca")
+                if(i==0) {
+                    str_company1= ""+jsonInner.get("Nome_azienda")
+                    str_offer1=""+jsonInner.get("Titolo_offerta")
+                }
+                if(i==1) {
+                    str_company2=""+jsonInner.get("Nome_azienda")
+                    str_offer2=""+jsonInner.get("Titolo_offerta")
+                }
+                if(i==2) {
+                    str_company3=""+jsonInner.get("Nome_azienda")
+                    str_offer3=""+jsonInner.get("Titolo_offerta")
+                }
+
 
 
             }
-            modello!!.text = "$str_modello "
-            marca!!.text = "$str_marca "
-            //targa!!.text = "$str_targa "
+            company1!!.text = "$str_company1 "
+            offer1!!.text = "$str_offer1 "
+            company2!!.text = "$str_company2 "
+            offer2!!.text = "$str_offer2 "
+            company3!!.text = "$str_company3 "
+            offer3!!.text = "$str_offer3 "
 
         },
         Response.ErrorListener {
-            modello!!.text = it.toString()
-            marca!!.text = it.toString()
-            //targa!!.text = it.toString()
-
-
+            //TO DO
         })
     //need to override getparams to get the post request
     {
@@ -87,6 +102,6 @@ fun getOffer(context: Context){
 
     queue.add(stringReq)
 }
-*/
+
 
 }

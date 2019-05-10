@@ -42,6 +42,7 @@ class CarsFragment : Fragment() {
         val queue = Volley.newRequestQueue(context)
         val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/visualizzamacchina.php"
 
+        val prefs = context.getSharedPreferences(R.string.shared_preferences.toString(), 0)
         // Request a string response from the provided URL.
         //object property needed to override getparams
         val stringReq = object: StringRequest(Request.Method.POST, url,
@@ -78,7 +79,7 @@ class CarsFragment : Fragment() {
         {
             override fun getParams() : Map<String,String> {
                 val params = HashMap<String, String>()
-                params.put("USER","Ele")
+                params.put("USER",prefs.getString("username","vuoto"))
                 return params
             }
         }
