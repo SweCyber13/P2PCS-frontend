@@ -101,6 +101,8 @@ class RegisterActivity : AppCompatActivity() {
                     //utente confermato manda al login, non dovrebbe mai succedere
                     val intent= Intent(context, LoginActivity::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP) //clear all previous activities
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
 
                 }

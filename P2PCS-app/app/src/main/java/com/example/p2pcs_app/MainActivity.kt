@@ -65,11 +65,12 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
+        //set action bar buttons
+
         //textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(this)
         //load search default
         loadFragment(SearchFragment())
-
 
 
         //test userpreference

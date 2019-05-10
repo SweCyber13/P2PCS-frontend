@@ -202,7 +202,7 @@
                                     android:text="Info"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/InfoButton3"
+                                    android:id="@+id/InfoOffer3"
                                     android:layout_marginEnd="1dp"
                                     android:layout_marginRight="1dp"
                                     android:layout_marginBottom="1dp"

@@ -15,27 +15,38 @@
             android:theme="@style/AppTheme">
         <activity android:name=".volley_test">
         </activity>
-        <activity android:name=".ClassificaActivity">
+        <activity android:name=".ClassificaActivity"
+                  android:label="Classifiche">
         </activity>
-        <activity android:name=".VisualizzaMacchinaActivity">
+        <activity android:name=".VisualizzaMacchinaActivity"
+                  android:label="Viasulizza Auto">
         </activity>
-        <activity android:name=".EditCar">
+        <activity android:name=".EditCar"
+                  android:label="Modifica Auto">
         </activity>
-        <activity android:name=".Leaderboards">
+        <activity android:name=".Leaderboards"
+                  android:label="Classifiche">
         </activity>
-        <activity android:name=".MyCarRequests">
+        <activity android:name=".MyCarRequests"
+                  android:label="Prenotazioni Auto">
         </activity>
-        <activity android:name=".CarRequests">
+        <activity android:name=".CarRequests"
+                  android:label="Prenotazioni Viaggi">
         </activity>
-        <activity android:name=".Coupons">
+        <activity android:name=".Coupons"
+                  android:label="Premi e Coupons">
         </activity>
-        <activity android:name=".PersonalData">
+        <activity android:name=".PersonalData"
+                  android:label="Dati Personali">
         </activity>
-        <activity android:name=".login_register_cognito.ConfirmRegisterActivity">
+        <activity android:name=".login_register_cognito.ConfirmRegisterActivity"
+                  android:label="Conferma Registrazione">
         </activity>
-        <activity android:name=".login_register_cognito.RegisterActivity">
+        <activity android:name=".login_register_cognito.RegisterActivity"
+                  android:label="Registrazione">
         </activity>
-        <activity android:name=".login_register_cognito.LoginActivity">
+        <activity android:name=".login_register_cognito.LoginActivity"
+                  android:label="Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -43,7 +54,7 @@
         </activity>
         <activity
                 android:name=".MainActivity"
-                android:label="@string/title_activity_main">
+                android:label="P2PCS">
         </activity>
     </application>
 
