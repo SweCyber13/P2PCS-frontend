@@ -28,8 +28,8 @@ class ExploreFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_explore, null)
-        company1 = view.findViewById<TextView>(R.id.Modello)
-        offer1 = view.findViewById<TextView>(R.id.Marca)
+        company1 = view.findViewById<TextView>(R.id.Company1)
+        offer1 = view.findViewById<TextView>(R.id.TitleOffer1)
         company2 = view.findViewById<TextView>(R.id.Company2)
         offer2 = view.findViewById<TextView>(R.id.TitleOffer2)
         company3 = view.findViewById<TextView>(R.id.Company3)
@@ -37,12 +37,12 @@ class ExploreFragment : Fragment() {
         val button = view.findViewById<Button>(R.id.InfoOffer)
 
 
-        val context=requireContext()
-        getOffer(context)
+        //val context=requireContext()
+        //getOffer(context)
 
         return view
     }
-fun getOffer(context: Context){
+/*fun getOffer(context: Context){
     val queue = Volley.newRequestQueue(context)
     val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/esplora.php"
 
@@ -61,7 +61,7 @@ fun getOffer(context: Context){
             var str_offer2: String = ""
             var str_company3: String = ""
             var str_offer3: String = ""
-            
+
             for (i in 0 until jsonArray.length()) {
                 val jsonInner: JSONObject = jsonArray.getJSONObject(i)
                 if(i==0) {
@@ -101,7 +101,7 @@ fun getOffer(context: Context){
     }
 
     queue.add(stringReq)
-}
+}*/
 
 
 }

@@ -52,12 +52,12 @@
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent" android:gravity="center_vertical">
                                 <TextView
-                                        android:text="TextView"
+                                        android:text="TheSpaceCnema"
                                         android:textColor="#ffffff"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content" android:id="@+id/Company1"/>
                                 <TextView
-                                        android:text="TextView"
+                                        android:text="Biglietto gratis"
                                         android:layout_width="match_parent"
                                         android:textColor="#ffffff"
                                         android:layout_height="wrap_content" android:id="@+id/TitleOffer1"/>
@@ -115,13 +115,13 @@
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent" android:gravity="center_vertical">
                                 <TextView
-                                        android:text="TextView"
+                                        android:text="Conad"
                                         android:textStyle="bold"
                                         android:textColor="#ffffff"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content" android:id="@+id/Company2"/>
                                 <TextView
-                                        android:text="TextView"
+                                        android:text="Buono spesa 10 euro"
                                         android:textStyle="bold"
                                         android:textColor="#ffffff"
                                         android:layout_width="wrap_content"
@@ -181,13 +181,13 @@
                                     app:layout_constraintTop_toTopOf="parent"
                                     app:layout_constraintBottom_toBottomOf="parent" android:gravity="center_vertical">
                                 <TextView
-                                        android:text="TextView"
+                                        android:text="Tigotà"
                                         android:textStyle="bold"
                                         android:textColor="#ffffff"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content" android:id="@+id/Company3"/>
                                 <TextView
-                                        android:text="TextView"
+                                        android:text="Sconto 5%"
                                         android:textStyle="bold"
                                         android:textColor="#ffffff"
                                         android:layout_width="wrap_content"
