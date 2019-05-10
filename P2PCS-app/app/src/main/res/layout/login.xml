@@ -85,7 +85,7 @@
                 android:layout_marginBottom="10dp"
                 android:gravity="center"
                 android:text="Sign Up"
-                android:textColor="@color/white"
+                android:textColor="@color/colorPrimary"
                 android:textSize="21sp" android:id="@+id/signup"/>
     </LinearLayout>
 
