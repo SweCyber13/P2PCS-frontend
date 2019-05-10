@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
 
         //test userpreference
-        val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
-        Toast.makeText(this, prefs.getString("username","vuoto") , Toast.LENGTH_LONG).show()
+        //val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
+        //Toast.makeText(this, prefs.getString("username","vuoto") , Toast.LENGTH_LONG).show()
     }
 }

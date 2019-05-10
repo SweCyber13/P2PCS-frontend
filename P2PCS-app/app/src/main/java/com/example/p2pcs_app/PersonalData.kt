@@ -1,5 +1,6 @@
 package com.example.p2pcs_app
 
+import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -39,15 +40,16 @@ class PersonalData : AppCompatActivity() {
         drivingLicense=findViewById<TextView>(R.id.DrivingLicense)
         dateDrivingLicense=findViewById<TextView>(R.id.DateDrivingLicense)
         job=findViewById<TextView>(R.id.Job)
-        getRequiredData()
-        getOptionalData()
+        getRequiredData(this)
+        getOptionalData(this)
     }
 
     // function for network call
-    fun getRequiredData() {
+    fun getRequiredData(context: Context) {
         // Instantiate the RequestQueue.
         val queue = Volley.newRequestQueue(this)
         val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/RequiredData.php"
+        val prefs = context.getSharedPreferences(R.string.shared_preferences.toString(), 0)
 
         // Request a string response from the provided URL.
         //object property needed to override getparams
@@ -89,17 +91,18 @@ class PersonalData : AppCompatActivity() {
         {
             override fun getParams() : Map<String,String> {
                 val params = HashMap<String, String>()
-                params.put("USER","Ele")
+                params.put("USER",prefs.getString("username","vuoto"))
                 return params
             }
         }
 
         queue.add(stringReq)
     }
-    fun getOptionalData() {
+    fun getOptionalData(context: Context) {
         // Instantiate the RequestQueue.
         val queue = Volley.newRequestQueue(this)
         val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/OptionalData.php"
+        val prefs = context.getSharedPreferences(R.string.shared_preferences.toString(), 0)
 
         // Request a string response from the provided URL.
         //object property needed to override getparams
@@ -150,7 +153,7 @@ class PersonalData : AppCompatActivity() {
         {
             override fun getParams() : Map<String,String> {
                 val params = HashMap<String, String>()
-                params.put("USER","Ele")
+                params.put("USER",prefs.getString("username","vuoto"))
                 return params
             }
         }
