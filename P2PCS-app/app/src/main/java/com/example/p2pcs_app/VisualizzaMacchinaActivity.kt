@@ -49,10 +49,10 @@ class VisualizzaMacchinaActivity : AppCompatActivity() {
 
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
-                    str_modello =  "\n" + jsonInner.get("Modello")
-                    str_marca = "\n" + jsonInner.get("Marca")
-                    str_targa = "\n" + jsonInner.get("Targa")
-                    str_anno = "\n" + jsonInner.get("Anno_produzione")
+                    str_modello = ""+ jsonInner.get("Modello")
+                    str_marca = ""+ jsonInner.get("Marca")
+                    str_targa = "" + jsonInner.get("Targa")
+                    str_anno = "" + jsonInner.get("Anno_produzione")
                 }
                 modello!!.text = "$str_modello "
                 marca!!.text = "$str_marca "
