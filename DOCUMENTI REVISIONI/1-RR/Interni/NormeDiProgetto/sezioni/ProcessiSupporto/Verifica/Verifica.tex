@@ -1,0 +1,58 @@
+\subsubsection{Scopo}
+Attraverso il processo di verifica si vuole evidenziare ed eliminare la presenza di errori nell'esecuzione degli altri processi per l'intero sviluppo del prodotto, in particolare alla conclusione di ogni incremento.
+Questa sezione norma gli strumenti e i metodi che verranno usati per la verifica del codice e dei documenti.
+Per quanto riguarda questa fase antecedente alla RR la verifica verterà
+essenzialmente su documenti e diagrammi.
+
+
+
+\subsubsection{Aspettative}
+Un’implementazione del processo di verifica permette di ottenere i seguenti effetti:
+    \begin{itemize}
+        \item Ottenere un sistema di controllo degli errori non invasivo, efficiente ed efficace;
+        \item Stabilire i criteri necessari per la verifica del prodotto;
+        \item Sottolineare le problematiche trovate col fine di risolverle.
+    \end{itemize}
+
+\subsubsection{Descrizione}
+Il processo si divide nei seguenti momenti:
+    \begin{itemize}
+        \item \textbf{Controllo}: Attraverso le tecniche di analisi statica e analisi dinamica (descritte nelle sezioni successive) si riesce ad
+        effettuare un controllo approfondito del codice sorgente e della sua corretta esecuzione;
+        \item \textbf{Test}: Esecuzione test sul software.
+    \end{itemize}
+
+\subsubsection{Attività}
+
+    \paragraph{Analisi statica}
+        ~\\ 
+        L’analisi statica è una tecnica di analisi applicabile sia alla documentazione che al codice e permette di effettuare la verifica di quanto prodotto individuando errori ed anomalie.\\
+        Vi sono due metodologie per effettuarla:
+            \begin{itemize}
+                \item \textbf{Walkthrough}: tecnica applicata quando non si sanno le tipologie di errori o problemi che si stanno cercando e quindi prevede una lettura da cima a fondo del codice o documento per trovare anomalie di qualsiasi tipo. Questo metodo risulta essere il più dispendioso in termini di efficienza ma si tratta anche del più semplice da imparare, diventando inevitabilmente il più utilizzato nelle prime fasi del progetto.
+                \item \textbf{Inspection}: tecnica da applicare quando si ha idea delle possibili problematiche che si stanno cercando e si attua leggendo in modo mirato il documento o il codice. Questo procedimento risulta molto più veloce del precedente in quanto,
+                utilizzando la lista di controllo degli errori e dalle misurazioni effettuate, permette un’analisi più efficace dei punti critici, tralasciando invece le parti senza problematiche.
+            \end{itemize}
+        
+        \paragraph {Analisi dinamica}
+        ~\\
+        Il processo di analisi dinamica consiste nella realizzazione ed esecuzione di una serie di test di vario tipo sul codice del software.  Questa tecnica non è applicabile per trovare errori nella documentazione. 
+        
+            \subparagraph{Test}
+            ~\\
+            Poiché la fase di RR prevede la sola preparazione di documentazione, le norme che regolano l'analisi dinamica verranno definite in seguito.
+        
+
+\subsubsection{Strumenti}
+    \begin{itemize}
+        \item \textbf{Documenti}: Per  quanto  riguarda  la  verifica  ortografica ci si affida allo strumento integrato di Overleaf, attraverso il quale le parole sbagliate vengono segnate in rosso, permettendo un controllo rapido ed efficace.
+        
+         \item \textbf{Indice Gulpease}: Per il calcolo dell’Indice  di  Gulpease il team ha utilizzato lo strumento disponibile online chiamato \citgl{Farfalla Project};
+         
+         \item \textbf{Octalysis Tool}: Per una valutazione della qualità degli aspetti relativi alla \citgl{Gamification} si è scelto di utilizzare lo strumento online Octalysis Tool disponibile sul sito del creatore del framework \citgl{Octalysis} Yu-kai Chou.
+         
+         \item \textbf{Gestione processi e feedback}: Anche per la verifica si è stato scelto di utilizzare il sistema di \citgl{issues} integrato in GitHub.
+         
+         
+    \end{itemize}
+

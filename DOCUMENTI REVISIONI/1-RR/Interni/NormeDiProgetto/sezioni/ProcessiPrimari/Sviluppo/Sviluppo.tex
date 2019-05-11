@@ -1,0 +1,221 @@
+\subsubsection{Scopo}
+Il processo di sviluppo contiene tutte le attività di analisi, design, codifica, integrazione ed installazione relative al prodotto da sviluppare. Di seguito sono raccolte le linee guida che verranno utilizzate dei membri del gruppo nelle principali attività di questo processo. \\
+Pertanto il processo si compone delle seguenti attività:
+    \begin{itemize}
+        \item Analisi dei requisiti;
+        \item Progettazione;
+        \item Codifica.
+    \end{itemize}
+
+
+\subsubsection{Aspettative}
+Gli obiettivi perseguiti in fase di sviluppo sono i seguenti:
+    \begin{itemize}
+        \item Realizzare un prodotto finale conforme alle richieste del proponente;
+        \item Realizzare un prodotto finale soddisfacente i test di verifica e di validazione.
+        
+    \end{itemize}
+
+
+
+\subsubsection{Attività}
+    \paragraph{Analisi dei requisiti}
+        \subparagraph{Scopo}
+         ~\\
+         L'analisi dei requisiti è un documento ad uso esterno, il cui compito è fornire una descrizione completa di tutti i 
+         \citgl{requisiti} individuati in fase di analisi dagli analisti e dei casi d'uso riguardanti il progetto \citgl{P2PCS}. \\
+         Le informazioni estrapolate sono state ottenute dall'esposizione del capitolato e soprattutto attraverso incontri con il referente dell'azienda proponente. \\
+         In seguito sono elencate le norme che riguardano i requisiti esposti nel documento \AdR, al fine di evitare ambiguità o difformità di natura formale. \\
+         La tecnica utilizzata per l’analisi e la ricerca dei requisiti è quella dei casi d’uso.
+         \subparagraph{Aspettative}
+         ~\\
+         L'obiettivo dell'attività è la creazione della documentazione formale contenente tutti i requisiti richiesti dal proponente.
+        \subparagraph{Classificazione dei requisiti}
+        ~\\
+        Ad ogni requisito individuato in fase di analisi viene identificato un codice univoco, espresso nel seguente formato:\\
+        \begin{center}
+        R[Priorità][Tipo][Codice]
+        \end{center}
+        \\
+        Dove:
+        \begin{itemize}
+            \item \textbf{R}: abbreviazione di requisito.
+            \item \textbf{Priorità}: Indica l'importanza di un requisito, e può assumere i seguenti valori (mutuamente esclusivi ed espressi in ordine decrescente di importanza):
+                \begin{itemize}
+                    \item C: Dall'inglese 'compulsory', che significa obbligatorio, indica un requisito irrinunciabile per il committente.
+                    \item D: Dall'inglese 'desirable', desiderabile. Requisito auspicabile ma non strettamente necessario.
+                   
+                    
+                \end{itemize}
+            \item \textbf{Tipo}: Indica la classificazione del vincolo. Può assumere i seguenti valori:
+                \begin{itemize}
+                    \item F: Indica un requisito funzionale, ovvero la definizione di una funzione/caratteristica che deve essere implementata in un sistema.  Questa tipologia di requisiti descrivono quindi come il software reagisce a situazioni ed input particolari;
+                    \item Q: Indica un requisito di qualità. Includono i requisiti di
+                    \citgl{efficacia}, \citgl{efficienza}
+                     e i requisiti per garantire la qualità del prodotto;
+                    \item V: Indica requisiti di vincolo imposti dalla proponente GaiaGo.
+                \end{itemize}
+            
+            \item \textbf{Codice}: Numero intero univoco e incrementale di tre cifre associato al particolare requisito sulla base dell'ordine in cui compare nella struttura del documento.
+        \end{itemize}
+        
+    
+    \subparagraph{Classificazione dei casi d'uso}
+    ~\\
+    Gli Analisti hanno inoltre il compito di individuare i diversi \citgl{Casi d'uso}, elencandoli attraverso una strategia \citgl{Top down}, ovvero partendo dal generale e in seguito scendendo nel particolare. \\
+    I casi d'uso hanno lo scopo di descrivere scenari di interazione tra utenti e un sistema. Ciascun caso d'uso presente nel documento di Analisi dei Requisiti sarà corredato delle seguenti informazioni:
+        \begin{itemize}
+            \item \textbf{Codice identificativo e nome}: Ogni caso d'uso è identificato da un codice univoco strutturato nel seguente modo:
+                \begin{center}
+                    UC [Codice Padre].[Codice Figlio]-Nome
+                \end{center} 
+                \\
+                Dove:
+                    \begin{itemize}
+                        \item UC: Indica "User case", caso d'uso in inglese;
+                        \item Codice Padre: Numero intero;
+                        \item Codice Figlio: Uno o più numeri interi che specificano l'annidamento del caso;
+                        \item Nome del caso d'uso.
+                    \end{itemize}
+                    
+            \item \textbf{Attori}: Indica gli attori principali (obbligatoriamente) e secondari (opzionalmente, se esistono) del caso d'uso.
+            \item \textbf{Scopo e descrizione}: Riporta una breve descrizione del caso d’uso.
+            \item \textbf{Scenario principale}: Descrizione  di ciò che il caso d’uso vuole modellare, indicando ogni azione che ne fa parte.
+            \item \textbf{Precondizione}: Specifica le condizioni che sono identificate come vere prima del verificarsi degli eventi del caso d’uso.
+            \item \textbf{Postcondizione}: Specifica le condizioni che sono identificate come vere dopo il verificarsi degli eventi del caso d’uso.
+            \item \textbf{Scenari alternativi (opzionale)}: Descrizione di una possibilità alternativa allo scenario principale.
+            \item \textbf{Inclusioni (opzionale)}: Usate per non descrivere più volte lo stesso flusso di eventi, inserendo il comportamento comune in un caso d’uso a parte.
+            \item \textbf{Estensioni (opzionale)}: Descrivono i casi d’uso che non  fanno parte del flusso principale degli eventi, allo stesso modo di quanto  descritto in “Scenario principale”.
+        \end{itemize}
+   Faremo inoltre uso dei \citgl{diagrammi dei casi d'uso} , descritti nel linguaggio \citgl{UML 2.0}, per mettere in evidenza gli attori ed i servizi del sistema. 
+    
+    
+    
+    
+
+\paragraph{Progettazione}
+    \subparagraph{Scopo}
+    ~\\
+    L'attività di progettazione precede la fase di realizzazione ed è svolta dai progettisti. Essi hanno il compito di sviluppare e documentare una visione architetturale ad alto livello del prodotto identificando componenti chiare, riusabili e coese rimanendo nei costi fissati. Nel processo di descrizione dell' \citgl{archittettura} saranno fissate le componenti che andranno a costituire il sistema, con relative dipendenze e interazioni tra le loro istanze. I progettisti definiranno inoltre le interfacce necessarie a consentire l'interazione tra componenti e i \citgl{design pattern} da utilizzare.\\
+    Durante questa attività è molto importante che i progettisti si confrontino con l’azienda proponente, allo scopo di ottenere feedback e consigli. L’attività di progettazione è documentata nella
+    \citgl{Technology Baseline} e nella \citgl{Product Baseline} che saranno consegnati rispettivamente alla Revisione di Progettazione e alla Revisione di Qualifica.\\
+    L’architettura definita avrà i seguenti obiettivi:
+        \begin{itemize}
+            \item Soddisfare i requisiti individuati in fase di analisi e riportati nel documento \AdR e adattarsi in caso questi evolvano o se ne aggiungano di nuovi.
+            \item Essere robusta, in modo tale da essere in grado di gestire situazioni impreviste.
+            \item Ridurre al minimo i tempi di manutenzione.
+            \item Essere sicura, in modo da sapersi difendere in caso di errori o intrusioni indesiderate.
+            \item Essere in grado di rispettare le specifiche nel tempo.
+            \item Essere composta da componenti semplici e che minimizzino il grado di dipendenza l'uno dall'altro.
+        \end{itemize}
+    
+    L’attività di progettazione deve rispettare i requisiti ed i vincoli stabiliti tra il gruppo e il proponente. In questa fase i progettisti pongono i seguenti obiettivi: 
+        \begin{itemize}
+            \item Garantire la correttezza del prodotto sviluppato, perseguendo la correttezza per costruzione.
+            \item Organizzare e ripartire compiti implementativi, riducendo la complessità del problema originale fino alle singole componenti facilitandone la codifica da parte dei singoli programmatori.
+            \item Ottimizzare l'uso delle risorse disponibili. 
+        \end{itemize}
+    
+    \subparagraph{Aspettative}
+    ~\\
+    L’attività di progettazione consiste nel descrivere una soluzione del problema che
+    sia soddisfacente per tutti gli \citgl{stakeholders}.
+    
+
+    
+
+    \subparagraph{Diagrammi}
+    ~\\
+    Al fine di rendere più chiare le scelte progettuali adottate e ridurre le possibili ambiguità, si farà ricorso a vari tipi di diagrammi UML 2.0. In particolare:
+        \begin{itemize}
+            \item \textbf{Diagrammi dei casi d'uso}: Dedicati alla descrizione delle funzioni offerte dal sistema. Saranno il tipo di diagrammi utilizzati in fase preliminare alla RR.
+            \item \textbf{Diagrammi delle classi}: Dedicati alla descrizione degli oggetti che fanno parte di un sistema e delle loro dipendenze.
+            \item \textbf{Diagrammi dei package}: Dedicati  alla  descrizione  della  dipendenza  tra classi raggruppate in package.
+            \item \textbf{Diagrammi di sequenza}: Dedicati a descrivere la collaborazione nel tempo tra un gruppo di oggetti.
+            \item \textbf{Diagrammi di attività}: Dedicati a descrivere la logica procedurale.
+        \end{itemize}
+    
+
+\paragraph{Codifica}
+    \subparagraph{Scopo}
+    ~\\
+    Questa attività ha come scopo l’effettiva realizzazione del prodotto software richiesto, rispettando le metriche stabilite nel documento \PdQ. In questa fase si concretizza la soluzione attraverso la programmazione, in modo da ottenere il prodotto software finale. \\
+    Durante l’attività di codifica i programmatori devono seguire le linee-guida ivi indicate, al fine di rendere il codice più uniforme e leggibile per favorire le fasi manutenzione, verifica e validazione, e di conseguenza migliorare la qualità del prodotto.
+    
+    \subparagraph{Aspettative}
+    ~\\
+    Obiettivo dell'attività è la creazione di un prodotto software conforme alle richieste prefissate con il proponente.
+    
+    
+     \subparagraph{Stile di codifica}
+    ~\\
+        \begin{itemize}
+            \item \textbf{Indentazione}: Si
+            richiede l’utilizzo di esattamente una tabulazione per ogni blocco di istruzioni.
+            \item \textbf{Parentesi dei costrutti}: Si richiede inserire la parentesi di apertura di un blocco in linea, mentre quella di chiusura allineata alla prima e in una linea a essa dedicata;
+            \item \textbf{Convenzioni per i nomi}: si seguiranno le usuali convenzioni sancite dal linguaggio Java:
+                \begin{itemize}
+                    \item Nomi di variabili, metodi e funzioni devono avere la prima lettera minuscole. Eventuali parole dopo la prima che dovessero comporre il nome avranno la prima lettera maiuscola.
+                    \item I nomi delle classi devono avere la prima lettera maiuscola.  Eventuali parole dopo la prima che dovessero comporre il nome avranno la prima lettera maiuscola.
+                    \item I nomi delle classi devono avere la prima lettera maiuscola.
+                    \item Se possibile alcuni caratteri all'interno dei nomi sono da evitare in quanto facilmente confondibili con i numeri 1 e 0, elencati di seguito:
+                        \begin{itemize}
+                            \item l: lettera minuscola elle;
+                            \item O: lettera maiuscola o;
+                            \item I: lettera maiuscola i.
+                        \end{itemize}
+                    \item Tutti i nomi devono essere unici ed esplicativi al fine di evitare il più possibile ambiguità e incomprensioni.
+                \end{itemize}
+            \item \textbf{Commenti}: Il  programmatore  è  invitato  ad  inserire  commenti  ogniqualvolta  li ritenga utili per la comprensione del codice prodotto.
+            \item \textbf{Funzioni pure}: Onde evitare effetti collaterali dovrebbero essere l'unico tipo di procedure da utilizzare.
+            \item \textbf{Codice requisito}: Se lo scopo della funzione oppure della classe è soddisfare la richiesta di un requisito, va specificato il suo codice.
+            \item \textbf{Lunghezza delle funzioni}: Ogni procedura non dovrebbe superare le 50 righe di codice, approssimativamente equivalenti al numero di righe visualizzabili contemporaneamente su uno schermo.
+        \item \textbf{Code tags}: sono delle parole chiavi informali all'interno dei commenti per segnalare dei problemi, note o delle parti di codice ancora da fare. La struttura è la seguente:
+            \begin{center}
+                // <tag>:<descrizione in una singola linea> 
+            \end{center}\\
+        I tag potranno essere usati all'interno di commenti blocco o inline.  Sono supportati da molti IDE ed editor moderni. I tipi di tag sono:
+            \begin{itemize}
+                \item TODO: qualcosa che va completato.
+                \item NOTE: annotazioni particolari.
+                \item FIXME: qualcosa che va risolto perchè non funzionante.
+                \item HACK: qualcosa che funziona ma andrebbe migliorato.
+            \end{itemize}
+            
+        \end{itemize}
+        
+    \subparagraph{Convenzioni per la documentazione}
+    ~\\
+        \begin{itemize}
+            \item \textbf{Intestazione}: Ogni file contenente codice deve avere la seguente
+            intestazione contenuta in un commento e posta all’inizio del file stesso:
+                \begin{verbatim}
+        File:nome del file;
+        Version: versione del file nella forma X.Y descritta
+                 in seguito; 
+        Type: tipo del file; 
+        Date: data di creazione del file;
+        Author: autore del file; 
+                    
+        License: tipo licenza del file;
+                    
+        Advice: lista avvertenze e limitazioni legate al file;
+                    
+        Changelog: registro modifiche strutturato come:
+                Author || Data || Description 
+                \end{verbatim}
+            Per quanto riguarda la versione del file, essa sarà rappresentata nella seguente forma: X.Y, dove X, Y sono numeri interi che, rispettivamente, rappresentano l'indice di una versione principale e l'indice di una modifica parziale. L'incremento del valore X rappresenta un avanzamento della versione stabile e implica l'azzeramento dell'indice Y. L'incremento dell'indice Y rappresenta una verifica o una modifica rilevante all'interno del documento (per esempio l'aggiunta o la rimozione di una o più istruzioni).\\
+            La  versione 1.0 deve  rappresentare  la  prima  versione  del  file  completo  e stabile, cioè quando le sue funzionalità obbligatorie sono state definite e si considerano funzionanti. Solo dalla versione 1.0 è possibile testare il file, con degli appositi test predefiniti, per validarne la qualità.
+           
+        \end{itemize}
+    
+
+\paragraph{Strumenti utilizzati}
+\\Di seguito sono elencati gli strumenti utilizzati dal team Cyber13 in fase di sviluppo. Gli elementi indicati con * sono stati identificati a seguito di un'analisi preliminare. Tali strumenti potrebbero cambiare in caso di necessità differenti da quanto pianificato.
+    \begin{itemize}
+        \item \textbf{Creazione diagrammi UML}: Per la produzione dei diagrammi UML viene utilizzato \citgl{Draw.io}, idoneo dato il funzionamento sul cloud e la condivisione diretta su \citgl{Google Drive};
+        \item \textbf{IDE}: Si utilizza \citgl{Android Studio} per la codifica in Java e Kotlin.
+        \item \textbf{Realizzazione Slide di presentazione}: per preparare le slide di presentazione del progetto il team utilizza lo strumento Presentazioni Google, che realizza il file di presentazione direttamente all'interno del Google Drive associato alla mail del gruppo e permette ad ogni membro del team di apportare modifiche e aggiornamenti anche da remoto.
+        \item \textbf{Continuos Integration}: Implementata attraverso la piattaforma \citgl{Bitrise}.
+       
+    \end{itemize}

@@ -1,0 +1,73 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{style}
+
+
+%colori per tablle tabu
+\definecolor{tableHeader}{RGB}{211, 47, 47}
+\definecolor{tableLineOne}{RGB}{245, 245, 245}
+\definecolor{tableLineTwo}{RGB}{224, 224, 224}
+%define header tabelle tabu
+\newcommand{\tableHeaderStyle}{
+    \rowfont[c]{\leavevmode\color{white}\bfseries}
+    \rowcolor{tableHeader}
+}
+
+\title{StudioDiFattibilità}
+\author{Cyber13}
+\date{March 2019}
+
+\begin{document}
+
+	\begin{titlepage}
+		\centering Università degli Studi di Padova
+		\line(1,0){350}\\
+		\vspace{1.2cm}
+		\logo
+		\vspace{1.0cm}
+		\centering{\bfseries\LARGE STUDIO DI FATTIBILITÀ \\}
+		\vspace{0.5cm}
+		\centering{\slshape\large Gruppo Cyber13 - Progetto P2PCS\\}
+		\vspace{0.5cm}
+		\centering{\bfseries Informazioni sul documento \\}
+		\line(1,0){240}\\
+		% compilare i campi per ogni documento
+		\begin{tabular}{r|l}
+			{\textbf{Versione}} 			& 1.0.0\\
+			{\textbf{Data Redazione}} 	& 13/03/2019\\	% aggiornare la data
+			{\textbf{Responsabile}} 	& Matteo Squeri\\	% aggiornare la data
+			{\textbf{Redazione}} 		& Daniel Mirel Bira\\ & Andrea Casagrande\\ & Elena Pontecchiani\\ & Ilaria Rizzo\\
+			{\textbf{Verifica}}  & Fabio Garavello\\ & Matteo Squeri\\ 
+			{\textbf{Approvazione}} 		& Matteo Squeri\\
+			{\textbf{Uso}} 				& Interno\\
+			{\textbf{Destinatari}} 	& Cyber13\\ & Prof. Tullio Vardanega\\ & Prof. Riccardo Cardin\\
+			{\textbf{Mail di contatto}} 	& swe.cyber13@gmail.com \\
+		\end{tabular}\\
+	\end{titlepage}
+
+	\newpage
+	    \subfile{sezioni/DiarioModifiche.tex}
+    \newpage
+		\tableofcontents
+		\newpage
+            \section{Introduzione}
+                \input{sezioni/Introduzione/Introduzione.tex}
+                \newpage
+            \section{Capitolato C1}
+                \input{sezioni/C1/C1.tex}
+                \newpage
+            \section{Capitolato C2}
+                \input{sezioni/C2/C2.tex}
+                \newpage
+            \section{Capitolato C3}
+                \input{sezioni/C3/C3.tex}
+                \newpage
+            \section{Capitolato C4}
+                \input{sezioni/C4/C4.tex}
+                \newpage
+            \section{Capitolato C5}
+                \input{sezioni/C5/C5.tex}
+                \newpage
+            \section{Capitolato C6}
+                \input{sezioni/C6/C6.tex}
+            
+\end{document}

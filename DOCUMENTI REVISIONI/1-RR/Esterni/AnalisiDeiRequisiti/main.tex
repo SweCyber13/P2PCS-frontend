@@ -1,0 +1,67 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{style}
+\usepackage{hyperref}
+
+%colori per tablle tabu
+\definecolor{tableHeader}{RGB}{254, 61, 0}
+\definecolor{tableLineOne}{RGB}{245, 245, 245}
+\definecolor{tableLineTwo}{RGB}{254, 204, 188}
+%define header tabelle tabu
+\newcommand{\tableHeaderStyle}{
+    \rowfont[c]{\leavevmode\color{white}\bfseries}
+    \rowcolor{tableHeader}
+}
+
+\title{Analisi dei requisiti}
+\author{Cyber13}
+\date{March 2019}
+
+\begin{document}
+	\begin{titlepage}
+		\centering Università degli Studi di Padova
+		\line(1,0){350}\\
+		\vspace{1.2cm}
+		\logo
+		\vspace{1.0cm}
+		\centering{\bfseries\LARGE ANALISI DEI REQUISITI \\}
+		\vspace{0.5cm}
+		\centering{\slshape\large Gruppo Cyber13 - Progetto P2PCS\\}
+		\vspace{0.5cm}
+		\centering{\bfseries Informazioni sul documento \\}
+		\line(1,0){240}\\
+		% compilare i campi per ogni documento
+		\begin{tabular}{r|l}
+			{\textbf{Versione}} 			& 1.0.0\\
+			{\textbf{Data Redazione}} 	& 05/04/2019\\	% aggiornare la data
+			{\textbf{Responsabili}} 	& Matteo Squeri\\ & Andrea Casagrande\\	% aggiornare la data
+			{\textbf{Redazione}} 		& Daniel Mirel Bira \\ & Elena Pontecchiani\\  & Ilaria Rizzo\\
+			{\textbf{Verifica}} 		& Daniel Mirel Bira \\	&  Andrea Casagrande \\ & Fabio Garavello\\ 
+			{\textbf{Approvazione}} 	& Andrea Casagrande\\
+			{\textbf{Uso}} 				& Esterno\\
+			{\textbf{Destinatari}} & GaiaGo\\	& Cyber 13\\ & Prof. Tullio Vardanega\\ & Prof. Riccardo Cardin\\
+			{\textbf{Mail di contatto}} 	& swe.cyber13@gmail.com\\
+		\end{tabular}\\
+	\end{titlepage}
+
+	\newpage
+		\subfile{DiarioModificheAdR.tex}
+	\newpage
+		\tableofcontents
+        	\newpage
+	    	\listoffigures
+	    	\newpage
+        	\section{Introduzione}
+                \input{sezioni/IntroduzioneADR/IntroduzioneADR.tex}
+                \newpage
+            \section{Descrizione generale}
+                \input{sezioni/DescrizioneGenerale/DescrizioneGenerale.tex}
+                \newpage
+            \section{Casi d'uso}
+                \input{sezioni/CasiDUso/CasiDUso.tex}
+                \newpage
+            \section{Requisiti}
+                \input{sezioni/Requisiti/Requisiti.tex}
+                \newpage
+		    
+		\newpage
+\end{document}
