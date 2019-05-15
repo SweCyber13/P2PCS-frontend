@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content"
               android:layout_height="match_parent"
               android:paddingRight="16dp"
               android:paddingTop="16dp"
@@ -9,125 +9,136 @@
               android:orientation="vertical"
               android:background="@color/white">
 
-        <LinearLayout
-                android:layout_width="395dp"
-                android:layout_height="80dp"
-                android:orientation="horizontal"
-                android:gravity="center"
-        >
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="207dp" app:srcCompat="@drawable/car_background" android:id="@+id/imageView6"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
 
-                <Button
-                        android:id="@+id/startDateBtn"
-                        android:text="Data di partenza"
-                        android:layout_width="196dp"
-                        android:layout_marginStart="0dp"
-                        android:alpha="0.9"
-                        android:background="@drawable/button_search"
-                        android:layout_height="wrap_content"/>
+    >
 
-
-                <TextView
-                        android:id="@+id/dateTv"
-                        android:text="Data"
-                        android:layout_width="69dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"/>
-
-
-        </LinearLayout>
-        <LinearLayout
-                android:layout_width="392dp"
-                android:layout_height="80dp"
-                android:orientation="horizontal"
-                android:gravity="center"
-        >
-
-                <Button
-                        android:id="@+id/pickTimeBtn"
-                        android:text="Orario di partenza"
-                        android:layout_width="196dp"
-                        android:layout_marginStart="0dp"
-                        android:background="@drawable/button_search"
-                        android:alpha="0.9"
-                        android:layout_height="wrap_content"/>
-
-
-                <TextView
-                        android:id="@+id/dateTime"
-                        android:text="Data"
-                        android:layout_width="69dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"/>
-        </LinearLayout>
-        <LinearLayout
-                android:layout_width="392dp"
-                android:layout_height="80dp"
-                android:orientation="horizontal"
-                android:gravity="center"
-        >
-
-                <Button
-                        android:id="@+id/endDateBtn"
-                        android:text="Data di arrivo"
-                        android:layout_width="196dp"
-                        android:layout_marginStart="0dp"
-                        android:background="@drawable/button_search"
-                        android:alpha="0.9"
-                        android:layout_height="wrap_content"/>
-
-
-                <TextView
-                        android:id="@+id/dateTp"
-                        android:text="Ora"
-                        android:layout_width="69dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"/>
-        </LinearLayout>
-
-        <LinearLayout
-                android:layout_width="392dp"
-                android:layout_height="80dp"
-                android:orientation="horizontal"
-                android:gravity="center"
-        >
-
-                <Button
-                        android:id="@+id/endTimeBtn"
-                        android:text="Orario di arrivo"
-                        android:layout_width="196dp"
-                        android:alpha="0.9"
-                        android:layout_marginStart="0dp"
-                        android:background="@drawable/button_search"
-                        android:layout_height="wrap_content"/>
-
-
-                <TextView
-                        android:id="@+id/dateEndTime"
-                        android:text="Ora"
-                        android:layout_width="69dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"/>
-        </LinearLayout>
-
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:paddingTop="35dp"
-                android:hint="Città di partenza" android:ems="10"
-                android:id="@+id/editText"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:paddingTop="35dp"
-                android:hint="Città di arrivo" android:ems="10"
-                android:id="@+id/editText2"/>
         <Button
-                android:text="Cerca"
-                android:layout_width="match_parent"
-                android:layout_marginTop="60dp"
+                android:id="@+id/startDateBtn"
+                android:text="Data di partenza"
+                android:layout_width="196dp"
+                android:layout_marginStart="0dp"
+                android:alpha="0.9"
+                android:background="@drawable/button_search"
+                android:layout_height="wrap_content"/>
 
-                android:layout_height="wrap_content" android:id="@+id/button"/>
+
+        <TextView
+                android:id="@+id/startDate"
+                android:text="Data"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+    >
+
+        <Button
+                android:id="@+id/startTimeBtn"
+                android:text="Orario di partenza"
+                android:layout_width="196dp"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/button_search"
+                android:alpha="0.9"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                android:id="@+id/startTime"
+                android:text="Ora"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+    >
+
+        <Button
+                android:id="@+id/endDateBtn"
+                android:text="Data di arrivo"
+                android:layout_width="196dp"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/button_search"
+                android:alpha="0.9"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                android:id="@+id/endDate"
+                android:text="Data"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+    >
+
+        <Button
+                android:id="@+id/endTimeBtn"
+                android:text="Orario di arrivo"
+                android:layout_width="196dp"
+                android:alpha="0.9"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/button_search"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                android:id="@+id/endTime"
+                android:text="Ora"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:inputType="textPersonName"
+            android:paddingTop="35dp"
+            android:hint="Città di partenza" android:ems="10"
+            android:id="@+id/start"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:inputType="textPersonName"
+            android:paddingTop="35dp"
+            android:hint="Città di arrivo" android:ems="10"
+            android:id="@+id/end"/>
+    <Button
+            android:text="Cerca macchina"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_background"
+            android:layout_height="50dp" android:id="@+id/search_car"/>
 
 </LinearLayout>

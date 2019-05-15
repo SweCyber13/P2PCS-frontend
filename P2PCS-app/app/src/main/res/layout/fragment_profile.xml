@@ -9,14 +9,16 @@
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="200dp" android:background="#009688" app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="200dp" android:background="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:id="@+id/linearLayout">
         <ImageView
-                android:src="@mipmap/ic_launcher_round"
-                android:layout_marginTop="50dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/imageView4"
+                android:src="@drawable/ic_account_circle"
+
+                android:layout_width="wrap_content"
+                android:layout_height="169dp"
+                android:id="@+id/imageView4"
                 android:baselineAligned="true"/>
         <TextView
                 android:text="NOME"
