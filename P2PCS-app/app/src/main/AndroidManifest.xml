@@ -19,7 +19,7 @@
                   android:label="Classifiche">
         </activity>
         <activity android:name=".VisualizzaMacchinaActivity"
-                  android:label="Viasulizza Auto">
+                  android:label="Visualizza Auto">
         </activity>
         <activity android:name=".EditCar"
                   android:label="Modifica Auto">
