@@ -47,7 +47,7 @@ class ClassificaActivity : AppCompatActivity() {
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
                     str_posizione=str_posizione+"\n"+ (i+1)
-                    str_classificarank = str_classificarank +"\n" + jsonInner.get("Nome")
+                    str_classificarank = str_classificarank +"\n" + jsonInner.get("Username")
                     str_punteggio=str_punteggio+"\n"+jsonInner.get("Punti_rank")
                 }
                 classificaRank!!.text = "$str_classificarank "
