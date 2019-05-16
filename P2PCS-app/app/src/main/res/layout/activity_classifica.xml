@@ -19,7 +19,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                 <TextView
-                        android:text="Tabellone utenti migliori"
+                        android:text="Tabellone punti"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/TitlePuntiRank"
@@ -28,6 +28,12 @@
                         android:textAlignment="center"
                         android:layout_marginBottom="25dp"
 
+                />
+                <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" app:srcCompat="@drawable/podium"
+                        android:id="@+id/imageView6"
+                        android:layout_gravity="center"
                 />
                 <LinearLayout
                         android:orientation="horizontal"
