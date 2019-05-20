@@ -29,10 +29,10 @@
                   android:label="Classifiche">
         </activity>
         <activity android:name=".MyCarRequests"
-                  android:label="Prenotazioni Auto">
+                  android:label="Prenotazioni Viaggi">
         </activity>
         <activity android:name=".CarRequests"
-                  android:label="Prenotazioni Viaggi">
+                  android:label="Prenotazioni Auto">
         </activity>
 
         <activity android:name=".Coupons"
