@@ -16,12 +16,10 @@
         <activity android:name=".volley_test">
         </activity>
 
-<<<<<<< HEAD
-=======
-        <activity android:name=".ClassificaActivity"
+        <activity android:name=".LeaderboardActivity"
                   android:label="Classifiche">
         </activity>
->>>>>>> master
+
         <activity android:name=".VisualizzaMacchinaActivity"
                   android:label="Visualizza Auto">
         </activity>
