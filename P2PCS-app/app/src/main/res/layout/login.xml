@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:gravity="center"
-                android:text="Sign Up"
+                android:text="REGISTRATI"
                 android:textColor="@color/colorPrimary"
                 android:textSize="21sp" android:id="@+id/signup"/>
     </LinearLayout>

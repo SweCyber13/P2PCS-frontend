@@ -15,16 +15,14 @@
             android:theme="@style/AppTheme">
         <activity android:name=".volley_test">
         </activity>
-        <activity android:name=".ClassificaActivity"
-                  android:label="Classifiche">
-        </activity>
+
         <activity android:name=".VisualizzaMacchinaActivity"
                   android:label="Visualizza Auto">
         </activity>
         <activity android:name=".EditCar"
                   android:label="Modifica Auto">
         </activity>
-        <activity android:name=".Leaderboards"
+        <activity android:name=".LeaderboardActivity"
                   android:label="Classifiche">
         </activity>
         <activity android:name=".MyCarRequests"

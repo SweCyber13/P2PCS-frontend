@@ -2,7 +2,6 @@ package com.example.p2pcs_app
 
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -10,7 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import com.example.p2pcs_app.login_register_cognito.CognitoSettings
 import com.example.p2pcs_app.login_register_cognito.LoginActivity
 
@@ -26,7 +24,7 @@ class ProfileFragment : Fragment() {
 
         val classifiche = view.findViewById<Button>(R.id.classifiche)
         classifiche.setOnClickListener{
-            val intent= Intent(requireContext(), ClassificaActivity::class.java)
+            val intent= Intent(requireContext(), LeaderboardActivity::class.java)
             startActivity(intent)
         }
 

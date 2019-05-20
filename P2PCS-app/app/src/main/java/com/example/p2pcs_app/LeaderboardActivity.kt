@@ -2,7 +2,6 @@ package com.example.p2pcs_app
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.Response
@@ -11,7 +10,7 @@ import com.android.volley.toolbox.Volley
 import org.json.JSONArray
 import org.json.JSONObject
 
-class ClassificaActivity : AppCompatActivity() {
+class LeaderboardActivity : AppCompatActivity() {
     private var classificaRank: TextView? = null
     private var posizione: TextView? = null
     private var punteggio: TextView? = null
@@ -19,7 +18,7 @@ class ClassificaActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_classifica)
+        setContentView(R.layout.activity_leaderboards)
         classificaRank = findViewById<TextView>(R.id.classifica)
         posizione= findViewById<TextView>(R.id.posizione)
         punteggio=findViewById<TextView>(R.id.punteggio)

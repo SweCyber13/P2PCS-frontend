@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:paddingRight="16dp"
               android:paddingTop="16dp"
@@ -8,133 +9,167 @@
               android:paddingBottom="16dp"
               android:orientation="vertical"
               android:background="@color/white">
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center"
 
-    >
 
-        <Button
-                android:id="@+id/startDateBtn"
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+        >
+
+            <ImageView
+                    android:layout_width="@dimen/image_fragment_search"
+                    android:layout_height="@dimen/image_fragment_search"
+                    app:srcCompat="@drawable/ic_locate"
+                    android:id="@+id/imageViewStartCity"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_image_fragment_search"
+
+            />
+            <TextView
+                    android:layout_marginLeft="@dimen/image_fragment_search"
+                    android:text="Inserisci punto di partenza"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_fragment_search"
+                    android:id="@+id/startCity"
+                    android:layout_weight="1"
+                    android:gravity="center"
+            />
+        </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            <ImageView
+                    android:layout_width="@dimen/image_fragment_search"
+                    android:layout_height="@dimen/image_fragment_search"
+                    app:srcCompat="@drawable/ic_locate"
+                    android:id="@+id/imageEndCity"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_image_fragment_search"/>
+            <TextView
+
+                    android:text="Inserisci punto di arrivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_fragment_search"
+                    android:id="@+id/endCity"
+                    android:gravity="center"
+
+                    android:layout_marginLeft="@dimen/image_fragment_search"
+                    android:layout_weight="1"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="@dimen/image_fragment_search"
+                android:layout_height="@dimen/image_fragment_search"
+                app:srcCompat="@drawable/ic_calendar"
+                android:id="@+id/imageStartDate"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/padding_image_fragment_search"
+        />
+        <TextView
                 android:text="Data di partenza"
-                android:layout_width="196dp"
-                android:layout_marginStart="0dp"
-                android:alpha="0.9"
-                android:background="@drawable/button_search"
-                android:layout_height="wrap_content"/>
-
-
-        <TextView
+                android:textAlignment="center"
+                android:layout_width="175dp"
+                android:layout_height="@dimen/image_fragment_search"
                 android:id="@+id/startDate"
-                android:text="Data"
-                android:layout_width="69dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"/>
+                android:gravity="center"
+
+                android:layout_weight="1"
+                android:layout_toRightOf="@+id/imageStartDate"
+                android:layout_toLeftOf="@id/imageStartTime"
 
 
-    </LinearLayout>
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center"
-    >
+        />
+        <ImageView
+                android:layout_width="@dimen/image_fragment_search"
+                android:layout_height="@dimen/image_fragment_search"
+                app:srcCompat="@drawable/ic_clock"
+                android:id="@+id/imageStartTime"
+                android:layout_weight="1"
+                android:layout_toLeftOf="@id/startTime"
+                android:padding="@dimen/padding_image_fragment_search"
 
-        <Button
-                android:id="@+id/startTimeBtn"
+
+        />
+        <TextView
                 android:text="Orario di partenza"
-                android:layout_width="196dp"
-                android:layout_marginStart="0dp"
-                android:background="@drawable/button_search"
-                android:alpha="0.9"
-                android:layout_height="wrap_content"/>
-
-
-        <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/image_fragment_search"
                 android:id="@+id/startTime"
-                android:text="Ora"
-                android:layout_width="69dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"/>
-    </LinearLayout>
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center"
-    >
+                android:layout_weight="1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:padding="@dimen/padding_image_fragment_search"
+        />
 
-        <Button
-                android:id="@+id/endDateBtn"
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="@dimen/image_fragment_search"
+                android:layout_height="@dimen/image_fragment_search"
+                app:srcCompat="@drawable/ic_calendar"
+                android:id="@+id/imageEndDate"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/padding_image_fragment_search"
+        />
+        <TextView
                 android:text="Data di arrivo"
-                android:layout_width="196dp"
-                android:layout_marginStart="0dp"
-                android:background="@drawable/button_search"
-                android:alpha="0.9"
-                android:layout_height="wrap_content"/>
-
-
-        <TextView
+                android:textAlignment="center"
+                android:layout_width="175dp"
+                android:layout_height="@dimen/image_fragment_search"
                 android:id="@+id/endDate"
-                android:text="Data"
-                android:layout_width="69dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"/>
-    </LinearLayout>
+                android:gravity="center"
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:gravity="center"
-    >
-
-        <Button
-                android:id="@+id/endTimeBtn"
-                android:text="Orario di arrivo"
-                android:layout_width="196dp"
-                android:alpha="0.9"
-                android:layout_marginStart="0dp"
-                android:background="@drawable/button_search"
-                android:layout_height="wrap_content"/>
+                android:layout_weight="1"
+                android:layout_toRightOf="@+id/imageEndDate"
 
 
+        />
+        <ImageView
+                android:layout_width="@dimen/image_fragment_search"
+                android:layout_height="@dimen/image_fragment_search"
+                app:srcCompat="@drawable/ic_clock"
+                android:id="@+id/imageEndTime"
+                android:layout_weight="1"
+                android:layout_toRightOf="@id/endDate"
+
+                android:padding="@dimen/padding_image_fragment_search"
+
+
+        />
         <TextView
+                android:text="Orario di arrivo"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/image_fragment_search"
                 android:id="@+id/endTime"
-                android:text="Ora"
-                android:layout_width="69dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"/>
-    </LinearLayout>
+                android:layout_weight="1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:layout_toRightOf="@id/imageEndTime"
+                android:padding="@dimen/padding_image_fragment_search"
+        />
 
-    <EditText
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:inputType="textPersonName"
-            android:paddingTop="35dp"
-            android:hint="Città di partenza" android:ems="10"
-            android:id="@+id/start"/>
-    <EditText
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:inputType="textPersonName"
-            android:paddingTop="35dp"
-            android:hint="Città di arrivo" android:ems="10"
-            android:id="@+id/end"/>
+    </RelativeLayout>
+
+
     <Button
             android:text="Cerca macchina"
             android:layout_width="match_parent"
             android:background="@drawable/button_background"
             android:layout_height="50dp" android:id="@+id/search_car"/>
+
 
 </LinearLayout>

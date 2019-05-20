@@ -33,7 +33,7 @@
                 android:drawableStart="@drawable/ic_lock_outline"
                 android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="confirmation code"
+                android:hint="codice di conferma"
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:textColor="@color/white"
@@ -54,7 +54,7 @@
                 android:layout_height="48dp"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/button_background"
-                android:text="Confirm"
+                android:text="Conferma"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="21sp"/>
