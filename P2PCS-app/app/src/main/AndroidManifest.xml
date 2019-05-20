@@ -16,6 +16,12 @@
         <activity android:name=".volley_test">
         </activity>
 
+<<<<<<< HEAD
+=======
+        <activity android:name=".ClassificaActivity"
+                  android:label="Classifiche">
+        </activity>
+>>>>>>> master
         <activity android:name=".VisualizzaMacchinaActivity"
                   android:label="Visualizza Auto">
         </activity>
@@ -26,13 +32,17 @@
                   android:label="Classifiche">
         </activity>
         <activity android:name=".MyCarRequests"
-                  android:label="Prenotazioni Auto">
-        </activity>
-        <activity android:name=".CarRequests"
                   android:label="Prenotazioni Viaggi">
         </activity>
+        <activity android:name=".CarRequests"
+                  android:label="Prenotazioni Auto">
+        </activity>
+
         <activity android:name=".Coupons"
                   android:label="Premi e Coupons">
+        </activity>
+        <activity android:name=".ActivityMission"
+                  android:label="Missioni">
         </activity>
         <activity android:name=".PersonalData"
                   android:label="Dati Personali">
