@@ -44,7 +44,7 @@ class ProfileFragment : Fragment() {
 
         val missioni = view.findViewById<Button>(R.id.missioni)
         missioni.setOnClickListener{
-            val intent= Intent(requireContext(), CarRequests::class.java) //TO DO
+            val intent= Intent(requireContext(), ActivityMission::class.java) //TO DO
             startActivity(intent)
         }
 
