@@ -33,6 +33,7 @@
                 <TextView
                         android:text="+15 pt"
                         android:layout_width="70dp"
+                        android:maxLines="1"
                         android:gravity="center"
                         android:layout_height="match_parent" android:id="@+id/textViewPoint" android:layout_weight="1"/>
             </LinearLayout>
