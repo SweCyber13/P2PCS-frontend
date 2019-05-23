@@ -3,164 +3,219 @@
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
                                              xmlns:tools="http://schemas.android.com/tools"
                                              android:layout_width="match_parent"
-                                             android:layout_height="match_parent"
-                                             android:layout_margin="5dp"
-                                             android:layout_marginTop="10dp"
-                                            >
-    <!-- città di partenza-->
-    <RelativeLayout
+                                             android:layout_height="wrap_content"
+
+>
+
+    <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/searchlayout"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintLeft_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            android:id="@+id/layoutStartCity">
-
-        <ImageView
-                android:id="@+id/imageStartCity"
-                android:src="@drawable/ic_local"
-                style="@style/SearchImageView"/>
-        <EditText
-                android:id="@+id/startCity"
+        <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/imageStartCity"
-                android:hint="Inserisci città di partenza"
-                style="@style/SearchEditText"
-                />
-    </RelativeLayout>
-    <!-- città di arrivo-->
-    <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/searchlayout"
+                android:paddingBottom="20dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:id="@+id/searchBox"
+                app:layout_constraintTop_toTopOf="parent"
 
-            android:background="@drawable/searchlayout"
+        >
+
+            <!-- città di partenza-->
+
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/searchrelativelayout"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/SearchRelativeLayout"
+                    android:id="@+id/layoutStartCity">
+
+                <ImageView
+                        android:id="@+id/imageStartCity"
+                        android:src="@drawable/ic_local"
+                        style="@style/SearchImageView"/>
+                <EditText
+                        android:id="@+id/startCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imageStartCity"
+                        android:hint="Inserisci città di partenza"
+                        style="@style/SearchEditText"
+                />
+            </RelativeLayout>
+            <!-- città di arrivo-->
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/SearchRelativeLayout"
+                    android:background="@drawable/searchrelativelayout"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutStartCity"
+                    android:id="@+id/layoutEndCity"
+            >
+
+                <ImageView
+                        android:id="@+id/imageEndCity"
+                        android:src="@drawable/ic_local"
+                        style="@style/SearchImageView"
+                />
+                <EditText
+                        android:id="@+id/endCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imageEndCity"
+                        android:hint="Inserisci città di arrivo"
+                        style="@style/SearchEditText"
+                />
+            </RelativeLayout>
+
+            <!-- data di partenza-->
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/searchrelativelayout"
+                    app:layout_constraintLeft_toLeftOf="parent"
+
+                    app:layout_constraintTop_toBottomOf="@id/layoutEndCity"
+                    app:layout_constraintWidth_percent="0.50"
+                    android:id="@+id/layoutStartDate"
+            >
+
+                <ImageView
+                        android:id="@+id/imageStartDate"
+                        android:src="@drawable/ic_calendar"
+                        style="@style/SearchImageView"/>
+                <EditText
+                        android:id="@+id/startDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imageStartDate"
+                        android:hint="Data di partenza"
+                        style="@style/SearchEditText"
+                />
+            </RelativeLayout>
+            <!-- orario di partenza-->
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/searchrelativelayout"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toRightOf="@id/layoutStartDate"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutEndCity"
+                    app:layout_constraintWidth_percent="0.50"
+                    android:id="@+id/layoutStarTime"
+
+            >
+
+                <ImageView
+
+                        android:id="@+id/imageStartTime"
+                        android:src="@drawable/ic_clock"
+                        style="@style/SearchImageView"/>
+                <EditText
+                        android:id="@+id/startTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imageStartTime"
+                        android:hint="Orario di partenza"
+                        style="@style/SearchEditText"
+
+                />
+            </RelativeLayout>
+
+
+            <!-- data di arrivo-->
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutStartDate"
+                    app:layout_constraintWidth_percent="0.50"
+                    android:id="@+id/layoutEndDate"
+                    android:background="@drawable/searchrelativelayout"
+
+
+            >
+
+                <ImageView
+                        android:id="@+id/imageEndDate"
+                        android:src="@drawable/ic_calendar"
+                        style="@style/SearchImageView"/>
+                <EditText
+                        android:id="@+id/endDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imageEndDate"
+                        android:hint="Data di arrivo"
+                        style="@style/SearchEditText"/>
+            </RelativeLayout>
+            <!-- orario di arrivo-->
+
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toRightOf="@id/layoutEndDate"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layoutStarTime"
+                    app:layout_constraintWidth_percent="0.50"
+                    android:id="@+id/layoutEndTime"
+                    android:background="@drawable/searchrelativelayout"
+
+
+            >
+
+                <ImageView
+
+                        android:id="@+id/imageEndTime"
+                        android:src="@drawable/ic_clock"
+                        style="@style/SearchImageView"/>
+                <EditText
+                        android:id="@+id/endTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/imageEndTime"
+                        android:hint="Orario di arrivo"
+                        android:layout_toEndOf="@+id/imageEndTime"
+                        style="@style/SearchEditText"
+                />
+            </RelativeLayout>
+
+
+
+
+
+    <Button
+            app:layout_constraintTop_toBottomOf="@id/layoutEndDate"
+android:background="@drawable/button_search"
+            android:text="Cerca macchina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:gravity="center"
+
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintLeft_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layoutStartCity"
-            android:id="@+id/layoutEndCity"
-    >
-
-        <ImageView
-                android:id="@+id/imageEndCity"
-                android:src="@drawable/ic_local"
-                style="@style/SearchImageView"
-                />
-        <EditText
-                android:id="@+id/endCity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/imageEndCity"
-                android:hint="Inserisci città di arrivo"
-                style="@style/SearchEditText"
-                />
-    </RelativeLayout>
-    <!-- data di partenza-->
-    <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-
-            android:background="@drawable/searchlayout"
-            app:layout_constraintLeft_toLeftOf="parent"
-
-            app:layout_constraintTop_toBottomOf="@id/layoutEndCity"
-            app:layout_constraintWidth_percent="0.5"
-            android:id="@+id/layoutStartDate"
-    >
-
-        <ImageView
-                android:id="@+id/imageStartDate"
-                android:src="@drawable/ic_calendar"
-                style="@style/SearchImageView"/>
-        <EditText
-                android:id="@+id/startDate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/imageStartDate"
-                android:hint="Data di partenza"
-                style="@style/SearchEditText"
-                />
-    </RelativeLayout>
-    <!-- orario di partenza-->
-    <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/searchlayout"
-
-            app:layout_constraintLeft_toRightOf="@id/layoutStartDate"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layoutEndCity"
-            app:layout_constraintWidth_percent="0.5"
-            android:id="@+id/layoutStarTime"
-    >
+            android:padding="2dp"
+            android:layout_margin="5dp"
 
-        <ImageView
+    />
 
-                android:id="@+id/imageStartTime"
-                android:src="@drawable/ic_clock"
-                style="@style/SearchImageView"/>
-        <EditText
-                android:id="@+id/startTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/imageStartTime"
-                android:hint="Orario di partenza"
-                style="@style/SearchEditText"
-
-                />
-    </RelativeLayout>
-    <!-- data di arrivo-->
-    <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layoutStartDate"
-            app:layout_constraintWidth_percent="0.5"
-            android:id="@+id/layoutEndDate"
-            android:background="@drawable/searchlayout"
-    >
-
-        <ImageView
-                android:id="@+id/imageEndDate"
-                android:src="@drawable/ic_calendar"
-                style="@style/SearchImageView"/>
-        <EditText
-                android:id="@+id/endDate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/imageEndDate"
-                android:hint="Data di arrivo"
-                style="@style/SearchEditText"/>
-    </RelativeLayout>
-    <!-- orario di arrivo-->
-    <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-
-
-            app:layout_constraintLeft_toRightOf="@id/layoutEndDate"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layoutStarTime"
-            app:layout_constraintWidth_percent="0.5"
-            android:id="@+id/layoutEndTime"
-            android:background="@drawable/searchlayout"
-    >
-
-        <ImageView
-
-                android:id="@+id/imageEndTime"
-                android:src="@drawable/ic_clock"
-                style="@style/SearchImageView"/>
-        <EditText
-                android:id="@+id/endTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/imageEndTime"
-                android:hint="Orario di arrivo"
-                android:layout_toEndOf="@+id/imageEndTime"
-                style="@style/SearchEditText"
-                />
-    </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
+        </ScrollView>
 </android.support.constraint.ConstraintLayout>

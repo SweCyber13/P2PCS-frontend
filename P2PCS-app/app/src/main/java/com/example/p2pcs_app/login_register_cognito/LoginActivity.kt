@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
         val cognitosettings= CognitoSettings(this)
 
         //debug!!!!!!!!!!!!!!!!!!!!!! signout
-        cognitosettings.getUserPool().currentUser.signOut()
+       // cognitosettings.getUserPool().currentUser.signOut()
 
         if(cognitosettings.getUserPool().currentUser.thisDevice()!=null) {
             //Crea sharedpreferences con username
