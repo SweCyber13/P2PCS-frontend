@@ -202,7 +202,7 @@
 
     <Button
             app:layout_constraintTop_toBottomOf="@id/layoutEndDate"
-android:background="@drawable/button_search"
+            android:background="@drawable/button_search"
             android:text="Cerca macchina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
