@@ -82,6 +82,11 @@ android:layout_height="match_parent">
             </LinearLayout>
         </FrameLayout>
     </LinearLayout>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/car_information_card">
+
+    </android.support.constraint.ConstraintLayout>
 </LinearLayout>
 </ScrollView>
         </android.support.constraint.ConstraintLayout>
