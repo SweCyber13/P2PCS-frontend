@@ -16,6 +16,10 @@
         <activity android:name=".volley_test">
         </activity>
 
+        <activity android:name=".HomeActivity"
+                  android:label="Home">
+        </activity>
+
         <activity android:name=".LeaderboardActivity"
                   android:label="Classifiche">
         </activity>
@@ -26,9 +30,8 @@
         <activity android:name=".EditCar"
                   android:label="Modifica Auto">
         </activity>
-        <activity android:name=".LeaderboardActivity"
-                  android:label="Classifiche">
-        </activity>
+
+
         <activity android:name=".MyCarRequests"
                   android:label="Prenotazioni Viaggi">
         </activity>
