@@ -28,6 +28,11 @@
                     app:layout_constraintHeight_percent="0.50"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toTopOf="@+id/second_part"
+                    android:background="@drawable/home"
+                    android:alpha="0.8"
+
+
+
             >
 
                 <Button
@@ -44,6 +49,10 @@
                         app:layout_constraintBottom_toBottomOf="parent"
 
                         style="@style/HomeMainButton"
+                        android:background="@drawable/menu_button_background"
+
+
+
 
 
                 />
@@ -59,6 +68,9 @@
                         app:layout_constraintBottom_toBottomOf="parent"
 
                         style="@style/HomeMainButton"
+                        android:background="@drawable/menu_button_background"
+
+
 
 
 
@@ -108,7 +120,8 @@
 
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
-                >
+                        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0">
 
                 </android.support.constraint.ConstraintLayout>
             </android.support.constraint.ConstraintLayout>
@@ -198,6 +211,11 @@
 
                             android:background="@drawable/ic_go"
 
+
+
+
+
+
                     />
                 </android.support.constraint.ConstraintLayout>
                 <android.support.constraint.ConstraintLayout
@@ -256,6 +274,11 @@
                     />
                 </android.support.constraint.ConstraintLayout>
             </android.support.constraint.ConstraintLayout>
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            </FrameLayout>
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
