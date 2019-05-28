@@ -19,9 +19,9 @@ class LeaderboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_leaderboards)
-        classificaRank = findViewById<TextView>(R.id.classifica)
-        posizione= findViewById<TextView>(R.id.posizione)
-        punteggio=findViewById<TextView>(R.id.punteggio)
+        classificaRank = findViewById<TextView>(R.id.username)
+        posizione= findViewById<TextView>(R.id.position)
+        punteggio=findViewById<TextView>(R.id.rank)
 
         getBoard()
     }
