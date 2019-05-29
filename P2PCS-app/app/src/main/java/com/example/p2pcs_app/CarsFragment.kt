@@ -21,13 +21,16 @@ class CarsFragment : Fragment() {
     private var modello: TextView? = null
     private var marca: TextView? = null
     private var targa: TextView? = null
+    private var anno: TextView? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_cars, null)
-        modello = view.findViewById<TextView>(R.id.Modello)
-        marca = view.findViewById<TextView>(R.id.Marca)
-        val button = view.findViewById<Button>(R.id.InfoOffer)
+        modello = view.findViewById<TextView>(R.id.textModel)
+        marca = view.findViewById<TextView>(R.id.textMarca)
+        anno = view.findViewById<TextView>(R.id.year)
+        targa = view.findViewById<TextView>(R.id.textTarga)
+        val button = view.findViewById<Button>(R.id.otherInfo)
         button.setOnClickListener{
             val intent= Intent(requireContext(), VisualizzaMacchinaActivity::class.java)
             startActivity(intent)
@@ -53,25 +56,29 @@ class CarsFragment : Fragment() {
                 //val jsonArray: JSONArray = jsonObj.getJSONArray() //devo mettere un nome in qualche modo all'array su php
                 var str_modello: String = ""
                 var str_marca: String = ""
-                //var str_targa: String = ""
+                var str_anno: String = ""
+                var str_targa: String = ""
 
 
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
                     str_modello =  "" + jsonInner.get("Modello")
                     str_marca = "" + jsonInner.get("Marca")
-                    //str_targa = "" + jsonInner.get("Targa")
+                    str_anno = "" + jsonInner.get("Anno_produzione")
+                    str_targa = "" + jsonInner.get("Targa")
 
                 }
                 modello!!.text = "$str_modello "
                 marca!!.text = "$str_marca "
-                //targa!!.text = "$str_targa "
+                anno!!.text = "$str_anno "
+                targa!!.text = "$str_targa "
 
             },
             Response.ErrorListener {
                 modello!!.text = it.toString()
                 marca!!.text = it.toString()
-                //targa!!.text = it.toString()
+                anno!!.text = it.toString()
+                targa!!.text = it.toString()
 
 
             })

@@ -16,9 +16,6 @@
         <activity android:name=".volley_test">
         </activity>
 
-        <activity android:name=".HomeActivity"
-                  android:label="Home">
-        </activity>
 
         <activity android:name=".LeaderboardActivity"
                   android:label="Classifiche">
