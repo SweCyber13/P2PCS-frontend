@@ -31,7 +31,7 @@ class ExploreFragment : Fragment() {
         company1 = view.findViewById<TextView>(R.id.CompanyName)
         offer1 = view.findViewById<TextView>(R.id.OfferTitle)
         
-        val button = view.findViewById<Button>(R.id.InfoOffer)
+
 
 
         //val context=requireContext()
