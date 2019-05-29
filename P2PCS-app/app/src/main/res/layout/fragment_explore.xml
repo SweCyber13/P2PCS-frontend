@@ -1,214 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:tools="http://schemas.android.com/tools"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent"
-                                             tools:context=".ProfileFragment"
-                                             android:background="@color/white"
-                                             android:id="@+id/frameLayout2">
-    <ScrollView
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+
+        android:layout_height="250dp">
+
+    <ImageView
+            android:background="@drawable/green_gradient"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <LinearLayout
-                android:orientation="vertical"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/offerta"
+            android:id="@+id/imageView"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.30"
+    >
+
+        <Button
+                android:background="@drawable/button_info_style"
+                android:text="info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_info"
+                app:layout_constraintRight_toRightOf="@id/line_right_button"
+                app:layout_constraintBottom_toBottomOf="@id/line_bottom"
+
+        />
+        <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp" android:id="@+id/Offer1"
-            android:layout_margin="10dp">
-                <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        app:srcCompat="@drawable/offerta"
-                        android:id="@+id/ImgOffer1"/>
-                <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                android:layout_height="match_parent"
 
-                    <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/black_gradient"
-                            android:id="@+id/InfoBar1"
-                   />
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                        <android.support.constraint.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
+                app:srcCompat="@drawable/black_gradient"
+                android:id="@+id/InfoBar"
 
-                            <LinearLayout
-                                    android:orientation="vertical"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+                android:text="Nome dell'azienda"
+                app:layout_constraintLeft_toLeftOf="@id/line_left"
+                app:layout_constraintTop_toTopOf="@id/line_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CompanyName"
 
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent" android:gravity="center_vertical">
-                                <TextView
-                                        android:text="TheSpaceCnema"
-                                        android:textColor="#ffffff"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content" android:id="@+id/Company1"/>
-                                <TextView
-                                        android:text="Biglietto gratis"
-                                        android:layout_width="match_parent"
-                                        android:textColor="#ffffff"
-                                        android:layout_height="wrap_content" android:id="@+id/TitleOffer1"/>
-                            </LinearLayout>
-                            <Button
-                                    android:background="@drawable/button_info_style"
-                                    android:text="Info"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:id="@+id/InfoOffer"
-                                    android:layout_marginEnd="1dp"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_marginBottom="1dp"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
-                        </android.support.constraint.ConstraintLayout>
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-            <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp" android:id="@+id/Offer2"
-                    android:layout_margin="10dp">
-                <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        app:srcCompat="@drawable/offerta"
-                        android:id="@+id/ImgOffer2"/>
-                <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                style="@style/ExploreTextView"/>
+        <TextView
+                android:text="Titolo offerta"
+                app:layout_constraintLeft_toLeftOf="@id/line_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/OfferTitle"
+                app:layout_constraintBottom_toBottomOf="@id/line_bottom"
+                style="@style/ExploreTextView"/>
 
-                    <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/black_gradient"
-                            android:id="@+id/InfoBar2"
-                    />
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                        <android.support.constraint.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
+        <android.support.constraint.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/line_bottom"
 
-                            <LinearLayout
-                                    android:orientation="vertical"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    android:layout_marginStart="8dp"
+                app:layout_constraintGuide_percent="0.90"/>
+        <android.support.constraint.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.99"
+                android:id="@+id/line_right_button"/>
+        <android.support.constraint.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.36"
+                android:id="@+id/line_top"/>
+        <android.support.constraint.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.05"
+                android:id="@+id/line_left"/>
+    </android.support.constraint.ConstraintLayout>
 
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent" android:gravity="center_vertical">
-                                <TextView
-                                        android:text="Conad"
-                                        android:textStyle="bold"
-                                        android:textColor="#ffffff"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content" android:id="@+id/Company2"/>
-                                <TextView
-                                        android:text="Buono spesa 10 euro"
-                                        android:textStyle="bold"
-                                        android:textColor="#ffffff"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:id="@+id/TitleOffer2"/>
-                            </LinearLayout>
-                            <Button
-                                    android:background="@drawable/button_info_style"
-                                    android:text="Info"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:id="@+id/InfoOffer2"
-                                    android:layout_marginEnd="1dp"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_marginBottom="1dp"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
-                        </android.support.constraint.ConstraintLayout>
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-            <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp" android:id="@+id/Offer3"
-                    android:layout_margin="10dp">
-                <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        app:srcCompat="@drawable/offerta"
-                        android:id="@+id/ImgOffer3"/>
-                <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
 
-                    <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            app:srcCompat="@drawable/black_gradient"
-                            android:id="@+id/InfoBar3"
-                    />
-                    <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                        <android.support.constraint.ConstraintLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-
-                            <LinearLayout
-                                    android:orientation="vertical"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    android:layout_marginStart="8dp"
-
-                                    app:layout_constraintTop_toTopOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent" android:gravity="center_vertical">
-                                <TextView
-                                        android:text="Tigotà"
-                                        android:textStyle="bold"
-                                        android:textColor="#ffffff"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content" android:id="@+id/Company3"/>
-                                <TextView
-                                        android:text="Sconto 5%"
-                                        android:textStyle="bold"
-                                        android:textColor="#ffffff"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:id="@+id/TitleOffer3"/>
-                            </LinearLayout>
-                            <Button
-                                    android:background="@drawable/button_info_style"
-                                    android:text="Info"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:id="@+id/InfoOffer3"
-                                    android:layout_marginEnd="1dp"
-                                    android:layout_marginRight="1dp"
-                                    android:layout_marginBottom="1dp"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintBottom_toBottomOf="parent"/>
-                        </android.support.constraint.ConstraintLayout>
-                    </LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
 </android.support.constraint.ConstraintLayout>

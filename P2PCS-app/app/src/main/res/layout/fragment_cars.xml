@@ -31,7 +31,7 @@ android:layout_height="match_parent">
             <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    app:srcCompat="@drawable/black_gradient"
+                    app:srcCompat="@drawable/green_gradient"
                     android:id="@+id/InfoBar1"
             />
             <LinearLayout
