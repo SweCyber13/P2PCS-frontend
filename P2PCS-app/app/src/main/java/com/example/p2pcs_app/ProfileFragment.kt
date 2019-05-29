@@ -16,43 +16,14 @@ import com.example.p2pcs_app.login_register_cognito.LoginActivity
 class ProfileFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_profile, null)
-        val datipersonali = view.findViewById<Button>(R.id.datipersonali)
+        val datipersonali = view.findViewById<Button>(R.id.personal_data)
         datipersonali.setOnClickListener{
             val intent= Intent(requireContext(), PersonalData::class.java)
             startActivity(intent)
         }
 
-        val classifiche = view.findViewById<Button>(R.id.classifiche)
-        classifiche.setOnClickListener{
-            val intent= Intent(requireContext(), LeaderboardActivity::class.java)
-            startActivity(intent)
-        }
 
-        val viaggi = view.findViewById<Button>(R.id.viaggi)
-        viaggi.setOnClickListener{
-            val intent= Intent(requireContext(), MyCarRequests::class.java)
-            startActivity(intent)
-        }
-
-        val auto = view.findViewById<Button>(R.id.auto)
-        auto.setOnClickListener{
-            val intent= Intent(requireContext(), CarRequests::class.java)
-            startActivity(intent)
-        }
-
-        val missioni = view.findViewById<Button>(R.id.missioni)
-        missioni.setOnClickListener{
-            val intent= Intent(requireContext(), ActivityMission::class.java) //TO DO
-            startActivity(intent)
-        }
-
-        val premi = view.findViewById<Button>(R.id.premi)
-        premi.setOnClickListener{
-            val intent= Intent(requireContext(), Coupons::class.java)
-            startActivity(intent)
-        }
-
-        val logout = view.findViewById<Button>(R.id.logoutbutton)
+        val logout = view.findViewById<Button>(R.id.logout)
         logout.setOnClickListener{
             //signout
             val cognitosettings= CognitoSettings(context as Context)

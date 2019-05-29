@@ -28,13 +28,10 @@ class ExploreFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_explore, null)
-        company1 = view.findViewById<TextView>(R.id.Company1)
-        offer1 = view.findViewById<TextView>(R.id.TitleOffer1)
-        company2 = view.findViewById<TextView>(R.id.Company2)
-        offer2 = view.findViewById<TextView>(R.id.TitleOffer2)
-        company3 = view.findViewById<TextView>(R.id.Company3)
-        offer3 = view.findViewById<TextView>(R.id.TitleOffer3)
-        val button = view.findViewById<Button>(R.id.InfoOffer)
+        company1 = view.findViewById<TextView>(R.id.CompanyName)
+        offer1 = view.findViewById<TextView>(R.id.OfferTitle)
+        
+
 
 
         //val context=requireContext()

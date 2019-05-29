@@ -17,19 +17,19 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     private lateinit var textMessage: TextView
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.navigation_search -> {
+            R.id.navigation_home -> {
                 textMessage.setText(R.string.title_search)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_cars -> {
+            R.id.navigation_reservation -> {
                 textMessage.setText(R.string.title_cars)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_explore -> {
+            R.id.navigation_profile -> {
                 textMessage.setText(R.string.title_explore)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_profile -> {
+            R.id.navigation_gift -> {
                 textMessage.setText(R.string.title_profile)
                 return@OnNavigationItemSelectedListener true
             }
@@ -41,9 +41,9 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.navigation_profile -> loadFragment(ProfileFragment())
-            R.id.navigation_search -> loadFragment(SearchFragment())
-            R.id.navigation_cars -> loadFragment(CarsFragment())
-            R.id.navigation_explore -> loadFragment(ExploreFragment())
+            R.id.navigation_home -> loadFragment(HomeFragment())
+            R.id.navigation_reservation -> loadFragment(CarsFragment())
+            R.id.navigation_gift -> loadFragment(ExploreFragment())
         }
 
         return true
@@ -69,8 +69,8 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
         //textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(this)
-        //load search default
-        loadFragment(SearchFragment())
+        //load home default
+        loadFragment(HomeFragment())
 
 
         //test userpreference
