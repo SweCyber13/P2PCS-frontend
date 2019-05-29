@@ -212,7 +212,7 @@
                             android:layout_width="20dp"
 
                             android:layout_height="20dp" app:srcCompat="@drawable/ic_border_color_black"
-                            tools:layout_editor_absoluteY="296dp" android:id="@+id/imageView5"
+                            tools:layout_editor_absoluteY="296dp" android:id="@+id/imageProfile"
                             app:layout_constraintEnd_toEndOf="parent"
                             tools:ignore="MissingConstraints" android:layout_alignParentTop="true"
                             android:layout_marginTop="7dp" android:layout_alignParentEnd="true"/>
