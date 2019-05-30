@@ -17,9 +17,9 @@
 
         <android.support.constraint.ConstraintLayout
                 android:id="@+id/my_car_card"
-                android:layout_width="370dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="7dp"
+                android:layout_margin="10dp"
                 android:padding="15dp"
                 android:layout_gravity="center_horizontal"
                 app:layout_constraintTop_toTopOf="parent"
@@ -162,7 +162,6 @@
 
 
                             app:layout_constraintTop_toTopOf="parent"
-
 
 
                     />

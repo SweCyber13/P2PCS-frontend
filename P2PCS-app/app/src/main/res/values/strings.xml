@@ -10,4 +10,22 @@
     <string name="prova2">prova2</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="patente">Patente</string>
+    <string name="patente">Patente</string>
+    <string name="occupazione">Occupazione</string>
+    <string name="occupazione">Occupazione</string>
+    <string name="citt">Città</string>
+    <string name="citt">Città</string>
+    <string name="email">Email</string>
+    <string name="email">Email</string>
+    <string name="nome_cognome">Nome,Cognome</string>
+    <string name="nome_cognome">Nome,Cognome</string>
+    <string name="username">Username</string>
+    <string name="username">Username</string>
+    <string name="_0_0">0.0</string>
+    <string name="media">Media</string>
+    <string name="_0_0">0.0</string>
+    <string name="contatta">Contatta</string>
+    <string name="citt">Città</string>
+    <string name="citt">Città</string>
 </resources>
