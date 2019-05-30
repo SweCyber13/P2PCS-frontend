@@ -136,4 +136,33 @@
 
         <item name="android:textStyle">normal</item>
     </style>
+
+    <!--pagina con dati personali-->
+    <style name="MyPersonalData1">
+
+
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#37966F</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="MyPersonalData2">
+
+
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+
+
 </resources>
