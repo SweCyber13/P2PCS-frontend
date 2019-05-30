@@ -11,7 +11,7 @@
             android:id="@+id/image_user"
             tools:ignore="MissingConstraints"/>
     <Button
-            android:text="@string/contatta"
+            android:text="contatta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button_contact" tools:ignore="MissingConstraints"/>
@@ -34,7 +34,7 @@
                     app:layout_constraintHeight_percent="0.4"
                     android:id="@+id/textView5"/>
             <TextView
-                    android:text="@string/_0_0"
+                    android:text="0.0"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:layout_width="match_parent"
@@ -55,14 +55,14 @@
 
 
         <TextView
-                android:text="@string/media"
+                android:text="Media"
                 android:textAlignment="center"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 app:layout_constraintHeight_percent="0.4"
                 android:id="@+id/textView6"/>
         <TextView
-                android:text="@string/_0_0"
+                android:text="0.0"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:layout_width="match_parent"
@@ -73,7 +73,7 @@
     </android.support.constraint.ConstraintLayout>
 
     <TextView
-            android:text="@string/username"
+            android:text="Username"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.04"
@@ -81,7 +81,7 @@
             android:id="@+id/textView8" tools:ignore="NotSibling"/>
 
     <TextView
-            android:text="@string/username"
+            android:text="Username"
             android:layout_width="match_parent"
             android:textSize="22sp"
             android:layout_height="0dp"
@@ -90,7 +90,7 @@
             android:id="@+id/textView9"/>
 
     <TextView
-            android:text="@string/nome_cognome"
+            android:text="Nome,Cognome"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.04"
@@ -98,7 +98,7 @@
             android:id="@+id/textView10" tools:ignore="NotSibling"/>
 
     <TextView
-            android:text="@string/nome_cognome"
+            android:text="Nome,Cognome"
             android:layout_width="match_parent"
             android:textSize="22sp"
             android:layout_height="0dp"
@@ -107,7 +107,7 @@
             android:id="@+id/textView11"/>
 
     <TextView
-            android:text="@string/email"
+            android:text="Email"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.04"
@@ -115,7 +115,7 @@
             android:id="@+id/textView12" tools:ignore="NotSibling"/>
 
     <TextView
-            android:text="@string/email"
+            android:text="Email"
             android:layout_width="match_parent"
             android:textSize="22sp"
             android:layout_height="0dp"
@@ -124,7 +124,7 @@
             android:id="@+id/textView13"/>
 
     <TextView
-            android:text="@string/citt"
+            android:text="Città"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.04"
@@ -132,7 +132,7 @@
             android:id="@+id/textView14" tools:ignore="NotSibling"/>
 
     <TextView
-            android:text="@string/citt"
+            android:text="Città"
             android:layout_width="match_parent"
             android:textSize="22sp"
             android:layout_height="0dp"
@@ -141,7 +141,7 @@
             android:id="@+id/textView15"/>
 
     <TextView
-        android:text="@string/occupazione"
+        android:text="Occupazione"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.04"
@@ -149,7 +149,7 @@
         android:id="@+id/textView16" tools:ignore="NotSibling"/>
 
     <TextView
-            android:text="@string/occupazione"
+            android:text="Occupazione"
             android:layout_width="match_parent"
             android:textSize="22sp"
             android:layout_height="0dp"
@@ -158,7 +158,7 @@
             android:id="@+id/textView17"/>
 
     <TextView
-            android:text="@string/patente"
+            android:text="Patente"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.04"
@@ -166,7 +166,7 @@
             android:id="@+id/textView18" tools:ignore="NotSibling"/>
 
     <TextView
-            android:text="@string/patente"
+            android:text="Patente"
             android:layout_width="match_parent"
             android:textSize="22sp"
             android:layout_height="0dp"
