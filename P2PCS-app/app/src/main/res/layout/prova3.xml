@@ -19,26 +19,83 @@
                 app:layout_constraintBottom_toBottomOf="parent"
 
         >
-            <ImageView
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/zeroLine"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="match_parent"
 
-                    app:srcCompat="@drawable/avatar"
-                    android:id="@+id/profilo"
-
-                    app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toTopOf="@+id/firstLine"
+                    app:layout_constraintTop_toTopOf="parent"
 
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
 
-            />
+                    android:padding="10dp"
+
+
+            >
+
+                <ImageView
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.4"
+                        android:layout_height="150dp"
+
+                        app:srcCompat="@drawable/avatar"
+                        android:id="@+id/profilo"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/Nome"
+
+                />
+                <TextView
+                        android:text="Elena"
+                        android:id="@+id/Nome"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.6"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/Cognome"
+
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/profilo"
+
+                        android:layout_marginLeft="20dp"
+
+                        style="@style/MyPersonalData1"
+
+
+                        />
+                <TextView
+                        android:id="@+id/Cognome"
+                        android:text="Pontecchiani"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.6"
+
+
+
+                        app:layout_constraintLeft_toRightOf="@+id/profilo"
+
+                        app:layout_constraintTop_toBottomOf="@+id/Nome"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        style="@style/MyPersonalData1"
+
+                        android:layout_marginLeft="20dp"
+
+                         />
+            </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/firstLine"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
 
-                    app:layout_constraintTop_toBottomOf="@+id/profilo"
+                    app:layout_constraintTop_toBottomOf="@+id/zeroLine"
                     app:layout_constraintBottom_toBottomOf="@+id/second_line"
                     android:padding="10dp"
 
@@ -48,8 +105,8 @@
             >
 
                 <TextView
-                        android:text="Nome:"
-                        android:id="@+id/nomeLabel"
+                        android:text="Username:"
+                        android:id="@+id/usernameLabel"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
                         android:layout_height="wrap_content"
@@ -60,15 +117,15 @@
                         android:gravity="center"
 
                         app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toLeftOf="@+id/nomeValue"
+                        app:layout_constraintRight_toLeftOf="@+id/usernameValue"
 
                         style="@style/MyPersonalData1"
 
 
                 />
                 <TextView
-                        android:text="Elena"
-                        android:id="@+id/nomeValue"
+                        android:text="elena"
+                        android:id="@+id/usernameValue"
 
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
@@ -78,7 +135,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
 
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintLeft_toRightOf="@+id/nomeLabel"
+                        app:layout_constraintLeft_toRightOf="@+id/usernameLabel"
 
                         android:gravity="center"
 
@@ -102,91 +159,7 @@
             >
 
                 <TextView
-                        android:text="Cognome"
-                        android:id="@+id/cognomeLabel"
-                        android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
-                        android:layout_height="wrap_content"
-
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
-
-                        android:gravity="center"
-
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toLeftOf="@+id/cognomeValue"
-
-                        style="@style/MyPersonalData1"
-                         />
-                <TextView
-                        android:text="Pontecchiani"
-                        android:id="@+id/cognomeValue"
-                        android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
-                        android:layout_height="wrap_content"
-
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
-
-                        android:gravity="center"
-
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintLeft_toRightOf="@+id/cognomeLabel"
-
-                        style="@style/MyPersonalData2"
-
-                />
-            </android.support.constraint.ConstraintLayout>
-            <android.support.constraint.ConstraintLayout
-                    android:id="@+id/thirdLine"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-
-                <TextView
-                        android:text="Username"
-                        android:id="@+id/usernameLabel"
-                        android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
-                        android:layout_height="wrap_content"
-
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
-
-                        android:gravity="center"
-
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toLeftOf="@+id/usernameValue"
-
-                        style="@style/MyPersonalData1"
-
-
-                />
-                <TextView
-                        android:text="Elena"
-                        android:id="@+id/usernameValue"
-                        android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
-                        android:layout_height="wrap_content"
-
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
-
-                        android:gravity="center"
-
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintLeft_toRightOf="@+id/usernameLabel"
-
-                        style="@style/MyPersonalData2"
-
-
-                />
-            </android.support.constraint.ConstraintLayout>
-            <android.support.constraint.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/fourthLine">
-
-                <TextView
-                        android:text="TextView"
+                        android:text="Mail:"
                         android:id="@+id/mailLabel"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
@@ -201,10 +174,9 @@
                         app:layout_constraintRight_toLeftOf="@+id/mailValue"
 
                         style="@style/MyPersonalData1"
-
-                />
+                         />
                 <TextView
-                        android:text="TextView"
+                        android:text="ele.pontecchiani@gmail.com"
                         android:id="@+id/mailValue"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
@@ -220,8 +192,325 @@
 
                         style="@style/MyPersonalData2"
 
+                />
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/thirdLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="@drawable/my_personal_data_line"
+
+            >
+
+                <TextView
+                        android:text="Password"
+                        android:id="@+id/passwordLabel"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/passwordValue"
+
+                        style="@style/MyPersonalData1"
+
 
                 />
+                <TextView
+                        android:text="lol"
+                        android:id="@+id/passwordValue"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/passwordLabel"
+
+                        style="@style/MyPersonalData2"
+
+
+                />
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/fourthLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="@drawable/my_personal_data_line"
+
+                    >
+
+                <TextView
+                        android:text="Età"
+                        android:id="@+id/etaLabel"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/etaValue"
+
+                        style="@style/MyPersonalData1"
+
+                />
+                <TextView
+                        android:text="22"
+                        android:id="@+id/etaValue"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/etaLabel"
+
+                        style="@style/MyPersonalData2"
+
+
+                />
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/fifthLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:padding="10dp"
+                    android:background="@drawable/my_personal_data_line"
+
+            >
+
+                <TextView
+                        android:text="Sesso"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintRight_toLeftOf="@+id/sessoValue"
+
+                        style="@style/MyPersonalData1"
+
+                        android:id="@+id/sessoLabel"/>
+                <TextView
+                        android:text="Femmina"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintRight_toRightOf="parent"
+
+                        app:layout_constraintLeft_toRightOf="@+id/sessoLabel"
+
+                        style="@style/MyPersonalData2"
+
+                        android:layout_height="wrap_content" android:id="@+id/sessoValue"/>
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/sixthLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="@drawable/my_personal_data_line"
+
+                    >
+
+                <TextView
+                        android:text="Città"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        app:layout_constraintRight_toLeftOf="@+id/cittaValue"
+
+                        style="@style/MyPersonalData1"
+
+                        android:layout_height="wrap_content" android:id="@+id/cittaLabel"/>
+                <TextView
+                        android:text="Ferrara"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintRight_toRightOf="parent"
+
+                        app:layout_constraintLeft_toRightOf="@+id/cittaLabel"
+
+                        style="@style/MyPersonalData2"
+
+                        android:layout_height="wrap_content" android:id="@+id/cittaValue"/>
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/seventhLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:padding="10dp"
+                    android:background="@drawable/my_personal_data_line"
+                >
+
+                <TextView
+                        android:text="Numero Patente"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+
+                        app:layout_constraintRight_toLeftOf="@+id/numberValue"
+
+                        style="@style/MyPersonalData1"
+
+                        android:layout_height="wrap_content" android:id="@+id/numberLabel"/>
+                <TextView
+                        android:text="0123456789"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintRight_toRightOf="parent"
+
+                        app:layout_constraintLeft_toRightOf="@+id/numberLabel"
+
+                        style="@style/MyPersonalData2"
+
+                        android:layout_height="wrap_content" android:id="@+id/numberValue"/>
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/eighthLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:padding="10dp"
+                    android:background="@drawable/my_personal_data_line"
+
+                    >
+
+                <TextView
+                        android:text="Rilascio Patente"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+
+                        app:layout_constraintRight_toLeftOf="@+id/dateValue"
+
+                        style="@style/MyPersonalData1"
+
+                        android:layout_height="wrap_content" android:id="@+id/dateLabel"/>
+                <TextView
+                        android:text="10/03/2015"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintRight_toRightOf="parent"
+
+                        app:layout_constraintLeft_toRightOf="@+id/dateLabel"
+
+                        style="@style/MyPersonalData2"
+
+                        android:layout_height="wrap_content" android:id="@+id/dateValue"/>
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/ninethLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:background="@drawable/my_personal_data_line"
+
+                   >
+
+                <TextView
+                        android:text="Occupazione"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+
+                        app:layout_constraintRight_toLeftOf="@+id/workValue"
+
+                        style="@style/MyPersonalData1"
+
+                        android:layout_height="wrap_content" android:id="@+id/workLabel"/>
+                <TextView
+                        android:text="Studente"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.5"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintRight_toRightOf="parent"
+
+                        app:layout_constraintLeft_toRightOf="@+id/workLabel"
+
+                        style="@style/MyPersonalData2"
+
+                        android:layout_height="wrap_content" android:id="@+id/workValue"/>
             </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
