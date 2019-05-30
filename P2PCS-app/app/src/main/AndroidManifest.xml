@@ -16,7 +16,9 @@
         <activity android:name=".volley_test">
         </activity>
 
-
+        <activity android:name=".ActivitySearchresult"
+                  android:label="Risultati della ricerca">
+        </activity>
         <activity android:name=".LeaderboardActivity"
                   android:label="Classifiche">
         </activity>

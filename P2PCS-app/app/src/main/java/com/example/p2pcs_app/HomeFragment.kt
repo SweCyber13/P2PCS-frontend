@@ -38,15 +38,6 @@ class HomeFragment : Fragment() {
         }
 
 
-
-
-
-
-
-
-
-
-
         val button3 = view.findViewById<Button>(R.id.b_secondLine)
         button3.setOnClickListener{
             val intent= Intent(requireContext(), LeaderboardActivity::class.java)
@@ -60,6 +51,14 @@ class HomeFragment : Fragment() {
             val intent= Intent(requireContext(), LeaderboardActivity::class.java)
             startActivity(intent)
         }
+
+
+        val button5 = view.findViewById<Button>(R.id.provatab)
+        button5.setOnClickListener{
+            val intent= Intent(requireContext(), ActivitySearchresult::class.java)
+            startActivity(intent)
+        }
+
 
         return view
 

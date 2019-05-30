@@ -1,0 +1,19 @@
+package com.example.p2pcs_app
+
+import android.os.Bundle
+import android.support.v4.view.ViewPager
+import android.support.v7.app.AppCompatActivity
+
+class ActivitySearchresult : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_search_result)
+
+        val viewPager = findViewById<ViewPager>(R.id.viewPager)
+        if (viewPager != null) {
+            val adapter = ViewPagerAdapter(supportFragmentManager)
+            viewPager.adapter = adapter
+        }
+    }
+}
