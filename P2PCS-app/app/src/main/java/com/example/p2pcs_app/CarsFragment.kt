@@ -9,10 +9,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.content.Context
+import android.widget.LinearLayout
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import kotlinx.android.synthetic.main.prova.*
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -26,6 +28,13 @@ class CarsFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_cars, null)
+
+        val View= view.findViewById<LinearLayout>(R.id.car_card_list) //dove salvo il linear layout a cui vado ad aggiungere card
+
+
+
+
+
         modello = view.findViewById<TextView>(R.id.textModel)
         marca = view.findViewById<TextView>(R.id.textMarca)
         anno = view.findViewById<TextView>(R.id.year)

@@ -4,10 +4,14 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.widget.GridLayoutManager
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.GridLayout
 import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.Response
@@ -17,27 +21,55 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 class ExploreFragment : Fragment() {
-    private var company1: TextView? = null
-    private var offer1: TextView? = null
-    private var company2: TextView? = null
-    private var offer2: TextView? = null
-    private var company3: TextView? = null
-    private var offer3: TextView? = null
+
+    //parametri per la recyclerView
+    private var recyclerView: RecyclerView? = null
+    private var linearLayoutManager: LinearLayoutManager? = null
+    private var customAdapter: CustomAdapter? =null
+
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        val view = inflater.inflate(R.layout.fragment_explore, null)
-        company1 = view.findViewById<TextView>(R.id.CompanyName)
-        offer1 = view.findViewById<TextView>(R.id.OfferTitle)
-        
+        val view = inflater.inflate(R.layout.fragment_explore2, null)
 
 
+        val recyclerView= view.findViewById<RecyclerView> (R.id.recycler_view)
+        val data_list=  ArrayList<MyData>()
+        load_data(data_list)
 
-        //val context=requireContext()
-        //getOffer(context)
+        linearLayoutManager= LinearLayoutManager(requireContext())
+
+        customAdapter= CustomAdapter(data_list)
+
+
+       recyclerView.apply {
+           setHasFixedSize(true)
+
+           layoutManager=linearLayoutManager
+           adapter=customAdapter
+
+       }
 
         return view
+    }
+
+    fun load_data (data_list: ArrayList<MyData>){ //prova con 3 card
+
+        var myData1= MyData(1,"lol","lol")
+
+
+        var myData2= MyData(2,"lol","lol")
+
+
+        var myData3= MyData(3,"lol","lol")
+
+
+        data_list.add(myData1)
+        data_list.add(myData2)
+        data_list.add(myData3)
+
+
     }
 /*fun getOffer(context: Context){
     val queue = Volley.newRequestQueue(context)

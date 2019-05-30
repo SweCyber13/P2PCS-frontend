@@ -39,7 +39,7 @@ class ProfileFragment : Fragment() {
         //set username
         val context=requireContext()
         val prefs = context.getSharedPreferences(R.string.shared_preferences.toString(), 0)
-        view.findViewById<TextView>(R.id.username).text=prefs.getString("username","vuoto")
+        view.findViewById<TextView>(R.id.personal_data).text=prefs.getString("dati_personali","Dati personali")
 
         return view
     }
