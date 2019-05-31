@@ -17,7 +17,7 @@
             android:paddingEnd="1dp" android:paddingBottom="1dp"
             app:layout_constraintTop_toTopOf="parent"
     >
-        <RelativeLayout
+        <android.support.constraint.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintWidth_percent="0.4"
@@ -30,14 +30,21 @@
 
 
             <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="100dp" app:srcCompat="@drawable/car"
                     android:id="@+id/car"
-                    />
+                    tools:ignore="MissingConstraints"/>
+
+            <Button android:layout_width="match_parent" android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.3"
+                    app:layout_constraintTop_toBottomOf="@+id/car"
+                    android:text="Prenota"
+                    android:id="@+id/reserve"
+                    tools:ignore="MissingConstraints" />
 
 
 
-        </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
         <android.support.constraint.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -53,7 +60,7 @@
             <android.support.constraint.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    app:layout_constraintWidth_percent="0.5"
+                    app:layout_constraintWidth_percent="0.6"
 
                     app:layout_constraintLeft_toLeftOf="parent"
 
@@ -62,12 +69,12 @@
                     app:layout_constraintBottom_toBottomOf="parent">
 
                 <TextView
-                        android:text="Modello/marca"
+                        android:text="Modello"
                         android:id="@+id/infoCar"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:textAlignment="center"
-                        app:layout_constraintHeight_percent="0.25"
+                        app:layout_constraintHeight_percent="0.2"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -75,16 +82,29 @@
 
                 />
 
+                <TextView
+                        android:text="Marca"
+                        android:id="@+id/marca"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textAlignment="center"
+                        app:layout_constraintHeight_percent="0.2"
+
+                        app:layout_constraintTop_toBottomOf="@+id/infoCar"
+
+
+                        tools:ignore="UnknownId"/>
+
 
                 <TextView
                         android:text="€/h" android:id="@+id/DataF"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        app:layout_constraintHeight_percent="0.25"
+                        app:layout_constraintHeight_percent="0.22"
                         android:textAlignment="center"
 
 
-                        app:layout_constraintTop_toBottomOf="@+id/infoCar"
+                        app:layout_constraintTop_toBottomOf="@+id/InTarga"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
 
@@ -95,7 +115,7 @@
                         android:text="Città " android:id="@+id/CityI"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        app:layout_constraintHeight_percent="0.25"
+                        app:layout_constraintHeight_percent="0.2"
                         android:textAlignment="center"
 
                         app:layout_constraintTop_toBottomOf="@+id/DataF"
@@ -103,14 +123,14 @@
                         app:layout_constraintRight_toRightOf="parent"
                 />
                 <TextView
-                        android:text="Anno produzione"
-                        android:id="@+id/InCorso"
+                        android:text="Targa"
+                        android:id="@+id/InTarga"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        app:layout_constraintHeight_percent="0.25"
+                        app:layout_constraintHeight_percent="0.2"
                         android:textAlignment="center"
 
-                        app:layout_constraintTop_toBottomOf="@+id/CityI"
+                        app:layout_constraintTop_toBottomOf="@+id/marca"
 
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -121,7 +141,7 @@
             <android.support.constraint.ConstraintLayout
                     android:layout_width="0dp" android:id="@+id/col2"
                     android:layout_height="match_parent"
-                    app:layout_constraintWidth_percent="0.5"
+                    app:layout_constraintWidth_percent="0.4"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
