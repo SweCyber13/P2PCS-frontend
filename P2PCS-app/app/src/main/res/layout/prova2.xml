@@ -181,8 +181,8 @@
 
                             android:gravity="center"
 
-                            style="@style/MyCarPageButton"
-                            android:background="@drawable/mycar_button_background"
+                            style="@style/MyCarPageButton2"
+                            android:background="@drawable/mycar_internal_button_background"
 
                     />
                 </android.support.constraint.ConstraintLayout>

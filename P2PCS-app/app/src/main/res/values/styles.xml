@@ -100,6 +100,18 @@
     </style>
 
 
+    <style name="MyCarPageButton2">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">normal</item>
+
+        <item name="android:gravity">center</item>
+
+    </style>
+
+
     <style name="MyCarTitleTextView1">
         <item name="android:layout_marginBottom">5dp</item>
         <item name="android:gravity">center</item>
@@ -139,8 +151,6 @@
 
     <!--pagina con dati personali-->
     <style name="MyPersonalData1">
-
-
         <item name="android:padding">10dp</item>
         <item name="android:textSize">20dp</item>
         <item name="android:textColor">#37966F</item>
@@ -151,10 +161,30 @@
     </style>
 
     <style name="MyPersonalData2">
-
-
         <item name="android:padding">10dp</item>
         <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="MyPersonalData3">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="MyPersonalDataMail">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">13dp</item>
         <item name="android:textColor">#000</item>
         <item name="android:textColorHighlight">#B9E4C9</item>
         <item name="android:typeface">sans</item>
