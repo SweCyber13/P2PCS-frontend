@@ -24,6 +24,11 @@ class CarsFragment : Fragment() {
     private var marca: TextView? = null
     private var targa: TextView? = null
     private var anno: TextView? = null
+    private var cavalli: TextView? = null
+    private var cilindrata: TextView? = null
+    private var raggio: TextView? = null
+    private var chilometraggio: TextView? = null
+    private var tariffa: TextView? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
