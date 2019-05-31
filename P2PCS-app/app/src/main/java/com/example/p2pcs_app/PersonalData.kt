@@ -16,7 +16,7 @@ class PersonalData : AppCompatActivity() {
     private var surname: TextView? = null
     private var username:TextView?=null
     private var email:TextView?=null
-    private var password:TextView?=null
+
     private var age:TextView?=null
     private var sex:TextView?=null
     private var city:TextView?=null
@@ -32,7 +32,7 @@ class PersonalData : AppCompatActivity() {
         surname= findViewById<TextView>(R.id.Surname)
         username=findViewById<TextView>(R.id.Username)
         email=findViewById<TextView>(R.id.Email)
-        password=findViewById<TextView>(R.id.Password)
+
         age=findViewById<TextView>(R.id.Age)
         sex=findViewById<TextView>(R.id.Sex)
         city=findViewById<TextView>(R.id.City)
@@ -62,28 +62,28 @@ class PersonalData : AppCompatActivity() {
                 var str_surname: String =""
                 var str_username: String=""
                 var str_email: String=""
-                var str_password: String=""
+
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
                     str_name= "" + jsonInner.get("Nome")
                     str_surname= "" + jsonInner.get("Cognome")
                     str_username= "" + jsonInner.get("Username")
                     str_email= "" + jsonInner.get("Mail")
-                    str_password= "" + jsonInner.get("Password")
+
 
                 }
                 name!!.text = "$str_name "
                 surname!!.text="$str_surname"
                 username!!.text="$str_username"
                 email!!.text="$str_email"
-                password!!.text="$str_password"
+
             },
             Response.ErrorListener {
                 name!!.text = it.toString()
                 surname!!.text= it.toString()
                 username!!.text= it.toString()
                 email!!.text= it.toString()
-                password!!.text= it.toString()
+
 
             })
         //need to override getparams to get the post request

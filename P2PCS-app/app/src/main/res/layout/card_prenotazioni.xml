@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/cardPrenotazioni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/cardprenotazioni_layout"
+
+
+            tools:layout_editor_absoluteX="10dp">
+
+        <ImageView
+                android:id="@+id/userImg"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.3"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/avatar"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/rightSide"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.7"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintRigth_toRigthOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/userImg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                android:id="@+id/rightSide">
+
+            <TextView
+                    android:id="@+id/Username"
+                    android:text="Username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="left"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/targa"
+
+                    style="@style/CardPrenotazioniTitle"
+
+
+            />
+            <TextView
+                    android:id="@+id/targa"
+                    android:text="0123456789"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintTop_toBottomOf="@+id/Username"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/giorno"
+
+
+                    style="@style/CardPrenotazioni"
+
+
+            />
+            <TextView
+                    android:id="@+id/giorno"
+                    android:text="23/04/19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/targa"
+                    app:layout_constraintBottom_toTopOf="@+id/Stato"
+
+
+                    style="@style/CardPrenotazioni"
+
+            />
+            <Button
+                    android:id="@+id/Stato"
+                    android:text="Stato"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/giorno"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+
+
+            />
+            <Button
+                    android:id="@+id/Contatta"
+                    android:text="Contatta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintTop_toBottomOf="@+id/giorno"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintLeft_toRightOf="@+id/Stato"
+                    app:layout_constraintRight_toLeftOf="@+id/more"
+
+
+            />
+            <Button
+                    android:id="@+id/more"
+                    android:text="+"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/giorno"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/Contatta"
+            />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
