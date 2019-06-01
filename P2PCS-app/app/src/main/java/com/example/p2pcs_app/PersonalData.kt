@@ -37,7 +37,7 @@ class PersonalData : AppCompatActivity() {
         sex=findViewById<TextView>(R.id.Sex)
         city=findViewById<TextView>(R.id.City)
         drivingLicense=findViewById<TextView>(R.id.DrivingLicense)
-        dateDrivingLicense=findViewById<TextView>(R.id.DateDrivingLicense)
+        dateDrivingLicense=findViewById<TextView>(R.id.DrivingLicense)
         job=findViewById<TextView>(R.id.Job)
         getRequiredData(this)
         getOptionalData(this)

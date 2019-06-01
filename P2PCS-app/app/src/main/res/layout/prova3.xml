@@ -41,28 +41,28 @@
                         android:layout_height="150dp"
 
                         app:srcCompat="@drawable/avatar"
-                        android:id="@+id/profilo"
+                        android:id="@+id/imageProfile"
 
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
 
 
                         app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toLeftOf="@+id/Nome"
+                        app:layout_constraintRight_toLeftOf="@+id/Name"
 
                 />
                 <TextView
                         android:text="Elena"
-                        android:id="@+id/Nome"
+                        android:id="@+id/Name"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.6"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toTopOf="@+id/Cognome"
+                        app:layout_constraintBottom_toTopOf="@+id/Surname"
 
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintLeft_toRightOf="@+id/profilo"
+                        app:layout_constraintLeft_toRightOf="@+id/imageProfile"
 
                         android:layout_marginLeft="20dp"
 
@@ -71,7 +71,7 @@
 
                         />
                 <TextView
-                        android:id="@+id/Cognome"
+                        android:id="@+id/Surname"
                         android:text="Pontecchiani"
                         android:layout_height="wrap_content"
                         android:layout_width="0dp"
@@ -79,9 +79,9 @@
 
 
 
-                        app:layout_constraintLeft_toRightOf="@+id/profilo"
+                        app:layout_constraintLeft_toRightOf="@+id/imageProfile"
 
-                        app:layout_constraintTop_toBottomOf="@+id/Nome"
+                        app:layout_constraintTop_toBottomOf="@+id/Name"
                         app:layout_constraintBottom_toBottomOf="@+id/Username"
 
                         style="@style/MyPersonalData1"
@@ -96,9 +96,9 @@
                         app:layout_constraintWidth_percent="0.6"
                         android:layout_height="wrap_content"
 
-                        app:layout_constraintLeft_toRightOf="@+id/profilo"
+                        app:layout_constraintLeft_toRightOf="@+id/imageProfile"
 
-                        app:layout_constraintTop_toBottomOf="@+id/Cognome"
+                        app:layout_constraintTop_toBottomOf="@+id/Surname"
                         app:layout_constraintBottom_toBottomOf="parent"
 
                         style="@style/MyPersonalData3"
@@ -126,7 +126,7 @@
 
                 <TextView
                         android:text="Mail:"
-                        android:id="@+id/mailLabel"
+                        android:id="@+id/titleMail"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
                         android:layout_height="wrap_content"
@@ -137,13 +137,13 @@
                         android:gravity="center"
 
                         app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toLeftOf="@+id/mailValue"
+                        app:layout_constraintRight_toLeftOf="@+id/Email"
 
                         style="@style/MyPersonalData1"
                          />
                 <TextView
                         android:text="ele.pontecchiani@gmail.com"
-                        android:id="@+id/mailValue"
+                        android:id="@+id/Email"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
                         android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
                         android:gravity="center"
 
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintLeft_toRightOf="@+id/mailLabel"
+                        app:layout_constraintLeft_toRightOf="@+id/titleMail"
 
                         style="@style/MyPersonalDataMail"
 
@@ -171,7 +171,7 @@
 
                 <TextView
                         android:text="Password"
-                        android:id="@+id/passwordLabel"
+                        android:id="@+id/titlePassword"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
                         android:layout_height="wrap_content"
@@ -182,7 +182,7 @@
                         android:gravity="center"
 
                         app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toLeftOf="@+id/passwordValue"
+                        app:layout_constraintRight_toLeftOf="@+id/Password"
 
                         style="@style/MyPersonalData1"
 
@@ -190,7 +190,7 @@
                 />
                 <TextView
                         android:text="lol"
-                        android:id="@+id/passwordValue"
+                        android:id="@+id/Password"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
                         android:layout_height="wrap_content"
@@ -201,7 +201,7 @@
                         android:gravity="center"
 
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintLeft_toRightOf="@+id/passwordLabel"
+                        app:layout_constraintLeft_toRightOf="@+id/titlePassword"
 
                         style="@style/MyPersonalData2"
 
@@ -219,7 +219,7 @@
 
                 <TextView
                         android:text="Età"
-                        android:id="@+id/etaLabel"
+                        android:id="@+id/titleAge"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
                         android:layout_height="wrap_content"
@@ -230,14 +230,14 @@
                         android:gravity="center"
 
                         app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toLeftOf="@+id/etaValue"
+                        app:layout_constraintRight_toLeftOf="@+id/Age"
 
                         style="@style/MyPersonalData1"
 
                 />
                 <TextView
                         android:text="22"
-                        android:id="@+id/etaValue"
+                        android:id="@+id/Age"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
                         android:layout_height="wrap_content"
@@ -248,7 +248,7 @@
                         android:gravity="center"
 
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintLeft_toRightOf="@+id/etaLabel"
+                        app:layout_constraintLeft_toRightOf="@+id/titleAge"
 
                         style="@style/MyPersonalData2"
 
@@ -278,11 +278,11 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
 
-                        app:layout_constraintRight_toLeftOf="@+id/sessoValue"
+                        app:layout_constraintRight_toLeftOf="@+id/Sex"
 
                         style="@style/MyPersonalData1"
 
-                        android:id="@+id/sessoLabel"/>
+                        android:id="@+id/titleSex"/>
                 <TextView
                         android:text="Femmina"
                         android:layout_width="0dp"
@@ -295,11 +295,11 @@
 
                         app:layout_constraintRight_toRightOf="parent"
 
-                        app:layout_constraintLeft_toRightOf="@+id/sessoLabel"
+                        app:layout_constraintLeft_toRightOf="@+id/titleSex"
 
                         style="@style/MyPersonalData2"
 
-                        android:layout_height="wrap_content" android:id="@+id/sessoValue"/>
+                        android:layout_height="wrap_content" android:id="@+id/Sex"/>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/sixthLine"
@@ -322,11 +322,11 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
 
-                        app:layout_constraintRight_toLeftOf="@+id/cittaValue"
+                        app:layout_constraintRight_toLeftOf="@+id/City"
 
                         style="@style/MyPersonalData1"
 
-                        android:layout_height="wrap_content" android:id="@+id/cittaLabel"/>
+                        android:layout_height="wrap_content" android:id="@+id/titleCity"/>
                 <TextView
                         android:text="Ferrara"
                         android:layout_width="0dp"
@@ -339,11 +339,11 @@
 
                         app:layout_constraintRight_toRightOf="parent"
 
-                        app:layout_constraintLeft_toRightOf="@+id/cittaLabel"
+                        app:layout_constraintLeft_toRightOf="@+id/titleCity"
 
                         style="@style/MyPersonalData2"
 
-                        android:layout_height="wrap_content" android:id="@+id/cittaValue"/>
+                        android:layout_height="wrap_content" android:id="@+id/City"/>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/seventhLine"
@@ -366,11 +366,11 @@
 
                         app:layout_constraintLeft_toLeftOf="parent"
 
-                        app:layout_constraintRight_toLeftOf="@+id/numberValue"
+                        app:layout_constraintRight_toLeftOf="@+id/DrivingLicense"
 
                         style="@style/MyPersonalData1"
 
-                        android:layout_height="wrap_content" android:id="@+id/numberLabel"/>
+                        android:layout_height="wrap_content" android:id="@+id/titleDrivingLicense"/>
                 <TextView
                         android:text="0123456789"
                         android:layout_width="0dp"
@@ -383,11 +383,11 @@
 
                         app:layout_constraintRight_toRightOf="parent"
 
-                        app:layout_constraintLeft_toRightOf="@+id/numberLabel"
+                        app:layout_constraintLeft_toRightOf="@+id/titleDrivingLicense"
 
                         style="@style/MyPersonalData2"
 
-                        android:layout_height="wrap_content" android:id="@+id/numberValue"/>
+                        android:layout_height="wrap_content" android:id="@+id/DrivingLicense"/>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/eighthLine"
@@ -411,11 +411,11 @@
 
                         app:layout_constraintLeft_toLeftOf="parent"
 
-                        app:layout_constraintRight_toLeftOf="@+id/dateValue"
+                        app:layout_constraintRight_toLeftOf="@+id/DateDrivingLicense"
 
                         style="@style/MyPersonalData1"
 
-                        android:layout_height="wrap_content" android:id="@+id/dateLabel"/>
+                        android:layout_height="wrap_content" android:id="@+id/titleDateDrivingLicense"/>
                 <TextView
                         android:text="10/03/2015"
                         android:layout_width="0dp"
@@ -428,11 +428,11 @@
 
                         app:layout_constraintRight_toRightOf="parent"
 
-                        app:layout_constraintLeft_toRightOf="@+id/dateLabel"
+                        app:layout_constraintLeft_toRightOf="@+id/titleDateDrivingLicense"
 
                         style="@style/MyPersonalData2"
 
-                        android:layout_height="wrap_content" android:id="@+id/dateValue"/>
+                        android:layout_height="wrap_content" android:id="@+id/DateDrivingLicense"/>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/ninethLine"
@@ -455,11 +455,11 @@
 
                         app:layout_constraintLeft_toLeftOf="parent"
 
-                        app:layout_constraintRight_toLeftOf="@+id/workValue"
+                        app:layout_constraintRight_toLeftOf="@+id/Job"
 
                         style="@style/MyPersonalData1"
 
-                        android:layout_height="wrap_content" android:id="@+id/workLabel"/>
+                        android:layout_height="wrap_content" android:id="@+id/titleJob"/>
                 <TextView
                         android:text="Studente"
                         android:layout_width="0dp"
@@ -472,11 +472,11 @@
 
                         app:layout_constraintRight_toRightOf="parent"
 
-                        app:layout_constraintLeft_toRightOf="@+id/workLabel"
+                        app:layout_constraintLeft_toRightOf="@+id/titleJob"
 
                         style="@style/MyPersonalData2"
 
-                        android:layout_height="wrap_content" android:id="@+id/workValue"/>
+                        android:layout_height="wrap_content" android:id="@+id/Job"/>
             </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>

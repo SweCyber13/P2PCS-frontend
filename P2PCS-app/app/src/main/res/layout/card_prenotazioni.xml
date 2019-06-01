@@ -35,7 +35,6 @@
                 app:layout_constraintWidth_percent="0.7"
                 android:layout_height="wrap_content"
 
-                app:layout_constraintRigth_toRigthOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/userImg"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
