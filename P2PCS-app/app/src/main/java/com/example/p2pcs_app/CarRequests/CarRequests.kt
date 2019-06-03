@@ -1,7 +1,8 @@
-package com.example.p2pcs_app
+package com.example.p2pcs_app.CarRequests
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.p2pcs_app.R
 
 class CarRequests : AppCompatActivity() {
 

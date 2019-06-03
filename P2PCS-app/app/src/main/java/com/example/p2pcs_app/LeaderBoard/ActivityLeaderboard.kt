@@ -1,4 +1,4 @@
-package com.example.p2pcs_app
+package com.example.p2pcs_app.LeaderBoard
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.example.p2pcs_app.R
 import org.json.JSONArray
 import org.json.JSONObject
 

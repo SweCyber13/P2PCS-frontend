@@ -28,7 +28,7 @@
                     app:srcCompat="@drawable/avatar"
                     android:clickable="true"
                     android:scaleType="centerCrop"
-                    />
+            />
             <TextView
                     android:text="test"
                     android:id="@+id/description"

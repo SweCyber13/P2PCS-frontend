@@ -1,16 +1,15 @@
 package com.example.p2pcs_app
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import android.support.v4.app.Fragment
-import android.support.v4.app.Person
-import android.widget.Button
-import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.p2pcs_app.Cars.CarsFragment
+import com.example.p2pcs_app.Explore.ExploreFragment
+import com.example.p2pcs_app.Home.HomeFragment
+import com.example.p2pcs_app.Profile.ProfileFragment
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 

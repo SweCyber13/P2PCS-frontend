@@ -1,24 +1,14 @@
-package com.example.p2pcs_app
+package com.example.p2pcs_app.Explore
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.GridLayout
-import android.widget.TextView
-import com.android.volley.Request
-import com.android.volley.Response
-import com.android.volley.toolbox.StringRequest
-import com.android.volley.toolbox.Volley
-import org.json.JSONArray
-import org.json.JSONObject
+import com.example.p2pcs_app.MyData
+import com.example.p2pcs_app.R
 
 class ExploreFragment : Fragment() {
 
@@ -56,13 +46,13 @@ class ExploreFragment : Fragment() {
 
     fun load_data (data_list: ArrayList<MyData>){ //prova con 3 card
 
-        var myData1= MyData(1,"lol","lol")
+        var myData1= MyData(1, "lol", "lol")
 
 
-        var myData2= MyData(2,"lol","lol")
+        var myData2= MyData(2, "lol", "lol")
 
 
-        var myData3= MyData(3,"lol","lol")
+        var myData3= MyData(3, "lol", "lol")
 
 
         data_list.add(myData1)

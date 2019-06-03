@@ -24,7 +24,7 @@ class VisualizzaMacchinaActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edit_car)
+        setContentView(R.layout.activity_edit_cars)
         marca = findViewById<TextView>(R.id.Marca)
         modello = findViewById<TextView>(R.id.Modello)
         targa = findViewById<TextView>(R.id.Targa)

@@ -16,17 +16,17 @@
         <activity android:name=".volley_test">
         </activity>
 
-        <activity android:name=".ActivitySearchresult"
+        <activity android:name=".SearchResult.ActivitySearchresult"
                   android:label="Risultati della ricerca">
         </activity>
-        <activity android:name=".LeaderboardActivity"
+        <activity android:name=".LeaderBoard.LeaderboardActivity"
                   android:label="Classifiche">
         </activity>
 
         <activity android:name=".VisualizzaMacchinaActivity"
                   android:label="Visualizza Auto">
         </activity>
-        <activity android:name=".EditCar"
+        <activity android:name=".EditCar.EditCar"
                   android:label="Modifica Auto">
         </activity>
 
@@ -34,17 +34,17 @@
         <activity android:name=".MyCarRequests"
                   android:label="Prenotazioni Viaggi">
         </activity>
-        <activity android:name=".CarRequests"
+        <activity android:name=".CarRequests.CarRequests"
                   android:label="Prenotazioni Auto">
         </activity>
 
-        <activity android:name=".Coupons"
+        <activity android:name=".Coupons.Coupons"
                   android:label="Premi e Coupons">
         </activity>
-        <activity android:name=".ActivityMission"
+        <activity android:name=".Mission.ActivityMission"
                   android:label="Missioni">
         </activity>
-        <activity android:name=".PersonalData"
+        <activity android:name=".PersonalData.PersonalData"
                   android:label="Dati Personali">
         </activity>
         <activity android:name=".login_register_cognito.ConfirmRegisterActivity"

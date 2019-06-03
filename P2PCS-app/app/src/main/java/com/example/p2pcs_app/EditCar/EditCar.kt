@@ -1,4 +1,4 @@
-package com.example.p2pcs_app
+package com.example.p2pcs_app.EditCar
 
 import android.content.DialogInterface
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
+import com.example.p2pcs_app.R
 
 
 class EditCar : AppCompatActivity() {
@@ -15,7 +16,7 @@ class EditCar : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edit_car)
+        setContentView(R.layout.activity_edit_cars)
 
         val textView = findViewById<View>(R.id.Marca) as TextView
         val textView1= findViewById<View>(R.id.Modello) as TextView

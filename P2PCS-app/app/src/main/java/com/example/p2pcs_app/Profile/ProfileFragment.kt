@@ -1,4 +1,4 @@
-package com.example.p2pcs_app
+package com.example.p2pcs_app.Profile
 
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import com.example.p2pcs_app.PersonalData.PersonalData
+import com.example.p2pcs_app.R
 import com.example.p2pcs_app.login_register_cognito.CognitoSettings
 import com.example.p2pcs_app.login_register_cognito.LoginActivity
 

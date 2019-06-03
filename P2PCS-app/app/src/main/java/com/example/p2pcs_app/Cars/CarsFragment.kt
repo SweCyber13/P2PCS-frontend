@@ -1,4 +1,4 @@
-package com.example.p2pcs_app
+package com.example.p2pcs_app.Cars
 
 import android.content.Intent
 import android.os.Bundle
@@ -14,7 +14,8 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import kotlinx.android.synthetic.main.prova.*
+import com.example.p2pcs_app.R
+import com.example.p2pcs_app.VisualizzaMacchinaActivity
 import org.json.JSONArray
 import org.json.JSONObject
 
