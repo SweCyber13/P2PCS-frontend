@@ -35,6 +35,7 @@
 
             >
 
+
                 <ImageView
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.4"
@@ -43,13 +44,22 @@
                         app:srcCompat="@drawable/avatar"
                         android:id="@+id/imageProfile"
 
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintTop_toBottomOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
 
 
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toLeftOf="@+id/Name"
 
+                />
+                <Button
+                        android:text="Logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/logout"
+                        android:background="@drawable/button_info_style"
+                        app:layout_constraintRight_toRightOf="parent"
                 />
                 <TextView
                         android:text="Elena"
@@ -58,7 +68,7 @@
                         app:layout_constraintWidth_percent="0.6"
                         android:layout_height="wrap_content"
 
-                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/logout"
                         app:layout_constraintBottom_toTopOf="@+id/Surname"
 
                         app:layout_constraintRight_toRightOf="parent"
@@ -401,7 +411,7 @@
             >
 
                 <TextView
-                        android:text="Rilascio Patente"
+                        android:text="Scadenza Patente"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
 
