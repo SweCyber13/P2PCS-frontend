@@ -218,5 +218,38 @@
     </style>
 
 
+    <!-- activity_car_reservation_details -->
+    <style name="CarReservationLineLayout">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="CarReservationTextLayout">
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:gravity">center_horizontal</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CarReservationImageLayout">
+        <item name="android:padding">15dp</item>
+        <item name="android:height">20dp</item>
+        <item name="android:width">20dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:gravity">center_horizontal</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
 
 </resources>
