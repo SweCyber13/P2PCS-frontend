@@ -9,6 +9,14 @@
     </style>
 
 
+    <!-- Register Page-->
+
+    <style name="RegisterInsertTextBox">
+        <item name="android:padding">20dp</item>
+
+    </style>
+
+
 
     <!-- Search page -->
     <style name="SearchRelativeLayout">
