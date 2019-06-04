@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter
 import com.example.p2pcs_app.GlobalLeaderboard.GlobalFragmentLeaderboard
 import com.example.p2pcs_app.LocalLeaderboard.LocalFragmentLeaderboard
 
-class LeaderboardViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+class ViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     private val COUNT = 2
 

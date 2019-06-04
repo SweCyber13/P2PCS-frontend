@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import com.example.p2pcs_app.R
-import com.example.p2pcs_app.LeaderBoard.LeaderboardViewPagerAdapter
 
 
 class ActivityLeaderboard : AppCompatActivity() {
@@ -15,7 +14,7 @@ class ActivityLeaderboard : AppCompatActivity() {
 
         val viewPager = findViewById<ViewPager>(R.id.viewPagerLeaderboard)
         if (viewPager != null) {
-            val adapter = LeaderboardViewPagerAdapter(supportFragmentManager)
+            val adapter = ViewPagerAdapter(supportFragmentManager)
             viewPager.adapter = adapter
         }
     }
