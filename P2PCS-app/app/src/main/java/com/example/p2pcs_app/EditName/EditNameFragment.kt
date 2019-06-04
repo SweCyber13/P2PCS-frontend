@@ -1,14 +1,13 @@
-package com.example.p2pcs_app
+package com.example.p2pcs_app.EditName
 
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.DialogFragment
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import com.example.p2pcs_app.R
 
 
 class EditNameFragment : DialogFragment() {

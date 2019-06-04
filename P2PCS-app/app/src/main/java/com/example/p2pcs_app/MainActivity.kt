@@ -6,10 +6,10 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import android.support.v4.app.Fragment
-import com.example.p2pcs_app.Cars.CarsFragment
-import com.example.p2pcs_app.Explore.ExploreFragment
+import com.example.p2pcs_app.Cars.FragmentCars
+import com.example.p2pcs_app.Explore.FragmentExplore
 import com.example.p2pcs_app.Home.HomeFragment
-import com.example.p2pcs_app.Profile.ProfileFragment
+import com.example.p2pcs_app.Profile.FragmentProfile
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -39,10 +39,10 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     //load different fragment when a navigation button is pressed
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.navigation_profile -> loadFragment(ProfileFragment())
+            R.id.navigation_profile -> loadFragment(FragmentProfile())
             R.id.navigation_home -> loadFragment(HomeFragment())
-            R.id.navigation_reservation -> loadFragment(CarsFragment())
-            R.id.navigation_gift -> loadFragment(ExploreFragment())
+            R.id.navigation_reservation -> loadFragment(FragmentCars())
+            R.id.navigation_gift -> loadFragment(FragmentExplore())
         }
 
         return true
@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
         //textMessage = findViewById(R.id.message)
         navView.setOnNavigationItemSelectedListener(this)
-        //load home default
+        //load fragment_home default
         loadFragment(HomeFragment())
 
 

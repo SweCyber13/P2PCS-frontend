@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.example.p2pcs_app.SearchResult.ActivitySearchresult
-import com.example.p2pcs_app.Cars.CarsFragment
+import com.example.p2pcs_app.Cars.FragmentCars
 import com.example.p2pcs_app.LeaderBoard.LeaderboardActivity
 import com.example.p2pcs_app.R
 
@@ -16,7 +16,7 @@ import com.example.p2pcs_app.R
 class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.home, null)
+        val view = inflater.inflate(R.layout.fragment_home, null)
 
 
         val button1 = view.findViewById<Button>(R.id.find_car)
@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
 
         val button2 = view.findViewById<Button>(R.id.share_car)
         button2.setOnClickListener{
-            val intent= Intent(requireContext(), CarsFragment::class.java)
+            val intent= Intent(requireContext(), FragmentCars::class.java)
             startActivity(intent)
         }
 

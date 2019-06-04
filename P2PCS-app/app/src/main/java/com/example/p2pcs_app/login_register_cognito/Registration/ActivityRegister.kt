@@ -1,45 +1,30 @@
-package com.example.p2pcs_app.login_register_cognito
+package com.example.p2pcs_app.login_register_cognito.Registration
 
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.nfc.Tag
-import android.os.AsyncTask
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.preference.PreferenceManager
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
-import com.amazonaws.auth.CognitoCachingCredentialsProvider
-import com.amazonaws.auth.CognitoCredentialsProvider
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.*
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.continuations.AuthenticationContinuation
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.continuations.AuthenticationDetails
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.continuations.ChallengeContinuation
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.continuations.MultiFactorAuthenticationContinuation
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.AuthenticationHandler
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.GenericHandler
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.SignUpHandler
-import com.amazonaws.regions.Regions
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.DatabaseException
-import com.example.p2pcs_app.MainActivity
 import com.example.p2pcs_app.R
-import org.json.JSONArray
-import org.json.JSONObject
+import com.example.p2pcs_app.login_register_cognito.CognitoSettings
+import com.example.p2pcs_app.login_register_cognito.ConfirmRegistration.ActivityConfirmRegister
+import com.example.p2pcs_app.login_register_cognito.Login.ActivityLogin
 import java.lang.Exception
 
-class RegisterActivity : AppCompatActivity() {
+class ActivityRegister : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.register)
+        setContentView(R.layout.activity_registration)
 
         //setting listener for registration
         val confirmbutton= findViewById<Button>(R.id.confirm)
@@ -83,7 +68,7 @@ class RegisterActivity : AppCompatActivity() {
                     prefs.edit().putString("username",(user as CognitoUser).userId).apply()
 
                     //manda alla conferma
-                    val intent= Intent(context, ConfirmRegisterActivity::class.java)
+                    val intent= Intent(context, ActivityConfirmRegister::class.java)
                     startActivity(intent)
 
                     //make volley request for insert user in background (maybe not in this activity???)
@@ -98,8 +83,8 @@ class RegisterActivity : AppCompatActivity() {
 
 
                 } else {
-                    //utente confermato manda al login, non dovrebbe mai succedere
-                    val intent= Intent(context, LoginActivity::class.java)
+                    //utente confermato manda al activity_login, non dovrebbe mai succedere
+                    val intent= Intent(context, ActivityLogin::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP) //clear all previous activities
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -121,7 +106,8 @@ class RegisterActivity : AppCompatActivity() {
         //aggiungo la mail che deve essere univoca
         userattributes.addAttribute("email",email)
         //connetto ad aws e faccio partire la procedura di registrazione, verrà mandata una mail con codice se ha successo
-        val cognitoSettings: CognitoSettings = CognitoSettings(context)
+        val cognitoSettings: CognitoSettings =
+            CognitoSettings(context)
         cognitoSettings.getUserPool().signUpInBackground(username,password,userattributes,null,signupCallback)
 
     }

@@ -1,17 +1,20 @@
-package com.example.p2pcs_app
+package com.example.p2pcs_app.EditCar
 
 import android.content.Context
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.example.p2pcs_app.R
 import org.json.JSONArray
 import org.json.JSONObject
 
-class VisualizzaMacchinaActivity : AppCompatActivity() {
+
+class ActivityEditCar : AppCompatActivity() {
+//da visualizza macchina activity
     private var modello: TextView? = null
     private var marca: TextView? = null
     private var targa: TextView? = null
@@ -24,7 +27,7 @@ class VisualizzaMacchinaActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edit_cars)
+        setContentView(R.layout.activity_edit_car)
         marca = findViewById<TextView>(R.id.Marca)
         modello = findViewById<TextView>(R.id.Modello)
         targa = findViewById<TextView>(R.id.Targa)
@@ -48,7 +51,8 @@ class VisualizzaMacchinaActivity : AppCompatActivity() {
 
         // Request a string response from the provided URL.
         //object property needed to override getparams
-        val stringReq = object: StringRequest(Request.Method.POST, url,
+        val stringReq = object: StringRequest(
+            Request.Method.POST, url,
             Response.Listener<String> { response ->
 
                 val strResp = response.toString()
@@ -110,6 +114,74 @@ class VisualizzaMacchinaActivity : AppCompatActivity() {
 
         queue.add(stringReq)
     }
+
+
 }
 
+/* Parte di prima
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_edit_car)
+        val textView = findViewById<View>(R.id.Marca) as TextView
+        val textView1= findViewById<View>(R.id.Modello) as TextView
+        val textView2 = findViewById<View>(R.id.Targa) as TextView
+        val textView3 = findViewById<View>(R.id.AnnoProduzione) as TextView
 
+        val dialog = AlertDialog.Builder(this).create()
+        val dialog1 = AlertDialog.Builder(this).create()
+        val dialog2 = AlertDialog.Builder(this).create()
+        val dialog3 = AlertDialog.Builder(this).create()
+
+        val editText = EditText(this)
+        val editText1 = EditText(this)
+        val editText2 = EditText(this)
+        val editText3 = EditText(this)
+
+        dialog.setTitle("Edit the text")
+        dialog.setView(editText)
+        dialog.setButton(DialogInterface.BUTTON_POSITIVE, "SAVE TEXT") { dialog, which ->
+            textView.text = editText.text
+        }
+
+        textView.setOnClickListener {
+            editText.setText(textView.text)
+            dialog.show()
+        }
+
+        dialog1.setTitle("Edit the text")
+        dialog1.setView(editText1)
+        dialog1.setButton(DialogInterface.BUTTON_POSITIVE, "SAVE TEXT") { dialog1, which ->
+            textView1.text = editText1.text
+        }
+
+        textView1.setOnClickListener {
+            editText1.setText(textView1.text)
+            dialog1.show()
+        }
+
+        dialog2.setTitle("Edit the text")
+        dialog2.setView(editText2)
+        dialog2.setButton(DialogInterface.BUTTON_POSITIVE, "SAVE TEXT") { dialog2, which ->
+            textView2.text = editText2.text
+        }
+
+        textView2.setOnClickListener {
+            editText2.setText(textView2.text)
+            dialog2.show()
+        }
+
+        dialog3.setTitle("Edit the text")
+        dialog3.setView(editText3)
+        dialog3.setButton(DialogInterface.BUTTON_POSITIVE, "SAVE TEXT") { dialog3, which ->
+            textView3.text = editText3.text
+        }
+
+        textView3.setOnClickListener {
+            editText3.setText(textView3.text)
+            dialog3.show()
+        }
+
+    }
+
+
+}*/

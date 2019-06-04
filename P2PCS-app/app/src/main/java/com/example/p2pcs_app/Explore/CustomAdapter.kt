@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.p2pcs_app.MyData
+import com.example.p2pcs_app.Explore.MyData
 import com.example.p2pcs_app.R
 
 class CustomAdapter(

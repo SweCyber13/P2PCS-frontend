@@ -26,7 +26,7 @@
         <activity android:name=".VisualizzaMacchinaActivity"
                   android:label="Visualizza Auto">
         </activity>
-        <activity android:name=".EditCar.EditCar"
+        <activity android:name=".EditCar.ActivityEditCar"
                   android:label="Modifica Auto">
         </activity>
 
@@ -34,7 +34,7 @@
         <activity android:name=".MyCarRequests"
                   android:label="Prenotazioni Viaggi">
         </activity>
-        <activity android:name=".CarRequests.CarRequests"
+        <activity android:name=".CarRequests.ActivityCarRequests"
                   android:label="Prenotazioni Auto">
         </activity>
 
@@ -47,13 +47,13 @@
         <activity android:name=".PersonalData.PersonalData"
                   android:label="Dati Personali">
         </activity>
-        <activity android:name=".login_register_cognito.ConfirmRegisterActivity"
+        <activity android:name=".login_register_cognito.ConfirmRegistration.ActivityConfirmRegister"
                   android:label="Conferma Registrazione">
         </activity>
-        <activity android:name=".login_register_cognito.RegisterActivity"
+        <activity android:name=".login_register_cognito.Registration.ActivityRegister"
                   android:label="Registrazione">
         </activity>
-        <activity android:name=".login_register_cognito.LoginActivity"
+        <activity android:name=".login_register_cognito.Login.ActivityLogin"
                   android:label="Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

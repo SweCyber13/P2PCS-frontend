@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.example.p2pcs_app.R
 
 
-class SearchFragment : Fragment() {
+class FragmentSearch : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_search, null)

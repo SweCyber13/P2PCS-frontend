@@ -1,23 +1,23 @@
-package com.example.p2pcs_app.login_register_cognito
+package com.example.p2pcs_app.login_register_cognito.ConfirmRegistration
 
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.GenericHandler
 import com.example.p2pcs_app.R
+import com.example.p2pcs_app.login_register_cognito.CognitoSettings
+import com.example.p2pcs_app.login_register_cognito.Login.ActivityLogin
 import java.lang.Exception
 
-class ConfirmRegisterActivity : AppCompatActivity() {
+class ActivityConfirmRegister : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.confirmregister)
+        setContentView(R.layout.activity_confirm_registration)
 
         //setting listener for confirm
         val confirmbutton= findViewById<Button>(R.id.confirm)
@@ -32,8 +32,8 @@ class ConfirmRegisterActivity : AppCompatActivity() {
 
         val confirmcallback: GenericHandler = object : GenericHandler {
             override fun onSuccess() {
-                //la registrazione ha avuto successo torno al login
-                val intent= Intent(context, LoginActivity::class.java)
+                //la registrazione ha avuto successo torno al activity_login
+                val intent= Intent(context, ActivityLogin::class.java)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP) //clear all previous activities
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

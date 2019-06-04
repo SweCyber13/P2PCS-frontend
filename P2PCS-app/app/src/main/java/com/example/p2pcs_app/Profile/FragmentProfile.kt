@@ -12,10 +12,10 @@ import android.widget.TextView
 import com.example.p2pcs_app.PersonalData.PersonalData
 import com.example.p2pcs_app.R
 import com.example.p2pcs_app.login_register_cognito.CognitoSettings
-import com.example.p2pcs_app.login_register_cognito.LoginActivity
+import com.example.p2pcs_app.login_register_cognito.Login.ActivityLogin
 
 
-class ProfileFragment : Fragment() {
+class FragmentProfile : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_profile, null)
         val datipersonali = view.findViewById<Button>(R.id.personal_data)
@@ -30,8 +30,8 @@ class ProfileFragment : Fragment() {
             //signout
             val cognitosettings= CognitoSettings(context as Context)
             cognitosettings.getUserPool().currentUser.signOut()
-            //redirect to login
-            val intent= Intent(requireContext(), LoginActivity::class.java)
+            //redirect to activity_login
+            val intent= Intent(requireContext(), ActivityLogin::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP) //clear all previous activities
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

@@ -1,34 +1,27 @@
-package com.example.p2pcs_app.login_register_cognito
+package com.example.p2pcs_app.login_register_cognito.Login
 
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.nfc.Tag
-import android.os.AsyncTask
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.preference.PreferenceManager
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.amazonaws.auth.CognitoCachingCredentialsProvider
-import com.amazonaws.auth.CognitoCredentialsProvider
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.*
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.continuations.AuthenticationContinuation
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.continuations.AuthenticationDetails
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.continuations.ChallengeContinuation
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.continuations.MultiFactorAuthenticationContinuation
 import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.AuthenticationHandler
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.GenericHandler
-import com.amazonaws.mobileconnectors.cognitoidentityprovider.handlers.SignUpHandler
-import com.amazonaws.regions.Regions
 import com.example.p2pcs_app.MainActivity
 import com.example.p2pcs_app.R
+import com.example.p2pcs_app.login_register_cognito.CognitoSettings
+import com.example.p2pcs_app.login_register_cognito.ConfirmRegistration.ActivityConfirmRegister
+import com.example.p2pcs_app.login_register_cognito.Registration.ActivityRegister
 import java.lang.Exception
 
-class LoginActivity : AppCompatActivity() {
+class ActivityLogin : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,15 +39,15 @@ class LoginActivity : AppCompatActivity() {
             //move to mainactivity
             val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
-            //kill login so no returning back
+            //kill activity_login so no returning back
             this.finish()
         }
 
         //user not already logged
 
-        setContentView(R.layout.login)
+        setContentView(R.layout.activity_login)
 
-        //setting listener for login
+        //setting listener for activity_login
         val confirmbutton= findViewById<Button>(R.id.confirm)
         confirmbutton.setOnClickListener{
             val username=findViewById<EditText>(R.id.username).text.toString()
@@ -65,7 +58,7 @@ class LoginActivity : AppCompatActivity() {
         //listener for opening registration
         val signuptext= findViewById<TextView>(R.id.signup)
         signuptext.setOnClickListener{
-            val intent= Intent(this, RegisterActivity::class.java)
+            val intent= Intent(this, ActivityRegister::class.java)
             startActivity(intent)
         }
 
@@ -86,7 +79,7 @@ class LoginActivity : AppCompatActivity() {
                 val intent= Intent(context, MainActivity::class.java)
                 startActivity(intent)
 
-                //kill login so no returning back
+                //kill activity_login so no returning back
                 (context as AppCompatActivity).finish()
             }
 
@@ -100,7 +93,7 @@ class LoginActivity : AppCompatActivity() {
                         val prefs = context.getSharedPreferences(R.string.shared_preferences.toString(), 0)
                         prefs.edit().putString("username",username).apply()
                         //send to confirmation code
-                        val intent= Intent(context, ConfirmRegisterActivity::class.java)
+                        val intent= Intent(context, ActivityConfirmRegister::class.java)
                         startActivity(intent)
                     }
                 }

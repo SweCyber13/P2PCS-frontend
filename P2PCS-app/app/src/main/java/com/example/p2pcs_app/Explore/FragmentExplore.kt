@@ -7,10 +7,10 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.p2pcs_app.MyData
+import com.example.p2pcs_app.Explore.MyData
 import com.example.p2pcs_app.R
 
-class ExploreFragment : Fragment() {
+class FragmentExplore : Fragment() {
 
     //parametri per la recyclerView
     private var recyclerView: RecyclerView? = null

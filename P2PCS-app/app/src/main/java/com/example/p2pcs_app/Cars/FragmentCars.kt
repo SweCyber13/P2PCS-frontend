@@ -15,12 +15,13 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.R
-import com.example.p2pcs_app.VisualizzaMacchinaActivity
+import com.example.p2pcs_app.EditCar.ActivityEditCar
 import org.json.JSONArray
 import org.json.JSONObject
 
 
-class CarsFragment : Fragment() {
+
+class FragmentCars : Fragment() {
     private var modello: TextView? = null
     private var marca: TextView? = null
     private var targa: TextView? = null
@@ -32,11 +33,11 @@ class CarsFragment : Fragment() {
     private var tariffa: TextView? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_cars_card, null) //view=card
+        //val view = inflater.inflate(R.layout.fragment_cars, null)
 
-        val view = inflater.inflate(R.layout.fragment_cars, null)
-
-        val View= view.findViewById<LinearLayout>(R.id.car_card_list) //dove salvo il linear layout a cui vado ad aggiungere card
-
+        //val View= view.findViewById<LinearLayout>(R.id.car_card_list) //dove salvo il linear layout a cui vado ad aggiungere card
+                                                                        //da fare
 
 
 
@@ -47,7 +48,7 @@ class CarsFragment : Fragment() {
         targa = view.findViewById<TextView>(R.id.textTarga)
         val button = view.findViewById<Button>(R.id.otherInfo)
         button.setOnClickListener{
-            val intent= Intent(requireContext(), VisualizzaMacchinaActivity::class.java)
+            val intent= Intent(requireContext(), ActivityEditCar::class.java)
             startActivity(intent)
         }
 
