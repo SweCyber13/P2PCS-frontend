@@ -10,7 +10,7 @@ import com.example.p2pcs_app.Cars.FragmentCars
 import com.example.p2pcs_app.Explore.FragmentExplore
 import com.example.p2pcs_app.Home.HomeFragment
 import com.example.p2pcs_app.Profile.FragmentProfile
-import com.example.p2pcs_app.PersonalData.PersonalData
+
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     //load different fragment when a navigation button is pressed
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.navigation_profile -> loadFragment(FragmentPersonalData())
+            R.id.navigation_profile -> loadFragment(FragmentProfile())
             R.id.navigation_home -> loadFragment(HomeFragment())
             R.id.navigation_reservation -> loadFragment(FragmentCars())
             R.id.navigation_gift -> loadFragment(FragmentExplore())
