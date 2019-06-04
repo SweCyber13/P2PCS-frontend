@@ -1,20 +1,20 @@
-package com.example.p2pcs_app
+package com.example.p2pcs_app.LeaderBoard
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import com.example.p2pcs_app.SearchResultList.FragmentSearchResultList
-import com.example.p2pcs_app.SearchResultMap.FragmentSearchResultMap
+import com.example.p2pcs_app.GlobalLeaderboard.GlobalFragmentLeaderboard
+import com.example.p2pcs_app.LocalLeaderboard.LocalFragmentLeaderboard
 
-class ViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+class LeaderboardViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     private val COUNT = 2
 
     override fun getItem(position: Int): Fragment? {
         var fragment: Fragment? = null
         when (position) {
-            0 -> fragment = FragmentSearchResultList()
-            1 -> fragment = FragmentSearchResultMap()
+            0 -> fragment = GlobalFragmentLeaderboard()
+            1 -> fragment = LocalFragmentLeaderboard()
 
         }
 

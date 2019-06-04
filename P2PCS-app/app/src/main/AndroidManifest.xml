@@ -19,7 +19,7 @@
         <activity android:name=".SearchResult.ActivitySearchresult"
                   android:label="Risultati della ricerca">
         </activity>
-        <activity android:name=".LeaderBoard.LeaderboardActivity"
+        <activity android:name=".LeaderBoard.ActivityLeaderboard"
                   android:label="Classifiche">
         </activity>
 

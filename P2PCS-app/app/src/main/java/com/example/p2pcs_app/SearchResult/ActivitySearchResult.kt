@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import com.example.p2pcs_app.R
-import com.example.p2pcs_app.ViewPagerAdapter
 
 class ActivitySearchresult : AppCompatActivity() {
 
@@ -14,7 +13,7 @@ class ActivitySearchresult : AppCompatActivity() {
 
         val viewPager = findViewById<ViewPager>(R.id.viewPager)
         if (viewPager != null) {
-            val adapter = ViewPagerAdapter(supportFragmentManager)
+            val adapter = ResultViewPagerAdapter(supportFragmentManager)
             viewPager.adapter = adapter
         }
     }
