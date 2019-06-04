@@ -3,51 +3,42 @@ package com.example.p2pcs_app.PersonalData
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.R
+import kotlinx.android.synthetic.main.activity_personal_data.*
+import kotlinx.android.synthetic.main.fragment_edit_name.view.*
 import org.json.JSONArray
 import org.json.JSONObject
 
-class PersonalData : AppCompatActivity() {
-    private var name: TextView? = null
-    private var surname: TextView? = null
-    private var username:TextView?=null
-    private var email:TextView?=null
-
-    private var age:TextView?=null
-    private var sex:TextView?=null
-    private var city:TextView?=null
-    private var drivingLicense:TextView?=null
-    private var dateDrivingLicense:TextView?=null
-    private var job:TextView?=null
+class PersonalData : Fragment() {
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_personal_data)
-        name = findViewById<TextView>(R.id.Name)
-        surname= findViewById<TextView>(R.id.Surname)
-        username=findViewById<TextView>(R.id.Username)
-        email=findViewById<TextView>(R.id.Email)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.activity_personal_data, null)
 
-        age=findViewById<TextView>(R.id.Age)
-        sex=findViewById<TextView>(R.id.Sex)
-        city=findViewById<TextView>(R.id.City)
-        drivingLicense=findViewById<TextView>(R.id.DrivingLicense)
-        dateDrivingLicense=findViewById<TextView>(R.id.DrivingLicense)
-        job=findViewById<TextView>(R.id.Job)
-        getRequiredData(this)
-        getOptionalData(this)
+        getRequiredData(requireContext())
+        getOptionalData(requireContext())
+
+        return view
     }
+
+
+
+
+
 
     // function for network call
     fun getRequiredData(context: Context) {
         // Instantiate the RequestQueue.
-        val queue = Volley.newRequestQueue(this)
+        val queue = Volley.newRequestQueue(context)
         val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/RequiredData.php"
         val prefs = context.getSharedPreferences(R.string.shared_preferences.toString(), 0)
 
@@ -73,17 +64,17 @@ class PersonalData : AppCompatActivity() {
 
 
                 }
-                name!!.text = "$str_name "
-                surname!!.text="$str_surname"
-                username!!.text="$str_username"
-                email!!.text="$str_email"
+                Name!!.text = "$str_name "
+                Surname!!.text="$str_surname"
+                Username!!.text="$str_username"
+                Email!!.text="$str_email"
 
             },
             Response.ErrorListener {
-                name!!.text = it.toString()
-                surname!!.text= it.toString()
-                username!!.text= it.toString()
-                email!!.text= it.toString()
+                Name!!.text = it.toString()
+                Surname!!.text= it.toString()
+                Username!!.text= it.toString()
+                Email!!.text= it.toString()
 
 
             })
@@ -100,7 +91,7 @@ class PersonalData : AppCompatActivity() {
     }
     fun getOptionalData(context: Context) {
         // Instantiate the RequestQueue.
-        val queue = Volley.newRequestQueue(this)
+        val queue = Volley.newRequestQueue(context)
         val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/OptionalData.php"
         val prefs = context.getSharedPreferences(R.string.shared_preferences.toString(), 0)
 
@@ -130,21 +121,21 @@ class PersonalData : AppCompatActivity() {
                     str_job="" + jsonInner.get("Occupazione")
 
                 }
-                age!!.text = "$str_age"
-                sex!!.text = "$str_sex"
-                city!!.text = "$str_city"
-                drivingLicense!!.text = "$str_driving_license"
-                dateDrivingLicense!!.text = "$str_date_driving_license"
-                job!!.text = "$str_job"
+                Age!!.text = "$str_age"
+                Sex!!.text = "$str_sex"
+                City!!.text = "$str_city"
+                DrivingLicense!!.text = "$str_driving_license"
+                DateDrivingLicense!!.text = "$str_date_driving_license"
+                Job!!.text = "$str_job"
 
             },
             Response.ErrorListener {
-                age!!.text = it.toString()
-                sex!!.text = it.toString()
-                city!!.text = it.toString()
-                drivingLicense!!.text = it.toString()
-                dateDrivingLicense!!.text = it.toString()
-                job!!.text = it.toString()
+                Age!!.text = it.toString()
+                Sex!!.text = it.toString()
+                City!!.text = it.toString()
+                DrivingLicense!!.text = it.toString()
+                DateDrivingLicense!!.text = it.toString()
+                Job!!.text = it.toString()
 
 
 
