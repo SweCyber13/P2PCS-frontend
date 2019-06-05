@@ -1,6 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/carRequestsCardList"
+        android:orientation="vertical"
+>
 
-</android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/carsRequestsCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/contenitor">
+
+            <ImageView
+                    android:id="@+id/userImage"
+                    app:srcCompat="@drawable/avatar"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.1"
+                    android:layout_height="50dp"
+                    app:layout_constraintHeight_percent="0.2"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/carImage"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/userApplicantName"
+
+            />
+            <TextView
+                    android:id="@+id/userApplicantName"
+                    android:text="Nome"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.4"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/carMarca"
+
+                    app:layout_constraintLeft_toRightOf="@+id/userImage"
+                    app:layout_constraintRight_toLeftOf="@+id/userApplicantSurname"
+
+            />
+            <TextView
+                    android:id="@+id/userApplicantSurname"
+                    android:text="Cognome"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.4"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/carModello"
+
+                    app:layout_constraintLeft_toRightOf="@+id/userApplicantName"
+                    app:layout_constraintRight_toRightOf="parent"
+
+            />
+            <ImageView
+                    android:id="@+id/carImage"
+                    app:srcCompat="@drawable/car"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.2"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.2"
+
+                    app:layout_constraintTop_toBottomOf="@+id/userImage"
+                    app:layout_constraintBottom_toBottomOf="@+id/calendarEndImage"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/carMarca"
+
+            />
+            <TextView
+                    android:id="@+id/carMarca"
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.4"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/userApplicantName"
+                    app:layout_constraintBottom_toTopOf="@+id/calendarEndHour"
+
+                    app:layout_constraintLeft_toRightOf="@+id/carImage"
+                    app:layout_constraintRight_toLeftOf="@+id/carModello"
+
+            />
+            <TextView
+                    android:id="@+id/carModello"
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.4"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintTop_toBottomOf="@+id/userApplicantSurname"
+                    app:layout_constraintBottom_toTopOf="@+id/calendarEndHour"
+
+                    app:layout_constraintLeft_toRightOf="@+id/carMarca"
+                    app:layout_constraintRight_toRightOf="parent"
+
+            />
+            <ImageView
+                    android:id="@+id/calendarStartImage"
+                    app:srcCompat="@drawable/ic_calendar"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.2"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.2"
+                    app:layout_constraintTop_toBottomOf="@+id/carImage"
+                    app:layout_constraintBottom_toTopOf="@+id/calendarEndImage"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/calendarStartDay"
+                    />
+            <TextView
+                    android:id="@+id/calendarStartDay"
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.4"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/carMarca"
+                    app:layout_constraintBottom_toTopOf="@+id/calendarEndDay"
+
+                    app:layout_constraintLeft_toRightOf="@+id/calendarEndImage"
+                    app:layout_constraintRight_toLeftOf="@+id/calendarEndHour"
+
+
+            />
+            <TextView
+                    android:id="@+id/calendarStartHour"
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.4"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintTop_toBottomOf="@+id/carModello"
+                    app:layout_constraintBottom_toTopOf="@+id/calendarEndHour"
+
+                    app:layout_constraintLeft_toRightOf="@+id/calendarStartDay"
+                    app:layout_constraintRight_toRightOf="parent"
+
+
+            />
+            <ImageView
+                    android:id="@+id/calendarEndImage"
+                    app:srcCompat="@drawable/ic_calendar"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.2"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.2"
+
+                    app:layout_constraintTop_toBottomOf="@+id/calendarStartImage"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/calendarEndDay"
+                    />
+            <TextView
+                    android:id="@+id/calendarEndDay"
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.4"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/calendarStartDay"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintLeft_toRightOf="@+id/calendarEndImage"
+                    app:layout_constraintRight_toLeftOf="@+id/calendarEndHour"
+
+            />
+            <TextView
+                    android:id="@+id/calendarEndHour"
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.4"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/calendarStartHour"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintLeft_toRightOf="@+id/calendarEndDay"
+                    app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
