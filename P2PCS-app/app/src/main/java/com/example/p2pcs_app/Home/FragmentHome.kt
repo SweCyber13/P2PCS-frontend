@@ -10,6 +10,7 @@ import android.widget.Button
 import com.example.p2pcs_app.SearchResult.ActivitySearchresult
 import com.example.p2pcs_app.Cars.FragmentCars
 import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
+import com.example.p2pcs_app.Mission.FragmentMission
 
 import com.example.p2pcs_app.R
 
@@ -37,7 +38,7 @@ class HomeFragment : Fragment() {
 
         val button3 = view.findViewById<Button>(R.id.b_secondLine)
         button3.setOnClickListener{
-            val intent= Intent(requireContext(), ActivityLeaderboard::class.java)
+            val intent= Intent(requireContext(), FragmentMission::class.java)
             startActivity(intent)
         }
 

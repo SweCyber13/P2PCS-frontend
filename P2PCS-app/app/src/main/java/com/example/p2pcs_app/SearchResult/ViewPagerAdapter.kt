@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter
 import com.example.p2pcs_app.SearchResultList.FragmentSearchResultList
 import com.example.p2pcs_app.SearchResultMap.FragmentSearchResultMap
 
-class ResultViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+class ViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     private val COUNT = 2
 

@@ -1,6 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
 
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card">
+    <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                 android:layout_marginTop="4dp"
+                                                 android:layout_height="0dp"
+                                                 app:layout_constraintHeight_percent="0.4"
+                                                 android:id="@+id/carRequestsCardList"
+                                                 tools:ignore="MissingConstraints"
+                                                 app:layout_constraintTop_toTopOf="parent"
+                                                 android:background="@drawable/cardprenotazioni_layout"
+    >
+
+    <ImageView
+            android:id="@+id/userImage"
+            app:srcCompat="@drawable/avatar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintTop_toTopOf="@+id/carRequestsCardList"
+            app:layout_constraintLeft_toLeftOf="@+id/carRequestsCardList"
+
+            tools:ignore="ContentDescription"/>
+    <TextView
+            android:layout_marginTop="4dp"
+            android:id="@+id/userApplicantName"
+            android:text="Nome"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintWidth_percent="0.4"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintLeft_toRightOf="@+id/userImage"
+
+
+    />
+    <TextView
+            android:layout_marginTop="4dp"
+            android:id="@+id/userApplicantSurname"
+            android:text="Cognome"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.4"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintLeft_toRightOf="@+id/userApplicantName"
+
+    />
+    <ImageView
+            android:id="@+id/carImage"
+            app:srcCompat="@drawable/car"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.2"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.2"
+
+            app:layout_constraintTop_toBottomOf="@+id/userImage"
+
+            tools:ignore="ContentDescription"/>
+    <TextView
+            android:id="@+id/carMarca"
+            android:text="Marca"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.4"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintTop_toBottomOf="@+id/userApplicantName"
+            app:layout_constraintLeft_toRightOf="@+id/carImage"
+
+    />
+    <TextView
+            android:id="@+id/carModello"
+            android:text="Targa"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.4"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.2"
+
+            app:layout_constraintTop_toBottomOf="@+id/userApplicantSurname"
+            app:layout_constraintLeft_toRightOf="@+id/carMarca"
+
+    />
+
+        <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                     android:layout_height="0dp"
+                                                     app:layout_constraintHeight_percent="0.2"
+                                                     app:layout_constraintTop_toBottomOf="@+id/carImage"
+                                                     android:id="@+id/DataCard"
+
+        >
+
+    <ImageView
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/calendarStartImage"
+            app:srcCompat="@drawable/ic_calendar"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.2"
+            android:layout_height="match_parent"
+    />
+    <TextView
+            android:id="@+id/calendarStartDay"
+            android:text="Data"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.4"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toRightOf="@+id/calendarStartImage"
+
+            tools:ignore="NotSibling"/>
+    <TextView
+            android:id="@+id/calendarStartHour"
+            android:text="00.00"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.4"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toRightOf="@+id/calendarStartDay"
+            tools:ignore="MissingConstraints"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                     android:layout_height="0dp"
+                                                     app:layout_constraintHeight_percent="0.2"
+                                                     app:layout_constraintTop_toBottomOf="@+id/DataCard"
+                                                     android:id="@+id/Data1Card"
+
+        >
+
+    <ImageView
+            android:layout_marginBottom="4dp"
+            android:id="@+id/calendarEndImage"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/ic_calendar"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.2"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription"/>
+
+    <TextView
+            android:id="@+id/calendarEndDay"
+            android:text="Data"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.4"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toRightOf="@+id/calendarEndImage"
+
+    />
+    <TextView
+            android:id="@+id/calendarEndHour"
+            android:text="00.00"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.4"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toRightOf="@+id/calendarEndDay"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+                android:id="@+id/prezzo"
+                android:text="Prezzo"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.5"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintTop_toBottomOf="@+id/Data1Card"
+
+
+                />
+
+        <Button android:layout_width="0dp" android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.5"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintLeft_toRightOf="@+id/prezzo"
+                app:layout_constraintTop_toBottomOf="@+id/Data1Card"
+                android:background="@drawable/button_search"
+                android:text="Accetta"/>
+
+
+</android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

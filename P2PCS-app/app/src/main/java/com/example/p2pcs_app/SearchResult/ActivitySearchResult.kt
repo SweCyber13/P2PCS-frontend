@@ -13,7 +13,7 @@ class ActivitySearchresult : AppCompatActivity() {
 
         val viewPager = findViewById<ViewPager>(R.id.viewPager)
         if (viewPager != null) {
-            val adapter = ResultViewPagerAdapter(supportFragmentManager)
+            val adapter = ViewPagerAdapter(supportFragmentManager)
             viewPager.adapter = adapter
         }
     }
