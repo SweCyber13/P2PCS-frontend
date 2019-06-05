@@ -6,14 +6,19 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 import android.support.v4.app.Fragment
+import com.android.volley.RequestQueue
+import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.Cars.FragmentCars
 import com.example.p2pcs_app.Explore.FragmentExplore
 import com.example.p2pcs_app.Home.HomeFragment
 import com.example.p2pcs_app.Profile.FragmentProfile
 
 
-class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener, RequestQueueListener {
 
+    var fragmentProfile=FragmentProfile()
+
+    var mqueue: RequestQueue?=null
     private lateinit var textMessage: TextView
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
@@ -40,7 +45,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     //load different fragment when a navigation button is pressed
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.navigation_profile -> loadFragment(FragmentProfile())
+            R.id.navigation_profile -> loadFragment(fragmentProfile)
             R.id.navigation_home -> loadFragment(HomeFragment())
             R.id.navigation_reservation -> loadFragment(FragmentCars())
             R.id.navigation_gift -> loadFragment(FragmentExplore())
@@ -48,6 +53,10 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
         return true
 
+    }
+
+    override fun getRequestQueue(): RequestQueue {
+        return mqueue!!
     }
 
     //load the selected fragment in the fragment container
@@ -65,6 +74,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
+        mqueue=Volley.newRequestQueue(this)
         //set action bar buttons
 
         //textMessage = findViewById(R.id.message)
@@ -72,7 +82,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         //load fragment_home default
         loadFragment(HomeFragment())
 
-
+        fragmentProfile.attach(this)
         //test userpreference
         //val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
         //Toast.makeText(this, prefs.getString("username","vuoto") , Toast.LENGTH_LONG).show()
