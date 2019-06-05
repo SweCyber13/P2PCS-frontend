@@ -10,7 +10,6 @@
 
 
     <!-- Register Page-->
-
     <style name="RegisterInsertTextBox">
         <item name="android:padding">20dp</item>
 
