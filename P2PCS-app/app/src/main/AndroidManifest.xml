@@ -13,9 +13,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".volley_test">
-        </activity>
 
+        <activity android:name=".CarPage.ActivityCarPage"
+                  android:label="Prenotazioni"></activity>
         <activity android:name=".SearchResult.ActivitySearchresult"
                   android:label="Risultati della ricerca">
         </activity>
@@ -34,7 +34,7 @@
         <activity android:name=".MyCarRequests"
                   android:label="Prenotazioni Viaggi">
         </activity>
-        <activity android:name=".CarRequests.ActivityCarRequests"
+        <activity android:name=".CarRequests.FragmentCarRequests"
                   android:label="Prenotazioni Auto">
         </activity>
 

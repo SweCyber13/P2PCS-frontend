@@ -12,6 +12,7 @@ import com.example.p2pcs_app.Cars.FragmentCars
 import com.example.p2pcs_app.Explore.FragmentExplore
 import com.example.p2pcs_app.Home.HomeFragment
 import com.example.p2pcs_app.Profile.FragmentProfile
+import com.example.p2pcs_app.Coupons.FragmentCoupon
 
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener, RequestQueueListener {
@@ -48,7 +49,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             R.id.navigation_profile -> loadFragment(fragmentProfile)
             R.id.navigation_home -> loadFragment(HomeFragment())
             R.id.navigation_reservation -> loadFragment(FragmentCars())
-            R.id.navigation_gift -> loadFragment(FragmentExplore())
+            R.id.navigation_gift -> loadFragment(FragmentCoupon())
         }
 
         return true
