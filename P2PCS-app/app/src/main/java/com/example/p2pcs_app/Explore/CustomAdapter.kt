@@ -18,14 +18,14 @@ class CustomAdapter(
 
     class MyViewHolder(val view:View): RecyclerView.ViewHolder(view){
 
-        var description=view.findViewById<TextView>(R.id.description)
-        var imageView=view.findViewById<ImageView>(R.id.image)
+        var description=view.findViewById<TextView>(R.id.OfferTitle)
+        var imageView=view.findViewById<ImageView>(R.id.imageoffer)
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): MyViewHolder {
         val view= LayoutInflater.from(parent.context)
-            .inflate(R.layout.fragment_explore_card, parent, false)
+            .inflate(R.layout.activity_explore_card, parent, false)
 
         return MyViewHolder(view)
     }

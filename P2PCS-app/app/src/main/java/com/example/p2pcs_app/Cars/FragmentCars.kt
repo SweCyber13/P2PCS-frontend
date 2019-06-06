@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.content.Context
-import android.widget.LinearLayout
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
@@ -33,7 +32,7 @@ class FragmentCars : Fragment() {
     private var tariffa: TextView? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_cars_card, null) //view=card
+        val view = inflater.inflate(R.layout.activity_cars_card, null) //view=card
         //val view = inflater.inflate(R.layout.fragment_cars, null)
 
         //val View= view.findViewById<LinearLayout>(R.id.car_card_list) //dove salvo il linear layout a cui vado ad aggiungere card

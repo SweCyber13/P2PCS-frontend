@@ -8,6 +8,6 @@ class ActivityCarRequests : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_car_requests)
+        setContentView(R.layout.fragment_car_requests)
     }
 }
