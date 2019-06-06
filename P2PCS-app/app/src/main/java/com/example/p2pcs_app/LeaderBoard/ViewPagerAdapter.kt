@@ -3,8 +3,8 @@ package com.example.p2pcs_app.LeaderBoard
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import com.example.p2pcs_app.GlobalLeaderboard.GlobalFragmentLeaderboard
-import com.example.p2pcs_app.LocalLeaderboard.LocalFragmentLeaderboard
+import com.example.p2pcs_app.LeaderBoard.GlobalLeaderboard.GlobalFragmentLeaderboard
+import com.example.p2pcs_app.LeaderBoard.LocalLeaderboard.LocalFragmentLeaderboard
 
 class ViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 

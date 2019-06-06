@@ -14,7 +14,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
 
-        <activity android:name=".CarPage.ActivityCarPage"
+        <activity android:name=".CarBookings.ActivityCarPage"
                   android:label="Prenotazioni"></activity>
         <activity android:name=".SearchResult.ActivitySearchresult"
                   android:label="Risultati della ricerca">
@@ -34,7 +34,7 @@
         <activity android:name=".MyCarRequests"
                   android:label="Prenotazioni Viaggi">
         </activity>
-        <activity android:name=".CarRequests.FragmentCarRequests"
+        <activity android:name="com.example.p2pcs_app.CarBookings.CarRequests.FragmentCarRequests"
                   android:label="Prenotazioni Auto">
         </activity>
 

@@ -1,4 +1,4 @@
-package com.example.p2pcs_app.CarRequests
+package com.example.p2pcs_app.CarBookings.CarReservations
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import com.example.p2pcs_app.Explore.MyData
 import com.example.p2pcs_app.R
 
-class FragmentCarRequests : Fragment() {
+class FragmentCarReservations : Fragment() {
 
     //parametri per la recyclerView
     private var recyclerView: RecyclerView? = null
@@ -21,7 +21,7 @@ class FragmentCarRequests : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        val view = inflater.inflate(R.layout.fragment_car_requests, null)
+        val view = inflater.inflate(R.layout.fragment_car_reservations, null)
 
 
         val recyclerView= view.findViewById<RecyclerView> (R.id.recycler_view)

@@ -7,11 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import com.example.p2pcs_app.SearchResult.ActivitySearchresult
 import com.example.p2pcs_app.Cars.FragmentCars
 import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
 import com.example.p2pcs_app.Mission.FragmentMission
-import com.example.p2pcs_app.CarPage.ActivityCarPage
+import com.example.p2pcs_app.CarBookings.ActivityCarPage
 
 
 

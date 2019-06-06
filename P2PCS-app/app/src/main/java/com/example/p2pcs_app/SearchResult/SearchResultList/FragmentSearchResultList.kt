@@ -1,4 +1,4 @@
-package com.example.p2pcs_app.SearchResultList
+package com.example.p2pcs_app.SearchResult.SearchResultList
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

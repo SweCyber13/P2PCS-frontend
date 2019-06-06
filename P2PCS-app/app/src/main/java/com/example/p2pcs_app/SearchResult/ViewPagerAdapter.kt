@@ -3,8 +3,8 @@ package com.example.p2pcs_app.SearchResult
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import com.example.p2pcs_app.SearchResultList.FragmentSearchResultList
-import com.example.p2pcs_app.SearchResultMap.FragmentSearchResultMap
+import com.example.p2pcs_app.SearchResult.SearchResultList.FragmentSearchResultList
+import com.example.p2pcs_app.SearchResult.SearchResultMap.FragmentSearchResultMap
 
 class ViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
