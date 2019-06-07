@@ -1,5 +1,6 @@
 package com.example.p2pcs_app
 
+import android.app.Application
 import android.content.Context
 import android.util.Log
 import com.android.volley.Request
@@ -15,7 +16,7 @@ class ApiRequestHandler{
     companion object {
         val domain= "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/"
         var strResp=""
-        fun makerequest(url:String, requestQueue: RequestQueue, callback: VolleyCallback){
+        fun makerequest(url:String, context: Context, callback: VolleyCallback){
             //lancia la richiesta e attende il risultato
             val finalurl=domain+url
             val stringReq = StringRequest(Request.Method.GET, finalurl,
@@ -32,7 +33,7 @@ class ApiRequestHandler{
                 })
 
             Log.i("ciao",finalurl)
-            requestQueue.add(stringReq) //lancia la richiesta
+            VolleySingleton.getInstance(context).requestQueue.add(stringReq) //ottiene l'istanza di lista del signleton con applicationcontext queue
         }
     }
 }

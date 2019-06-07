@@ -21,7 +21,7 @@ import org.json.JSONObject
 
 class FragmentProfile : Fragment(), FragmentProfileContract.View {
     lateinit  var mypresenter: FragmentProfileContract.Presenter
-    var listener: RequestQueueListener?=null
+    //var listener: RequestQueueListener?=null
     override fun displayUserinfo(Username:String) {
         //setto tutte le textview
         if(view!=null){
@@ -35,7 +35,8 @@ class FragmentProfile : Fragment(), FragmentProfileContract.View {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_profile, null)
 
-        mypresenter=FragmentProfilePresenter(this,listener?.getRequestQueue()!!)
+        //mypresenter=FragmentProfilePresenter(this,listener?.getRequestQueue()!!)
+        mypresenter=FragmentProfilePresenter(this,requireContext())
 
         mypresenter.getUserinfo()
         return view
@@ -48,8 +49,8 @@ class FragmentProfile : Fragment(), FragmentProfileContract.View {
 
 
 
-    fun attach(listener:RequestQueueListener){
+    /*fun attach(listener:RequestQueueListener){
         this.listener=listener
-    }
+    }*/
 
 }
