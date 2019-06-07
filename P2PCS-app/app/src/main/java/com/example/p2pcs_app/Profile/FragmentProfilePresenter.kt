@@ -11,10 +11,10 @@ import com.example.p2pcs_app.Model.User
 import com.example.p2pcs_app.ModelCallback
 import com.example.p2pcs_app.R
 
-class FragmentProfilePresenter(private var view: FragmentProfileContract.View, private var requestQueue: RequestQueue): FragmentProfileContract.Presenter {
+class FragmentProfilePresenter(private var view: FragmentProfileContract.View, private var context: Context): FragmentProfileContract.Presenter {
     override fun getUserinfo() {
             try {
-                var user=Model.getUser(requestQueue, "Matteo",object : ModelCallback {
+                var user=Model.getUser(context, "Matteo",object : ModelCallback<User> {
                     override fun onSuccess(result:User) {
                         if(view!=null) { //check if activity is still in execution
                             Log.i("ciao","entering presenter")

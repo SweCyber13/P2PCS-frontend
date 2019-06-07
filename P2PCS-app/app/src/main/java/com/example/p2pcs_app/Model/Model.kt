@@ -18,11 +18,11 @@ class Model {
 
     companion object {
 
-        fun getUser(requestQueue: RequestQueue,username:String, callback: ModelCallback) {
+        fun getUser(context: Context,username:String, callback: ModelCallback<User>) {
             var jsonstring:String=""
             val url="users/read.php?USERNAME=$username" //$concatena le stringhe
             try {
-                ApiRequestHandler.makerequest(url,requestQueue,object : VolleyCallback {
+                ApiRequestHandler.makerequest(url,context,object : VolleyCallback {
                     override fun onSuccess(result:String) {
                         jsonstring=result
                         //ho ottenuto la risposta ora devo parsare il json
