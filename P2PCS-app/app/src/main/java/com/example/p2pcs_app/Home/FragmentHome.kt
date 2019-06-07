@@ -10,7 +10,7 @@ import android.widget.Button
 import com.example.p2pcs_app.Cars.FragmentCars
 import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
 import com.example.p2pcs_app.Mission.FragmentMission
-import com.example.p2pcs_app.CarBookings.ActivityCarPage
+import com.example.p2pcs_app.CarBookings.ActivityCarBooking
 
 
 
@@ -55,7 +55,7 @@ class HomeFragment : Fragment() {
 
         val button5 = view.findViewById<Button>(R.id.provatab)
         button5.setOnClickListener{
-            val intent= Intent(requireContext(), ActivityCarPage::class.java)
+            val intent= Intent(requireContext(), ActivityCarBooking::class.java)
             startActivity(intent)
         }
 

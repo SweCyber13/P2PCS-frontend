@@ -24,10 +24,11 @@
                 android:layout_height="0dp"
                 app:layout_constraintWidth_percent="0.2"
                 app:layout_constraintHeight_percent="0.2"
+                android:layout_marginTop="5dp"
                 app:layout_constraintTop_toTopOf="@+id/carRequestsCardList"
                 app:layout_constraintLeft_toLeftOf="@+id/carRequestsCardList"
 
-                tools:ignore="ContentDescription"/>
+               />
         <TextView
                 android:layout_marginTop="4dp"
                 android:id="@+id/userApplicantName"

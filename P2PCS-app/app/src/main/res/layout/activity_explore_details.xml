@@ -19,7 +19,7 @@
     />
 
     <TextView
-            android:text="Azienda" android:id="@+id/placeF"
+            android:text="Cinema" android:id="@+id/placeF"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.06"
@@ -29,7 +29,7 @@
     />
 
     <TextView
-            android:text="Titolo offerta" android:id="@+id/titleF"
+            android:text="Biglietto gratuito" android:id="@+id/titleF"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.06"
@@ -38,7 +38,8 @@
             android:textSize="24dp"
     />
     <TextView
-            android:text="Descrizione offerta" android:id="@+id/descriptionF"
+            android:text="Se vieni al cinema con il servizio di carsharing avrai un ingresso omaggio"
+            android:id="@+id/descriptionF"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.58"

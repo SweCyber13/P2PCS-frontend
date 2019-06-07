@@ -3,16 +3,18 @@
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
                                              xmlns:tools="http://schemas.android.com/tools"
                                              android:layout_width="match_parent"
-                                             android:layout_height="wrap_content"
+                                             android:background="@drawable/searchbackground"
+                                             android:layout_height="match_parent"
 
 >
 
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             app:layout_constraintTop_toTopOf="parent">
 
         <android.support.constraint.ConstraintLayout
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -202,7 +204,7 @@
 
     <Button
             app:layout_constraintTop_toBottomOf="@id/layoutEndDate"
-            android:background="@drawable/button_search"
+            android:background="@drawable/button_info_style"
             android:text="Cerca macchina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -212,7 +214,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:padding="2dp"
-            android:layout_margin="5dp"
+            android:layout_marginTop="30dp"
 
     />
 

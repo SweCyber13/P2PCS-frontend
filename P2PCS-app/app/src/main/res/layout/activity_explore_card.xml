@@ -58,7 +58,7 @@
 
                         app:layout_constraintBottom_toBottomOf="parent"/>
                 <TextView
-                        android:text="Nome dell'azienda"
+                        android:text="Cinema"
                         app:layout_constraintLeft_toLeftOf="@id/line_left"
                         app:layout_constraintTop_toTopOf="@id/line_top"
                         android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
 
                         style="@style/ExploreTextView"/>
                 <TextView
-                        android:text="Titolo offerta"
+                        android:text="Biglietto gratuito"
                         app:layout_constraintLeft_toLeftOf="@id/line_left"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

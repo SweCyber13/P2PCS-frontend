@@ -137,7 +137,7 @@
                 />
                 <TextView
                         android:id="@+id/Targa"
-                        android:text="0123456789"
+                        android:text="AA000AA"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"
                         android:layout_height="wrap_content"

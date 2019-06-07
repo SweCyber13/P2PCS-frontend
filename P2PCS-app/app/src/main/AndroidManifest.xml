@@ -14,7 +14,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
 
-        <activity android:name=".CarBookings.ActivityCarPage"
+        <activity android:name=".CarBookings.ActivityCarBooking"
                   android:label="Prenotazioni"></activity>
         <activity android:name=".SearchResult.ActivitySearchresult"
                   android:label="Risultati della ricerca">

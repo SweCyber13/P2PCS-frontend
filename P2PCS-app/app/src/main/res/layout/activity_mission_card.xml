@@ -29,21 +29,21 @@
                     app:layout_constraintStart_toEndOf="@id/missioncar"
                     app:layout_constraintTop_toTopOf="parent"
                     android:gravity="center"
-                    android:text="TextView"
+                    android:text="Presta la tua auto per la prima volta"
                     android:textAlignment="center"
                     android:layout_width="0dp"
                     app:layout_constraintWidth_percent="0.5"
                     android:layout_height="match_parent"
                     android:id="@+id/titlemission"/>
             <TextView
-                    android:text="TextView"
+                    android:text="50pt"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:id="@+id/pointmission"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintWidth_percent="0.2"
-            android:gravity="center"/>
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintWidth_percent="0.2"
+                    android:gravity="center"/>
         </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>

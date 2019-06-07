@@ -20,9 +20,9 @@
         <ImageView
                 android:id="@+id/userImg"
                 android:layout_width="0dp"
-                app:layout_constraintWidth_percent="0.3"
+                app:layout_constraintWidth_percent="0.4"
                 android:layout_height="100dp"
-                app:srcCompat="@drawable/avatar"
+                app:srcCompat="@drawable/car"
 
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/rightSide"
@@ -32,7 +32,7 @@
         />
         <android.support.constraint.ConstraintLayout
                 android:layout_width="0dp"
-                app:layout_constraintWidth_percent="0.7"
+                app:layout_constraintWidth_percent="0.6"
                 android:layout_height="wrap_content"
 
                 app:layout_constraintLeft_toRightOf="@+id/userImg"
@@ -45,7 +45,8 @@
                     android:id="@+id/Username"
                     android:text="Username"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.2"
 
                     android:gravity="left"
 
@@ -60,9 +61,10 @@
             />
             <TextView
                     android:id="@+id/targa"
-                    android:text="0123456789"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:text="AA000AA"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.2"
 
                     app:layout_constraintTop_toBottomOf="@+id/Username"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -77,8 +79,9 @@
             <TextView
                     android:id="@+id/giorno"
                     android:text="23/04/19"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.2"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/targa"
@@ -88,16 +91,17 @@
                     style="@style/CardPrenotazioni"
 
             />
-            <Button
+            <TextView
                     android:id="@+id/Stato"
-                    android:text="Stato"
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
+                    android:text="In attesa"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.2"
                     app:layout_constraintTop_toBottomOf="@+id/giorno"
-                    app:layout_constraintBottom_toBottomOf="parent"
+
 
                     app:layout_constraintLeft_toLeftOf="parent"
-
+                    style="@style/CardPrenotazioni"
 
             />
             <Button
@@ -106,25 +110,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    app:layout_constraintTop_toBottomOf="@+id/giorno"
+                    app:layout_constraintTop_toBottomOf="@+id/Stato"
                     app:layout_constraintBottom_toBottomOf="parent"
 
-                    app:layout_constraintLeft_toRightOf="@+id/Stato"
+                    app:layout_constraintLeft_toLeftOf="@+id/Stato"
                     app:layout_constraintRight_toLeftOf="@+id/more"
 
 
             />
             <Button
                     android:id="@+id/more"
-                    android:text="+"
-                    android:layout_width="50dp"
+                    android:text="info"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/giorno"
+                    app:layout_constraintTop_toBottomOf="@+id/Stato"
                     app:layout_constraintBottom_toBottomOf="parent"
 
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintLeft_toRightOf="@+id/Contatta"
-            />
+                    />
         </android.support.constraint.ConstraintLayout>
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

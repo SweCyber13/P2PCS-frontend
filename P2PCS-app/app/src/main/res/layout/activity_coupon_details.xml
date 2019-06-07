@@ -19,7 +19,7 @@
     />
 
     <TextView
-            android:text="Azienda" android:id="@+id/placeF"
+            android:text="Supermercato" android:id="@+id/placeF"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.06"
@@ -29,7 +29,7 @@
     />
 
     <TextView
-            android:text="Titolo offerta" android:id="@+id/titleF"
+            android:text="30% di sconto " android:id="@+id/titleF"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.06"
@@ -38,12 +38,23 @@
             android:textSize="24dp"
     />
     <TextView
-            android:text="Descrizione offerta" android:id="@+id/descriptionF"
+            android:text="15000pt"
+            android:layout_width="match_parent"
+            android:layout_height="0pt"
+            app:layout_constraintHeight_percent="0.06"
+            android:id="@+id/requiredPoints"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            app:layout_constraintTop_toBottomOf="@id/titleF"
+    />
+    <TextView
+            android:text="Con 1500 punti ottieni uno sconto del 30% su una spesa minima 40€"
+            android:id="@+id/descriptionF"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.58"
             android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@+id/titleF"
+            app:layout_constraintTop_toBottomOf="@+id/requiredPoints"
             android:textSize="24dp"
             tools:layout_editor_absoluteX="0dp"/>
 

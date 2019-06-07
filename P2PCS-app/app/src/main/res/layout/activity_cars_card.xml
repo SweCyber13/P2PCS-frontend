@@ -72,7 +72,7 @@
                 >
                     <TextView
                             android:id="@+id/textMarca"
-                            android:text="Marca"
+                            android:text="Opel"
                             android:layout_width="wrap_content"
 
                             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
                     />
                     <TextView
                             android:id="@+id/textModel"
-                            android:text="Modello"
+                            android:text="Corsa"
                             android:layout_width="wrap_content"
 
                             android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
 
                 <TextView
                         android:id="@+id/textTarga"
-                        android:text="0123456789"
+                        android:text="AA000AA"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="1.0"
                         android:layout_height="wrap_content"
@@ -160,9 +160,9 @@
                     />
                     <Button
                             android:id="@+id/otherInfo"
-                            android:text="+"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:text="info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
 
                             app:layout_constraintRight_toRightOf="parent"
 
