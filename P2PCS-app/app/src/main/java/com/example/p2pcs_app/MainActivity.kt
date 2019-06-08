@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         //load fragment_home default
         loadFragment(HomeFragment())
 
-        fragmentProfile.attach(this)
+        //fragmentProfile.attach(this)
         //test userpreference
         //val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
         //Toast.makeText(this, prefs.getString("username","vuoto") , Toast.LENGTH_LONG).show()
