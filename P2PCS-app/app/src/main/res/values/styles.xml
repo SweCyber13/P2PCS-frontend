@@ -87,7 +87,7 @@
 
 
     </style>
-<!--Explore page-->
+<!--layouts page-->
     <style name="ExploreTextView">
         <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>

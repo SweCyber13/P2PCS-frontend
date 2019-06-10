@@ -1,16 +1,10 @@
 package com.example.p2pcs_app
 
-import android.app.Application
 import android.content.Context
 import android.util.Log
 import com.android.volley.Request
-import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
-import com.android.volley.toolbox.Volley
-import kotlinx.android.synthetic.main.fragment_profile.*
-import org.json.JSONArray
-import org.json.JSONObject
 
 class ApiRequestHandler{
     companion object {
