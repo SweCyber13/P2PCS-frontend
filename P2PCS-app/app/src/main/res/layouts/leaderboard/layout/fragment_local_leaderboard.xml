@@ -11,6 +11,7 @@
             android:layout_height="40dp" app:srcCompat="@drawable/rank"
             android:id="@+id/imageRank"
             android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
 
 
             tools:layout_editor_absoluteY="106dp"/>
