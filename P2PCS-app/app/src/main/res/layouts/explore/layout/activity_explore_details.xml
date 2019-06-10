@@ -27,6 +27,7 @@
             android:textAlignment="center"
             app:layout_constraintTop_toBottomOf="@+id/image_explore"
             android:textSize="24dp"
+
     />
 
     <TextView
