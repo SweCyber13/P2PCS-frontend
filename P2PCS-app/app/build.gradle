@@ -20,6 +20,30 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts/booking',
+                            'src/main/res/layouts/cars',
+                            'src/main/res/layouts/coupon',
+                            'src/main/res/layouts/explore',
+                            'src/main/res/layouts/home',
+                            'src/main/res/layouts/leaderboard',
+                            'src/main/res/layouts/main',
+                            'src/main/res/layouts/mission',
+                            'src/main/res/layouts/other_user',
+                            'src/main/res/layouts/profile',
+                            'src/main/res/layouts/registration_login',
+                            'src/main/res/layouts/search',
+                            'src/main/res/layouts/search_result',
+
+
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+        }
+    }
 
 }
 
