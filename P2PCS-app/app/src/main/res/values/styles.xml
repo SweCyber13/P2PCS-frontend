@@ -200,6 +200,17 @@
     </style>
 
 
+    <style name="MyPersonalData4">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
     <!-- Card delle prenotazioni -->
 
     <style name="CardPrenotazioniTitle">

@@ -19,12 +19,22 @@
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/zeroLine"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintBottom_toTopOf="@+id/fistLine"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    android:padding="10dp"
+                    android:layout_margin="4dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+            >
 
                 <ImageView
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.4"
-                        android:layout_height="210dp"
+                        android:layout_height="150dp"
 
                         app:srcCompat="@drawable/avatar"
                         android:id="@+id/imageProfile"
@@ -37,12 +47,16 @@
                         app:layout_constraintRight_toLeftOf="@+id/Name"
                 />
 
-                <android.support.constraint.ConstraintLayout android:layout_width="0dp"
-                                                             android:layout_height="wrap_content"
-                                                             app:layout_constraintWidth_percent="0.6"
-                                                             app:layout_constraintLeft_toRightOf="@+id/imageProfile"
-                                                             app:layout_constraintTop_toBottomOf="@+id/contact"
-                                                             android:id="@+id/view"
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.6"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:layout_constraintLeft_toRightOf="@+id/imageProfile"
+                        app:layout_constraintTop_toBottomOf="@+id/contact"
+                        android:id="@+id/view"
 
 
                 >
@@ -50,57 +64,84 @@
                             android:id="@+id/userPoint"
                             android:text="Punti: "
                             android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.5"
+                            app:layout_constraintWidth_percent="0.4"
                             android:layout_height="wrap_content"
+                            app:layout_constraintLeft_toLeftOf="@+id/view"
+                            app:layout_constraintRight_toLeftOf="@+id/valuePoint"
                             app:layout_constraintTop_toTopOf="@+id/view"
+                            app:layout_constraintBottom_toTopOf="@+id/userAverage"
                             style="@style/MyPersonalData1"
 
-                            tools:ignore="MissingConstraints"/>
+                            />
 
                     <TextView
                             android:id="@+id/valuePoint"
                             android:text="0.0"
-                            android:textAlignment="center"
+                            android:textAlignment="viewStart"
                             android:layout_width="0dp"
                             app:layout_constraintWidth_percent="0.5"
                             android:layout_height="wrap_content"
-                            app:layout_constraintLeft_toRightOf="@+id/userPoint"
-                            style="@style/MyPersonalData1"
 
-                            tools:ignore="MissingConstraints"/>
+                            app:layout_constraintLeft_toRightOf="@+id/userPoint"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/view"
+                            app:layout_constraintBottom_toTopOf="@+id/valueAverage"
+
+
+
+                            style="@style/MyPersonalData2"
+
+
+                    />
                     <TextView
                             android:id="@+id/userAverage"
                             android:text="Media: "
                             android:layout_height="wrap_content"
                             android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.5"
+                            app:layout_constraintWidth_percent="0.4"
+
+
+                            app:layout_constraintLeft_toLeftOf="@+id/view"
+                            app:layout_constraintRight_toLeftOf="@+id/valueAverage"
                             app:layout_constraintTop_toBottomOf="@+id/userPoint"
                             app:layout_constraintBottom_toBottomOf="parent"
+
+
                             style="@style/MyPersonalData1"
                             tools:ignore="MissingConstraints"/>
 
                     <TextView
                             android:id="@+id/valueAverage"
                             android:text="0.0"
-                            android:textAlignment="center"
+
                             android:layout_width="0dp"
                             app:layout_constraintWidth_percent="0.5"
                             android:layout_height="wrap_content"
+
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/valuePoint"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintLeft_toRightOf="@+id/userAverage"
-                            app:layout_constraintBottom_toBottomOf="@+id/view"
-                            style="@style/MyPersonalData1"
+
+                            style="@style/MyPersonalData2"
+                            android:textAlignment="viewStart"
 
                             tools:ignore="MissingConstraints"/>
                 </android.support.constraint.ConstraintLayout>
                 <Button
                         android:id="@+id/contact"
                         android:text="Contatta"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
-                        android:background="@drawable/button_info_style"
+
+                        app:layout_constraintLeft_toRightOf="@+id/imageProfile"
+
                         app:layout_constraintRight_toRightOf="parent"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
 
 
                 />
