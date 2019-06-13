@@ -18,7 +18,13 @@
             <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/zeroLine">
+                    android:id="@+id/zeroLine"
+                    android:padding="10dp"
+                    android:layout_margin="4dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+            >
 
                 <ImageView
                         android:id="@+id/carImage"
@@ -47,7 +53,7 @@
             <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="10dp"
+                    android:padding="4dp"
 
                     android:background="@drawable/my_personal_data_line"
                     android:id="@+id/firstLine">
@@ -90,7 +96,7 @@
             <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="10dp"
+                    android:padding="4dp"
 
                     android:background="@drawable/my_personal_data_line"
                     android:id="@+id/secondLine">
@@ -133,13 +139,13 @@
                     android:id="@+id/thirdLine"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="10dp"
+                    android:padding="4dp"
 
                     android:background="@drawable/my_personal_data_line">
 
                 <TextView
                         android:id="@+id/modelloLabel"
-                        android:text="Modello"
+                        android:text="Modello:"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.3"
                         android:layout_height="wrap_content"
@@ -175,13 +181,13 @@
                     android:id="@+id/fourthLine"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="10dp"
+                    android:padding="4dp"
 
                     android:background="@drawable/my_personal_data_line">
 
                 <TextView
                         android:id="@+id/annoLabel"
-                        android:text="Anno"
+                        android:text="Anno:"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.3"
                         android:layout_height="wrap_content"
@@ -215,7 +221,7 @@
                     android:id="@+id/fifthLine"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="10dp"
+                    android:padding="4dp"
 
                     android:background="@drawable/my_personal_data_line">
 
@@ -256,7 +262,7 @@
                     android:id="@+id/sixthLine"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="10dp"
+                    android:padding="4dp"
 
                     android:background="@drawable/my_personal_data_line">
 
@@ -295,7 +301,7 @@
                     android:id="@+id/seventhLine"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="10dp"
+                    android:padding="4dp"
 
                     android:background="@drawable/my_personal_data_line">
 
@@ -335,7 +341,7 @@
                     android:id="@+id/eigthLine"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="10dp"
+                    android:padding="4dp"
 
                     android:background="@drawable/my_personal_data_line">
 

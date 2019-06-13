@@ -31,7 +31,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
 
-                    android:background="@drawable/my_personal_data_zero_line"
+
 
 
 
