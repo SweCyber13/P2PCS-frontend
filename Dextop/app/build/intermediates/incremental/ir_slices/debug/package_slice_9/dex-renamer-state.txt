@@ -1,4 +1,0 @@
-#Mon May 06 10:08:19 CEST 2019
-base.0=C\:\\Users\\Daniel\\Dextop\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
-path.0=classes.dex
-renamed.0=classes.dex
