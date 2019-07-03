@@ -2,7 +2,7 @@ package com.example.p2pcs_app.Model
 
 import java.util.*
 
-class User {
+class User : DataClass {
     lateinit var username:String
     lateinit var nome:String
     lateinit var cognome:String

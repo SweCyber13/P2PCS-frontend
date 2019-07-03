@@ -10,5 +10,6 @@ interface FragmentProfileContract {
 
     interface Presenter {
         fun getUserinfo()
+        fun getUserinfo2()
     }
 }
