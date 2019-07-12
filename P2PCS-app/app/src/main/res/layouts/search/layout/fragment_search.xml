@@ -91,7 +91,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
 
                     app:layout_constraintTop_toBottomOf="@id/layoutEndCity"
-                    app:layout_constraintWidth_percent="0.50"
+                    app:layout_constraintWidth_percent="1.0"
                     android:id="@+id/layoutStartDate"
             >
 
@@ -109,34 +109,6 @@
                 />
             </RelativeLayout>
             <!-- orario di partenza-->
-            <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/searchrelativelayout"
-                    android:layout_marginTop="10dp"
-                    app:layout_constraintLeft_toRightOf="@id/layoutStartDate"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layoutEndCity"
-                    app:layout_constraintWidth_percent="0.50"
-                    android:id="@+id/layoutStarTime"
-
-            >
-
-                <ImageView
-
-                        android:id="@+id/imageStartTime"
-                        android:src="@drawable/ic_clock"
-                        style="@style/SearchImageView"/>
-                <EditText
-                        android:id="@+id/startTime"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@+id/imageStartTime"
-                        android:hint="Orario di partenza"
-                        style="@style/SearchEditText"
-
-                />
-            </RelativeLayout>
 
 
             <!-- data di arrivo-->
@@ -147,7 +119,7 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/layoutStartDate"
                     app:layout_constraintWidth_percent="0.50"
-                    android:id="@+id/layoutEndDate"
+                    android:id="@+id/layoutStartTime"
                     android:background="@drawable/searchrelativelayout"
 
 
@@ -155,14 +127,14 @@
 
                 <ImageView
                         android:id="@+id/imageEndDate"
-                        android:src="@drawable/ic_calendar"
+                        android:src="@drawable/ic_clock"
                         style="@style/SearchImageView"/>
                 <EditText
                         android:id="@+id/endDate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/imageEndDate"
-                        android:hint="Data di arrivo"
+                        android:hint="Orario di partenza"
                         style="@style/SearchEditText"/>
             </RelativeLayout>
             <!-- orario di arrivo-->
@@ -170,17 +142,16 @@
             <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-
-                    android:layout_marginTop="10dp"
-                    app:layout_constraintLeft_toRightOf="@id/layoutEndDate"
+                    app:layout_constraintTop_toBottomOf="@id/layoutStartDate"
+                    app:layout_constraintLeft_toRightOf="@id/layoutStartTime"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/layoutStarTime"
                     app:layout_constraintWidth_percent="0.50"
                     android:id="@+id/layoutEndTime"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/searchrelativelayout"
 
 
-            >
+                    tools:layout_editor_absoluteY="162dp">
 
                 <ImageView
 
@@ -203,7 +174,7 @@
 
 
     <Button
-            app:layout_constraintTop_toBottomOf="@id/layoutEndDate"
+            app:layout_constraintTop_toBottomOf="@id/layoutStartTime"
             android:background="@drawable/button_info_style"
             android:text="Cerca macchina"
             android:layout_width="wrap_content"
