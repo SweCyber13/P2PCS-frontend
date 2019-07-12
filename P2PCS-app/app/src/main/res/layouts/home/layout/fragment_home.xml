@@ -126,17 +126,17 @@
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintRight_toRightOf="parent"
                             app:layout_constraintLeft_toRightOf="@id/saleimage"
-                            android:text="SCOPRI I LUOGHI DOVE PUOI AVERE UNO SCONTO!"
+                            android:text="SCOPRI TUTTE LE PROMOZIONI E GLI SCONTI CHE PUOI OTTENERE UTILIZZANDO P2PCS!"
                             android:layout_width="0dp"
                             app:layout_constraintWidth_percent="0.7"
                             android:layout_height="match_parent"
                             android:id="@+id/saletext"
-                    android:gravity="center"
+                            android:gravity="center"
                             android:textColor="@color/colorPrimaryDark"
                             android:textStyle="normal"
                             android:padding="25dp"
 
-                   />
+                    />
                 </android.support.constraint.ConstraintLayout>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
@@ -285,12 +285,4 @@
             </android.support.constraint.ConstraintLayout>
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
-    <Button
-            android:text="prova_tab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/provatab"
-            app:layout_constraintTop_toBottomOf="@+id/scrollView2" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/scrollView2" android:layout_marginEnd="23dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="1.0"/>
 </android.support.constraint.ConstraintLayout>

@@ -1,16 +1,12 @@
 package com.example.p2pcs_app.Profile
 
-import android.app.Activity
 import android.content.Context
 import android.util.Log
-import android.widget.TextView
-import com.android.volley.RequestQueue
 import com.android.volley.VolleyError
 import com.example.p2pcs_app.Model.Model
 import com.example.p2pcs_app.Model.User
 import com.example.p2pcs_app.ModelCallback
-import com.example.p2pcs_app.R
-import com.example.p2pcs_app.UserModel
+import com.example.p2pcs_app.Zutilities.UserModel
 
 class FragmentProfilePresenter(private var view: FragmentProfileContract.View, private var context: Context): FragmentProfileContract.Presenter {
     //istanzia UserModel e poi chiama il metodo di User
@@ -37,7 +33,7 @@ class FragmentProfilePresenter(private var view: FragmentProfileContract.View, p
 
     override fun getUserinfo2() {
         try {
-            var userModel=UserModel()
+            var userModel= UserModel()
             var user=User()
             user.username="Matteo"
             userModel.userRequest(user, context,object : ModelCallback<User>{

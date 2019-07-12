@@ -8,17 +8,17 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.p2pcs_app.R
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
 
-class FragmentSearchResultMap : Fragment() {
+class FragmentSearchResultMap : Fragment(), OnMapReadyCallback{
+    override fun onMapReady(p0: GoogleMap?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_search_result_map, container, false)
-        val textView = view.findViewById<TextView>(R.id.textView)
-        textView.setText(R.string.prova2)
-
-        val imageView = view.findViewById<ImageView>(R.id.imageView5)
-        imageView.setImageResource(R.mipmap.ic_launcher)
 
         return view
     }

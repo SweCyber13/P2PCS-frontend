@@ -8,7 +8,7 @@ import com.example.p2pcs_app.LeaderBoard.LocalLeaderboard.FragmentLocalLeaderboa
 
 class ViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
-    private val COUNT = 2
+    private val COUNT = 1
 
     override fun getItem(position: Int): Fragment? {
         var fragment: Fragment? = null

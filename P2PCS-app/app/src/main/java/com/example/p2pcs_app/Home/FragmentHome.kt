@@ -11,10 +11,11 @@ import com.example.p2pcs_app.Cars.FragmentCars
 import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
 import com.example.p2pcs_app.Mission.FragmentMission
 import com.example.p2pcs_app.CarBookings.ActivityCarBooking
-
+import com.example.p2pcs_app.Cars.ActivityCars
 
 
 import com.example.p2pcs_app.R
+import com.example.p2pcs_app.Search.ActivitySearch
 
 
 class HomeFragment : Fragment() {
@@ -25,7 +26,7 @@ class HomeFragment : Fragment() {
 
         val button1 = view.findViewById<Button>(R.id.find_car)
         button1.setOnClickListener{
-            val intent= Intent(requireContext(), ActivityLeaderboard::class.java)
+            val intent= Intent(requireContext(), ActivitySearch::class.java)
             startActivity(intent)
         }
 
@@ -33,14 +34,14 @@ class HomeFragment : Fragment() {
 
         val button2 = view.findViewById<Button>(R.id.share_car)
         button2.setOnClickListener{
-            val intent= Intent(requireContext(), FragmentCars::class.java)
+            val intent= Intent(requireContext(), ActivityCars::class.java)
             startActivity(intent)
         }
 
 
         val button3 = view.findViewById<Button>(R.id.b_secondLine)
         button3.setOnClickListener{
-            val intent= Intent(requireContext(), FragmentMission::class.java)
+            val intent= Intent(requireContext(), FragmentMission::class.java) //Fare activity mission per scalare la classifica
             startActivity(intent)
         }
 
@@ -49,13 +50,6 @@ class HomeFragment : Fragment() {
         val button4 = view.findViewById<Button>(R.id.b_thirdLine)
         button4.setOnClickListener{
             val intent= Intent(requireContext(), ActivityLeaderboard::class.java)
-            startActivity(intent)
-        }
-
-
-        val button5 = view.findViewById<Button>(R.id.provatab)
-        button5.setOnClickListener{
-            val intent= Intent(requireContext(), ActivityCarBooking::class.java)
             startActivity(intent)
         }
 

@@ -15,7 +15,6 @@ class ViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPager
         when (position) {
             0 -> fragment = FragmentSearchResultList()
             1 -> fragment = FragmentSearchResultMap()
-
         }
 
         return fragment

@@ -30,9 +30,10 @@ class ActivityLogin : AppCompatActivity() {
         val cognitosettings= CognitoSettings(this)
 
         //debug!!!!!!!!!!!!!!!!!!!!!! signout
-       // cognitosettings.getUserPool().currentUser.signOut()
+        //cognitosettings.getUserPool().currentUser.signOut()
 
-        if(cognitosettings.getUserPool().currentUser.thisDevice()!=null) {
+        //salta sempre il login, da controllare
+        if(cognitosettings.getUserPool().currentUser.userId!=null) {
             //Crea sharedpreferences con username
             val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
             prefs.edit().putString("username",cognitosettings.getUserPool().currentUser.userId).apply()

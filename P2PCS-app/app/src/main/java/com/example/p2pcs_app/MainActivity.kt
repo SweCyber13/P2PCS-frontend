@@ -8,6 +8,7 @@ import android.widget.TextView
 import android.support.v4.app.Fragment
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.Volley
+import com.example.p2pcs_app.CarBookings.ActivityCarBooking
 import com.example.p2pcs_app.Cars.FragmentCars
 import com.example.p2pcs_app.Explore.FragmentExplore
 import com.example.p2pcs_app.Home.HomeFragment
@@ -17,7 +18,8 @@ import com.example.p2pcs_app.Coupons.FragmentCoupon
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener, RequestQueueListener {
 
-    var fragmentProfile=FragmentProfile()
+    //var fragmentProfile=FragmentProfile()
+    //var fragmentbooking= ActivityCarBooking()
 
     var mqueue: RequestQueue?=null
     private lateinit var textMessage: TextView
@@ -46,9 +48,9 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     //load different fragment when a navigation button is pressed
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.navigation_profile -> loadFragment(fragmentProfile)
+            R.id.navigation_profile -> loadFragment(FragmentProfile())
             R.id.navigation_home -> loadFragment(HomeFragment())
-            R.id.navigation_reservation -> loadFragment(FragmentCars())
+            R.id.navigation_reservation -> loadFragment(ActivityCarBooking()) //da rinominare a fragment la classe
             R.id.navigation_gift -> loadFragment(FragmentCoupon())
         }
 

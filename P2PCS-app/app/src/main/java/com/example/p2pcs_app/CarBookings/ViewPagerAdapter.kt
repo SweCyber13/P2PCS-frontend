@@ -27,8 +27,8 @@ class ViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPager
 
     override fun getPageTitle(position: Int): CharSequence? {
         if (position==0)
-            return "Prenotazioni inviate"
+            return "Richieste"
         else
-            return "Prenotazioni ricevute"
+            return "Prenotazioni"
     }
 }

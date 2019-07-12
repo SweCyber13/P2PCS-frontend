@@ -15,8 +15,7 @@ class FragmentCarRequests : Fragment() {
     //parametri per la recyclerView
     private var recyclerView: RecyclerView? = null
     private var linearLayoutManager: LinearLayoutManager? = null
-    private var customAdapter: CustomAdapter? =null
-
+    private var customAdapter: CustomAdapter? = null
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -24,35 +23,33 @@ class FragmentCarRequests : Fragment() {
         val view = inflater.inflate(R.layout.fragment_car_requests, null)
 
 
-        val recyclerView= view.findViewById<RecyclerView> (R.id.recycler_view)
-        val data_list=  ArrayList<MyData>()
+        val recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view)
+        val data_list = ArrayList<MyData>()
         load_data(data_list)
 
-        linearLayoutManager= LinearLayoutManager(requireContext())
+        linearLayoutManager = LinearLayoutManager(requireContext())
 
-        customAdapter= CustomAdapter(data_list)
+        customAdapter = CustomAdapter(data_list)
 
 
         recyclerView.apply {
             setHasFixedSize(true)
 
-            layoutManager=linearLayoutManager
-            adapter=customAdapter
+            layoutManager = linearLayoutManager
+            adapter = customAdapter
 
         }
 
         return view
     }
 
-    fun load_data (data_list: ArrayList<MyData>){ //prova con 3 card
+    fun load_data(data_list: ArrayList<MyData>) { //prova con 3 card
 
-        var myData1= MyData(1, "lol", "lol")
+        var myData1 = MyData(1, "lol", "lol")
 
+        var myData2 = MyData(2, "lol", "lol")
 
-        var myData2= MyData(2, "lol", "lol")
-
-
-        var myData3= MyData(3, "lol", "lol")
+        var myData3 = MyData(3, "lol", "lol")
 
 
         data_list.add(myData1)
@@ -61,6 +58,9 @@ class FragmentCarRequests : Fragment() {
 
 
     }
+
+
+}
 /*fun getOffer(context: Context){
     val queue = Volley.newRequestQueue(context)
     val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/esplora.php"
@@ -121,6 +121,3 @@ class FragmentCarRequests : Fragment() {
 
     queue.add(stringReq)
 }*/
-
-
-}

@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
                 android:background="@color/colorPrimary"
-                />
+                android:padding="13dp"/>
 
 
 
