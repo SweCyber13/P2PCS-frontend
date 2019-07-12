@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -89,6 +90,7 @@
                 android:name=".MainActivity"
                 android:label="P2PCS">
         </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/> //dipendenza per maps
     </application>
 
 </manifest>

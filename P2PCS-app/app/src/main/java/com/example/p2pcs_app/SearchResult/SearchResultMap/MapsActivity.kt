@@ -1,4 +1,4 @@
-package com.example.p2pcs_app.SearchResult.SearchResultMap
+/*package com.example.p2pcs_app.SearchResult.SearchResultMap
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -41,3 +41,4 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
     }
 }
+*/
