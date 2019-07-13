@@ -1,6 +1,303 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                              android:layout_height="match_parent">
 
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"/>
+    </ScrollView>
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/lineZero"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.25"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/lineOne"
+
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+
+
+
+
+
+
+
+    >
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/image"
+                android:background="@drawable/looool"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/lineOne"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.28"
+
+            app:layout_constraintTop_toBottomOf="@id/lineZero"
+            app:layout_constraintBottom_toTopOf="@id/lineTwo"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+
+    >
+
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                app:layout_constraintBottom_toTopOf="@id/secondpart"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+
+        >
+
+            <TextView
+                    android:id="@+id/partOneLabel"
+                    android:text="Le tue statistiche in P2PCS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+
+                    android:gravity="center_horizontal"
+
+
+                    style="@style/HomeTitleTextView"
+
+
+            />
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/secondpart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                app:layout_constraintTop_toBottomOf="@id/header"
+
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+
+        >
+
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/partLeft"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/partRight"
+
+
+            >
+
+                <TextView
+                        android:id="@+id/puntiRanklabel"
+                        android:text="Punti Rank:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:gravity="center_horizontal"
+
+                        android:layout_margin="17dp"
+
+                        style="@style/MyPersonalData1"
+
+
+                />
+                <TextView
+                        android:id="@+id/puntiRankValue"
+                        android:text="1000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toBottomOf="@id/puntiRanklabel"
+
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:gravity="center_horizontal"
+
+
+                        style="@style/MyPersonalData2"
+
+
+                />
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/partRight"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/partLeft"
+
+
+            >
+
+                <TextView
+                        android:id="@+id/puntiBonusLabel"
+                        android:text="Punti buoni:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/puntiBonusValue"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:gravity="center_horizontal"
+
+                        android:layout_margin="17dp"
+
+                        style="@style/MyPersonalData1"
+
+
+                />
+                <TextView
+                        android:id="@+id/puntiBonusValue"
+                        android:text="150"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toBottomOf="@id/puntiBonusLabel"
+                        app:layout_constraintBottom_toBottomof="parent"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:gravity="center_horizontal"
+
+
+                        style="@style/MyPersonalData2"
+
+                />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/lineTwo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.7"
+
+            app:layout_constraintTop_toBottomOf="@id/lineOne"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+
+           >
+
+        <TextView
+                android:id="@+id/couponLabel"
+                android:text="Utilizza i tuoi punti!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                android:gravity="center_horizontal"
+
+
+                android:layout_marginBottom="10dp"
+
+                style="@style/MyPersonalData1"
+
+
+        />
+        <Button
+                android:id="@+id/couponButton"
+                android:text="Scopri i coupon disponibili!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintTop_toBottomOf="@id/couponLabel"
+
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+
+
+        />
+        <TextView
+                android:id="@+id/eventLabel"
+                android:text="Partecipa agli eventi convenzionati con P2PCS!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintTop_toBottomOf="@id/couponButton"
+
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+
+
+
+                style="@style/MyPersonalData1"
+
+
+        />
+        <Button
+                android:id="@+id/eventButton"
+                android:text="Partecipa!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintTop_toBottomOf="@id/eventLabel"
+
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+
+        />
+    </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
