@@ -185,8 +185,6 @@
     </android.support.constraint.ConstraintLayout>
 
 
-
-
     <android.support.constraint.ConstraintLayout
             android:id="@+id/lineTwo"
             android:layout_width="match_parent"
@@ -200,8 +198,7 @@
             app:layout_constraintRight_toRightOf="parent"
 
 
-
-    >
+           >
 
         <TextView
                 android:id="@+id/couponLabel"
@@ -215,11 +212,17 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
 
+                android:gravity="center_horizontal"
+
+                android:layout_margin="17dp"
+
+                style="@style/MyPersonalData1"
+
 
         />
         <Button
                 android:id="@+id/couponButton"
-                android:text="Button"
+                android:text="Scopri i coupon disponibili!"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -234,7 +237,7 @@
         />
         <TextView
                 android:id="@+id/eventLabel"
-                android:text="Scopri gli eventi convenzionati con P2PCS!"
+                android:text="Partecipa agli eventi convenzionati con P2PCS!"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
@@ -244,11 +247,17 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
 
+                android:gravity="center_horizontal"
+
+                android:layout_margin="17dp"
+
+                style="@style/MyPersonalData1"
+
 
         />
         <Button
                 android:id="@+id/eventButton"
-                android:text="Button"
+                android:text="Partecipa!"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
