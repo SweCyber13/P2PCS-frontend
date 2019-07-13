@@ -46,13 +46,14 @@
                         android:id="@+id/imageStartCity"
                         android:src="@drawable/ic_local"
                         style="@style/SearchImageView"/>
-                <EditText
+                <fragment
                         android:id="@+id/startCity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/imageStartCity"
                         android:hint="Inserisci città di partenza"
                         style="@style/SearchEditText"
+                        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
                 />
             </RelativeLayout>
             <!-- città di arrivo-->
@@ -72,13 +73,14 @@
                         android:src="@drawable/ic_local"
                         style="@style/SearchImageView"
                 />
-                <EditText
+                <fragment
                         android:id="@+id/endCity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/imageEndCity"
                         android:hint="Inserisci città di arrivo"
                         style="@style/SearchEditText"
+                        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
                 />
             </RelativeLayout>
 
@@ -99,7 +101,7 @@
                         android:id="@+id/imageStartDate"
                         android:src="@drawable/ic_calendar"
                         style="@style/SearchImageView"/>
-                <EditText
+                <TextView
                         android:id="@+id/startDate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -129,8 +131,8 @@
                         android:id="@+id/imageEndDate"
                         android:src="@drawable/ic_clock"
                         style="@style/SearchImageView"/>
-                <EditText
-                        android:id="@+id/endDate"
+                <TextView
+                        android:id="@+id/startTime"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/imageEndDate"
@@ -158,12 +160,12 @@
                         android:id="@+id/imageEndTime"
                         android:src="@drawable/ic_clock"
                         style="@style/SearchImageView"/>
-                <EditText
+                <TextView
                         android:id="@+id/endTime"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@id/imageEndTime"
-                        android:hint="Orario di arrivo"
+                        android:hint="Orario di ritorno"
                         android:layout_toEndOf="@+id/imageEndTime"
                         style="@style/SearchEditText"
                 />

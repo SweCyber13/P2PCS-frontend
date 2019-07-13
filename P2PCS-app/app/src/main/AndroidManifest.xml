@@ -90,7 +90,7 @@
                 android:name=".MainActivity"
                 android:label="P2PCS">
         </activity>
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/> //dipendenza per maps
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     </application>
 
 </manifest>
