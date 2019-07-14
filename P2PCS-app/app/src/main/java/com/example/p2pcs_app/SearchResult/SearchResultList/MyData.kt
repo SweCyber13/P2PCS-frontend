@@ -1,6 +1,6 @@
 package com.example.p2pcs_app.SearchResult.SearchResultList
 
 
-class MyData(num:Int, str1:String, str2:String, str3:String, str4:String){
+class MyData(val susername: String, val smodello:String, val smarca:String, val scosto:String, val sindirizzo:String){
 
 }

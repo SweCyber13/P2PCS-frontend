@@ -1,6 +1,7 @@
 package com.example.p2pcs_app.Profile
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -12,7 +13,9 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.example.p2pcs_app.login_register_cognito.Login.ActivityLogin
 import kotlinx.android.synthetic.main.fragment_profile.*
+import kotlinx.android.synthetic.main.fragment_profile.view.*
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -36,6 +39,13 @@ class FragmentProfile : Fragment(), FragmentProfileContract.View {
         //mypresenter=FragmentProfilePresenter(this,requireContext())
 
         //mypresenter.getUserinfo()
+        view.logout.setOnClickListener{
+            val intent= Intent(context, ActivityLogin::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP) //clear all previous activities
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+        }
         getuser()
 
         return view
@@ -70,20 +80,27 @@ class FragmentProfile : Fragment(), FragmentProfileContract.View {
                     val str_datapatente = "" + jsonInner.get("Data_rilascio_p")
                     val str_buoni = "" + jsonInner.get("Punti_buoni")
                     val str_rank = "" + jsonInner.get("Punti_rank")
+                    Password.text="********"
                     Name.text=str_nome
                     Surname.text=str_cognome
                     Username.text=str_username
                     Email.text=str_mail
-                    Age.text=str_eta
-                    City.text=str_citta
-                    DateDrivingLicense.text=str_datapatente
-                    DrivingLicense.text=str_npatente
-                    Job.text=str_occupazione
-                    if(str_sesso=="F"){
-                        Sex.text="Donna"
+                    if(str_eta!="null")
+                        Age.text=str_eta
+                    if(str_citta!="null")
+                        City.text=str_citta
+                    if(str_datapatente!="null")
+                        DateDrivingLicense.text=str_datapatente
+                    if(str_npatente!="null")
+                        DrivingLicense.text=str_npatente
+                    if(str_occupazione!="null")
+                        Job.text=str_occupazione
+                    if(str_sesso!="null") {
+                        if (str_sesso == "F") {
+                            Sex.text = "Donna"
+                        } else
+                            Sex.text = "Uomo"
                     }
-                    else
-                        Sex.text="Uomo"
                 }
 
             },

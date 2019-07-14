@@ -49,15 +49,7 @@ class FragmentCarReservations : Fragment() {
         var myData1= MyData(1, "lol", "lol")
 
 
-        var myData2= MyData(2, "lol", "lol")
-
-
-        var myData3= MyData(3, "lol", "lol")
-
-
         data_list.add(myData1)
-        data_list.add(myData2)
-        data_list.add(myData3)
 
 
     }

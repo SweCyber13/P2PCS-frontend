@@ -29,8 +29,6 @@ class ActivitySearchresult : AppCompatActivity() {
         minstart=intent.getStringExtra("MINP")
         minend=intent.getStringExtra("MINA")
 
-        Toast.makeText(this, latp+lonp+lata+lona, Toast.LENGTH_LONG).show()
-
         val viewPager = findViewById<ViewPager>(R.id.viewPager)
         if (viewPager != null) {
             val adapter = ViewPagerAdapter(supportFragmentManager)

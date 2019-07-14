@@ -153,16 +153,6 @@
 
 
                 />
-                <ImageView
-
-                        app:layout_constraintWidth_percent="0.1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/Targa"
-                        app:srcCompat="@drawable/ic_edit"
-                        app:layout_constraintBottom_toBottomOf="@+id/Targa"
-                        android:id="@+id/edit_targa"/>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/thirdLine"
@@ -558,9 +548,9 @@
                 <TextView
                         android:id="@+id/indirizzoValue"
                         android:text="Via Rossi 8, Fe"
-                        android:layout_width="0dp"
+                        android:layout_width="217dp"
                         app:layout_constraintWidth_percent="0.45"
-                        android:layout_height="wrap_content"
+                        android:layout_height="48dp"
 
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -570,17 +560,7 @@
                         app:layout_constraintLeft_toRightOf="@+id/indirizzoLabel"
 
                         style="@style/MyPersonalData2"
-                />
-                <ImageView
-
-                        app:layout_constraintWidth_percent="0.1"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/indirizzoValue"
-                        app:srcCompat="@drawable/ic_edit"
-                        app:layout_constraintBottom_toBottomOf="@+id/indirizzoValue"
-                        android:id="@+id/edit_indirizzo"/>
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
             </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>

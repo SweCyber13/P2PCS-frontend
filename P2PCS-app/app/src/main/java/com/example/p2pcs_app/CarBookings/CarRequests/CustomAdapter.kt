@@ -5,8 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.example.p2pcs_app.Explore.MyData
 import com.example.p2pcs_app.R
+import kotlinx.android.synthetic.main.activity_car_requests_card.view.*
 
 class CustomAdapter(
 
@@ -17,8 +17,17 @@ class CustomAdapter(
 
     class MyViewHolder(val view:View): RecyclerView.ViewHolder(view){
 
-        var marca=view.findViewById<TextView>(R.id.carMarca)
-        var modello=view.findViewById<TextView>(R.id.carModello)
+        var nome=view.userApplicantName
+        var cognome=view.userApplicantSurname
+        var modello= view.carMarca
+        var targa= view.carModello
+        var data=view.Day
+        var inizio=view.requestStartHour
+        var fine=view.requestEndHour
+        var prezzo=view.prezzo
+        var accetta=view.bottone
+        var rifiuta=view.bottoneR
+
 
     }
 
@@ -30,7 +39,19 @@ class CustomAdapter(
     }
 
     override fun onBindViewHolder(p0: MyViewHolder, p1: Int) {
-        p0.marca.text="Ciao"
+        p0.nome.text="Elena"
+        p0.cognome.text="Pontecchiani"
+        p0.modello.text="Fiat Punto"
+        p0.targa.text="PD000PD"
+        p0.data.text="2019-07-16"
+        p0.inizio.text="12.00"
+        p0.fine.text="20.00"
+        p0.prezzo.text=""
+        p0.accetta.setOnClickListener{
+            p0.accetta.text="Accettato"
+            p0.accetta.isEnabled=false
+            p0.rifiuta.visibility=View.INVISIBLE
+        }
     }
 
 

@@ -119,9 +119,9 @@ class ActivitySearch : AppCompatActivity() {
         startDate.setOnClickListener {
         val dpd = DatePickerDialog(this,
             DatePickerDialog.OnDateSetListener { view: DatePicker?, mYear: Int, mMonth: Int, mDay: Int ->
-                startDate.setText("" + mDay + "/" + mMonth + "/" + mYear)
+                startDate.setText("" + mDay + "/" + mMonth+1 + "/" + mYear)
                 //salvo data
-                dataarr="" + mYear + "-" + mMonth + "-" + mDay
+                dataarr="" + mYear + "-" + "07" + "-" + mDay
             }, year, month, day )
 
         dpd.show()
@@ -149,7 +149,7 @@ class ActivitySearch : AppCompatActivity() {
             val timeSetListener = TimePickerDialog.OnTimeSetListener { view: TimePicker, hourOfDay:Int, minute:Int ->
                 cal.set(Calendar.HOUR_OF_DAY, hourOfDay)
                 cal.set(Calendar.MINUTE, minute)
-                endTime.setText(SimpleDateFormat("MM:mm").format(cal.time))
+                endTime.setText(""+hourOfDay+":"+minute)
                 //salvo ora
                 minend=""+(hourOfDay*60+minute)
             }

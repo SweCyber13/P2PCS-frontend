@@ -79,6 +79,7 @@ class ActivityEditCar : AppCompatActivity() {
                     raggioValue.text = "" + jsonInner.get("Raggio_percorrenza")
                     chilometraggioValue.text = "" + jsonInner.get("Kilometraggio")
                     tariffaValue.text = "" + jsonInner.get("Tariffa_oraria")
+                    indirizzoValue.text= ""+ jsonInner.get("Indirizzo")
                     // = "" + jsonInner.get("Indirizzo")
                 }
 

@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.p2pcs_app.Explore.MyData
 import com.example.p2pcs_app.R
 
 class FragmentCarRequests : Fragment() {
@@ -45,16 +44,9 @@ class FragmentCarRequests : Fragment() {
 
     fun load_data(data_list: ArrayList<MyData>) { //prova con 3 card
 
-        var myData1 = MyData(1, "lol", "lol")
-
-        var myData2 = MyData(2, "lol", "lol")
-
-        var myData3 = MyData(3, "lol", "lol")
-
+        var myData1 = MyData("Elena", "Pontecchiani", "Fiat Punto", "PD000PD", "2019-07-16", "12.00", "20.00","")
 
         data_list.add(myData1)
-        data_list.add(myData2)
-        data_list.add(myData3)
 
 
     }
