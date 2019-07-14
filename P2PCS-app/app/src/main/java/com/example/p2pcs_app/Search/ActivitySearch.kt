@@ -119,7 +119,7 @@ class ActivitySearch : AppCompatActivity() {
         startDate.setOnClickListener {
         val dpd = DatePickerDialog(this,
             DatePickerDialog.OnDateSetListener { view: DatePicker?, mYear: Int, mMonth: Int, mDay: Int ->
-                startDate.setText("" + mDay + "/" + mMonth+1 + "/" + mYear)
+                startDate.setText("" + mDay + "/" + (mMonth+1) + "/" + mYear)
                 //salvo data
                 dataarr="" + mYear + "-" + "07" + "-" + mDay
             }, year, month, day )

@@ -38,8 +38,12 @@
                 android:label="@string/title_activity_maps">
         </activity>
         <activity
-                android:name=".EditCarCalendar.ActivityEditCarCalenar"
+                android:name=".EditCarCalendar.ActivityEditCarCalendar"
                 android:label="Disponibilità auto">
+        </activity>
+        <activity
+                android:name=".EditCarCalendar.ActivityAddAvaiability"
+                android:label="Aggiungi disponibilità">
         </activity>
         <activity
                 android:name=".Cars.ActivityCars"

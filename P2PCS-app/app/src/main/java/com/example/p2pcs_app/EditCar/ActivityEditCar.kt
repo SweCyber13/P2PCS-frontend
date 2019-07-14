@@ -9,7 +9,7 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.example.p2pcs_app.EditCarCalendar.ActivityEditCarCalenar
+import com.example.p2pcs_app.EditCarCalendar.ActivityEditCarCalendar
 import com.example.p2pcs_app.R
 import kotlinx.android.synthetic.main.activity_edit_car.*
 import org.json.JSONArray
@@ -42,7 +42,8 @@ class ActivityEditCar : AppCompatActivity() {
 
         //listener calendario disponibilità
         Calendario.setOnClickListener{
-            val intent= Intent(this, ActivityEditCarCalenar::class.java)
+            val intent= Intent(this, ActivityEditCarCalendar::class.java)
+            intent.putExtra("TARGA", targapassed)
             startActivity(intent)
         }
 

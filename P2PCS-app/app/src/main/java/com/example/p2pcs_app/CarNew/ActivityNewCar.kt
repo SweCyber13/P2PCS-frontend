@@ -97,10 +97,7 @@ class ActivityNewCar : AppCompatActivity() {
 
                 //risponde successo o no
                 val strResp = response.toString()
-                Toast.makeText(this, "successo l'auto è stata aggiunta" , Toast.LENGTH_LONG).show()
-                val intent= Intent(this, ActivityCars::class.java)
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-                startActivity(intent)
+                Toast.makeText(this, "l'auto è stata aggiunta con successo" , Toast.LENGTH_LONG).show()
             },
             Response.ErrorListener {
                 Toast.makeText(this, "errore nella creazione dell'auto" , Toast.LENGTH_LONG).show()
