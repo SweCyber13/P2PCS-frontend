@@ -29,6 +29,14 @@ import java.util.*
 
 class ActivitySearch : AppCompatActivity() {
 
+    var latp=""
+    var lonp=""
+    var lata=""
+    var lona=""
+    var dataarr=""
+    var minstart=""
+    var minend=""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_search)
@@ -36,6 +44,13 @@ class ActivitySearch : AppCompatActivity() {
         val button = findViewById<Button>(R.id.search_search_car)
         button.setOnClickListener {
             val intent = Intent(this, ActivitySearchresult::class.java)
+            intent.putExtra("LATP", latp)
+            intent.putExtra("LONP", lonp)
+            intent.putExtra("LATA", lata)
+            intent.putExtra("LONA", lona)
+            intent.putExtra("DAY", dataarr)
+            intent.putExtra("MINP", minstart)
+            intent.putExtra("MINA", minend)
             startActivity(intent)
         }
 
@@ -76,6 +91,9 @@ class ActivitySearch : AppCompatActivity() {
             override fun onPlaceSelected(place: Place) {
                 Toast.makeText(context, place.address, Toast.LENGTH_LONG).show()
                 //salvare dati
+                latp=""+place.latLng!!.latitude
+                lonp=""+place.latLng!!.longitude
+
             }
         })
 
@@ -87,6 +105,8 @@ class ActivitySearch : AppCompatActivity() {
             override fun onPlaceSelected(place: Place) {
                 Toast.makeText(context, place.address, Toast.LENGTH_LONG).show()
                 //salvare dati
+                lata=""+place.latLng!!.latitude
+                lona=""+place.latLng!!.longitude
             }
         })
 
@@ -100,6 +120,8 @@ class ActivitySearch : AppCompatActivity() {
         val dpd = DatePickerDialog(this,
             DatePickerDialog.OnDateSetListener { view: DatePicker?, mYear: Int, mMonth: Int, mDay: Int ->
                 startDate.setText("" + mDay + "/" + mMonth + "/" + mYear)
+                //salvo data
+                dataarr="" + mYear + "-" + mMonth + "-" + mDay
             }, year, month, day )
 
         dpd.show()
@@ -113,6 +135,8 @@ class ActivitySearch : AppCompatActivity() {
                 cal.set(Calendar.HOUR_OF_DAY, hourOfDay)
                 cal.set(Calendar.MINUTE, minute)
                 startTime.setText(""+hourOfDay+":"+minute)
+                //salvo minuti
+                minstart=""+(hourOfDay*60+minute)
             }
             TimePickerDialog(this, timeSetListener, cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE), true).show()
         }
@@ -126,6 +150,8 @@ class ActivitySearch : AppCompatActivity() {
                 cal.set(Calendar.HOUR_OF_DAY, hourOfDay)
                 cal.set(Calendar.MINUTE, minute)
                 endTime.setText(SimpleDateFormat("MM:mm").format(cal.time))
+                //salvo ora
+                minend=""+(hourOfDay*60+minute)
             }
             TimePickerDialog(this, timeSetListener, cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE), true).show()
         }
