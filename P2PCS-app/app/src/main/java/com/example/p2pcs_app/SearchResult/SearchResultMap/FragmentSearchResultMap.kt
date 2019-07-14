@@ -20,7 +20,7 @@ class FragmentSearchResultMap : Fragment(), OnMapReadyCallback{
     var supportmap : SupportMapFragment? = null
 
     override fun onMapReady(p0: GoogleMap?) {
-        Toast.makeText(context, "hi", Toast.LENGTH_LONG).show()
+        //Toast.makeText(context, "hi", Toast.LENGTH_LONG).show()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

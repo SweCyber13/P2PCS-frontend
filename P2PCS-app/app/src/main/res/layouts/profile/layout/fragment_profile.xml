@@ -82,7 +82,7 @@
                         app:layout_constraintRight_toLeftOf="@+id/logout"
                         app:layout_constraintLeft_toRightOf="@+id/imageProfile"
 
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="16dp"
 
                         style="@style/MyPersonalData1"
 
