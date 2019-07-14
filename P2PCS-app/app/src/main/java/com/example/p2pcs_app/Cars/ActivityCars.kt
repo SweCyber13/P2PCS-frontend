@@ -1,13 +1,16 @@
 package com.example.p2pcs_app.Cars
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import com.example.p2pcs_app.CarNew.ActivityNewCar
 import com.example.p2pcs_app.R
 
 import kotlinx.android.synthetic.main.activity_cars.*
+import kotlinx.android.synthetic.main.fragment_cars.*
 
 class ActivityCars : AppCompatActivity() {
 
@@ -25,7 +28,7 @@ class ActivityCars : AppCompatActivity() {
 
         linearLayoutManager= LinearLayoutManager(this)
 
-        customAdapter= CustomAdapter(data_list)
+        customAdapter= CustomAdapter(data_list,this)
 
 
         recyclerView.apply {
@@ -35,6 +38,13 @@ class ActivityCars : AppCompatActivity() {
             adapter=customAdapter
 
         }
+
+        //listener per nuova macchina
+        new_car.setOnClickListener{
+            val intent= Intent(this, ActivityNewCar::class.java)
+            startActivity(intent)
+        }
+
     }
 
     fun load_data (data_list: ArrayList<MyData>){ //prova con 3 card

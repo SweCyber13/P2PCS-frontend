@@ -14,6 +14,7 @@ import com.example.p2pcs_app.Explore.FragmentExplore
 import com.example.p2pcs_app.Home.HomeFragment
 import com.example.p2pcs_app.Profile.FragmentProfile
 import com.example.p2pcs_app.Coupons.FragmentCoupon
+import com.example.p2pcs_app.GamificationFragment.GamificationFragment
 
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener, RequestQueueListener {
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             R.id.navigation_profile -> loadFragment(FragmentProfile())
             R.id.navigation_home -> loadFragment(HomeFragment())
             R.id.navigation_reservation -> loadFragment(ActivityCarBooking()) //da rinominare a fragment la classe
-            R.id.navigation_gift -> loadFragment(FragmentCoupon())
+            R.id.navigation_gift -> loadFragment(GamificationFragment())
         }
 
         return true

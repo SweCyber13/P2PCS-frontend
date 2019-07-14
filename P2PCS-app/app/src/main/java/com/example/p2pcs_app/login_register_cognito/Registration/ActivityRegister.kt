@@ -67,10 +67,6 @@ class ActivityRegister : AppCompatActivity() {
                     val prefs = context.getSharedPreferences(R.string.shared_preferences.toString(), 0)
                     prefs.edit().putString("username",(user as CognitoUser).userId).apply()
 
-                    //manda alla conferma
-                    val intent= Intent(context, ActivityConfirmRegister::class.java)
-                    startActivity(intent)
-
                     //make volley request for insert user in background (maybe not in this activity???)
                     try{
                         saveUser(context,username,password,name,surname,email)
@@ -80,6 +76,10 @@ class ActivityRegister : AppCompatActivity() {
                         (user as CognitoUser).deleteUser(null)
                         Toast.makeText(context, "Si è verificato un errore" , Toast.LENGTH_LONG).show()
                     }
+
+                    //manda alla conferma
+                    val intent= Intent(context, ActivityConfirmRegister::class.java)
+                    startActivity(intent)
 
 
                 } else {
@@ -115,36 +115,24 @@ class ActivityRegister : AppCompatActivity() {
     fun saveUser(context: Context, username: String, password: String, name: String, surname: String, email: String){
         // Instantiate the RequestQueue.
         val queue = Volley.newRequestQueue(context)
-        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/registrazione.php"
+        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/user/create.php?USERNAME="+username+"&NAME="+name+"&SURNAME="+surname+"&MAIL="+email
 
         // Request a string response from the provided URL.
         //object property needed to override getparams
-        val stringReq = object: StringRequest(
+        val stringReq = StringRequest(
             Request.Method.POST, url,
             Response.Listener<String> { response ->
 
                 //risponde successo o no
                 val strResp = response.toString()
-                if(strResp!="success")
+                if(strResp!="meesage->Success")
                 {
-                    throw(DatabaseException("errore"))
+                    //throw(DatabaseException("errore"))
                 }
             },
             Response.ErrorListener {
-                throw(DatabaseException("errore"))
+                //throw(DatabaseException("errore"))
             })
-        //need to override getparams to get the post request
-        {
-            override fun getParams() : Map<String,String> {
-                val params = HashMap<String, String>()
-                params.put("USERNAME",username)
-                params.put("NOME",name)
-                params.put("COGNOME",surname)
-                params.put("EMAIL",email)
-                params.put("PASSWORD",password)
-                return params
-            }
-        }
 
         queue.add(stringReq)
     }

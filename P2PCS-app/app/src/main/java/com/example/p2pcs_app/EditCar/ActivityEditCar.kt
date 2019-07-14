@@ -1,6 +1,7 @@
 package com.example.p2pcs_app.EditCar
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
@@ -8,13 +9,15 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.example.p2pcs_app.EditCarCalendar.ActivityEditCarCalenar
 import com.example.p2pcs_app.R
+import kotlinx.android.synthetic.main.activity_edit_car.*
 import org.json.JSONArray
 import org.json.JSONObject
 
 
 class ActivityEditCar : AppCompatActivity() {
-//da visualizza macchina activity
+    //da visualizza macchina activity
     private var modello: TextView? = null
     private var marca: TextView? = null
     private var targa: TextView? = null
@@ -28,7 +31,7 @@ class ActivityEditCar : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_car)
-        marca = findViewById<TextView>(R.id.Marca)
+        /*marca = findViewById<TextView>(R.id.Marca)
         modello = findViewById<TextView>(R.id.Modello)
         targa = findViewById<TextView>(R.id.Targa)
         anno = findViewById<TextView>(R.id.AnnoProduzione)
@@ -38,10 +41,26 @@ class ActivityEditCar : AppCompatActivity() {
         chilometraggio = findViewById<TextView>(R.id.chilometraggioValue)
         tariffa = findViewById<TextView>(R.id.tariffaValue)
 
-        getCar(this)
+        getCar(this)*/
+
+        //ottenere i parametri passati dall'intent
+        //settare tutti i campi di testo
+        //possibilmente mettere i listener per la modifica
+        //possibilmente mettere listener per l'eliminazione e tornare indietro
+        //mettere listener per calendario disponibilità
+
+        //listener calendario disponibilità
+        Calendario.setOnClickListener{
+            val intent= Intent(this, ActivityEditCarCalenar::class.java)
+            startActivity(intent)
+        }
+
+
     }
 
-    // function for network call
+}
+
+    /*// function for network call
     fun getCar(context: Context) {
         // Instantiate the RequestQueue.
         val queue = Volley.newRequestQueue(this)
@@ -116,7 +135,7 @@ class ActivityEditCar : AppCompatActivity() {
     }
 
 
-}
+}*/
 
 /* Parte di prima
     override fun onCreate(savedInstanceState: Bundle?) {
