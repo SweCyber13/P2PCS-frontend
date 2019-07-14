@@ -208,7 +208,7 @@
 
                 />
                 <TextView
-                        android:text="lol"
+                        android:text="******"
                         android:id="@+id/Password"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.5"

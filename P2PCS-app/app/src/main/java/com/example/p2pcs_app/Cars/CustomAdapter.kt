@@ -40,9 +40,13 @@ class CustomAdapter(
     override fun onBindViewHolder(p0: MyViewHolder, p1: Int) {
         p0.button.setOnClickListener{
             val intent= Intent(mcontext, ActivityEditCar::class.java)
-            intent.putExtra("VEHICLE", 1) //inserire le informazioni da passare da mydata info macchina
+            intent.putExtra("MACCHINA", myData[p1].targa) //passo la targa della macchina
             mcontext.startActivity(intent)
         }
+        p0.marca.text=myData[p1].marca
+        p0.modello.text=myData[p1].modello
+        p0.targa.text=myData[p1].targa
+        p0.year.text=myData[p1].anno
     }
 
 

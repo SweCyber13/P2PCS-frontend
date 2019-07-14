@@ -107,7 +107,7 @@
                             android:fontFamily="sans-serif-light"
 
 
-                    />
+                            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
                 </android.support.constraint.ConstraintLayout>
 
                 <TextView

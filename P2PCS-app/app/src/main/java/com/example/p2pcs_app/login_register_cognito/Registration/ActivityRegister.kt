@@ -125,7 +125,7 @@ class ActivityRegister : AppCompatActivity() {
 
                 //risponde successo o no
                 val strResp = response.toString()
-                if(strResp!="meesage->Success")
+                if(strResp!="message->Success")
                 {
                     //throw(DatabaseException("errore"))
                 }
