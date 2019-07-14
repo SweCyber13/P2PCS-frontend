@@ -46,8 +46,16 @@ android {
                             'src/main/res/layouts/registration_login',
                             'src/main/res/layouts/search',
                             'src/main/res/layouts/search_result',
+<<<<<<< HEAD
+
+
                             'src/main/res/layouts/fragment_prize_section',
 
+
+=======
+                            'src/main/res/layouts/fragment_prize_section',
+
+>>>>>>> master
                             'src/main/res/layouts',
                             'src/main/res'
                     ]
