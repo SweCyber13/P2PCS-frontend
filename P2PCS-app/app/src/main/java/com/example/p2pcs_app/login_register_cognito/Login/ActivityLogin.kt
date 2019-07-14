@@ -33,7 +33,7 @@ class ActivityLogin : AppCompatActivity() {
         //cognitosettings.getUserPool().currentUser.signOut()
 
         //salta sempre il login, da controllare
-        if(cognitosettings.getUserPool().currentUser.userId!=null) {
+        /*if(cognitosettings.getUserPool().currentUser.userId!=null) {
             //Crea sharedpreferences con username
             val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
             prefs.edit().putString("username",cognitosettings.getUserPool().currentUser.userId).apply()
@@ -42,7 +42,7 @@ class ActivityLogin : AppCompatActivity() {
             startActivity(intent)
             //kill activity_login so no returning back
             this.finish()
-        }
+        }*/
 
         //user not already logged
 

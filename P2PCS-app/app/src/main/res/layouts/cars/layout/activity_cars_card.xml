@@ -144,7 +144,7 @@
 
                 >
                     <TextView
-                            android:id="@+id/year"
+                            android:id="@+id/textYear"
 
                             android:text="1997"
 

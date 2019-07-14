@@ -43,7 +43,7 @@ class FragmentCars : Fragment() {
 
         modello = view.findViewById<TextView>(R.id.textModel)
         marca = view.findViewById<TextView>(R.id.textMarca)
-        anno = view.findViewById<TextView>(R.id.year)
+        anno = view.findViewById<TextView>(R.id.textYear)
         targa = view.findViewById<TextView>(R.id.textTarga)
         val button = view.findViewById<Button>(R.id.otherInfo)
         button.setOnClickListener{
