@@ -181,7 +181,7 @@
                         android:id="@+id/annoLabel"
                         android:text="Anno Produzione"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -200,7 +200,7 @@
                         android:id="@+id/AnnoProduzione"
                         android:text="1997"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -208,13 +208,22 @@
 
                         android:gravity="center"
 
-                        app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintLeft_toRightOf="@+id/annoLabel"
 
                         style="@style/MyPersonalData2"
 
 
                 />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/AnnoProduzione"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/AnnoProduzione"
+                        android:id="@+id/edit_anno"/>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/fourthLine"
@@ -236,7 +245,7 @@
                         android:id="@+id/cavalliLabel"
                         android:text="Cavalli"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -253,7 +262,7 @@
                         android:id="@+id/cavalliValue"
                         android:text="1600"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -261,11 +270,20 @@
 
                         android:gravity="center"
 
-                        app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintLeft_toRightOf="@+id/cavalliLabel"
 
                         style="@style/MyPersonalData2"
                 />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/cavalliValue"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/cavalliValue"
+                        android:id="@+id/edit_cavalli"/>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/fifthLine"
@@ -285,7 +303,7 @@
                         android:text="Cilindrata"
                         android:id="@+id/cilindrataLabel"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -302,7 +320,7 @@
                         android:id="@+id/cilindrataValue"
                         android:text="1600"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -310,11 +328,20 @@
 
                         android:gravity="center"
 
-                        app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintLeft_toRightOf="@+id/cilindrataLabel"
 
                         style="@style/MyPersonalData2"
                 />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/cilindrataValue"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/cilindrataValue"
+                        android:id="@+id/edit_cilindrata"/>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/sixthLine"
@@ -336,7 +363,7 @@
                         android:id="@+id/raggioLabel"
                         android:text="Percorrenza Consentita"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -354,7 +381,7 @@
                         android:id="@+id/raggioValue"
                         android:text="100"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -362,11 +389,20 @@
 
                         android:gravity="center"
 
-                        app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintLeft_toRightOf="@+id/raggioLabel"
 
                         style="@style/MyPersonalData2"
                 />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/raggioValue"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/raggioValue"
+                        android:id="@+id/edit_raggio"/>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/seventhLine"
@@ -388,7 +424,7 @@
                         android:id="@+id/chilometraggioLabel"
                         android:text="Chilometraggio"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -405,7 +441,7 @@
                         android:id="@+id/chilometraggioValue"
                         android:text="112222"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -413,11 +449,20 @@
 
                         android:gravity="center"
 
-                        app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintLeft_toRightOf="@+id/chilometraggioLabel"
 
                         style="@style/MyPersonalData2"
                 />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/chilometraggioValue"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/chilometraggioValue"
+                        android:id="@+id/edit_chilometraggio"/>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/eigthLine"
@@ -437,7 +482,7 @@
                         android:id="@+id/tariffaLabel"
                         android:text="Tariffa oraria"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -454,7 +499,7 @@
                         android:id="@+id/tariffaValue"
                         android:text="5,00"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.5"
+                        app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
@@ -462,11 +507,20 @@
 
                         android:gravity="center"
 
-                        app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintLeft_toRightOf="@+id/tariffaLabel"
 
                         style="@style/MyPersonalData2"
                 />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tariffaValue"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/tariffaValue"
+                        android:id="@+id/edit_tariffa"/>
             </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>

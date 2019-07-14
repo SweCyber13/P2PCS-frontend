@@ -46,15 +46,11 @@ android {
                             'src/main/res/layouts/registration_login',
                             'src/main/res/layouts/search',
                             'src/main/res/layouts/search_result',
-<<<<<<< HEAD
 
-=======
 
                             'src/main/res/layouts/fragment_prize_section',
 
 
-
->>>>>>> 4cb74a63aa36e10ea3b3d42b3c231bde60878edb
                             'src/main/res/layouts',
                             'src/main/res'
                     ]
