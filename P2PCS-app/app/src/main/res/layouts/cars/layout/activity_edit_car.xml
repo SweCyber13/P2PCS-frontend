@@ -522,6 +522,66 @@
                         app:layout_constraintBottom_toBottomOf="@+id/tariffaValue"
                         android:id="@+id/edit_tariffa"/>
             </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/ninethLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    android:padding="10dp"
+
+                    android:background="@drawable/my_personal_data_line"
+
+
+            >
+
+                <TextView
+                        android:id="@+id/indirizzoLabel"
+                        android:text="Inidirizzo:"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/indirizzoValue"
+
+                        style="@style/MyPersonalData1"
+                />
+                <TextView
+                        android:id="@+id/indirizzoValue"
+                        android:text="Via Rossi 8, Fe"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toRightOf="@+id/indirizzoLabel"
+
+                        style="@style/MyPersonalData2"
+                />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/indirizzoValue"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/indirizzoValue"
+                        android:id="@+id/edit_indirizzo"/>
+            </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
