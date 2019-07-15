@@ -46,7 +46,7 @@ class CustomAdapter(
         p0.data.text="2019-07-16"
         p0.inizio.text="12.00"
         p0.fine.text="20.00"
-        p0.prezzo.text=""
+        p0.prezzo.text="40.00€"
         p0.accetta.setOnClickListener{
             p0.accetta.text="Accettato"
             p0.accetta.isEnabled=false

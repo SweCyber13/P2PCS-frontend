@@ -25,6 +25,7 @@ class CustomAdapter(
         var city=view.city
         var username= view.username
         var prenota= view.reserve
+        var targa=view.InTarga
 
     }
 
@@ -45,6 +46,7 @@ class CustomAdapter(
         p0.marca.text=myData[p1].smarca
         p0.model.text=myData[p1].smodello
         p0.rate.text=myData[p1].scosto
+        p0.targa.text=myData[p1].starga
     }
 
 

@@ -41,6 +41,17 @@ class ActivitySearch : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_search)
 
+        //mok prenotazione
+
+        val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
+        val str_username=prefs.getString("username","")
+        if(str_username=="SweElena"){
+            //sono sulla ricerca con il profilo che deve cercare
+            prefs.edit().putString("mostrarichiesta","si").apply()
+            prefs.edit().putString("mostraprenotazione","si").apply()
+        }
+
+
         val button = findViewById<Button>(R.id.search_search_car)
         button.setOnClickListener {
             val intent = Intent(this, ActivitySearchresult::class.java)

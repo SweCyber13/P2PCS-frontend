@@ -90,11 +90,11 @@ class FragmentSearchResultList() : Fragment() {
                     val str_modello = "" + jsonInner.get("Modello")
                     val str_marca = "" + jsonInner.get("Marca")
                     val str_proprietario="" + jsonInner.get("Proprietario")
+                    var str_targa="" + jsonInner.get("Targa")
                     val str_costo="" + jsonInner.get("Costo_viaggio")
                     val str_indirizzo="" + jsonInner.get("Indirizzo")
-
                     //creo mydata
-                    var myDatacar= MyData(str_proprietario, str_modello, str_marca, str_costo, str_indirizzo)
+                    var myDatacar= MyData(str_proprietario, str_modello, str_marca, str_costo, str_indirizzo,str_targa)
                     data_list.add(myDatacar)
                 }
                 //ho aggiunto tutte le auto a datalist chiamo la recyclerview

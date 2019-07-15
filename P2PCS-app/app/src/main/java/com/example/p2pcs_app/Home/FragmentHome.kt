@@ -16,6 +16,8 @@ import com.example.p2pcs_app.Cars.ActivityCars
 
 import com.example.p2pcs_app.R
 import com.example.p2pcs_app.Search.ActivitySearch
+import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
 class HomeFragment : Fragment() {
@@ -51,6 +53,15 @@ class HomeFragment : Fragment() {
         button4.setOnClickListener{
             val intent= Intent(requireContext(), ActivityLeaderboard::class.java)
             startActivity(intent)
+        }
+
+        val prefs = requireContext().getSharedPreferences(R.string.shared_preferences.toString(), 0)
+        val str_username=prefs.getString("username","")
+        if(str_username=="SweElena"){
+            view.third_part_title.text="Sei il 1 in classifica!"
+        }
+        if(str_username=="SweCyber13"){
+            view.third_part_title.text="Sei il 14 in classifica!"
         }
 
 
