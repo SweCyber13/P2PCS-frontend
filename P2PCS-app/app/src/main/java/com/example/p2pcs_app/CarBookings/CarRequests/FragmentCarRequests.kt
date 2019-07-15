@@ -26,19 +26,26 @@ class FragmentCarRequests : Fragment() {
         val data_list = ArrayList<MyData>()
         load_data(data_list)
 
-        linearLayoutManager = LinearLayoutManager(requireContext())
+        val prefs = requireContext().getSharedPreferences(R.string.shared_preferences.toString(), 0)
+        val str_username=prefs.getString("username","")
+        val str_mostra=prefs.getString("mostrarichiesta","")
+        if(str_username=="SweCyber13"&&str_mostra=="si") {
+            linearLayoutManager = LinearLayoutManager(requireContext())
 
-        customAdapter = CustomAdapter(data_list)
+            customAdapter = CustomAdapter(data_list)
 
 
-        recyclerView.apply {
-            setHasFixedSize(true)
+            recyclerView.apply {
+                setHasFixedSize(true)
 
-            layoutManager = linearLayoutManager
-            adapter = customAdapter
+                layoutManager = linearLayoutManager
+                adapter = customAdapter
+
+            }
+
+            prefs.edit().putString("mostraaccettato","si").apply()
 
         }
-
         return view
     }
 

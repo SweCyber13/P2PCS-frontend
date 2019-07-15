@@ -26,19 +26,24 @@ class FragmentCarReservations : Fragment() {
 
         val recyclerView= view.findViewById<RecyclerView> (R.id.recycler_view)
         val data_list=  ArrayList<MyData>()
-        load_data(data_list)
+        val prefs = requireContext().getSharedPreferences(R.string.shared_preferences.toString(), 0)
+        val str_username=prefs.getString("username","")
+        val str_mostra=prefs.getString("mostraprenotazione","")
+        if(str_username=="SweElena"&&str_mostra=="si") {
+            load_data(data_list)
 
-        linearLayoutManager= LinearLayoutManager(requireContext())
+            linearLayoutManager = LinearLayoutManager(requireContext())
 
-        customAdapter= CustomAdapter(data_list)
+            customAdapter = CustomAdapter(data_list)
 
 
-        recyclerView.apply {
-            setHasFixedSize(true)
+            recyclerView.apply {
+                setHasFixedSize(true)
 
-            layoutManager=linearLayoutManager
-            adapter=customAdapter
+                layoutManager = linearLayoutManager
+                adapter = customAdapter
 
+            }
         }
 
         return view

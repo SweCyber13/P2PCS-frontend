@@ -93,7 +93,7 @@
             />
             <TextView
                     android:id="@+id/Stato"
-                    android:text="In attesa"
+                    android:text="Accettata"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     app:layout_constraintHeight_percent="0.2"
