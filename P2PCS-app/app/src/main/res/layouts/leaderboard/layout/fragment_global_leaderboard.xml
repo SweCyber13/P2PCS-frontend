@@ -15,7 +15,7 @@
 
 
 />                <TextView
-                        android:text="Tabellone punti"
+                        android:text="Classifica Globale"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/TitlePuntiRank"
@@ -46,7 +46,7 @@
                             android:text="Posizione"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:id="@+id/position"
+                            android:id="@id/positionLabel"
                             app:layout_constraintWidth_percent="0.33"
                             app:layout_constraintLeft_toLeftOf="parent"
                             style="@style/LeaderboardsTextView"
@@ -55,12 +55,12 @@
                     />
                     <TextView
 
-                            android:text="Username "
+                            android:text="Username"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:id="@+id/username"
+                            android:id="@+id/usernameLabel"
                             app:layout_constraintWidth_percent="0.34"
-                            app:layout_constraintLeft_toRightOf="@id/position"
+                            app:layout_constraintLeft_toRightOf="@id/positionLabel"
                             style="@style/LeaderboardsTextView"
 
                     />
@@ -70,10 +70,27 @@
                             android:layout_width="0dp"
                             app:layout_constraintWidth_percent="0.33"
                             android:layout_height="match_parent"
-                            android:id="@+id/rank"
+                            android:id="@+id/rankLabel"
                             app:layout_constraintRight_toRightOf="parent"
                             style="@style/LeaderboardsTextView"
                     />
+
+                    <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/positionLabel">
+                        <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycler_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                card_view:cardUseCompactPadding="true"
+                                card_view:cardElevation="5dp"
+                                card_view:cardCornerRadius="5dp"
+                                android:scrollbars="vertical"
+                                android:layout_margin="6dp"
+
+                        />
+                    </ScrollView>
                 </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>

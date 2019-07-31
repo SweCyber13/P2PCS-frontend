@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_width="match_parent"
                                              android:layout_height="match_parent">
 
     <android.support.v7.widget.CardView
@@ -10,12 +10,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
-
     >
         <android.support.constraint.ConstraintLayout
-
-
 
                 android:layout_width="match_parent"
 
@@ -48,6 +44,7 @@
                         android:id="@+id/button_info"
                         app:layout_constraintRight_toRightOf="@id/line_right_button"
                         app:layout_constraintBottom_toBottomOf="@id/line_bottom"
+                        app:layout_constraintTop_toTopOf="@id/line_top"
 
                 />
                 <ImageView
@@ -75,6 +72,7 @@
                         android:id="@+id/OfferTitle"
                         app:layout_constraintBottom_toBottomOf="@id/line_bottom"
                         style="@style/ExploreTextView"/>
+
                 <TextView
                         android:text="1500pt"
                         android:textColor="@color/white"
