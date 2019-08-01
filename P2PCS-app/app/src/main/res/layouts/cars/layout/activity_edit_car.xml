@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+        >
+
+
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/zeroLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintBottom_toTopOf="@+id/secondLine"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:padding="10dp"
+            >
+
+
+                <ImageView
+                        android:id="@+id/car"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.4"
+                        android:layout_height="150dp"
+
+                        app:srcCompat="@drawable/car11"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                />
+                <TextView
+                        android:id="@+id/Marca"
+                        android:text="Opel"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.6"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/Modello"
+
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/car"
+
+                        android:layout_marginLeft="20dp"
+
+                        style="@style/MyPersonalData1"
+
+
+                />
+                <TextView
+                        android:id="@+id/Modello"
+                        android:text="Corsa"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.6"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/car"
+
+                        app:layout_constraintTop_toBottomOf="@+id/Marca"
+                        app:layout_constraintBottom_toTopOf="@+id/Calendario"
+
+                        android:layout_marginLeft="20dp"
+
+                        style="@style/MyPersonalData1"
+
+                />
+                <Button
+                        android:id="@+id/Calendario"
+                        android:text="Calendario Disponibilità"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/car"
+
+                        app:layout_constraintTop_toBottomOf="@+id/Modello"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+
+
+
+                />
+
+
+                />
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/secondLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toTopOf="@+id/b_thirdLine"
+                    app:layout_constraintTop_toBottomOf="@+id/zeroLine"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    android:padding="10dp"
+
+                    android:background="@drawable/my_personal_data_line"
+
+            >
+
+                <TextView
+                        android:id="@+id/targaLabel"
+                        android:text="Targa"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/Targa"
+
+                        style="@style/MyPersonalData1"
+
+
+                />
+                <TextView
+                        android:id="@+id/Targa"
+                        android:text="AA000AA"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toRightOf="@+id/targaLabel"
+
+                        style="@style/MyPersonalData2"
+
+
+                />
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/thirdLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    android:padding="10dp"
+
+                    android:background="@drawable/my_personal_data_line"
+
+            >
+
+                <TextView
+                        android:id="@+id/annoLabel"
+                        android:text="Anno Produzione"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/AnnoProduzione"
+
+                        style="@style/MyPersonalData1"
+
+
+                />
+                <TextView
+                        android:id="@+id/AnnoProduzione"
+                        android:text="1997"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toRightOf="@+id/annoLabel"
+
+                        style="@style/MyPersonalData2"
+
+
+                />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/AnnoProduzione"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/AnnoProduzione"
+                        android:id="@+id/edit_anno"/>
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/fourthLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    android:padding="10dp"
+
+                    android:background="@drawable/my_personal_data_line"
+
+
+
+            >
+
+                <TextView
+                        android:id="@+id/cavalliLabel"
+                        android:text="Cavalli"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/cavalliValue"
+
+                        style="@style/MyPersonalData1"
+                />
+                <TextView
+                        android:id="@+id/cavalliValue"
+                        android:text="1600"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toRightOf="@+id/cavalliLabel"
+
+                        style="@style/MyPersonalData2"
+                />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/cavalliValue"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/cavalliValue"
+                        android:id="@+id/edit_cavalli"/>
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/fifthLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    android:padding="10dp"
+
+                    android:background="@drawable/my_personal_data_line"
+
+            >
+
+                <TextView
+                        android:text="Cilindrata"
+                        android:id="@+id/cilindrataLabel"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/cilindrataValue"
+
+                        style="@style/MyPersonalData1"
+                />
+                <TextView
+                        android:id="@+id/cilindrataValue"
+                        android:text="1600"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toRightOf="@+id/cilindrataLabel"
+
+                        style="@style/MyPersonalData2"
+                />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/cilindrataValue"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/cilindrataValue"
+                        android:id="@+id/edit_cilindrata"/>
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/sixthLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    android:padding="10dp"
+
+                    android:background="@drawable/my_personal_data_line"
+
+
+
+            >
+
+                <TextView
+                        android:id="@+id/raggioLabel"
+                        android:text="Percorrenza Consentita"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/raggioValue"
+
+                        style="@style/MyPersonalData1"
+
+                />
+                <TextView
+                        android:id="@+id/raggioValue"
+                        android:text="100"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toRightOf="@+id/raggioLabel"
+
+                        style="@style/MyPersonalData2"
+                />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/raggioValue"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/raggioValue"
+                        android:id="@+id/edit_raggio"/>
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/seventhLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    android:padding="10dp"
+
+                    android:background="@drawable/my_personal_data_line"
+
+
+
+            >
+
+                <TextView
+                        android:id="@+id/chilometraggioLabel"
+                        android:text="Chilometraggio"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/chilometraggioValue"
+
+                        style="@style/MyPersonalData1"
+                />
+                <TextView
+                        android:id="@+id/chilometraggioValue"
+                        android:text="112222"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toRightOf="@+id/chilometraggioLabel"
+
+                        style="@style/MyPersonalData2"
+                />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/chilometraggioValue"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/chilometraggioValue"
+                        android:id="@+id/edit_chilometraggio"/>
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/eigthLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    android:padding="10dp"
+
+                    android:background="@drawable/my_personal_data_line"
+
+
+            >
+
+                <TextView
+                        android:id="@+id/tariffaLabel"
+                        android:text="Tariffa oraria"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/tariffaValue"
+
+                        style="@style/MyPersonalData1"
+                />
+                <TextView
+                        android:id="@+id/tariffaValue"
+                        android:text="5,00"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toRightOf="@+id/tariffaLabel"
+
+                        style="@style/MyPersonalData2"
+                />
+                <ImageView
+
+                        app:layout_constraintWidth_percent="0.1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tariffaValue"
+                        app:srcCompat="@drawable/ic_edit"
+                        app:layout_constraintBottom_toBottomOf="@+id/tariffaValue"
+                        android:id="@+id/edit_tariffa"/>
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/ninethLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+
+                    android:padding="10dp"
+
+                    android:background="@drawable/my_personal_data_line"
+
+
+            >
+
+                <TextView
+                        android:id="@+id/indirizzoLabel"
+                        android:text="Inidirizzo:"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/indirizzoValue"
+
+                        style="@style/MyPersonalData1"
+                />
+                <TextView
+                        android:id="@+id/indirizzoValue"
+                        android:text="Via Rossi 8, Fe"
+                        android:layout_width="217dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        android:layout_height="48dp"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:gravity="center"
+
+                        app:layout_constraintLeft_toRightOf="@+id/indirizzoLabel"
+
+                        style="@style/MyPersonalData2"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

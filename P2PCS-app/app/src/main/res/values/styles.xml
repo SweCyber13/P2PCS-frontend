@@ -1,0 +1,273 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- Register Page-->
+    <style name="RegisterInsertTextBox">
+        <item name="android:padding">20dp</item>
+
+    </style>
+
+
+
+    <!-- Search page -->
+    <style name="SearchRelativeLayout">
+        <item name="android:layout_marginTop">10dp</item>
+
+    </style>
+    <style name="SearchEditText">
+        <item name="android:alpha">100</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="SearchImageView">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+
+    </style>
+
+    <!--leaderboard page-->
+    <style name="LeaderboardsTextView">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+    <!-- Homepage -->
+    <style name="HomeTextView">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#356859</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="HomeTitleTextView">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">23dp</item>
+        <item name="android:textColor">#37966F</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="HomeMainButton">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#37966F</item>
+        <item name="android:textStyle">normal</item>
+
+        <item name="android:gravity">center</item>
+
+
+    </style>
+<!--layouts page-->
+    <style name="ExploreTextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+<!--pagina con schede delle proprie macchine-->
+    <style name="MyCarPageButton">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#37966F</item>
+        <item name="android:textStyle">normal</item>
+
+        <item name="android:gravity">center</item>
+
+    </style>
+
+
+    <style name="MyCarPageButton2">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">normal</item>
+
+        <item name="android:gravity">center</item>
+
+    </style>
+
+
+    <style name="MyCarTitleTextView1">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#37966F</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyCarTitleTextView2">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#37966F</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="MyCarTarga">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--pagina con dati personali-->
+    <style name="MyPersonalData1">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#37966F</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="MyPersonalData2">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="MyPersonalData3">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="MyPersonalDataMail">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="MyPersonalData4">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <!-- Card delle prenotazioni -->
+
+    <style name="CardPrenotazioniTitle">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#37966F</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="CardPrenotazioni">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <!-- activity_car_reservation_details -->
+    <style name="CarReservationLineLayout">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="CarReservationTextLayout">
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:gravity">center_horizontal</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CarReservationImageLayout">
+        <item name="android:padding">15dp</item>
+        <item name="android:height">20dp</item>
+        <item name="android:width">20dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorHighlight">#B9E4C9</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:gravity">center_horizontal</item>
+
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+
+</resources>

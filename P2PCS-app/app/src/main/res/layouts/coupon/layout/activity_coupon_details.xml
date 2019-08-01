@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_margin="5dp"
+                                             android:layout_marginTop="10dp"
+>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.30"
+            android:id="@+id/image_explore"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/coupon"
+
+
+    />
+
+    <TextView
+            android:text="Supermercato" android:id="@+id/placeF"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.06"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/image_explore"
+            android:textSize="24dp"
+    />
+
+    <TextView
+            android:text="30% di sconto " android:id="@+id/titleF"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.06"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/placeF"
+            android:textSize="24dp"
+    />
+    <TextView
+            android:text="15000pt"
+            android:layout_width="match_parent"
+            android:layout_height="0pt"
+            app:layout_constraintHeight_percent="0.06"
+            android:id="@+id/requiredPoints"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            app:layout_constraintTop_toBottomOf="@id/titleF"
+    />
+    <TextView
+            android:text="Con 1500 punti ottieni uno sconto del 30% su una spesa minima 40€"
+            android:id="@+id/descriptionF"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.58"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/requiredPoints"
+            android:textSize="24dp"
+            tools:layout_editor_absoluteX="0dp"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
+
