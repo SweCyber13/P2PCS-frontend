@@ -71,7 +71,7 @@
 
                 >
                     <TextView
-                            android:id="@+id/textMarca"
+                            android:id="@+id/brandLabel"
                             android:text="Opel"
                             android:layout_width="wrap_content"
 
@@ -89,13 +89,13 @@
 
                     />
                     <TextView
-                            android:id="@+id/textModel"
+                            android:id="@+id/modelLabel"
                             android:text="Corsa"
                             android:layout_width="wrap_content"
 
                             android:layout_height="wrap_content"
 
-                            app:layout_constraintLeft_toRightOf="@+id/textMarca"
+                            app:layout_constraintLeft_toRightOf="@+id/brandLabel"
 
                             android:layout_marginLeft="5dp"
 
@@ -111,7 +111,7 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <TextView
-                        android:id="@+id/textTarga"
+                        android:id="@+id/targa"
                         android:text="AA000AA"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="1.0"
@@ -138,13 +138,13 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
 
-                        app:layout_constraintTop_toBottomOf="@+id/textTarga"
+                        app:layout_constraintTop_toBottomOf="@+id/targa"
                         app:layout_constraintBottom_toBottomOf="parent"
 
 
                 >
                     <TextView
-                            android:id="@+id/textYear"
+                            android:id="@+id/year"
 
                             android:text="1997"
 

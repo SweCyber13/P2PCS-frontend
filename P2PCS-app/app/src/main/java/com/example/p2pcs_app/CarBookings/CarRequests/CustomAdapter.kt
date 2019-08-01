@@ -4,7 +4,6 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.example.p2pcs_app.R
 import kotlinx.android.synthetic.main.activity_car_requests_card.view.*
 
@@ -17,16 +16,16 @@ class CustomAdapter(
 
     class MyViewHolder(val view:View): RecyclerView.ViewHolder(view){
 
-        var nome=view.userApplicantName
-        var cognome=view.userApplicantSurname
-        var modello= view.carMarca
-        var targa= view.carModello
-        var data=view.Day
-        var inizio=view.requestStartHour
-        var fine=view.requestEndHour
-        var prezzo=view.prezzo
-        var accetta=view.bottone
-        var rifiuta=view.bottoneR
+        var nome=view.name
+        var cognome=view.surname
+        var modello= view.car
+        var targa= view.carTarga
+        var data=view.date
+        var inizio=view.startTime
+        var fine=view.endTime
+        var prezzo=view.price
+        var accetta=view.accettaButton
+        var rifiuta=view.rifiutaButton
 
 
     }

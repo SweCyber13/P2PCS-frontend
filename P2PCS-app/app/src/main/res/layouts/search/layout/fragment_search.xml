@@ -142,7 +142,7 @@
                         android:src="@drawable/ic_clock"
                         style="@style/SearchImageView"/>
                 <TextView
-                        android:id="@+id/startTime"
+                        android:id="@+id/startTimeLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/imageEndDate"
@@ -171,7 +171,7 @@
                         android:src="@drawable/ic_clock"
                         style="@style/SearchImageView"/>
                 <TextView
-                        android:id="@+id/endTime"
+                        android:id="@+id/endTimeLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@id/imageEndTime"

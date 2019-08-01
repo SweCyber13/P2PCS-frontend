@@ -1,7 +1,6 @@
 package com.example.p2pcs_app.Search
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import com.example.p2pcs_app.R
 import android.app.AlertDialog
@@ -14,16 +13,11 @@ import android.content.Intent
 import android.widget.*
 import com.example.p2pcs_app.SearchResult.ActivitySearchresult
 import com.google.android.gms.common.api.Status
-import kotlinx.android.synthetic.main.activity_other_user.*
-import kotlinx.android.synthetic.main.activity_search.*
 import com.google.android.libraries.places.api.Places
 import com.google.android.libraries.places.api.model.Place
 import com.google.android.libraries.places.widget.AutocompleteSupportFragment
-import com.google.android.libraries.places.internal.i
 import com.google.android.libraries.places.widget.listener.PlaceSelectionListener
-import kotlinx.android.synthetic.main.activity_car_requests_card.*
 import kotlinx.android.synthetic.main.fragment_search.*
-import java.text.SimpleDateFormat
 import java.util.*
 
 
@@ -140,12 +134,12 @@ class ActivitySearch : AppCompatActivity() {
 
 
         //seleziona ora partenza
-        startTime.setOnClickListener {
+        startTimeLabel.setOnClickListener {
             val cal = Calendar.getInstance()
             val timeSetListener = TimePickerDialog.OnTimeSetListener { view: TimePicker, hourOfDay:Int, minute:Int ->
                 cal.set(Calendar.HOUR_OF_DAY, hourOfDay)
                 cal.set(Calendar.MINUTE, minute)
-                startTime.setText(""+hourOfDay+":"+minute)
+                startTimeLabel.setText(""+hourOfDay+":"+minute)
                 //salvo minuti
                 minstart=""+(hourOfDay*60+minute)
             }
@@ -155,12 +149,12 @@ class ActivitySearch : AppCompatActivity() {
 
 
         //seleziona ora arrivo
-        endTime.setOnClickListener {
+        endTimeLabel.setOnClickListener {
             val cal = Calendar.getInstance()
             val timeSetListener = TimePickerDialog.OnTimeSetListener { view: TimePicker, hourOfDay:Int, minute:Int ->
                 cal.set(Calendar.HOUR_OF_DAY, hourOfDay)
                 cal.set(Calendar.MINUTE, minute)
-                endTime.setText(""+hourOfDay+":"+minute)
+                endTimeLabel.setText(""+hourOfDay+":"+minute)
                 //salvo ora
                 minend=""+(hourOfDay*60+minute)
             }

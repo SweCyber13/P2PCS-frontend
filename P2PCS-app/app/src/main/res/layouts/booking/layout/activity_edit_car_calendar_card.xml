@@ -21,7 +21,7 @@
 
         >
             <ImageView
-                    android:id="@+id/image"
+                    android:id="@+id/clockImage"
                     app:srcCompat="@drawable/ic_clock"
                     android:layout_width="0dp"
                     app:layout_constraintWidth_percent="0.12"
@@ -33,25 +33,25 @@
                     app:layout_constraintBottom_toBottomOf="parent"
             />
             <TextView
-                    android:id="@+id/giornoLabel"
+                    android:id="@+id/dateLabel"
                     android:text="Giorno:"
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
 
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toTopOf="@+id/orario"
-                    app:layout_constraintLeft_toRightOf="@+id/image"
+                    app:layout_constraintLeft_toRightOf="@+id/clockImage"
                     style="@style/MyPersonalData1"
             />
             <TextView
-                    android:id="@+id/data"
+                    android:id="@+id/date"
                     android:text="19 Agosto 2019"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toTopOf="@+id/orario"
-                    app:layout_constraintLeft_toRightOf="@+id/giornoLabel"
+                    app:layout_constraintLeft_toRightOf="@+id/dateLabel"
                     style="@style/MyPersonalData2"
 
             />
@@ -61,12 +61,12 @@
                     app:layout_constraintWidth_percent="0.7"
                     android:layout_height="match_parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/data"
-                    app:layout_constraintLeft_toRightOf="@+id/image"
+                    app:layout_constraintTop_toBottomOf="@id/date"
+                    app:layout_constraintLeft_toRightOf="@+id/clockImage"
                     >
 
                 <TextView
-                        android:id="@+id/labelOra"
+                        android:id="@+id/timeLabel"
                         android:text="Orario:"
                         android:layout_width="90dp"
                         android:layout_height="wrap_content"
@@ -78,14 +78,14 @@
 
                 />
                 <TextView
-                        android:id="@+id/oraInizio"
+                        android:id="@+id/startTime"
                         android:text="9:00"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
 
-                        app:layout_constraintLeft_toRightOf="@+id/labelOra"
+                        app:layout_constraintLeft_toRightOf="@+id/timeLabel"
                         style="@style/MyPersonalData2"
 
 
@@ -98,12 +98,12 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
 
-                        app:layout_constraintLeft_toRightOf="@+id/oraInizio"
+                        app:layout_constraintLeft_toRightOf="@+id/startTime"
                         style="@style/MyPersonalData2"
 
                 />
                 <TextView
-                        android:id="@+id/oraFine"
+                        android:id="@+id/endTime"
                         android:text="12:00"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
