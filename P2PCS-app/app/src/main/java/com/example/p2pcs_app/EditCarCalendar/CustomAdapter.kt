@@ -1,7 +1,6 @@
 package com.example.p2pcs_app.EditCarCalendar
 
 import android.content.Context
-import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -18,9 +17,9 @@ class CustomAdapter(
     val mcontext= context
 
     class MyViewHolder(val view: View): RecyclerView.ViewHolder(view){
-        var giorno=view.data
-        var inizio=view.oraInizio
-        var fine= view.oraFine
+        var giorno=view.date
+        var inizio=view.startTime
+        var fine= view.endTime
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): MyViewHolder {

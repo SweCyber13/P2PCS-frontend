@@ -37,12 +37,12 @@
 
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toLeftOf="@+id/userApplicantName"
+                    app:layout_constraintRight_toLeftOf="@+id/name"
                     app:layout_constraintBottom_toTopOf="@+id/carImage"
 
             />
             <TextView
-                    android:id="@+id/userApplicantName"
+                    android:id="@+id/name"
                     android:text="Nome"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
@@ -51,14 +51,14 @@
 
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintLeft_toRightOf="@+id/userImage"
-                    app:layout_constraintRight_toLeftOf="@+id/userApplicantSurname"
+                    app:layout_constraintRight_toLeftOf="@+id/surname"
                     android:gravity="center"
 
 
             />
             <TextView
 
-                    android:id="@+id/userApplicantSurname"
+                    android:id="@+id/surname"
                     android:text="Cognome"
                     android:layout_width="0dp"
                     app:layout_constraintWidth_percent="0.4"
@@ -66,8 +66,8 @@
                     app:layout_constraintHeight_percent="0.15"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintLeft_toRightOf="@+id/userApplicantName"
-                    app:layout_constraintBottom_toTopOf="@+id/carModello"
+                    app:layout_constraintLeft_toRightOf="@+id/name"
+                    app:layout_constraintBottom_toTopOf="@+id/carTarga"
 
                     android:gravity="center"
 
@@ -82,32 +82,32 @@
                     app:layout_constraintTop_toBottomOf="@+id/userImage"
                     app:layout_constraintLeft_toLeftOf="parent"
 
-                    app:layout_constraintRight_toLeftOf="@+id/carMarca"
+                    app:layout_constraintRight_toLeftOf="@+id/car"
 
 
             />
             <TextView
-                    android:id="@+id/carMarca"
+                    android:id="@+id/car"
                     android:text="Marca"
                     android:layout_width="0dp"
                     app:layout_constraintWidth_percent="0.4"
                     android:layout_height="0dp"
                     app:layout_constraintHeight_percent="0.15"
-                    app:layout_constraintTop_toBottomOf="@+id/userApplicantName"
+                    app:layout_constraintTop_toBottomOf="@+id/name"
                     app:layout_constraintLeft_toRightOf="@+id/carImage"
                     android:gravity="center"
 
             />
             <TextView
-                    android:id="@+id/carModello"
+                    android:id="@+id/carTarga"
                     android:text="Targa"
                     android:layout_width="0dp"
                     app:layout_constraintWidth_percent="0.4"
                     android:layout_height="0dp"
                     app:layout_constraintHeight_percent="0.15"
 
-                    app:layout_constraintTop_toBottomOf="@+id/userApplicantSurname"
-                    app:layout_constraintLeft_toRightOf="@+id/carMarca"
+                    app:layout_constraintTop_toBottomOf="@+id/surname"
+                    app:layout_constraintLeft_toRightOf="@+id/car"
                     android:gravity="center"
 
             />
@@ -121,7 +121,7 @@
                                                          tools:layout_editor_absoluteX="10dp">
 
                 <ImageView
-                        android:id="@+id/calendarStartImage"
+                        android:id="@+id/calendarImage"
                         app:srcCompat="@drawable/ic_calendar"
                         android:layout_width="0dp"
                         android:padding="5dp"
@@ -132,12 +132,12 @@
 
                 />
                 <TextView
-                        android:id="@+id/Day"
+                        android:id="@+id/date"
                         android:text="Data"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.8"
                         android:layout_height="match_parent"
-                        app:layout_constraintLeft_toRightOf="@+id/calendarStartImage"
+                        app:layout_constraintLeft_toRightOf="@+id/calendarImage"
                         android:gravity="center"
 
                         app:layout_constraintEnd_toEndOf="parent"
@@ -154,7 +154,7 @@
 
                 <ImageView
 
-                        android:id="@+id/calendarEndImage"
+                        android:id="@+id/clockimage"
 
                         app:srcCompat="@drawable/ic_clock"
                         android:layout_width="0dp"
@@ -169,22 +169,22 @@
 
 
                 <TextView
-                        android:id="@+id/requestStartHour"
+                        android:id="@+id/startTime"
                         android:text="00.00"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.4"
                         android:layout_height="match_parent"
-                        app:layout_constraintLeft_toRightOf="@+id/calendarEndImage"
+                        app:layout_constraintLeft_toRightOf="@+id/clockimage"
                         android:gravity="center"
 
                 />
                 <TextView
-                        android:id="@+id/requestEndHour"
+                        android:id="@+id/endTime"
                         android:text="00.00"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.4"
                         android:layout_height="match_parent"
-                        app:layout_constraintLeft_toRightOf="@+id/requestStartHour"
+                        app:layout_constraintLeft_toRightOf="@+id/startTime"
                         android:gravity="center"
 
                 />
@@ -198,7 +198,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/Data1Card" tools:layout_editor_absoluteX="10dp">
 
                 <ImageView
-                        android:id="@+id/prezzoImg"
+                        android:id="@+id/priceImage"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.2"
                         android:layout_height="match_parent"
@@ -207,11 +207,11 @@
 
                         app:layout_constraintTop_toTopOf="parent"
 
-                        app:layout_constraintRight_toLeftOf="@+id/prezzo"
+                        app:layout_constraintRight_toLeftOf="@+id/price"
                         app:layout_constraintLeft_toLeftOf="parent"
                 />
                 <TextView
-                        android:id="@+id/prezzo"
+                        android:id="@+id/price"
                         android:text="Prezzo"
                         android:textAlignment="center"
                         android:layout_width="0dp"
@@ -220,7 +220,7 @@
                         app:layout_constraintHeight_percent="0.2"
                         app:layout_constraintTop_toTopOf="parent"
 
-                        app:layout_constraintLeft_toRightOf="@+id/prezzoImg"
+                        app:layout_constraintLeft_toRightOf="@+id/priceImage"
                         app:layout_constraintRight_toRightOf="parent"
 
                         android:gravity="center"
@@ -231,20 +231,20 @@
             </android.support.constraint.ConstraintLayout>
 
             <Button
-                    android:id="@+id/bottoneR"
+                    android:id="@+id/rifiutaButton"
                     android:text="Rifiuta"
                     android:layout_width="125dp"
                     app:layout_constraintWidth_percent="0.30"
                     android:layout_height="48dp"
 
-                    app:layout_constraintRight_toLeftOf="@id/bottone"
+                    app:layout_constraintRight_toLeftOf="@id/accettaButton"
                     app:layout_constraintTop_toBottomOf="@+id/PriceCard"
                     app:layout_constraintBottom_toBottomOf="parent"
 
 
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"/>
             <Button
-                    android:id="@+id/bottone"
+                    android:id="@+id/accettaButton"
                     android:text="Accetta"
                     android:layout_width="135dp"
                     app:layout_constraintWidth_percent="0.30"

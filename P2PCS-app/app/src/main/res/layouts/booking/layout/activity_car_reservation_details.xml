@@ -60,14 +60,14 @@
                 style="@style/CarReservationImageLayout"
         />
         <TextView
-                android:id="@+id/user_name"
+                android:id="@+id/name"
                 android:text="Ele"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
 
                 app:layout_constraintLeft_toRightOf="@+id/user_image"
-                app:layout_constraintRight_toLeftOf="@+id/user_surname"
+                app:layout_constraintRight_toLeftOf="@+id/surname"
 
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -77,12 +77,12 @@
 
         />
         <TextView
-                android:id="@+id/user_surname"
+                android:id="@+id/surname"
                 android:text="Pontecchiani"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
-                app:layout_constraintLeft_toRightOf="@id/user_name"
+                app:layout_constraintLeft_toRightOf="@id/name"
                 app:layout_constraintRight_toRightOf="parent"
 
                 app:layout_constraintTop_toTopOf="parent"
@@ -113,31 +113,31 @@
                 app:layout_constraintWidth_percent="0.2"
                 android:layout_height="0dp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@id/car_marca"
+                app:layout_constraintRight_toLeftOf="@id/carBrand"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 style="@style/CarReservationImageLayout"
 
         />
         <TextView
-                android:id="@+id/car_marca"
+                android:id="@+id/carBrand"
                 android:text="Opel"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
                 app:layout_constraintLeft_toRightOf="@+id/car_image"
-                app:layout_constraintRight_toLeftOf="@id/car_modello"
+                app:layout_constraintRight_toLeftOf="@id/carModel"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 style="@style/CarReservationTextLayout"
         />
         <TextView
-                android:id="@+id/car_modello"
+                android:id="@+id/carModel"
                 android:text="Corsa"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
-                app:layout_constraintLeft_toRightOf="@id/car_marca"
+                app:layout_constraintLeft_toRightOf="@id/carBrand"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -160,36 +160,36 @@
     >
 
         <ImageView
-                android:id="@+id/data_start_image"
+                android:id="@+id/calendarImageStart"
                 app:srcCompat="@drawable/ic_calendar"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.2"
                 android:layout_height="0dp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@id/day_start"
+                app:layout_constraintRight_toLeftOf="@id/startDate"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 style="@style/CarReservationImageLayout"
         />
         <TextView
-                android:id="@+id/day_start"
+                android:id="@+id/startDate"
                 android:text="TextView"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
-                app:layout_constraintLeft_toRightOf="@+id/data_start_image"
-                app:layout_constraintRight_toLeftOf="@id/hour_start"
+                app:layout_constraintLeft_toRightOf="@+id/calendarImageStart"
+                app:layout_constraintRight_toLeftOf="@id/startTime"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 style="@style/CarReservationTextLayout"
         />
         <TextView
-                android:id="@+id/hour_start"
+                android:id="@+id/startTime"
                 android:text="TextView"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
-                app:layout_constraintLeft_toRightOf="@id/day_start"
+                app:layout_constraintLeft_toRightOf="@id/startDate"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -210,37 +210,37 @@
     >
 
         <ImageView
-                android:id="@+id/data_end_image"
+                android:id="@+id/calendarImageEnd"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.2"
                 android:layout_height="0dp"
                 app:srcCompat="@drawable/ic_calendar"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@id/day_end"
+                app:layout_constraintRight_toLeftOf="@id/endDate"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 style="@style/CarReservationImageLayout"
 
                 />
         <TextView
-                android:id="@+id/day_end"
+                android:id="@+id/endDate"
                 android:text="TextView"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
-                app:layout_constraintLeft_toRightOf="@+id/data_end_image"
-                app:layout_constraintRight_toLeftOf="@id/hour_end"
+                app:layout_constraintLeft_toRightOf="@+id/calendarImageEnd"
+                app:layout_constraintRight_toLeftOf="@id/endTime"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 style="@style/CarReservationTextLayout"
         />
         <TextView
-                android:id="@+id/hour_end"
+                android:id="@+id/endTime"
                 android:text="TextView"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
-                app:layout_constraintLeft_toRightOf="@id/day_end"
+                app:layout_constraintLeft_toRightOf="@id/endDate"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"

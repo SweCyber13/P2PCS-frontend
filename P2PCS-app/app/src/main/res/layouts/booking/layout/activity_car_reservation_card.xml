@@ -18,7 +18,7 @@
             tools:layout_editor_absoluteX="10dp">
 
         <ImageView
-                android:id="@+id/userImg"
+                android:id="@+id/carImage"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="100dp"
@@ -35,14 +35,14 @@
                 app:layout_constraintWidth_percent="0.6"
                 android:layout_height="wrap_content"
 
-                app:layout_constraintLeft_toRightOf="@+id/userImg"
+                app:layout_constraintLeft_toRightOf="@+id/carImage"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
 
                 android:id="@+id/rightSide">
 
             <TextView
-                    android:id="@+id/Username"
+                    android:id="@+id/username"
                     android:text="Username"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -66,10 +66,10 @@
                     android:layout_height="0dp"
                     app:layout_constraintHeight_percent="0.2"
 
-                    app:layout_constraintTop_toBottomOf="@+id/Username"
+                    app:layout_constraintTop_toBottomOf="@+id/username"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintBottom_toTopOf="@+id/giorno"
+                    app:layout_constraintBottom_toTopOf="@+id/date"
 
 
                     style="@style/CardPrenotazioni"
@@ -77,7 +77,7 @@
 
             />
             <TextView
-                    android:id="@+id/giorno"
+                    android:id="@+id/date"
                     android:text="23/04/19"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -85,19 +85,19 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/targa"
-                    app:layout_constraintBottom_toTopOf="@+id/Stato"
+                    app:layout_constraintBottom_toTopOf="@+id/state"
 
 
                     style="@style/CardPrenotazioni"
 
             />
             <TextView
-                    android:id="@+id/Stato"
+                    android:id="@+id/state"
                     android:text="Accettata"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     app:layout_constraintHeight_percent="0.2"
-                    app:layout_constraintTop_toBottomOf="@+id/giorno"
+                    app:layout_constraintTop_toBottomOf="@+id/date"
 
 
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -105,29 +105,29 @@
 
             />
             <Button
-                    android:id="@+id/Contatta"
+                    android:id="@+id/contactButton"
                     android:text="Contatta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    app:layout_constraintTop_toBottomOf="@+id/Stato"
+                    app:layout_constraintTop_toBottomOf="@+id/state"
                     app:layout_constraintBottom_toBottomOf="parent"
 
-                    app:layout_constraintLeft_toLeftOf="@+id/Stato"
-                    app:layout_constraintRight_toLeftOf="@+id/more"
+                    app:layout_constraintLeft_toLeftOf="@+id/state"
+                    app:layout_constraintRight_toLeftOf="@+id/infoButton"
 
 
             />
             <Button
-                    android:id="@+id/more"
+                    android:id="@+id/infoButton"
                     android:text="info"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/Stato"
+                    app:layout_constraintTop_toBottomOf="@+id/state"
                     app:layout_constraintBottom_toBottomOf="parent"
 
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintLeft_toRightOf="@+id/Contatta"
+                    app:layout_constraintLeft_toRightOf="@+id/contactButton"
                     />
         </android.support.constraint.ConstraintLayout>
     </android.support.constraint.ConstraintLayout>

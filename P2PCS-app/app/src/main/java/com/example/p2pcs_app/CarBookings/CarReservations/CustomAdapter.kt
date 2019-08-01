@@ -4,11 +4,9 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.example.p2pcs_app.Explore.MyData
 import com.example.p2pcs_app.R
 import kotlinx.android.synthetic.main.activity_car_reservation_card.view.*
-import kotlinx.android.synthetic.main.activity_car_reservation_details.view.*
 
 class CustomAdapter(
 
@@ -19,11 +17,11 @@ class CustomAdapter(
 
     class MyViewHolder(val view:View): RecyclerView.ViewHolder(view){
 
-        var username=view.Username
+        var username=view.username
         var targa=view.targa
-        var giorno=view.giorno
-        var stato=view.Stato
-        var contatta=view.Contatta
+        var giorno=view.date
+        var stato=view.state
+        var contatta=view.contactButton
 
     }
 

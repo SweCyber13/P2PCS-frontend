@@ -1,6 +1,5 @@
 package com.example.p2pcs_app.Profile
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -25,7 +24,7 @@ class FragmentProfile : Fragment(), FragmentProfileContract.View {
     override fun displayUserinfo(Username:String) {
         //setto tutte le textview
         if(view!=null){
-            val usernameview = view!!.findViewById<TextView>(R.id.Username)
+            val usernameview = view!!.findViewById<TextView>(R.id.username)
             usernameview.setText(Username)
         }
 
@@ -83,7 +82,7 @@ class FragmentProfile : Fragment(), FragmentProfileContract.View {
                     Password.text="********"
                     Name.text=str_nome
                     Surname.text=str_cognome
-                    Username.text=str_username
+                    username.text=str_username
                     Email.text=str_mail
                     if(str_eta!="null")
                         Age.text=str_eta
