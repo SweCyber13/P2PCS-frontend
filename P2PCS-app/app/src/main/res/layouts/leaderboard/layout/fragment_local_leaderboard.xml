@@ -6,15 +6,6 @@
     <!--menu missioni/classifiche-->
     <!--menu 3 tipi di classifiche-->
     <!-- immagini e titolo-->
-    <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="40dp" app:srcCompat="@drawable/rank"
-            android:id="@+id/imageRank"
-            android:layout_gravity="center"
-            app:layout_constraintTop_toTopOf="parent"
-
-
-            tools:layout_editor_absoluteY="106dp"/>
     <TextView
             android:text="Classifica Locale"
             android:layout_width="match_parent"
@@ -77,22 +68,11 @@
                 app:layout_constraintTop_toTopOf="parent"
         />
 
-        <ScrollView
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/localLeaderboardRecycleView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/positionLabel">
-            <android.support.v7.widget.RecyclerView
-                    android:id="@+id/recycler_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    card_view:cardUseCompactPadding="true"
-                    card_view:cardElevation="5dp"
-                    card_view:cardCornerRadius="5dp"
-                    android:scrollbars="vertical"
-                    android:layout_margin="6dp"
-
-            />
-        </ScrollView>
+                app:layout_constraintTop_toBottomOf="@id/positionLabel"/>
     </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>

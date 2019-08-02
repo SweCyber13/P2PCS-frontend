@@ -14,18 +14,16 @@
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-app:layout_constraintTop_toTopOf="parent">
-    <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            card_view:cardUseCompactPadding="true"
-            card_view:cardElevation="5dp"
-            card_view:cardCornerRadius="5dp"
-            android:scrollbars="vertical"
-            android:layout_margin="6dp"
-
-    />
+            app:layout_constraintTop_toTopOf="parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/missionsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardUseCompactPadding="true"
+                card_view:cardElevation="5dp"
+                card_view:cardCornerRadius="5dp"
+                android:scrollbars="vertical"
+                android:layout_margin="6dp"/>
     </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

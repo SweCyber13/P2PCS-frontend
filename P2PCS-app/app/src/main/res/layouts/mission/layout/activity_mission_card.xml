@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
 
     <android.support.v7.widget.CardView
@@ -20,30 +22,66 @@
             <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintWidth_percent="0.3"
-                    android:id="@+id/missioncar"/>
-            <TextView
-                    app:layout_constraintStart_toEndOf="@id/missioncar"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:gravity="center"
+                    android:id="@+id/missionLogo"/>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:background="@color/quantum_black_divider"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@id/missionLogo" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintWidth_percent="0.5"
+                app:layout_constraintStart_toEndOf="@id/divider1"
+                app:layout_constraintEnd_toStartOf="@id/divider2"
+                android:id="@+id/missionDescriptionLayout">
+
+                <TextView
+                    android:id="@+id/missionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text='Diventa "Prestante"'
+                    android:textAlignment="textStart"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/missionDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
                     android:text="Presta la tua auto per la prima volta"
-                    android:textAlignment="center"
-                    android:layout_width="0dp"
-                    app:layout_constraintWidth_percent="0.5"
-                    android:layout_height="match_parent"
-                    android:id="@+id/titlemission"/>
+                    android:textAlignment="textStart" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:background="@color/quantum_black_divider"
+                android:visibility="visible"
+                tools:visibility="visible"
+                app:layout_constraintStart_toEndOf="@id/missionDescriptionLayout"/>
+
             <TextView
-                    android:text="50pt"
+                    android:text="50 pt rank"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:id="@+id/pointmission"
+                    android:id="@+id/missionReward"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintWidth_percent="0.2"
+                    app:layout_constraintStart_toEndOf="@id/divider2"
                     android:gravity="center"/>
+
         </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
