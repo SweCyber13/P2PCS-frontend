@@ -19,7 +19,7 @@
 
     <!-- Search page -->
     <style name="SearchRelativeLayout">
-        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
 
     </style>
     <style name="SearchEditText">

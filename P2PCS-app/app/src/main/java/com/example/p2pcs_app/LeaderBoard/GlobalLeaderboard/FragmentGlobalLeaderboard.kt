@@ -26,7 +26,7 @@ class FragmentGlobalLeaderboard : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        val view = inflater.inflate(R.layout.fragment_search_result_list, null)
+        val view = inflater.inflate(R.layout.fragment_global_leaderboard, null)
 
         val activity= requireContext() as ActivityLeaderboard
 
@@ -73,7 +73,7 @@ class FragmentGlobalLeaderboard : Fragment() {
                 val jsonArray: JSONArray = jsonObj.getJSONArray("globalleaderboard")
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
-                    val str_posizione = "" + "\n" + (i + 1)
+                    val str_posizione = ""  + (i + 1)
                     val str_username = "" + jsonInner.get("Username")
                     val str_rank = "" + jsonInner.get("Punti_rank")
 

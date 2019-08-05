@@ -70,9 +70,9 @@ class ActivitySearch : AppCompatActivity() {
         //val startCity =findViewById<AutoCompleteTextView>(R.id.startCity)
         //val endCity=findViewById<AutoCompleteTextView>(R.id.endCity)
         val startCity = supportFragmentManager.findFragmentById(R.id.startCity) as AutocompleteSupportFragment
-        startCity.setHint("seleziona la città di partenza")
+        startCity.setHint("città di partenza")
         val endCity = supportFragmentManager.findFragmentById(R.id.endCity) as AutocompleteSupportFragment
-        endCity.setHint("seleziona la città di arrivo")
+        endCity.setHint("città di arrivo")
         //setto che cosa prendere dai places per partenza e arrivo
         startCity.setPlaceFields(
             Arrays.asList(

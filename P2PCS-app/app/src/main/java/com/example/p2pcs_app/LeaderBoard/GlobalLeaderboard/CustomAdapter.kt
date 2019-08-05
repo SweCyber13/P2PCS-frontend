@@ -23,7 +23,7 @@ class CustomAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): MyViewHolder {
         val view= LayoutInflater.from(parent.context)
-            .inflate(R.layout.activity_local_leaderboard_card, parent, false)
+            .inflate(R.layout.activity_global_leaderboard_card, parent, false)
 
         return MyViewHolder(view)
     }
