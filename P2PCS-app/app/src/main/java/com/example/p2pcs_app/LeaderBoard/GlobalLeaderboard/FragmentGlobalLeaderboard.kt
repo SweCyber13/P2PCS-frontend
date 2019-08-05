@@ -1,8 +1,9 @@
 package com.example.p2pcs_app.LeaderBoard.GlobalLeaderboard
 
-import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,88 +12,85 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.R
-import kotlinx.android.synthetic.main.fragment_global_leaderboard.*
+import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
 import org.json.JSONArray
 import org.json.JSONObject
 
 class FragmentGlobalLeaderboard : Fragment() {
 
+    //parametri per la recyclerView
+    private var recyclerView: RecyclerView? = null
+    private var linearLayoutManager: LinearLayoutManager? = null
+    private var customAdapter: CustomAdapter? =null
+    private lateinit var data_list: ArrayList<MyData>
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_global_leaderboard, null)
-        getBoard(requireContext())
+
+        val view = inflater.inflate(R.layout.fragment_search_result_list, null)
+
+        val activity= requireContext() as ActivityLeaderboard
+
+
+
+        recyclerView= view.findViewById<RecyclerView> (R.id.recycler_view)
+        data_list=  ArrayList<MyData>()
+        getBoard()
+
         return view
+    }
+
+    fun loadrecycler(data_list:  ArrayList<MyData>){
+
+        linearLayoutManager= LinearLayoutManager(requireContext())
+
+        customAdapter= CustomAdapter(data_list)
+
+
+        recyclerView!!.apply {
+            setHasFixedSize(false)
+
+            layoutManager=linearLayoutManager
+            adapter=customAdapter
+
+        }
     }
 
 
 
-
-
-
     // function for network call
-    fun getBoard(context: Context) {
+    fun getBoard() {
         // Instantiate the RequestQueue.
         val queue = Volley.newRequestQueue(context)
-        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/classifica.php"
+        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/leaderboard/globalLeaderboard.php"
 
-        // Request a string response from the provided URL.
-        //object property needed to override getparams
-        val stringReq = object: StringRequest(Request.Method.POST, url,
+        val stringReq = StringRequest(
+            Request.Method.POST, url,
             Response.Listener<String> { response ->
 
+                //risponde successo o no
                 val strResp = response.toString()
-                val jsonArray: JSONArray = JSONArray(strResp)
-                //val jsonArray: JSONArray = jsonObj.getJSONArray() //devo mettere un nome in qualche modo all'array su php
-                var str_username: String = ""
-                var str_posizione: String = ""
-                var str_punteggio: String = ""
+                val jsonObj: JSONObject = JSONObject(strResp)
+                val jsonArray: JSONArray = jsonObj.getJSONArray("globalleaderboard")
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
-                    str_posizione=str_posizione+"\n"+ (i+1)
-                    str_username = str_username +"\n" + jsonInner.get("Username")
-                    str_punteggio=str_punteggio+"\n"+jsonInner.get("Punti_rank")
+                    val str_posizione = "" + "\n" + (i + 1)
+                    val str_username = "" + jsonInner.get("Username")
+                    val str_rank = "" + jsonInner.get("Punti_rank")
+
+                    //creo mydata
+                    var myDataGLeaderboard = MyData(str_posizione, str_username, str_rank)
+                    data_list.add(myDataGLeaderboard)
                 }
-                username!!.text = "$str_username "
-                position!!.text = "$str_posizione "
-                rank!!.text = "$str_punteggio "
+                //ho aggiunto tutte le auto a datalist chiamo la recyclerview
+                loadrecycler(data_list)
+
             },
             Response.ErrorListener {
-                username!!.text = it.toString()
-                position!!.text = it.toString()
-                rank!!.text = it.toString()
+                //throw(DatabaseException("errore"))
             })
-        //need to override getparams to get the post request
-        {
-            override fun getParams() : Map<String,String> {
-                val params = HashMap<String, String>()
-                params.put("USER","admin")
-                return params
-            }
-        }
 
         queue.add(stringReq)
     }
 }
 
 
-//textView!!.text = "That didn't work!"
-
-
-
-
-
-
-
-
-
-
-/*import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
-
-class volley_test : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_volley_test)
-    }
-}*/

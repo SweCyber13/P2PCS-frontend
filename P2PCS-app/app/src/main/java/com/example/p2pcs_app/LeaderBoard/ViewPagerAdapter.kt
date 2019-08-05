@@ -4,7 +4,6 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import com.example.p2pcs_app.LeaderBoard.GlobalLeaderboard.FragmentGlobalLeaderboard
-import com.example.p2pcs_app.LeaderBoard.LocalLeaderboard.FragmentLocalLeaderboard
 
 class ViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
@@ -14,7 +13,7 @@ class ViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPager
         var fragment: Fragment? = null
         when (position) {
             0 -> fragment = FragmentGlobalLeaderboard()
-            1 -> fragment = FragmentLocalLeaderboard()
+
 
         }
 

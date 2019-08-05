@@ -1,5 +1,6 @@
 package com.example.p2pcs_app.Home
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -21,7 +22,15 @@ import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
 class HomeFragment : Fragment() {
-
+    /*private fun showDialog(title:String, message:String) {
+        AlertDialog.Builder(context)
+            .setTitle(title)
+            .setMessage(message)
+            .setNegativeButton(android.R.string.ok, null)
+            .create()
+            .show()
+    }
+*/
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_home, null)
 

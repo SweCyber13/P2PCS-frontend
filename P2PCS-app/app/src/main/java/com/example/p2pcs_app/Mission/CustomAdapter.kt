@@ -18,9 +18,9 @@ class CustomAdapter(
 
     class MyViewHolder(val view:View): RecyclerView.ViewHolder(view){
 
-        var description=view.findViewById<TextView>(R.id.titlemission)
-        var imageView=view.findViewById<ImageView>(R.id.missioncar)
-        var point=view.findViewById<ImageView>(R.id.pointmission)
+        var description=view.findViewById<TextView>(R.id.missionTitle)
+        var imageView=view.findViewById<ImageView>(R.id.missionLogo)
+        var point=view.findViewById<ImageView>(R.id.missionDescription)
 
     }
 
