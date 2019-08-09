@@ -98,7 +98,7 @@
                 android:name=".MainActivity"
                 android:label="P2PCS">
         </activity>
-        <activity android:name=".Explore.FragmentExplore"/>
+        <activity android:name=".Explore.ActivityExplore"/>
 
         <uses-library
                 android:name="org.apache.http.legacy"

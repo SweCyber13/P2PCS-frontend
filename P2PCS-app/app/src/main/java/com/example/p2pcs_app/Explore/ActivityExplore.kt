@@ -17,7 +17,7 @@ import com.example.p2pcs_app.R
 import org.json.JSONArray
 import org.json.JSONObject
 
-class FragmentExplore : Activity() {
+class ActivityExplore : Activity() {
 
     //parametri per la recyclerView
     private var recyclerView: RecyclerView? = null
