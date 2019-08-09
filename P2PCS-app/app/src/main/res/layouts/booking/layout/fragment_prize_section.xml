@@ -151,7 +151,7 @@
                         style="@style/MyPersonalData2"
 
 
-                />
+                        android:layout_marginBottom="429dp" app:layout_constraintBottom_toBottomOf="@+id/lineTwo"/>
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/partRight"
@@ -175,7 +175,6 @@
                         android:layout_height="wrap_content"
 
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toTopOf="@id/puntiBonusValue"
 
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -186,7 +185,7 @@
                         style="@style/MyPersonalData1"
 
 
-                />
+                        app:layout_constraintHorizontal_bias="0.457"/>
                 <TextView
                         android:id="@+id/puntiBonusValue"
                         android:text="150"
@@ -203,7 +202,7 @@
 
                         style="@style/MyPersonalData2"
 
-                />
+                        app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
 
 
             </android.support.constraint.ConstraintLayout>
@@ -226,7 +225,7 @@
             app:layout_constraintRight_toRightOf="parent"
 
 
-           >
+    >
 
         <TextView
                 android:id="@+id/couponLabel"
@@ -261,7 +260,6 @@
                 app:layout_constraintRight_toRightOf="parent"
 
 
-
         />
         <TextView
                 android:id="@+id/eventLabel"
@@ -278,7 +276,6 @@
                 android:gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
-
 
 
                 style="@style/MyPersonalData1"
