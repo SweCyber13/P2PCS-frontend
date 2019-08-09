@@ -10,7 +10,6 @@ import com.android.volley.RequestQueue
 import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.CarBookings.ActivityCarBooking
 import com.example.p2pcs_app.Cars.FragmentCars
-import com.example.p2pcs_app.Explore.FragmentExplore
 import com.example.p2pcs_app.Home.HomeFragment
 import com.example.p2pcs_app.Profile.FragmentProfile
 import com.example.p2pcs_app.Coupons.FragmentCoupon
