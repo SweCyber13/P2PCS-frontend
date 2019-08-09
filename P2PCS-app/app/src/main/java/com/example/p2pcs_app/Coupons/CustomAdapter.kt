@@ -4,23 +4,21 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import com.example.p2pcs_app.Explore.MyData
 import com.example.p2pcs_app.R
+import kotlinx.android.synthetic.main.activity_coupon_card.view.*
 
 class CustomAdapter(
 
-    private var myData: ArrayList<MyData>
+   private var myData: ArrayList<MyData>
 
 ) : RecyclerView.Adapter<CustomAdapter.MyViewHolder> () {
 
 
     class MyViewHolder(val view:View): RecyclerView.ViewHolder(view){
 
-        var description=view.findViewById<TextView>(R.id.OfferTitle)
-        var imageView=view.findViewById<ImageView>(R.id.imageoffer)
-
+        var nome=view.nome
+        var titolo=view.titolo
+        var punti=view.punti
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): MyViewHolder {
@@ -31,7 +29,12 @@ class CustomAdapter(
     }
 
     override fun onBindViewHolder(p0: MyViewHolder, p1: Int) {
-        p0.description.text="Ciao"
+
+        //setto campi della card
+        p0.nome.text=myData[p1].nome
+        p0.titolo.text=myData[p1].titolo
+        p0.punti.text=myData[p1].punti
+
     }
 
 
@@ -41,6 +44,3 @@ class CustomAdapter(
 
 
 }
-
-
-

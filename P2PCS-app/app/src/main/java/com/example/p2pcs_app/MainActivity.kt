@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             R.id.navigation_profile -> loadFragment(FragmentProfile())
             R.id.navigation_home -> loadFragment(HomeFragment())
             R.id.navigation_reservation -> loadFragment(ActivityCarBooking()) //da rinominare a fragment la classe
-            R.id.navigation_gift -> loadFragment(GamificationFragment())
+            R.id.navigation_gift -> loadFragment(FragmentCoupon())
         }
 
         return true

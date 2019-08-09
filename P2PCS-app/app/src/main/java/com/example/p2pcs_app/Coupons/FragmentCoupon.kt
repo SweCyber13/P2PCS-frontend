@@ -7,8 +7,13 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.p2pcs_app.Explore.MyData
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.R
+import org.json.JSONArray
+import org.json.JSONObject
 
 class FragmentCoupon : Fragment() {
 
@@ -16,111 +21,75 @@ class FragmentCoupon : Fragment() {
     private var recyclerView: RecyclerView? = null
     private var linearLayoutManager: LinearLayoutManager? = null
     private var customAdapter: CustomAdapter? =null
-
-
+    private lateinit var data_list: ArrayList<MyData>
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_coupon, null)
 
+        //val activity= requireContext() as ActivityLeaderboard
 
-        val recyclerView= view.findViewById<RecyclerView> (R.id.recycler_view)
-        val data_list=  ArrayList<MyData>()
-        load_data(data_list)
+
+
+        recyclerView= view.findViewById<RecyclerView> (R.id.recycler_view)
+        data_list=  ArrayList<MyData>()
+        getCoupon()
+
+        return view
+    }
+
+    fun loadrecycler(data_list:  ArrayList<MyData>){
 
         linearLayoutManager= LinearLayoutManager(requireContext())
 
         customAdapter= CustomAdapter(data_list)
 
 
-        recyclerView.apply {
-            setHasFixedSize(true)
+        recyclerView!!.apply {
+            setHasFixedSize(false)
 
             layoutManager=linearLayoutManager
             adapter=customAdapter
 
         }
-
-        return view
     }
 
-    fun load_data (data_list: ArrayList<MyData>){ //prova con 3 card
-
-        var myData1= MyData(1, "lol", "lol")
 
 
-        var myData2= MyData(2, "lol", "lol")
+    // function for network call
+    fun getCoupon() {
+        // Instantiate the RequestQueue.
+        val queue = Volley.newRequestQueue(context)
+        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/coupon/readall.php"
 
+        val stringReq = StringRequest(
+            Request.Method.POST, url,
+            Response.Listener<String> { response ->
 
-        var myData3= MyData(3, "lol", "lol")
+                //risponde successo o no
+                val strResp = response.toString()
+                val jsonObj: JSONObject = JSONObject(strResp)
+                val jsonArray: JSONArray = jsonObj.getJSONArray("coupons")
+                for (i in 0 until jsonArray.length()) {
+                    val jsonInner: JSONObject = jsonArray.getJSONObject(i)
+                    val str_nome = ""  + jsonInner.get("Nome_azienda")
+                    val str_titolo = "" + jsonInner.get("Titolo")
+                    val str_punti = ""+ jsonInner.get("Soglia_punti")
 
+                    //creo mydata
+                    var myDataCoupon = MyData(str_nome, str_titolo, str_punti)
+                    data_list.add(myDataCoupon)
+                }
+                //ho aggiunto tutte le auto a datalist chiamo la recyclerview
+                loadrecycler(data_list)
 
-        data_list.add(myData1)
-        data_list.add(myData2)
-        data_list.add(myData3)
+            },
+            Response.ErrorListener {
+                //throw(DatabaseException("errore"))
+            })
 
-
+        queue.add(stringReq)
     }
-/*fun getOffer(context: Context){
-    val queue = Volley.newRequestQueue(context)
-    val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/esplora.php"
-
-    // Request a string response from the provided URL.
-    //object property needed to override getparams
-    val stringReq = object: StringRequest(
-        Request.Method.POST, url,
-        Response.Listener<String> { response ->
-
-            val strResp = response.toString()
-            val jsonArray: JSONArray = JSONArray(strResp)
-            //val jsonArray: JSONArray = jsonObj.getJSONArray() //devo mettere un nome in qualche modo all'array su php
-            var str_company1: String = ""
-            var str_offer1: String = ""
-            var str_company2: String = ""
-            var str_offer2: String = ""
-            var str_company3: String = ""
-            var str_offer3: String = ""
-
-            for (i in 0 until jsonArray.length()) {
-                val jsonInner: JSONObject = jsonArray.getJSONObject(i)
-                if(i==0) {
-                    str_company1= ""+jsonInner.get("Nome_azienda")
-                    str_offer1=""+jsonInner.get("Titolo_offerta")
-                }
-                if(i==1) {
-                    str_company2=""+jsonInner.get("Nome_azienda")
-                    str_offer2=""+jsonInner.get("Titolo_offerta")
-                }
-                if(i==2) {
-                    str_company3=""+jsonInner.get("Nome_azienda")
-                    str_offer3=""+jsonInner.get("Titolo_offerta")
-                }
-
-
-
-            }
-            company1!!.text = "$str_company1 "
-            offer1!!.text = "$str_offer1 "
-            company2!!.text = "$str_company2 "
-            offer2!!.text = "$str_offer2 "
-            company3!!.text = "$str_company3 "
-            offer3!!.text = "$str_offer3 "
-
-        },
-        Response.ErrorListener {
-            //TO DO
-        })
-    //need to override getparams to get the post request
-    {
-        override fun getParams() : Map<String,String> {
-            val params = HashMap<String, String>()
-            params.put("USER","admin")
-            return params
-        }
-    }
-
-    queue.add(stringReq)
-}*/
-
-
 }
+
+

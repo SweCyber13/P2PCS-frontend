@@ -1,5 +1,5 @@
 package com.example.p2pcs_app.Explore
 
-class MyData(num:Int, str1:String, str2:String){
+class MyData(val nome:String, val titolo:String){
 
 }

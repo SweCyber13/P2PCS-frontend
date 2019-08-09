@@ -13,6 +13,7 @@ import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
 import com.example.p2pcs_app.Mission.FragmentMission
 import com.example.p2pcs_app.CarBookings.ActivityCarBooking
 import com.example.p2pcs_app.Cars.ActivityCars
+import com.example.p2pcs_app.Explore.FragmentExplore
 
 
 import com.example.p2pcs_app.R
@@ -22,15 +23,7 @@ import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
 class HomeFragment : Fragment() {
-    /*private fun showDialog(title:String, message:String) {
-        AlertDialog.Builder(context)
-            .setTitle(title)
-            .setMessage(message)
-            .setNegativeButton(android.R.string.ok, null)
-            .create()
-            .show()
-    }
-*/
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_home, null)
 
@@ -52,7 +45,8 @@ class HomeFragment : Fragment() {
 
         val button3 = view.findViewById<Button>(R.id.b_secondLine)
         button3.setOnClickListener{
-            val intent= Intent(requireContext(), FragmentMission::class.java) //Fare activity mission per scalare la classifica
+            val intent= Intent(requireContext(), FragmentExplore::class.java)
+            //Fare activity mission per scalare la classifica
             startActivity(intent)
         }
 

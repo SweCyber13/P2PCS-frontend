@@ -54,7 +54,7 @@ class FragmentCarReservations : Fragment() {
         var myData1= MyData(1, "lol", "lol")
 
 
-        data_list.add(myData1)
+        //data_list.add(myData1)
 
 
     }
