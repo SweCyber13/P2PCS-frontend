@@ -2,4 +2,8 @@
     <string name="title_activity_search">ActivitySearch</string>
     <string name="title_activity_cars">ActivityCars</string>
     <string name="title_activity_maps">Map</string>
+    <string name="mission_image">Mission Image</string>
+    <string name="mission_pts_reward">50 pt rank</string>
+    <string name="mission_title_example">Diventa Prestante</string>
+    <string name="mission_description_example">Presta la tua auto per la prima volta</string>
 </resources>
