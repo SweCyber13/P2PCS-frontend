@@ -6,7 +6,8 @@
 
     <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/card_car_view"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_car_view"
     >
         <android.support.constraint.ConstraintLayout
                 android:id="@+id/my_car_card"
