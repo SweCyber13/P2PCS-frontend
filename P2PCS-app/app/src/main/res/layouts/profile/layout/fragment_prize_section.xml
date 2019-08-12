@@ -248,7 +248,7 @@
 
                 app:layout_constraintTop_toBottomOf="@id/couponLabel"
 
-
+                android:background="@drawable/button_info_style"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
 
@@ -282,6 +282,7 @@
 
                 app:layout_constraintTop_toBottomOf="@id/eventLabel"
 
+                android:background="@drawable/button_info_style"
 
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"

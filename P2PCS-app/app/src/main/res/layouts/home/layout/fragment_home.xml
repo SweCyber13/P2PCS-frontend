@@ -120,13 +120,15 @@
                             android:layout_width="0dp"
                             app:layout_constraintWidth_percent="0.3"
                             android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/sale"
-                            android:id="@+id/saleimage"/>
+                            app:srcCompat="@drawable/present"
+                            android:id="@+id/saleimage"
+
+                    />
                     <TextView
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintRight_toRightOf="parent"
                             app:layout_constraintLeft_toRightOf="@id/saleimage"
-                            android:text="SCOPRI TUTTE LE PROMOZIONI E GLI SCONTI CHE PUOI OTTENERE UTILIZZANDO P2PCS!"
+                            android:text="SCOPRI EVENTI, \n I TUOI PUNTI E COME UTILIZZARLI!"
                             android:layout_width="0dp"
                             app:layout_constraintWidth_percent="0.7"
                             android:layout_height="match_parent"
@@ -134,7 +136,7 @@
                             android:gravity="center"
                             android:textColor="@color/colorPrimaryDark"
                             android:textStyle="normal"
-                            android:padding="0dp"
+                            android:padding="5dp"
 
                             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
                 </android.support.constraint.ConstraintLayout>

@@ -11,7 +11,6 @@ import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.Coupons.ActivityCoupon
 import com.example.p2pcs_app.Explore.ActivityExplore
 import com.example.p2pcs_app.R
-import kotlinx.android.synthetic.main.activity_other_user.*
 import kotlinx.android.synthetic.main.fragment_prize_section.*
 
 import org.json.JSONArray
@@ -23,18 +22,18 @@ class ActivityPrize : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_prize_section)
         getPoints()
-/*
-     val button1 = view.findViewById<Button>(R.id.couponButton)
-        button1.setOnClickListener {
-            val intent = Intent(this, ActivityCoupon::class.java)
+
+        couponButton.setOnClickListener{
+            val intent= Intent(this, ActivityCoupon::class.java)
             startActivity(intent)
         }
-        val button2 = view.findViewById<Button>(R.id.eventButton)
-        button2.setOnClickListener {
-            val intent = Intent(this, ActivityExplore::class.java)
+        eventButton.setOnClickListener{
+            val intent= Intent(this, ActivityExplore::class.java)
             startActivity(intent)
-        }*/
+        }
+
     }
+
     fun getPoints(){
 
         //val queue = Volley.newRequestQueue(this)

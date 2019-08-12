@@ -21,7 +21,7 @@
                     android:background="@drawable/green_gradient"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/coupon"
+                    android:src="@drawable/coupon"
                     android:id="@+id/imageoffer"
                     android:backgroundTint="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +51,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
 
-                        app:srcCompat="@drawable/black_gradient"
+                        android:src="@drawable/black_gradient"
                         android:id="@+id/InfoBar"
 
                         app:layout_constraintBottom_toBottomOf="parent"/>
