@@ -12,6 +12,7 @@ import com.example.p2pcs_app.CarBookings.ActivityCarBooking
 
 import com.example.p2pcs_app.Home.HomeFragment
 import com.example.p2pcs_app.Profile.FragmentProfile
+import com.example.p2pcs_app.Tutorial.WelcomeActivity
 
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener, RequestQueueListener {
@@ -49,7 +50,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             R.id.navigation_profile -> loadFragment(FragmentProfile())
             R.id.navigation_home -> loadFragment(HomeFragment())
             R.id.navigation_reservation -> loadFragment(ActivityCarBooking()) //da rinominare a fragment la classe
-
+            R.id.navigation_gift -> loadFragment(WelcomeActivity())
         }
 
         return true
