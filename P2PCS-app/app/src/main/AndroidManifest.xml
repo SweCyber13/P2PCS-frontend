@@ -87,8 +87,12 @@
                 android:label="Modifica Auto">
         </activity>
         <activity
-                android:name=".Coupons.Coupons"
+                android:name=".Coupons.ActivityCoupon"
                 android:label="Premi e Coupons">
+        </activity>
+        <activity
+                android:name=".Profile.ActivityPrize"
+                android:label="Punti">
         </activity>
         <activity
                 android:name=".Mission.ActivityMission"

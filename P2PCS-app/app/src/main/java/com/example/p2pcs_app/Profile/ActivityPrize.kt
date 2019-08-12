@@ -1,13 +1,18 @@
 package com.example.p2pcs_app.Profile
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.example.p2pcs_app.Coupons.ActivityCoupon
+import com.example.p2pcs_app.Explore.ActivityExplore
 import com.example.p2pcs_app.R
 import kotlinx.android.synthetic.main.fragment_prize_section.*
+
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -17,6 +22,16 @@ class ActivityPrize : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_prize_section)
         getPoints()
+
+        couponButton.setOnClickListener{
+            val intent= Intent(this, ActivityCoupon::class.java)
+            startActivity(intent)
+        }
+        eventButton.setOnClickListener{
+            val intent= Intent(this, ActivityExplore::class.java)
+            startActivity(intent)
+        }
+
     }
 
     fun getPoints(){

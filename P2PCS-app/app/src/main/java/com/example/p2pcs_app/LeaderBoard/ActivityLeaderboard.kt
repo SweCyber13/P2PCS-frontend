@@ -12,7 +12,7 @@ class ActivityLeaderboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_leaderboard)
 
-        val viewPager = findViewById<ViewPager>(R.id.viewPagerLeaderboard)
+        val viewPager = findViewById<ViewPager>(R.id.viewPager)
         if (viewPager != null) {
             val adapter = ViewPagerAdapter(supportFragmentManager)
             viewPager.adapter = adapter

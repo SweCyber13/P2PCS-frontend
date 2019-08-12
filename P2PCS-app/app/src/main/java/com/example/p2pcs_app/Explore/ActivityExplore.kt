@@ -26,7 +26,6 @@ class ActivityExplore : Activity() {
     private lateinit var data_list: ArrayList<MyData>
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
