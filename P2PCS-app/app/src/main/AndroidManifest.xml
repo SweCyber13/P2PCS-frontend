@@ -65,6 +65,15 @@
                 android:name=".VisualizzaMacchinaActivity"
                 android:label="Visualizza Auto">
         </activity>
+
+        <activity
+                android:name=".ActivityGamification.ActivityGamification"
+                android:label="Dati gamification">
+        </activity>
+        <activity
+                android:name=".Tutorial.WelcomeActivity"
+                android:label="Dati gamification">
+        </activity>
         <activity
                 android:name=".EditCar.ActivityEditCar"
                 android:label="Modifica Auto">
