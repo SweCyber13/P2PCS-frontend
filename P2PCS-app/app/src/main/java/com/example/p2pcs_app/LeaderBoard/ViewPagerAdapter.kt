@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import com.example.p2pcs_app.Coupons.FragmentCoupon
-import com.example.p2pcs_app.Explore.FragmentExplore
+import com.example.p2pcs_app.Explore.ActivityExplore
 import com.example.p2pcs_app.LeaderBoard.GlobalLeaderboard.FragmentGlobalLeaderboard
 import com.example.p2pcs_app.SearchResult.SearchResultMap.FragmentSearchResultMap
 

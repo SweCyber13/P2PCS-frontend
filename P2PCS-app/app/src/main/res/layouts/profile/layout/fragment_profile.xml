@@ -41,6 +41,11 @@
             >
 
 
+                <Button
+                        android:text="Dati gamification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/gamificationData"
+                        tools:layout_editor_absoluteY="10dp" tools:layout_editor_absoluteX="10dp"/>
                 <ImageView
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.4"

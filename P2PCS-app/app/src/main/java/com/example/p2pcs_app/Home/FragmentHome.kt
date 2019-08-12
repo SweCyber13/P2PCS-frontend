@@ -13,7 +13,7 @@ import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
 import com.example.p2pcs_app.Mission.FragmentMission
 import com.example.p2pcs_app.CarBookings.ActivityCarBooking
 import com.example.p2pcs_app.Cars.ActivityCars
-import com.example.p2pcs_app.Explore.FragmentExplore
+import com.example.p2pcs_app.Explore.ActivityExplore
 
 
 import com.example.p2pcs_app.R
@@ -45,7 +45,7 @@ class HomeFragment : Fragment() {
 
         val button3 = view.findViewById<Button>(R.id.b_secondLine)
         button3.setOnClickListener{
-            val intent= Intent(requireContext(), FragmentExplore::class.java)
+            val intent= Intent(requireContext(), ActivityExplore::class.java)
             //Fare activity mission per scalare la classifica
             startActivity(intent)
         }

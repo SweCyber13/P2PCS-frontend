@@ -7,12 +7,15 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import com.example.p2pcs_app.R
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.example.p2pcs_app.ActivityGamification.ActivityGamification
+import com.example.p2pcs_app.Search.ActivitySearch
 import com.example.p2pcs_app.login_register_cognito.Login.ActivityLogin
 import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.fragment_profile.view.*
@@ -44,6 +47,12 @@ class FragmentProfile : Fragment(), FragmentProfileContract.View {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP) //clear all previous activities
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+        }
+
+        val button1 = view.findViewById<Button>(R.id.gamificationData)
+        button1.setOnClickListener{
+            val intent= Intent(requireContext(), ActivityGamification::class.java)
             startActivity(intent)
         }
         getuser()
