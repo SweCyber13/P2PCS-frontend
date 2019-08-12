@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.p2pcs_app.R
-import kotlinx.android.synthetic.main.activity_coupon_card.view.*
 import kotlinx.android.synthetic.main.activity_mission_card.view.*
 
 class CustomAdapter(
@@ -25,7 +24,7 @@ class CustomAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): MyViewHolder {
         val view= LayoutInflater.from(parent.context)
-            .inflate(R.layout.activity_explore_card, parent, false)
+            .inflate(R.layout.activity_mission_card, parent, false)
 
         return MyViewHolder(view)
     }

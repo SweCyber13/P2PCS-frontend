@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent">
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/missionsRecyclerView"
+                android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 card_view:cardUseCompactPadding="true"

@@ -52,7 +52,7 @@ class FragmentProfile : Fragment(), FragmentProfileContract.View {
 
         val button1 = view.findViewById<Button>(R.id.gamificationData)
         button1.setOnClickListener{
-            val intent= Intent(requireContext(), ActivityGamification::class.java)
+            val intent= Intent(requireContext(), ActivityPrize::class.java)
             startActivity(intent)
         }
         getuser()

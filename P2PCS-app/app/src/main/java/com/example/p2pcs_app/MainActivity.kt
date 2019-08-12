@@ -9,10 +9,9 @@ import android.support.v4.app.Fragment
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.CarBookings.ActivityCarBooking
-<<<<<<< HEAD
+
 import com.example.p2pcs_app.Cars.FragmentCars
-=======
->>>>>>> master
+
 import com.example.p2pcs_app.Home.HomeFragment
 import com.example.p2pcs_app.Profile.FragmentProfile
 import com.example.p2pcs_app.Coupons.FragmentCoupon

@@ -8,7 +8,6 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.R
 import kotlinx.android.synthetic.main.fragment_prize_section.*
-import kotlinx.android.synthetic.main.fragment_profile.*
 import org.json.JSONArray
 import org.json.JSONObject
 
