@@ -12,7 +12,7 @@ import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
 import com.example.p2pcs_app.Cars.ActivityCars
 import com.example.p2pcs_app.Explore.ActivityExplore
 import com.example.p2pcs_app.Mission.ActivityMission
-
+import com.example.p2pcs_app.Profile.ActivityPrize
 
 
 import com.example.p2pcs_app.R
@@ -50,7 +50,7 @@ class HomeFragment : Fragment() {
 
         val saletext = view.findViewById<TextView>(R.id.saletext)
         saletext.setOnClickListener {
-            val intent = Intent(requireContext(), ActivityExplore::class.java)
+            val intent = Intent(requireContext(), ActivityPrize::class.java)
             startActivity(intent)
         }
         val button4 = view.findViewById<Button>(R.id.b_thirdLine)
