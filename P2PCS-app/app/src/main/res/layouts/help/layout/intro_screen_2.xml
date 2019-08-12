@@ -10,9 +10,9 @@
             android:orientation="vertical">
         <ImageView
                 android:layout_width="400dp"
-                android:layout_height="490dp"
-                android:layout_marginBottom="10dp"
-                android:src="@drawable/screen1"/>
+                android:layout_height="520dp"
+                android:src="@drawable/screen2"
+                android:layout_marginBottom="10dp"/>
         <View
                 android:id="@+id/sep_line"
                 android:layout_width="match_parent"
@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
 
-                android:text="La home"
+                android:text="Il menu"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textAlignment="center"
                 android:textAllCaps="true"

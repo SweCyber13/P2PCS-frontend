@@ -72,6 +72,22 @@
 
                 >
                     <TextView
+                            android:id="@+id/label0"
+                            android:text="Modello:"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.4"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/textMarca"
+
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            style="@style/MyCarTitleTextView2"
+                            android:fontFamily="sans-serif-light"
+
+
+                    />
+                    <TextView
                             android:id="@+id/textMarca"
                             android:text="Opel"
                             android:layout_width="wrap_content"
@@ -79,12 +95,12 @@
                             android:layout_height="wrap_content"
 
 
-                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/label0"
 
                             app:layout_constraintTop_toTopOf="parent"
 
 
-                            style="@style/MyCarTitleTextView2"
+                            style="@style/MyCarTitleTextView3"
                             android:fontFamily="sans-serif-light"
 
 
@@ -104,7 +120,7 @@
                             app:layout_constraintTop_toTopOf="parent"
 
 
-                            style="@style/MyCarTitleTextView2"
+                            style="@style/MyCarTitleTextView3"
                             android:fontFamily="sans-serif-light"
 
 
@@ -112,25 +128,111 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <TextView
-                        android:id="@+id/textTarga"
-                        android:text="AA000AA"
+                        android:id="@+id/label1"
+                        android:text="Targa:"
                         android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="1.0"
+                        app:layout_constraintWidth_percent="0.4"
                         android:layout_height="wrap_content"
 
-
+                        app:layout_constraintRight_toLeftOf="@+id/textTarga"
                         app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
 
                         app:layout_constraintTop_toBottomOf="@+id/firstLine"
                         app:layout_constraintBottom_toTopOf="@+id/second_line"
 
+                        style="@style/MyCarTitleTextView2"
+                        android:fontFamily="sans-serif-light"
 
-                        style="@style/MyCarTarga"
+
+
+                />
+                <TextView
+                        android:id="@+id/textTarga"
+                        android:text="AA000AA"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.6"
+                        android:layout_height="wrap_content"
+
+
+                        app:layout_constraintLeft_toRightOf="@+id/label1"
+                        app:layout_constraintRight_toRightOf="parent"
+
+                        app:layout_constraintTop_toBottomOf="@+id/firstLine"
+                        app:layout_constraintBottom_toTopOf="@+id/addLine"
+
+
+                        style="@style/MyCarTitleTextView3"
                         android:fontFamily="sans-serif-light"
 
 
                 />
+                <android.support.constraint.ConstraintLayout
+                        android:id="@+id/addLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+
+                        app:layout_constraintTop_toBottomOf="@+id/textTarga"
+                        app:layout_constraintBottom_toTopOf="@id/secondLine"
+
+                >
+
+                    <TextView
+                            android:id="@+id/label2"
+                            android:text="Tariffa"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.4"
+                            android:layout_height="wrap_content"
+
+                            app:layout_constraintRight_toLeftOf="@+id/tariffaTx"
+                            app:layout_constraintLeft_toLeftOf="parent"
+
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            style="@style/MyCarTitleTextView2"
+                            android:fontFamily="sans-serif-light"
+
+                    />
+                    <TextView
+                            android:id="@+id/tariffaTx"
+                            android:text="10,00"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.4"
+                            android:layout_height="wrap_content"
+
+
+                            app:layout_constraintLeft_toRightOf="@+id/label2"
+                            app:layout_constraintRight_toLeftOf="@id/fix"
+
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+
+                            style="@style/MyCarTitleTextView3"
+                            android:fontFamily="sans-serif-light"
+
+
+                    />
+                    <TextView
+                            android:id="@+id/fix"
+                            android:text="€/h"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.2"
+                            android:layout_height="wrap_content"
+
+
+                            app:layout_constraintLeft_toRightOf="@+id/tariffaTx"
+                            app:layout_constraintRight_toRightOf="parent"
+
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+
+                            style="@style/MyCarTitleTextView3"
+                            android:fontFamily="sans-serif-light" />
+                </android.support.constraint.ConstraintLayout>
                 <android.support.constraint.ConstraintLayout
                         android:id="@+id/secondLine"
                         android:layout_width="match_parent"
@@ -139,17 +241,17 @@
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
 
-                        app:layout_constraintTop_toBottomOf="@+id/textTarga"
+                        app:layout_constraintTop_toBottomOf="@+id/addLine"
                         app:layout_constraintBottom_toBottomOf="parent"
 
 
                 >
                     <TextView
-                            android:id="@+id/textYear"
+                            android:id="@+id/label3"
+                            android:text="Anno:"
 
-                            android:text="1997"
-
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.4"
                             android:layout_height="wrap_content"
 
                             app:layout_constraintLeft_toLeftOf="parent"
@@ -158,11 +260,32 @@
                             app:layout_constraintTop_toTopOf="parent"
 
 
+                            style="@style/MyCarTitleTextView2"
+                            android:fontFamily="sans-serif-light"
+
+
+                    />
+                    <TextView
+                            android:id="@+id/textYear"
+                            android:text="1997"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.4"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintLeft_toRightOf="@+id/label3"
+
+
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            style="@style/MyCarTitleTextView3"
+                            android:fontFamily="sans-serif-light"
+
+
                     />
                     <Button
                             android:id="@+id/otherInfo"
                             android:text="info"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
+
                             android:layout_height="wrap_content"
 
                             app:layout_constraintRight_toRightOf="parent"

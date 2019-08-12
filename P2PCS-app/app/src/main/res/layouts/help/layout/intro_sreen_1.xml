@@ -9,10 +9,14 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
         <ImageView
-                android:layout_width="360dp"
-                android:layout_height="470dp"
-                android:src="@drawable/screen2"
-                android:layout_marginBottom="10dp"/>
+                android:layout_width="400dp"
+<<<<<<< HEAD:P2PCS-app/app/src/main/res/layouts/booking/layout/intro_sreen_1.xml
+                android:layout_height="490dp"
+=======
+                android:layout_height="520dp"
+>>>>>>> ce4eb4aa16052dc989ea500e2831aff441588bb5:P2PCS-app/app/src/main/res/layouts/help/layout/intro_sreen_1.xml
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/screen1"/>
         <View
                 android:id="@+id/sep_line"
                 android:layout_width="match_parent"
@@ -25,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
 
-                android:text="Il menu"
+                android:text="La home"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textAlignment="center"
                 android:textAllCaps="true"
