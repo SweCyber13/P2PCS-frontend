@@ -83,6 +83,10 @@
                 android:label="Premi e Coupons">
         </activity>
         <activity
+                android:name=".Profile.ActivityPrize"
+                android:label="Punti">
+        </activity>
+        <activity
                 android:name=".Mission.ActivityMission"
                 android:label="Missioni">
         </activity>
