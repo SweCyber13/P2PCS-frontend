@@ -1,3 +1,5 @@
+
+
 package com.example.p2pcs_app.Tutorial
 
 import android.content.Intent
@@ -13,14 +15,11 @@ import com.example.p2pcs_app.R
 import com.example.p2pcs_app.Search.ActivitySearch
 import kotlinx.android.synthetic.main.activity_edit_car.*
 
-class Screen1: AppCompatActivity(){
+class Screen2: AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.intro_sreen_1)
-
-
-
+        setContentView(R.layout.intro_screen_2)
 
     }
 

@@ -75,6 +75,14 @@
                 android:label="Dati gamification">
         </activity>
         <activity
+                android:name=".Tutorial.Screen1"
+                android:label="Dati gamification">
+        </activity>
+        <activity
+                android:name=".Tutorial.Screen2"
+                android:label="Dati gamification">
+        </activity>
+        <activity
                 android:name=".EditCar.ActivityEditCar"
                 android:label="Modifica Auto">
         </activity>

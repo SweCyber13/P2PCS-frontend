@@ -12,7 +12,6 @@ import com.example.p2pcs_app.CarBookings.ActivityCarBooking
 
 import com.example.p2pcs_app.Home.HomeFragment
 import com.example.p2pcs_app.Profile.FragmentProfile
-import com.example.p2pcs_app.Coupons.ActivityCoupon
 
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener, RequestQueueListener {
@@ -37,7 +36,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_gift -> {
-                textMessage.setText(R.string.title_profile)
+                textMessage.setText("Help")
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -50,7 +49,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             R.id.navigation_profile -> loadFragment(FragmentProfile())
             R.id.navigation_home -> loadFragment(HomeFragment())
             R.id.navigation_reservation -> loadFragment(ActivityCarBooking()) //da rinominare a fragment la classe
-            //R.id.navigation_gift -> loadFragment(ActivityCoupon())
+
         }
 
         return true

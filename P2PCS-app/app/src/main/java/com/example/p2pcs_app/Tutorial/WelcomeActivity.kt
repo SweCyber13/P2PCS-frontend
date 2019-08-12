@@ -3,19 +3,13 @@ package com.example.p2pcs_app.Tutorial
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import com.example.p2pcs_app.ActivityGamification.ActivityGamification
-import com.example.p2pcs_app.Cars.ActivityCars
-import com.example.p2pcs_app.Explore.ActivityExplore
-import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
 import com.example.p2pcs_app.R
 import com.example.p2pcs_app.Search.ActivitySearch
-import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class WelcomeActivity: Fragment(){
    // private lateinit var introViewPagerAdapter: IntroScreenViewPagerAdapter
@@ -26,17 +20,17 @@ class WelcomeActivity: Fragment(){
         val view = inflater.inflate(R.layout.activity_welcome, null)
 
 
-        val button1 = view.findViewById<Button>(R.id.btnSkip0)
+        val button1 = view.findViewById<Button>(R.id.gh)
         button1.setOnClickListener{
-            val intent= Intent(requireContext(), ActivitySearch::class.java)
+            val intent= Intent(requireContext(), Screen1::class.java)
             startActivity(intent)
         }
 
 
 
-        val button2 = view.findViewById<Button>(R.id.btnNext0)
+        val button2 = view.findViewById<Button>(R.id.gm)
         button2.setOnClickListener{
-            val intent= Intent(requireContext(), Screen1::class.java)
+            val intent= Intent(requireContext(), Screen2::class.java)
             startActivity(intent)
         }
 
