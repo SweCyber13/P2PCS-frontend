@@ -216,6 +216,7 @@
 
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            android:paddingBottom="10dp"
 
 
     >
@@ -247,7 +248,7 @@
                 android:layout_height="wrap_content"
 
                 app:layout_constraintTop_toBottomOf="@id/couponLabel"
-
+android:padding="5dp"
                 android:background="@drawable/button_info_style"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -283,7 +284,7 @@
                 app:layout_constraintTop_toBottomOf="@id/eventLabel"
 
                 android:background="@drawable/button_info_style"
-
+android:padding="2dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
 
