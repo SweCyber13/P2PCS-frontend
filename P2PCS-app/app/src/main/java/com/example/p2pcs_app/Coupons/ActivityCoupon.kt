@@ -1,5 +1,6 @@
 package com.example.p2pcs_app.Coupons
 
+import android.app.Activity
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -15,7 +16,7 @@ import com.example.p2pcs_app.R
 import org.json.JSONArray
 import org.json.JSONObject
 
-class FragmentCoupon : Fragment() {
+class ActivityCoupon : Activity() {
 
     //parametri per la recyclerView
     private var recyclerView: RecyclerView? = null
@@ -23,24 +24,20 @@ class FragmentCoupon : Fragment() {
     private var customAdapter: CustomAdapter? =null
     private lateinit var data_list: ArrayList<MyData>
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
-        val view = inflater.inflate(R.layout.fragment_coupon, null)
-
-        //val activity= requireContext() as ActivityLeaderboard
+    override fun onCreate(savedInstanceState: Bundle?) {
 
 
-
-        recyclerView= view.findViewById<RecyclerView> (R.id.recycler_view)
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.fragment_explore)
+        recyclerView= findViewById<RecyclerView> (R.id.recycler_view)
         data_list=  ArrayList<MyData>()
+        loadrecycler(data_list)
         getCoupon()
-
-        return view
     }
 
     fun loadrecycler(data_list:  ArrayList<MyData>){
 
-        linearLayoutManager= LinearLayoutManager(requireContext())
+        linearLayoutManager= LinearLayoutManager(this)
 
         customAdapter= CustomAdapter(data_list)
 
@@ -59,7 +56,7 @@ class FragmentCoupon : Fragment() {
     // function for network call
     fun getCoupon() {
         // Instantiate the RequestQueue.
-        val queue = Volley.newRequestQueue(context)
+        val queue = Volley.newRequestQueue(this)
         val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/coupon/readall.php"
 
         val stringReq = StringRequest(

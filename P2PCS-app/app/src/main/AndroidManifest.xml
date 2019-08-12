@@ -79,7 +79,7 @@
                 android:label="Modifica Auto">
         </activity>
         <activity
-                android:name=".Coupons.Coupons"
+                android:name=".Coupons.ActivityCoupon"
                 android:label="Premi e Coupons">
         </activity>
         <activity
