@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                <android.support.constraint.ConstraintLayout
+                        android:id="@+id/lineZero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/lineOne"
+
+
+
+                >
+
+                    <TextView
+                            android:id="@+id/titleZero"
+                            android:text="Brevi tutorial alla guida di P2PCS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+
+                            app:layout_constraintTop_toTopOf="parent"
+
+
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+
+                            style="@style/HomeTitleTextView"
+
+                            android:fontFamily="sans-serif-light"
+                    />
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+                        android:id="@+id/lineOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lineZero"
+                        app:layout_constraintBottom_toTopOf="@+id/lineTwo"
+                >
+
+                    <TextView
+                            android:id="@+id/txA"
+                            android:text="Guida alla Home"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.80"
+
+                            app:layout_constraintRight_toLeftOf="@+id/gh"
+                            app:layout_constraintLeft_toLeftOf="parent"
+
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            style="@style/HomeTextView"
+
+
+                            android:fontFamily="sans-serif-light"
+
+                    />
+                    <Button
+                            android:id="@+id/gh"
+                            android:text=""
+                            android:layout_height="0dp"
+                            app:layout_constraintHeight_percent="0.70"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.10"
+
+                            app:layout_constraintLeft_toRightOf="@+id/txA"
+                            app:layout_constraintRight_toRightOf="parent"
+
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            android:background="@drawable/ic_go"
+
+
+                    />
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+                        android:id="@+id/lineTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lineOne"
+                        app:layout_constraintBottom_toTopOf="@+id/lineThree"
+                >
+                    <TextView
+                            android:id="@+id/txB"
+                            android:text="Guida al Menù"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.80"
+
+                            app:layout_constraintRight_toLeftOf="@+id/gm"
+                            app:layout_constraintLeft_toLeftOf="parent"
+
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            style="@style/HomeTextView"
+
+
+                            android:fontFamily="sans-serif-light"
+
+                    />
+                    <Button
+                            android:id="@+id/gm"
+                            android:text=""
+                            android:layout_height="0dp"
+                            app:layout_constraintHeight_percent="0.70"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.10"
+
+                            app:layout_constraintLeft_toRightOf="@+id/txB"
+                            app:layout_constraintRight_toRightOf="parent"
+
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            android:background="@drawable/ic_go"
+
+
+                    />
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+                        android:id="@+id/lineThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lineTwo"
+                        app:layout_constraintBottom_toTopOf="@+id/lineFour"
+                >
+
+                    <TextView
+                            android:id="@+id/questionTitle"
+                            android:text="Hai delle altre domande per noi?"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:gravity="center"
+
+                            style="@style/HomeTitleTextView"
+
+                            android:fontFamily="sans-serif-light"
+
+                    />
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+                        android:id="@+id/lineFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lineThree"
+                        app:layout_constraintBottom_toTopOf="@+id/lineFive"
+                >
+
+                    <TextView
+                            android:id="@+id/txC"
+                            android:text="FAQ"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.80"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/buttonC"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            style="@style/HomeTextView"
+                            android:fontFamily="sans-serif-light"
+
+                    />
+                    <Button
+                            android:id="@+id/buttonC"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/txC"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+
+                            android:text=""
+                            android:layout_height="0dp"
+                            app:layout_constraintHeight_percent="0.70"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.10"
+
+
+                            android:background="@drawable/ic_go"
+
+                            app:layout_constraintVertical_bias="0.615"/>
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                        android:id="@+id/lineFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lineFour"
+
+                >
+
+                    <TextView
+                            android:id="@+id/txD"
+                            android:text="Contattaci: swe.cyber13@gmail.com"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.80"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            style="@style/HomeTextView"
+                            android:fontFamily="sans-serif-light"
+                    />
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lineSix"
+                        app:layout_constraintTop_toBottomOf="@id/lineFive"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                >
+
+                    <ImageView
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/backgroundhelp"
+                            android:id="@+id/imageView2"
+                            app:layout_constraintRight_toRightOf="parent"
+                    />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
