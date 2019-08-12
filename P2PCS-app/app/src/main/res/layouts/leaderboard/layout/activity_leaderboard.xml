@@ -3,60 +3,24 @@
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
                                              xmlns:tools="http://schemas.android.com/tools"
                                              android:layout_width="match_parent"
-                                             android:layout_height="wrap_content">
+                                             android:layout_height="wrap_content"
 
-
-    <android.support.v7.widget.CardView
+>
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-    >
-        <android.support.constraint.ConstraintLayout
+            android:layout_height="match_parent">
+
+        <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pager_header"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/colorPrimary"
+                android:padding="13dp"/>
 
-            <TextView
-                    android:text="Posizione"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:id="@+id/position"
-                    app:layout_constraintWidth_percent="0.33"
-                    app:layout_constraintHeight_max="10dp"
-                    style="@style/LeaderboardsTextView"
 
-                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintBaseline_toBaselineOf="@+id/username"
-                    app:layout_constraintEnd_toStartOf="@+id/username" android:layout_marginEnd="4dp"
-            />
-            <TextView
 
-                    android:text="Username"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/username"
-                    app:layout_constraintWidth_percent="0.34"
-                    app:layout_constraintHeight_max="10dp"
-                    style="@style/LeaderboardsTextView"
 
-                    android:layout_marginEnd="152dp" app:layout_constraintEnd_toStartOf="@+id/rank"
-                    app:layout_constraintStart_toEndOf="@+id/position" android:layout_marginStart="4dp"
-                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
-            />
-            <TextView
-
-                    android:text="Punteggio"
-                    android:layout_width="wrap_content"
-                    app:layout_constraintWidth_percent="0.33"
-                    app:layout_constraintHeight_max="10dp"
-                    android:layout_height="match_parent"
-                    android:id="@+id/rank"
-                    style="@style/LeaderboardsTextView"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/username"
-                    android:layout_marginStart="10dp"/>
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+    </android.support.v4.view.ViewPager>
 </android.support.constraint.ConstraintLayout>
-
-
