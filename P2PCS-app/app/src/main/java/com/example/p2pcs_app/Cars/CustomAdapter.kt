@@ -25,7 +25,7 @@ class CustomAdapter(
     class MyViewHolder(val view:View): RecyclerView.ViewHolder(view){
         var marca=view.textMarca
         var modello=view.textModel
-        var year= view.textYear
+        var tariffa= view.tariffaTx
         var targa=view.textTarga
         var button= view.otherInfo
     }
@@ -46,7 +46,7 @@ class CustomAdapter(
         p0.marca.text=myData[p1].marca
         p0.modello.text=myData[p1].modello
         p0.targa.text=myData[p1].targa
-        p0.year.text=myData[p1].anno
+        p0.tariffa.text=myData[p1].tariffa
     }
 
 
