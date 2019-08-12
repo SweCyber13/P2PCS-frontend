@@ -1,13 +1,11 @@
 package com.example.p2pcs_app.Mission
-
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import com.example.p2pcs_app.Mission.MyData
 import com.example.p2pcs_app.R
+import kotlinx.android.synthetic.main.activity_coupon_card.view.*
+import kotlinx.android.synthetic.main.activity_mission_card.view.*
 
 class CustomAdapter(
 
@@ -18,21 +16,29 @@ class CustomAdapter(
 
     class MyViewHolder(val view:View): RecyclerView.ViewHolder(view){
 
-        var description=view.findViewById<TextView>(R.id.missionTitle)
-        var imageView=view.findViewById<ImageView>(R.id.missionLogo)
-        var point=view.findViewById<ImageView>(R.id.missionDescription)
+        var titolo=view.missionTitle
+        var descr=view.missionDescription
+        var puntiRank= view.puntiRank
+        var puntiBuoni= view.puntiBuoni
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): MyViewHolder {
         val view= LayoutInflater.from(parent.context)
-            .inflate(R.layout.activity_mission_card, parent, false)
+            .inflate(R.layout.activity_explore_card, parent, false)
 
         return MyViewHolder(view)
     }
 
     override fun onBindViewHolder(p0: MyViewHolder, p1: Int) {
-        p0.description.text="Ciao"
+
+        //setto campi della card
+        p0.titolo.text=myData[p1].titolo
+        p0.descr.text=myData[p1].descr
+        p0.puntiRank.text=myData[p1].puntiRank
+        p0.puntiBuoni.text=myData[p1].puntiBuoni
+
+
     }
 
 
@@ -42,6 +48,3 @@ class CustomAdapter(
 
 
 }
-
-
-

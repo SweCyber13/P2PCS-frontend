@@ -1,6 +1,5 @@
 package com.example.p2pcs_app.Home
 
-import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -9,17 +8,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import com.example.p2pcs_app.Cars.FragmentCars
 import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
-import com.example.p2pcs_app.Mission.FragmentMission
-import com.example.p2pcs_app.CarBookings.ActivityCarBooking
 import com.example.p2pcs_app.Cars.ActivityCars
 import com.example.p2pcs_app.Explore.ActivityExplore
+import com.example.p2pcs_app.Mission.ActivityMission
+
 
 
 import com.example.p2pcs_app.R
 import com.example.p2pcs_app.Search.ActivitySearch
-import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
@@ -46,7 +43,7 @@ class HomeFragment : Fragment() {
 
         val button3 = view.findViewById<Button>(R.id.b_secondLine)
         button3.setOnClickListener{
-            val intent= Intent(requireContext(), ActivityExplore::class.java)
+            val intent= Intent(requireContext(), ActivityMission::class.java)
             //Fare activity mission per scalare la classifica
             startActivity(intent)
         }

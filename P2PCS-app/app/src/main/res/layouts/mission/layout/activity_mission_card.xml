@@ -29,7 +29,7 @@
                 android:contentDescription="@string/mission_image"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintWidth_percent="0.25"
+                app:layout_constraintWidth_percent="0.15"
                 app:srcCompat="@drawable/car"/>
 
             <View
@@ -47,7 +47,7 @@
                 android:orientation="vertical"
                 app:layout_constraintEnd_toStartOf="@id/divider2"
                 app:layout_constraintStart_toEndOf="@id/divider1"
-                app:layout_constraintWidth_percent="0.5">
+                app:layout_constraintWidth_percent="0.3">
 
                 <TextView
                     android:id="@+id/missionTitle"
@@ -80,11 +80,20 @@
                     android:text="@string/mission_pts_reward"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:id="@+id/missionReward"
+                    android:id="@+id/puntiRank"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    app:layout_constraintWidth_percent="0.15"
+                  app:layout_constraintStart_toStartOf="@id/divider2"
+                    android:gravity="center"/>
+            <TextView
+                    android:text="10 punti buoni"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/puntiBuoni"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintWidth_percent="0.15"
-                    app:layout_constraintEnd_toEndOf="parent"
                     android:gravity="center"/>
 
         </android.support.constraint.ConstraintLayout>

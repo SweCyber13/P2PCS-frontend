@@ -1,6 +1,6 @@
 package com.example.p2pcs_app.Mission
 
 
-class MyData(num:Int, str1:String, str2:String){
+class MyData(val titolo:String, val descr:String, val puntiRank:String, val puntiBuoni:String){
 
 }
