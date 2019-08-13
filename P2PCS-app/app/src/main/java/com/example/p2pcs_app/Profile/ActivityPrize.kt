@@ -10,6 +10,7 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.Coupons.ActivityCoupon
 import com.example.p2pcs_app.Explore.ActivityExplore
+import com.example.p2pcs_app.Mission.ActivityMission
 import com.example.p2pcs_app.R
 import kotlinx.android.synthetic.main.fragment_prize_section.*
 
@@ -22,7 +23,10 @@ class ActivityPrize : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_prize_section)
         getPoints()
-
+missionButton.setOnClickListener{
+    val intent= Intent(this, ActivityMission::class.java)
+    startActivity(intent)
+}
         couponButton.setOnClickListener{
             val intent= Intent(this, ActivityCoupon::class.java)
             startActivity(intent)

@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
 
         val button1 = view.findViewById<Button>(R.id.find_car)
         button1.setOnClickListener{
-            val intent= Intent(requireContext(), ActivityGamification::class.java)
+            val intent= Intent(requireContext(), ActivitySearch::class.java)
             startActivity(intent)
         }
 
@@ -42,16 +42,16 @@ class HomeFragment : Fragment() {
         }
 
 
-        val button3 = view.findViewById<Button>(R.id.b_secondLine)
-        button3.setOnClickListener{
-            val intent= Intent(requireContext(), ActivityMission::class.java)
-            //Fare activity mission per scalare la classifica
+
+
+        val presentText = view.findViewById<TextView>(R.id.toPresent)
+        presentText.setOnClickListener {
+            val intent = Intent(requireContext(), ActivityGamification::class.java)
             startActivity(intent)
         }
-
-        val saletext = view.findViewById<TextView>(R.id.saletext)
-        saletext.setOnClickListener {
-            val intent = Intent(requireContext(), ActivityPrize::class.java)
+        val pointsText = view.findViewById<TextView>(R.id.toPoints)
+        pointsText.setOnClickListener{
+            val intent= Intent(requireContext(), ActivityPrize::class.java)
             startActivity(intent)
         }
         val button4 = view.findViewById<Button>(R.id.b_thirdLine)

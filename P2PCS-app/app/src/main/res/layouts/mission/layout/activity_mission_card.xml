@@ -103,7 +103,7 @@
 
                         <TextView
                                 android:id="@+id/rT"
-                                android:text="Punti rank:"
+                                android:text="Punti esperienza:"
                                 android:layout_width="0dp"
                                 app:layout_constraintWidth_percent="0.5"
                                 app:layout_constraintTop_toTopOf="parent"

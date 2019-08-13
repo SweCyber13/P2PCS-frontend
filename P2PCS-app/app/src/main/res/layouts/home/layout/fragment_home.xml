@@ -9,26 +9,22 @@
 
 >
 
-    <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" android:id="@+id/SV">
         <android.support.constraint.ConstraintLayout
                 android:id="@+id/home"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
 
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-
+                app:layout_constraintBottom_toBottomOf="parent"
         >
 
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/first_part"
                     android:layout_width="match_parent"
-                    android:layout_height="230dp"
+                    android:layout_height="0dp"
                     app:layout_constraintHeight_percent="0.50"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toTopOf="@+id/second_part"
                     android:background="@drawable/home"
                     android:alpha="0.8"
 
@@ -70,83 +66,10 @@
                 />
             </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
-                    android:id="@+id/second_part"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintHeight_percent="0.25"
-                    app:layout_constraintTop_toBottomOf="@+id/first_part"
-                    app:layout_constraintBottom_toTopOf="@+id/third_part"
-
-            >
-
-                <TextView
-                        android:id="@+id/second_part_title"
-                        android:text="Esplora"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-
-
-                        android:gravity="center"
-
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toTopOf="@+id/card_list"
-
-                        style="@style/HomeTitleTextView"
-
-                        android:fontFamily="sans-serif-light"
-
-
-                />
-                <android.support.constraint.ConstraintLayout
-                        android:id="@+id/card_list"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-
-
-                        app:layout_constraintTop_toBottomOf="@+id/second_part_title"
-                        app:layout_constraintBottom_toBottomOf="parent"
-
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintHorizontal_bias="0.0">
-
-                    <ImageView
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintLeft_toLeftOf="parent"
-                            android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.3"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/present"
-                            android:id="@+id/saleimage"
-
-                    />
-                    <TextView
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintRight_toRightOf="parent"
-                            app:layout_constraintLeft_toRightOf="@id/saleimage"
-                            android:text="SCOPRI EVENTI, \n I TUOI PUNTI E COME UTILIZZARLI!"
-                            android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.7"
-                            android:layout_height="match_parent"
-                            android:id="@+id/saletext"
-                            android:gravity="center"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textStyle="normal"
-                            android:padding="5dp"
-
-                            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
-                </android.support.constraint.ConstraintLayout>
-            </android.support.constraint.ConstraintLayout>
-            <android.support.constraint.ConstraintLayout
                     android:id="@+id/third_part"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintHeight_percent="0.25"
-                    app:layout_constraintTop_toBottomOf="@+id/second_part"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.50"
                     app:layout_constraintBottom_toBottomOf="parent"
                     android:background="@color/hint_color"
             >
@@ -155,13 +78,12 @@
                         android:id="@+id/third_part_title"
                         android:text="Sei il xy in classifica!"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintHeight_percent="0.30"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.15"
 
                         android:gravity="center"
 
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toTopOf="@+id/second_line"
 
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
@@ -173,80 +95,19 @@
 
                 />
                 <android.support.constraint.ConstraintLayout
-                        android:id="@+id/second_line"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        app:layout_constraintHeight_percent="0.35"
-
-                        app:layout_constraintTop_toBottomOf="@+id/third_part_title"
-                        app:layout_constraintBottom_toTopOf="@+id/third_line"
-
-
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-
-
-                >
-
-                    <TextView
-                            android:id="@+id/tV_secondLine"
-                            android:text="Scopri come scalare la classifica!"
-
-                            android:layout_height="wrap_content"
-                            android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.80"
-
-                            app:layout_constraintRight_toLeftOf="@+id/b_secondLine"
-                            app:layout_constraintLeft_toLeftOf="parent"
-
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-
-                            style="@style/HomeTextView"
-
-
-                            android:fontFamily="sans-serif-light"
-
-
-                    />
-                    <Button
-                            android:id="@+id/b_secondLine"
-                            android:text=""
-
-                            android:layout_height="0dp"
-                            app:layout_constraintHeight_percent="0.70"
-
-                            android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.10"
-
-                            app:layout_constraintLeft_toRightOf="@+id/tV_secondLine"
-                            app:layout_constraintRight_toRightOf="parent"
-
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-
-                            android:background="@drawable/ic_go"
-
-
-                    />
-                </android.support.constraint.ConstraintLayout>
-                <android.support.constraint.ConstraintLayout
                         android:id="@+id/third_line"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        app:layout_constraintHeight_percent="0.35"
-
-                        app:layout_constraintTop_toBottomOf="@+id/second_line"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHeight_percent="0.15"
 
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
-                >
+                        app:layout_constraintTop_toBottomOf="@id/third_part_title">
 
                     <TextView
                             android:id="@+id/tV_thirdLine"
-                            android:text="Scopri le classifiche di P2PCS!"
-
+                            android:text="Scopri le classifiche"
+                            android:textSize="25dp"
                             android:layout_height="wrap_content"
                             android:layout_width="0dp"
                             app:layout_constraintWidth_percent="0.80"
@@ -284,7 +145,76 @@
 
                     />
                 </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintHeight_percent="0.25"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/third_line" android:id="@+id/presentLayout">
+
+
+                    <ImageView
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.3"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/present"
+                            android:id="@+id/present"/>
+                    <TextView
+                            app:layout_constraintLeft_toRightOf="@id/present"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginRight="15dp"
+                            android:text="RITIRA IL TUO PREMIO GIORNALIERO"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.7"
+                            android:layout_height="match_parent"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorSecondary"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:id="@+id/toPresent"/>
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintHeight_percent="0.25"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/presentLayout"
+                        android:id="@+id/pointsLayout">
+
+
+                    <ImageView
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.3"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/fireworks"
+                            android:id="@+id/points"/>
+                    <TextView
+                            app:layout_constraintLeft_toRightOf="@id/points"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginRight="15dp"
+                            android:text="PUNTEGGI, MISSIONI, COUPON, EVENTI"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.7"
+                            android:layout_height="match_parent"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorSecondary"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:id="@+id/toPoints"/>
+                </android.support.constraint.ConstraintLayout>
+
+
             </android.support.constraint.ConstraintLayout>
         </android.support.constraint.ConstraintLayout>
-    </ScrollView>
+
 </android.support.constraint.ConstraintLayout>

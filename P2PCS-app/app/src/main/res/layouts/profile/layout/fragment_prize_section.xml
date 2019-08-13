@@ -4,12 +4,7 @@
                                              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                              android:layout_height="match_parent">
 
-    <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:orientation="vertical"/>
-    </ScrollView>
+
     <android.support.constraint.ConstraintLayout
             android:id="@+id/lineZero"
             android:layout_width="match_parent"
@@ -62,7 +57,7 @@
 
             <TextView
                     android:id="@+id/partOneLabel"
-                    android:text="Le tue statistiche in P2PCS"
+                    android:text="I tuoi punti "
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
@@ -110,7 +105,7 @@
 
                 <TextView
                         android:id="@+id/puntiRanklabel"
-                        android:text="Punti Rank:"
+                        android:text="Punti esperienza:"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
@@ -144,8 +139,7 @@
                         style="@style/MyPersonalData2"
 
 
-                        app:layout_constraintBottom_toBottomOf="@+id/lineTwo"/>
-            </android.support.constraint.ConstraintLayout>
+/>            </android.support.constraint.ConstraintLayout>
             <android.support.constraint.ConstraintLayout
                     android:id="@+id/partRight"
                     android:layout_width="0dp"
@@ -208,11 +202,11 @@
     <android.support.constraint.ConstraintLayout
             android:id="@+id/lineTwo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintHeight_percent="0.8"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.5"
 
             app:layout_constraintTop_toBottomOf="@id/lineOne"
-
+android:layout_marginTop="15dp"
 
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -221,74 +215,127 @@
 
     >
 
-        <TextView
-                android:id="@+id/couponLabel"
-                android:text="Utilizza i tuoi punti!"
+        <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.45"
+                app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/mission_coupon">
 
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.45"
+                    android:layout_height="match_parent"
+                    android:id="@+id/missionLayout"
+                    android:layout_margin="10dp"
+            >
 
-                android:gravity="center_horizontal"
+                <TextView
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="Accumula i tuoi punti"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        style="@style/MyPersonalData1"
+                        android:gravity="center"
+
+                        app:layout_constraintHeight_percent="0.55"
+                        android:id="@+id/missionLabel"/>
+                <Button
+                        android:text="Missioni"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/missionLabel"
+                        android:layout_width="match_parent"
+                        app:layout_constraintHeight_percent="0.45"
+                        android:layout_height="0dp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:id="@+id/missionButton"
+                        android:background="@drawable/button_leaderboard"/>
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.45"
+                    app:layout_constraintLeft_toRightOf="@id/missionLayout"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/couponLayout"
+                    android:layout_margin="10dp">
+
+                <TextView
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:id="@+id/couponLabel"
+                        android:text="Utilizza i tuoi punti!"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.55"
+                        android:gravity="center_horizontal"
 
 
-                style="@style/MyPersonalData1"
-                android:layout_margin="0dp"
+                        style="@style/MyPersonalData1"
 
 
-
-        />
-        <Button
-                android:id="@+id/couponButton"
-                android:text="Scopri i coupon disponibili!"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                app:layout_constraintTop_toBottomOf="@id/couponLabel"
-android:padding="5dp"
-                android:background="@drawable/button_info_style"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
+                />
+                <Button
+                        android:id="@+id/couponButton"
+                        android:text="Coupon"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/couponLabel"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintHeight_percent="0.45"
+                        android:background="@drawable/button_leaderboard"
 
 
-        />
-        <TextView
-                android:id="@+id/eventLabel"
-                android:text="Partecipa agli eventi convenzionati con P2PCS!"
+                />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                app:layout_constraintTop_toBottomOf="@id/couponButton"
-
-
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-
-                android:gravity="center_horizontal"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.45"
+                android:id="@+id/eventLayout"
                 android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/mission_coupon"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+            <TextView
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/eventLabel"
+                    android:text="Partecipa agli eventi convenzionati con P2PCS!"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.5"
 
 
-                style="@style/MyPersonalData1"
+                    android:gravity="center_horizontal"
 
 
-        />
-        <Button
-                android:id="@+id/eventButton"
-                android:text="Partecipa!"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                app:layout_constraintTop_toBottomOf="@id/eventLabel"
-
-                android:background="@drawable/button_info_style"
-android:padding="2dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
+                    style="@style/MyPersonalData1"
 
 
-        />
+                    tools:layout_editor_absoluteY="474dp"/>
+            <Button
+                    app:layout_constraintTop_toBottomOf="@id/eventLabel"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/eventButton"
+                    android:text="Partecipa!"
+                    android:padding="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/button_leaderboard"
+
+
+            />
+        </android.support.constraint.ConstraintLayout>
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
