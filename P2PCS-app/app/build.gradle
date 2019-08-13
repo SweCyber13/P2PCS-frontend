@@ -47,6 +47,8 @@ android {
                             'src/main/res/layouts/search',
                             'src/main/res/layouts/search_result',
                             'src/main/res/layouts/help',
+                            'src/main/res/layouts/gamification',
+
 
 
                             'src/main/res/layouts/fragment_prize_section',
