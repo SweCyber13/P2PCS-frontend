@@ -68,7 +68,7 @@
 
         <activity
                 android:name=".ActivityGamification.ActivityGamification"
-                android:label="Dati gamification">
+                android:label="Ruota della fortuna">
         </activity>
         <activity
                 android:name=".Tutorial.WelcomeActivity"

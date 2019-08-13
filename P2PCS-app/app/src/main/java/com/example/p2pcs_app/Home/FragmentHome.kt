@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import com.example.p2pcs_app.ActivityGamification.ActivityGamification
 import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
 import com.example.p2pcs_app.Cars.ActivityCars
 import com.example.p2pcs_app.Explore.ActivityExplore
@@ -28,7 +29,7 @@ class HomeFragment : Fragment() {
 
         val button1 = view.findViewById<Button>(R.id.find_car)
         button1.setOnClickListener{
-            val intent= Intent(requireContext(), ActivitySearch::class.java)
+            val intent= Intent(requireContext(), ActivityGamification::class.java)
             startActivity(intent)
         }
 

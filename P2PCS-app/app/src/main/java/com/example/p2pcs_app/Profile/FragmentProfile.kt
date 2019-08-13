@@ -14,7 +14,6 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.example.p2pcs_app.ActivityGamification.ActivityGamification
 import com.example.p2pcs_app.Search.ActivitySearch
 import com.example.p2pcs_app.login_register_cognito.Login.ActivityLogin
 import kotlinx.android.synthetic.main.fragment_profile.*

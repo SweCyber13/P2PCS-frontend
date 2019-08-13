@@ -166,20 +166,6 @@
 
                     app:layout_constraintHorizontal_bias="0.0"/>
 
-            <TextView
-                    android:text="0.0"
-                    android:id="@+id/Rating"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:textAlignment="center"
-                    app:layout_constraintHeight_percent="0.25"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/username"
-
-
-            />
-
 
         </android.support.constraint.ConstraintLayout>
     </android.support.constraint.ConstraintLayout>
