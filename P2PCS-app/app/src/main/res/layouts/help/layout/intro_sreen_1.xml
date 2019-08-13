@@ -10,11 +10,7 @@
             android:orientation="vertical">
         <ImageView
                 android:layout_width="400dp"
-<<<<<<< HEAD:P2PCS-app/app/src/main/res/layouts/booking/layout/intro_sreen_1.xml
-                android:layout_height="490dp"
-=======
                 android:layout_height="520dp"
->>>>>>> ce4eb4aa16052dc989ea500e2831aff441588bb5:P2PCS-app/app/src/main/res/layouts/help/layout/intro_sreen_1.xml
                 android:layout_marginBottom="10dp"
                 android:src="@drawable/screen1"/>
         <View
