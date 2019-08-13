@@ -1,124 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:id="@+id/container">
 
-    <android.support.v7.widget.CardView
+    <android.support.constraint.ConstraintLayout
+
+            android:id="@+id/card"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/card_car_view"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="120dp"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"
+            android:background="@drawable/leaderboard_background"
     >
-        <android.support.constraint.ConstraintLayout
-                android:id="@+id/my_car_card"
-                android:layout_width="match_parent"
+
+        <TextView
+                android:id="@+id/giornoLabel"
+                android:text="Giorno: "
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.5"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="15dp"
-                android:layout_gravity="center_horizontal"
                 app:layout_constraintTop_toTopOf="parent"
-                android:background="@drawable/mycar_button_background"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/data"
+                style="@style/MyPersonalData1"
 
 
-        >
-            <ImageView
-                    android:id="@+id/image"
-                    app:srcCompat="@drawable/ic_clock"
-                    android:layout_width="0dp"
-                    app:layout_constraintWidth_percent="0.12"
-                    android:layout_height="wrap_content"
-
-                    app:layout_constraintLeft_toLeftOf="parent"
-
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-            />
-            <TextView
-                    android:id="@+id/giornoLabel"
-                    android:text="Giorno:"
-                    android:layout_width="90dp"
-                    android:layout_height="wrap_content"
-
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toTopOf="@+id/orario"
-                    app:layout_constraintLeft_toRightOf="@+id/image"
-                    style="@style/MyPersonalData1"
-            />
-            <TextView
-                    android:id="@+id/data"
-                    android:text="19 Agosto 2019"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toTopOf="@+id/orario"
-                    app:layout_constraintLeft_toRightOf="@+id/giornoLabel"
-                    style="@style/MyPersonalData2"
-
-            />
-            <android.support.constraint.ConstraintLayout
-                    android:id="@+id/orario"
-                    android:layout_width="0dp"
-                    app:layout_constraintWidth_percent="0.7"
-                    android:layout_height="match_parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/data"
-                    app:layout_constraintLeft_toRightOf="@+id/image"
-                    >
-
-                <TextView
-                        android:id="@+id/labelOra"
-                        android:text="Orario:"
-                        android:layout_width="90dp"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintLeft_toLeftOf="parent"
-
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        style="@style/MyPersonalData1"
-
-                />
-                <TextView
-                        android:id="@+id/oraInizio"
-                        android:text="9:00"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-
-                        app:layout_constraintLeft_toRightOf="@+id/labelOra"
-                        style="@style/MyPersonalData2"
-
-
-                />
-                <TextView
-                        android:id="@+id/tratto"
-                        android:text="-"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-
-                        app:layout_constraintLeft_toRightOf="@+id/oraInizio"
-                        style="@style/MyPersonalData2"
-
-                />
-                <TextView
-                        android:id="@+id/oraFine"
-                        android:text="12:00"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-
-                        app:layout_constraintLeft_toRightOf="@+id/tratto"
-                        style="@style/MyPersonalData2"
-
-
-                />
-            </android.support.constraint.ConstraintLayout>
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
-
-</LinearLayout>
+        />
+        <TextView
+                android:id="@+id/data"
+                android:text="19 Agosto 2019"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.5"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/giornoLabel"
+                style="@style/MyPersonalData2"
+        />
+        <TextView
+                android:id="@+id/labelOra"
+                android:text="Orario:"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.5"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/giornoLabel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/oraInizio"
+                style="@style/MyPersonalData1"
+        />
+        <TextView
+                android:id="@+id/oraInizio"
+                android:text="09.00"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.2"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/data"
+                app:layout_constraintLeft_toRightOf="@+id/labelOra"
+                app:layout_constraintRight_toLeftOf="@+id/tratto"
+                style="@style/MyPersonalData2"
+        />
+        <TextView
+                android:id="@+id/tratto"
+                android:text="-"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.1"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/data"
+                app:layout_constraintLeft_toRightOf="@+id/oraInizio"
+                app:layout_constraintRight_toLeftOf="@+id/oraFine"
+                style="@style/MyPersonalData1"
+        />
+        <TextView
+                android:id="@+id/oraFine"
+                android:text="12.00"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.2"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/data"
+                app:layout_constraintLeft_toRightOf="@+id/tratto"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/MyPersonalData2"
+        />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
 
