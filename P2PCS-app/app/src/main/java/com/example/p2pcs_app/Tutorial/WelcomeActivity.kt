@@ -1,15 +1,23 @@
 package com.example.p2pcs_app.Tutorial
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import com.example.p2pcs_app.R
 import com.example.p2pcs_app.Search.ActivitySearch
+import com.squareup.picasso.Callback
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_welcome.*
+
+
+
 
 class WelcomeActivity: Fragment(){
    // private lateinit var introViewPagerAdapter: IntroScreenViewPagerAdapter
@@ -33,6 +41,9 @@ class WelcomeActivity: Fragment(){
             val intent= Intent(requireContext(), Screen2::class.java)
             startActivity(intent)
         }
+
+
+
 
 
 

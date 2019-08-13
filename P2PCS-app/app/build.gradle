@@ -65,7 +65,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
 
     implementation 'com.android.support:cardview-v7:28.0+'
     implementation 'com.android.support:recyclerview-v7:28.0.+'
@@ -84,5 +84,7 @@ dependencies {
     //use @arr and transitive to download the dependency
     implementation('com.amazonaws:aws-android-sdk-mobile-client:2.7.+@aar') { transitive = true }
     implementation('com.amazonaws:aws-android-sdk-auth-userpools:2.7.+@aar') { transitive = true }
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
 
 }

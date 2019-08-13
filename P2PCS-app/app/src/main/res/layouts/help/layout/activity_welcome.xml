@@ -11,9 +11,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
             <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/lol">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/backgroundhelp"
+                    android:id="@+id/img"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/container"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                   />
+
+            <android.support.constraint.ConstraintLayout
                     android:id="@+id/container"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img"
+                    app:layout_constraintBottom_toTopOf="@+id/lineOne"
+            >
 
                 <android.support.constraint.ConstraintLayout
                         android:id="@+id/lineZero"
@@ -235,26 +257,10 @@
                             android:fontFamily="sans-serif-light"
                     />
                 </android.support.constraint.ConstraintLayout>
-                <android.support.constraint.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/lineSix"
-                        app:layout_constraintTop_toBottomOf="@id/lineFive"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                >
-
-                    <ImageView
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintLeft_toLeftOf="parent"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/backgroundhelp"
-                            android:id="@+id/imageView2"
-                            app:layout_constraintRight_toRightOf="parent"
-                    />
-                </android.support.constraint.ConstraintLayout>
+            </android.support.constraint.ConstraintLayout>
             </android.support.constraint.ConstraintLayout>
         </ScrollView>
 
-    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
 

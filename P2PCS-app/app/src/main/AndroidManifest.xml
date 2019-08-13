@@ -72,15 +72,15 @@
         </activity>
         <activity
                 android:name=".Tutorial.WelcomeActivity"
-                android:label="Dati gamification">
+                android:label="FAQ e Tutorial">
         </activity>
         <activity
                 android:name=".Tutorial.Screen1"
-                android:label="Dati gamification">
+                android:label="Tutorial Home">
         </activity>
         <activity
                 android:name=".Tutorial.Screen2"
-                android:label="Dati gamification">
+                android:label="Tutorial Menù">
         </activity>
         <activity
                 android:name=".EditCar.ActivityEditCar"
@@ -117,7 +117,7 @@
         </activity>
         <activity
                 android:name=".MainActivity"
-                android:label="P2PCS">
+                android:label="GaiaGo">
         </activity>
         <activity android:name=".Explore.ActivityExplore"/>
 

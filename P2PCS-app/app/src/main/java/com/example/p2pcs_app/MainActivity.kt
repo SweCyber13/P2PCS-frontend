@@ -1,5 +1,6 @@
 package com.example.p2pcs_app
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import android.support.design.widget.BottomNavigationView
@@ -13,6 +14,8 @@ import com.example.p2pcs_app.CarBookings.ActivityCarBooking
 import com.example.p2pcs_app.Home.HomeFragment
 import com.example.p2pcs_app.Profile.FragmentProfile
 import com.example.p2pcs_app.Tutorial.WelcomeActivity
+import com.squareup.picasso.Picasso
+
 
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener, RequestQueueListener {
@@ -84,9 +87,13 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         //load fragment_home default
         loadFragment(HomeFragment())
 
+        //Picasso.get().load(Uri.parse("https://i.imgur.com/H981AN7.jpg")).into(myImageView)
+
+
         //fragmentProfile.attach(this)
         //test userpreference
         //val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
         //Toast.makeText(this, prefs.getString("username","vuoto") , Toast.LENGTH_LONG).show()
+
     }
 }
