@@ -22,7 +22,7 @@
                 android:paddingBottom="5dp"
                 android:layout_gravity="center_horizontal"
                 app:layout_constraintTop_toTopOf="parent"
-                android:background="@drawable/bb"
+                android:background="@drawable/leaderboard_background"
 
 
         >
@@ -40,7 +40,6 @@
 
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginTop="10dp"
-
 
 
                     app:srcCompat="@drawable/car"
@@ -67,13 +66,14 @@
                 <android.support.constraint.ConstraintLayout
                         android:id="@+id/firstLine"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.25"
 
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
 
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toTopOf="@+id/textTarga"
+                        app:layout_constraintBottom_toTopOf="@+id/lolLine"
 
 
                 >
@@ -98,7 +98,7 @@
                             android:text="Opel"
                             android:layout_width="wrap_content"
 
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
 
 
                             app:layout_constraintLeft_toRightOf="@+id/label0"
@@ -116,7 +116,7 @@
                             android:text="Corsa"
                             android:layout_width="wrap_content"
 
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
 
                             app:layout_constraintLeft_toRightOf="@+id/textMarca"
 
@@ -133,59 +133,63 @@
                             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
                 </android.support.constraint.ConstraintLayout>
 
-                <TextView
-                        android:id="@+id/label1"
-                        android:text="Targa:"
-                        android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.4"
-                        android:layout_height="wrap_content"
-
-                        app:layout_constraintRight_toLeftOf="@+id/textTarga"
+                <android.support.constraint.ConstraintLayout
+                        android:id="@+id/lolLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.25"
                         app:layout_constraintLeft_toLeftOf="parent"
-
-                        app:layout_constraintTop_toBottomOf="@+id/firstLine"
-                        app:layout_constraintBottom_toTopOf="@+id/second_line"
-
-                        style="@style/MyCarTitleTextView2"
-                        android:fontFamily="sans-serif-light"
-
-
-                />
-                <TextView
-                        android:id="@+id/textTarga"
-                        android:text="AA000AA"
-                        android:layout_width="0dp"
-                        app:layout_constraintWidth_percent="0.6"
-                        android:layout_height="wrap_content"
-
-
-                        app:layout_constraintLeft_toRightOf="@+id/label1"
                         app:layout_constraintRight_toRightOf="parent"
-
                         app:layout_constraintTop_toBottomOf="@+id/firstLine"
                         app:layout_constraintBottom_toTopOf="@+id/addLine"
+                >
+
+                    <TextView
+                            android:id="@+id/label1"
+                            android:text="Targa:"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.4"
+                            android:layout_height="match_parent"
+                            app:layout_constraintHeight_percent="0.2"
+
+                            style="@style/MyCarTitleTextView2"
+                            android:fontFamily="sans-serif-light"
+                            app:layout_constraintRight_toLeftOf="@id/textTarga"
+                            app:layout_constraintLeft_toLeftOf="parent"
 
 
-                        style="@style/MyCarTitleTextView3"
-                        android:fontFamily="sans-serif-light"
+                    />
+                    <TextView
+                            android:id="@+id/textTarga"
+                            android:text="AA000AA"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.6"
+                            android:layout_height="match_parent"
+                            app:layout_constraintHeight_percent="0.2"
 
 
-                />
+                            style="@style/MyCarTitleTextView3"
+                            android:fontFamily="sans-serif-light"
+                            app:layout_constraintLeft_toRightOf="@id/label1"
+                            app:layout_constraintRight_toRightOf="parent"
+                    />
+                </android.support.constraint.ConstraintLayout>
                 <android.support.constraint.ConstraintLayout
                         android:id="@+id/addLine"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.25"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
 
-                        app:layout_constraintTop_toBottomOf="@+id/textTarga"
+                        app:layout_constraintTop_toBottomOf="@+id/lolLine"
                         app:layout_constraintBottom_toTopOf="@id/secondLine"
 
                 >
 
                     <TextView
                             android:id="@+id/label2"
-                            android:text="Tariffa"
+                            android:text="Tariffa:"
                             android:layout_width="0dp"
                             app:layout_constraintWidth_percent="0.4"
                             android:layout_height="wrap_content"
@@ -204,7 +208,7 @@
                             android:id="@+id/tariffaTx"
                             android:text="10,00"
                             android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.25"
+                            app:layout_constraintWidth_percent="0.1"
                             android:layout_height="wrap_content"
 
 
@@ -223,7 +227,7 @@
                             android:id="@+id/fix"
                             android:text="€/h"
                             android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.35"
+                            app:layout_constraintWidth_percent="0.5"
                             android:layout_height="wrap_content"
 
 
@@ -240,7 +244,8 @@
                         android:id="@+id/secondLine"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.8"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintHeight_percent="0.25"
 
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -249,16 +254,13 @@
                         android:padding="5dp"
 
 
-
-
-
                 >
                     <Button
                             android:id="@+id/otherInfo"
                             android:text=""
                             app:layout_constraintWidth_percent="0.15"
                             android:layout_width="0dp"
-                            android:layout_height="35dp"
+                            android:layout_height="25dp"
 
 
                             app:layout_constraintRight_toRightOf="parent"

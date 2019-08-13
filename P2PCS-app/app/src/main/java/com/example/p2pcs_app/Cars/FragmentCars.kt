@@ -36,7 +36,7 @@ class FragmentCars : Fragment() {
         //val view = inflater.inflate(R.layout.fragment_cars, null)
 
         //val View= view.findViewById<LinearLayout>(R.id.car_card_list) //dove salvo il linear layout a cui vado ad aggiungere card
-                                                                        //da fare
+        //da fare
 
 
 
@@ -56,7 +56,7 @@ class FragmentCars : Fragment() {
 
         return view
     }
-   fun getCars(context: Context){
+    fun getCars(context: Context){
         val queue = Volley.newRequestQueue(context)
         val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/visualizzamacchina.php"
 

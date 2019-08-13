@@ -77,7 +77,7 @@ class ActivityCars : AppCompatActivity() {
                     val str_targa = "" + jsonInner.get("Targa")
                     val str_modello = "" + jsonInner.get("Modello")
                     val str_marca = "" + jsonInner.get("Marca")
-                    val str_anno = "" + jsonInner.get("Anno_produzione")
+                    val str_anno = "" + jsonInner.get("Tariffa_oraria")
 
                     //creo mydata
                     var myDatacar= MyData(str_marca, str_modello, str_targa, str_anno)

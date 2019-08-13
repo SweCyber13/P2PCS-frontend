@@ -18,7 +18,7 @@ class CustomAdapter(
 
     private var myData: ArrayList<MyData>
 
-, context: Context
+    , context: Context
 ) : RecyclerView.Adapter<CustomAdapter.MyViewHolder> () {
     val mcontext= context
 
