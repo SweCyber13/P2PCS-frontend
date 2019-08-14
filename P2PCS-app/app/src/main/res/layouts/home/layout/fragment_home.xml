@@ -98,22 +98,34 @@
                         android:id="@+id/third_line"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        app:layout_constraintHeight_percent="0.15"
+                        app:layout_constraintHeight_percent="0.25"
 
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/third_part_title">
 
+                    <ImageView
+                            android:id="@+id/imaget"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent="0.2"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/trophy"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                    />
                     <TextView
                             android:id="@+id/tV_thirdLine"
-                            android:text="Scopri le classifiche"
-                            android:textSize="25dp"
+                            android:text="Scopri le classifiche di GaiaGo!"
+                            android:textSize="20dp"
                             android:layout_height="wrap_content"
                             android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.80"
+                            app:layout_constraintWidth_percent="0.70"
+                            android:layout_marginRight="5dp"
 
                             app:layout_constraintRight_toLeftOf="@+id/b_thirdLine"
-                            app:layout_constraintLeft_toLeftOf="parent"
+
 
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -129,13 +141,13 @@
                             android:text=""
 
                             android:layout_height="0dp"
-                            app:layout_constraintHeight_percent="0.70"
+                            app:layout_constraintHeight_percent="0.40"
 
 
                             android:layout_width="0dp"
                             app:layout_constraintWidth_percent="0.10"
+                            android:layout_marginRight="10dp"
 
-                            app:layout_constraintLeft_toRightOf="@+id/tV_thirdLine"
                             app:layout_constraintRight_toRightOf="parent"
 
                             app:layout_constraintTop_toTopOf="parent"
@@ -151,7 +163,7 @@
                         android:layout_marginTop="15dp"
                         app:layout_constraintHeight_percent="0.25"
                         app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/third_line" android:id="@+id/presentLayout">
+                        app:layout_constraintTop_toBottomOf="@id/pointsLayout" android:id="@+id/presentLayout">
 
 
                     <ImageView
@@ -159,21 +171,21 @@
                             app:layout_constraintTop_toTopOf="parent"
 
                             android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.3"
+                            app:layout_constraintWidth_percent="0.2"
+                            android:padding="15dp"
                             android:layout_height="wrap_content"
                             app:srcCompat="@drawable/present"
                             android:id="@+id/present"/>
                     <TextView
                             app:layout_constraintLeft_toRightOf="@id/present"
                             app:layout_constraintTop_toTopOf="parent"
-                            android:layout_marginRight="15dp"
                             android:text="RITIRA IL TUO PREMIO GIORNALIERO"
                             android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.7"
+                            app:layout_constraintWidth_percent="0.8"
                             android:layout_height="match_parent"
                             android:textSize="20dp"
                             android:textColor="@color/colorSecondary"
-                            android:textStyle="bold"
+
                             android:textAlignment="center"
                             android:gravity="center"
                             android:id="@+id/toPresent"/>
@@ -184,7 +196,7 @@
                         android:layout_marginTop="15dp"
                         app:layout_constraintHeight_percent="0.25"
                         app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/presentLayout"
+                        app:layout_constraintTop_toBottomOf="@id/third_line"
                         android:id="@+id/pointsLayout">
 
 
@@ -193,21 +205,21 @@
                             app:layout_constraintTop_toTopOf="parent"
 
                             android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.3"
+                            app:layout_constraintWidth_percent="0.2"
                             android:layout_height="wrap_content"
                             app:srcCompat="@drawable/fireworks"
+                            android:padding="11dp"
                             android:id="@+id/points"/>
                     <TextView
                             app:layout_constraintLeft_toRightOf="@id/points"
                             app:layout_constraintTop_toTopOf="parent"
-                            android:layout_marginRight="15dp"
                             android:text="PUNTEGGI, MISSIONI, COUPON, EVENTI"
                             android:layout_width="0dp"
-                            app:layout_constraintWidth_percent="0.7"
+                            app:layout_constraintWidth_percent="0.8"
                             android:layout_height="match_parent"
                             android:textSize="20dp"
                             android:textColor="@color/colorSecondary"
-                            android:textStyle="bold"
+
                             android:textAlignment="center"
                             android:gravity="center"
                             android:id="@+id/toPoints"/>

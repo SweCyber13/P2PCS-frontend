@@ -53,7 +53,7 @@
         <item name="android:layout_marginBottom">5dp</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">5dp</item>
-        <item name="android:textSize">18dp</item>
+        <item name="android:textSize">15dp</item>
         <item name="android:textColor">#356859</item>
         <item name="android:textColorHighlight">#B9E4C9</item>
         <item name="android:typeface">sans</item>
@@ -67,7 +67,7 @@
         <item name="android:layout_marginBottom">5dp</item>
         <item name="android:gravity">center</item>
         <item name="android:padding">5dp</item>
-        <item name="android:textSize">23dp</item>
+        <item name="android:textSize">25dp</item>
         <item name="android:textColor">#37966F</item>
         <item name="android:textColorHighlight">#B9E4C9</item>
         <item name="android:typeface">sans</item>
