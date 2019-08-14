@@ -100,6 +100,7 @@
                 card_view:cardCornerRadius="5dp"
                 android:scrollbars="vertical"
                 android:layout_margin="6dp"
+                android:layout_gravity="center_horizontal"
 
         />
     </ScrollView>

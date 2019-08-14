@@ -21,79 +21,79 @@
     >
 
         <TextView
-                android:id="@+id/textView"
+                android:id="@+id/dataResume"
                 android:text="Seleziona il giorno:"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.6"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@+id/dateResume"
+                app:layout_constraintRight_toLeftOf="@+id/textView"
                 style="@style/MyPersonalData1"
 
 
         />
         <TextView
-                android:id="@+id/dateResume"
+                android:id="@+id/textView"
                 android:text="1/08/2019"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toRightOf="@+id/textView"
+                app:layout_constraintLeft_toRightOf="@+id/dataResume"
                 style="@style/MyPersonalData2"
 
-
-
-        />
-        <TextView
-                android:id="@+id/textView3"
-                android:text="Seleziona l'ora di inizio:"
-                android:layout_width="0dp"
-                app:layout_constraintWidth_percent="0.6"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@+id/startTimeResume"
-                style="@style/MyPersonalData1"
 
 
         />
         <TextView
                 android:id="@+id/startTimeResume"
+                android:text="Seleziona l'ora di inizio:"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/dataResume"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/textView3"
+                style="@style/MyPersonalData1"
+
+
+        />
+        <TextView
+                android:id="@+id/textView3"
                 android:text="11:15"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/dateResume"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toRightOf="@+id/textView3"
+                app:layout_constraintLeft_toRightOf="@+id/startTimeResume"
                 style="@style/MyPersonalData2"
 
 
         />
         <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView10"
                 android:text="Seleziona ora fine:"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.6"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/startTimeResume"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@+id/textView10"
+                app:layout_constraintRight_toLeftOf="@+id/textView4"
                 style="@style/MyPersonalData1"
 
         />
         <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/textView4"
                 android:text="13:45"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/startTimeResume"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintLeft_toRightOf="@+id/textView4"
+                app:layout_constraintLeft_toRightOf="@+id/textView10"
                 style="@style/MyPersonalData2"
 
 
