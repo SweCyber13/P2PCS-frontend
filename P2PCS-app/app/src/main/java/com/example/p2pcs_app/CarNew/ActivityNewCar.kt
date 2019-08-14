@@ -104,7 +104,7 @@ class ActivityNewCar : AppCompatActivity() {
                 //risponde successo o no
                 val strResp = response.toString()
                 //Toast.makeText(this, "l'auto è stata aggiunta con successo" , Toast.LENGTH_LONG).show()
-                val toast = Toast.makeText(applicationContext, "Auto aggiunta con sccesso!", Toast.LENGTH_SHORT)
+                val toast = Toast.makeText(applicationContext, "Auto aggiunta con successo!", Toast.LENGTH_SHORT)
                 toast.setGravity(Gravity.CENTER, 0, 0)
                 val toastContentView = toast.view as LinearLayout
                 val imageView = ImageView(applicationContext)
