@@ -41,6 +41,18 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
+        val button3 = view.findViewById<Button>(R.id.b1)
+        button3.setOnClickListener{
+            val intent= Intent(requireContext(), ActivityPrize::class.java)
+            startActivity(intent)
+        }
+
+        val button5 = view.findViewById<Button>(R.id.b2)
+        button5.setOnClickListener{
+            val intent= Intent(requireContext(), ActivityGamification::class.java)
+            startActivity(intent)
+        }
+
 
 
 
