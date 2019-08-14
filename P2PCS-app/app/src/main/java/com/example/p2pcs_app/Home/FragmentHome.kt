@@ -75,10 +75,10 @@ class HomeFragment : Fragment() {
         val prefs = requireContext().getSharedPreferences(R.string.shared_preferences.toString(), 0)
         val str_username=prefs.getString("username","")
         if(str_username=="SweElena"){
-            view.third_part_title.text="Sei il 1 in classifica!"
+            view.third_part_title.text="Sei il 1° in classifica!"
         }
         if(str_username=="SweCyber13"){
-            view.third_part_title.text="Sei il 14 in classifica!"
+            view.third_part_title.text="Sei il 14° in classifica!"
         }
 
 
