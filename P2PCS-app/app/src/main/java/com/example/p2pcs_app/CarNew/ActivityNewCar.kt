@@ -18,6 +18,12 @@ import com.google.android.libraries.places.widget.AutocompleteSupportFragment
 import com.google.android.libraries.places.widget.listener.PlaceSelectionListener
 import kotlinx.android.synthetic.main.activity_insert_car.*
 import java.util.*
+//import android.R
+import android.widget.LinearLayout
+import android.view.Gravity
+//import android.R
+import android.widget.ImageView
+
 
 class ActivityNewCar : AppCompatActivity() {
 
@@ -97,7 +103,15 @@ class ActivityNewCar : AppCompatActivity() {
 
                 //risponde successo o no
                 val strResp = response.toString()
-                Toast.makeText(this, "l'auto è stata aggiunta con successo" , Toast.LENGTH_LONG).show()
+                //Toast.makeText(this, "l'auto è stata aggiunta con successo" , Toast.LENGTH_LONG).show()
+                val toast = Toast.makeText(applicationContext, "Auto aggiunta con sccesso!", Toast.LENGTH_SHORT)
+                toast.setGravity(Gravity.CENTER, 0, 0)
+                val toastContentView = toast.view as LinearLayout
+                val imageView = ImageView(applicationContext)
+                imageView.setImageResource(R.drawable.aa)
+                toastContentView.addView(imageView, 0)
+                toast.show()
+
             },
             Response.ErrorListener {
                 Toast.makeText(this, "errore nella creazione dell'auto" , Toast.LENGTH_LONG).show()
