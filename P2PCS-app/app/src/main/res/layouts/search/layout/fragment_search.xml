@@ -32,7 +32,8 @@
 
             <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.14"
                     android:background="@drawable/searchrelativelayout"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintLeft_toRightOf="parent"
@@ -57,13 +58,15 @@
             <!-- città di arrivo-->
             <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.14"
                     style="@style/SearchRelativeLayout"
                     android:background="@drawable/searchrelativelayout"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintLeft_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/layoutStartCity"
                     android:id="@+id/layoutEndCity"
+                    android:layout_marginTop="13dp"
             >
 
                 <ImageView
@@ -86,7 +89,7 @@
             <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="13dp"
                     android:background="@drawable/searchrelativelayout"
                     app:layout_constraintLeft_toLeftOf="parent"
 
@@ -114,14 +117,16 @@
             <!-- data di arrivo-->
             <RelativeLayout
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.15"
+                    android:layout_marginTop="13dp"
                     app:layout_constraintLeft_toLeftOf="parent"
+
                     app:layout_constraintTop_toBottomOf="@id/layoutStartDate"
-                    app:layout_constraintWidth_percent="0.50"
+                    app:layout_constraintWidth_percent="0.49"
                     android:id="@+id/layoutStartTime"
                     android:background="@drawable/searchrelativelayout"
-style="@style/SearchRelativeLayout"
+                    style="@style/SearchRelativeLayout"
 
             >
 
@@ -141,17 +146,18 @@ style="@style/SearchRelativeLayout"
 
             <RelativeLayout
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.15"
                     app:layout_constraintTop_toBottomOf="@id/layoutStartDate"
-                    app:layout_constraintLeft_toRightOf="@id/layoutStartTime"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintWidth_percent="0.50"
-                    android:id="@+id/layoutEndTime"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/searchrelativelayout"
-style="@style/SearchRelativeLayout"
 
-                    tools:layout_editor_absoluteY="162dp">
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintWidth_percent="0.49"
+                    android:id="@+id/layoutEndTime"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/searchrelativelayout"
+                    style="@style/SearchRelativeLayout"
+
+            >
 
                 <ImageView
 
@@ -170,25 +176,23 @@ style="@style/SearchRelativeLayout"
             </RelativeLayout>
 
 
+            <Button
+                    app:layout_constraintTop_toBottomOf="@id/layoutStartTime"
+                    android:background="@drawable/mycar_internal_button_background"
+                    android:text="Cerca macchina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
+                    android:id="@+id/search_search_car"
+                    android:gravity="center"
 
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:padding="10dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/white"
 
-    <Button
-            app:layout_constraintTop_toBottomOf="@id/layoutStartTime"
-            android:background="@drawable/mycar_internal_button_background"
-            android:text="Cerca macchina"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/search_search_car"
-            android:gravity="center"
-
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:padding="7dp"
-            android:layout_marginTop="30dp"
-            android:textColor="@color/white"
-
-    />
+            />
 
         </android.support.constraint.ConstraintLayout>
         </ScrollView>
