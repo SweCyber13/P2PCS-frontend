@@ -4,9 +4,8 @@ import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.DatePicker
-import android.widget.TimePicker
-import android.widget.Toast
+import android.view.Gravity
+import android.widget.*
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
@@ -84,7 +83,14 @@ class ActivityAddAvaiability: AppCompatActivity() {
         val stringReq = StringRequest(
             Request.Method.POST, url,
             Response.Listener<String> { response ->
-                Toast.makeText(this, "Aggiornata con successo!" , Toast.LENGTH_LONG).show()
+                //Toast.makeText(this, "Aggiornata con successo!" , Toast.LENGTH_LONG).show()
+                val toast = Toast.makeText(applicationContext, "Disponibilità aggiunta con successo!", Toast.LENGTH_SHORT)
+                toast.setGravity(Gravity.CENTER, 0, 0)
+                val toastContentView = toast.view as LinearLayout
+                val imageView = ImageView(applicationContext)
+                imageView.setImageResource(R.drawable.aa)
+                toastContentView.addView(imageView, 0)
+                toast.show()
             },
             Response.ErrorListener {
                 //throw(DatabaseException("errore"))
