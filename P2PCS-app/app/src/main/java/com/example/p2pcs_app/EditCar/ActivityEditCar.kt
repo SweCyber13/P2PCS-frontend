@@ -72,8 +72,8 @@ class ActivityEditCar : AppCompatActivity() {
                 val jsonArray: JSONArray= jsonObj.getJSONArray("macchina")
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
-                    Marca.text = "" + jsonInner.get("Marca")
-                    Modello.text = "" + jsonInner.get("Modello")
+                   // Marca.text = "" + jsonInner.get("Marca")
+                  //  Modello.text = "" + jsonInner.get("Modello")
                     AnnoProduzione.text = "" + jsonInner.get("Anno_produzione")
                     cavalliValue.text = "" + jsonInner.get("Cavalli")
                     cilindrataValue.text= "" + jsonInner.get("Cilindrata")
