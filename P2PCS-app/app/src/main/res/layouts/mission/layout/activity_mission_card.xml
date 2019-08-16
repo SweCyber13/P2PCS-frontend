@@ -20,7 +20,7 @@
                 android:layout_gravity="center_horizontal"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                android:background="@drawable/mycar_button_background">
+                android:background="@drawable/leaderboard_background">
             <ImageView
                     android:id="@+id/imageCard"
                     android:layout_width="0dp"
@@ -105,7 +105,7 @@
                                 android:id="@+id/rT"
                                 android:text="Punti esperienza:"
                                 android:layout_width="0dp"
-                                app:layout_constraintWidth_percent="0.71"
+                                app:layout_constraintWidth_percent="0.75"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintLeft_toLeftOf="parent"
@@ -113,12 +113,12 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center_vertical"
                                 android:textStyle="bold"
-                        />
+                                app:layout_constraintStart_toStartOf="parent"/>
                         <TextView
                                 android:id="@+id/puntiRank"
                                 android:text=""
                                 android:layout_width="0dp"
-                                app:layout_constraintWidth_percent="0.29"
+                                app:layout_constraintWidth_percent="0.25"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintRight_toRightOf="parent"
