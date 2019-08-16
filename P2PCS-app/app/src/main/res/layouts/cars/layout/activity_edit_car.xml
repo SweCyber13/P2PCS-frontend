@@ -530,7 +530,7 @@
 
                 <TextView
                         android:id="@+id/indirizzoLabel"
-                        android:text="Inidirizzo:"
+                        android:text="Indirizzo:"
                         android:layout_width="0dp"
                         app:layout_constraintWidth_percent="0.45"
                         android:layout_height="wrap_content"
