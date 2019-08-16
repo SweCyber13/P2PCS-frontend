@@ -32,10 +32,10 @@ class ActivityAddAvaiability: AppCompatActivity() {
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
 
-        textView.setOnClickListener {
+        model.setOnClickListener {
             val dpd = DatePickerDialog(this,
                 DatePickerDialog.OnDateSetListener { view: DatePicker?, mYear: Int, mMonth: Int, mDay: Int ->
-                    textView.setText("" + mDay + "-" + (mMonth+1) + "-" + mYear)
+                    model.setText("" + mDay + "-" + (mMonth+1) + "-" + mYear)
                     //salvo data
                     dataarr="" + mYear + "-" + "07" + "-" + mDay
                 }, year, month, day )
@@ -45,12 +45,12 @@ class ActivityAddAvaiability: AppCompatActivity() {
 
 
         //seleziona ora partenza
-        textView3.setOnClickListener {
+        marca.setOnClickListener {
             val cal = Calendar.getInstance()
             val timeSetListener = TimePickerDialog.OnTimeSetListener { view: TimePicker, hourOfDay:Int, minute:Int ->
                 cal.set(Calendar.HOUR_OF_DAY, hourOfDay)
                 cal.set(Calendar.MINUTE, minute)
-                textView3.setText(""+hourOfDay+":"+minute)
+                marca.setText(""+hourOfDay+":"+minute)
                 //salvo minuti
                 minstart=""+(hourOfDay*60+minute)
             }
@@ -60,12 +60,12 @@ class ActivityAddAvaiability: AppCompatActivity() {
 
 
         //seleziona ora arrivo
-        textView4.setOnClickListener {
+        InTarga.setOnClickListener {
             val cal = Calendar.getInstance()
             val timeSetListener = TimePickerDialog.OnTimeSetListener { view: TimePicker, hourOfDay:Int, minute:Int ->
                 cal.set(Calendar.HOUR_OF_DAY, hourOfDay)
                 cal.set(Calendar.MINUTE, minute)
-                textView4.setText(""+hourOfDay+":"+minute)
+                InTarga.setText(""+hourOfDay+":"+minute)
                 //salvo ora
                 minend=""+(hourOfDay*60+minute)
             }
@@ -73,7 +73,7 @@ class ActivityAddAvaiability: AppCompatActivity() {
         }
 
         //listener bottone
-        button3.setOnClickListener {
+        reserve.setOnClickListener {
             save_avaiability()
         }
     }
