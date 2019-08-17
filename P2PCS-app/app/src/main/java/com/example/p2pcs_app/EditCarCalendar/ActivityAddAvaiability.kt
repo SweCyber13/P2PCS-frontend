@@ -79,7 +79,7 @@ class ActivityAddAvaiability: AppCompatActivity() {
 
     fun save_avaiability(){
         val queue = Volley.newRequestQueue(this)
-        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/car/avaiability/update.php?TARGA="+targapassed+"&GIORNO=2019-07-16"+"&START="+minstart+"&END="+minend
+        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/car/avaiability/update.php?TARGA="+targapassed+"&GIORNO=2019-08-19"+"&START="+minstart+"&END="+minend
         val stringReq = StringRequest(
             Request.Method.POST, url,
             Response.Listener<String> { response ->

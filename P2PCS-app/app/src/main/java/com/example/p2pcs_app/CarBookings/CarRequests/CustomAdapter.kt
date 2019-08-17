@@ -43,7 +43,7 @@ class CustomAdapter(
         p0.cognome.text="Pontecchiani"
         p0.modello.text="Fiat Punto"
         p0.targa.text="PD000PD"
-        p0.data.text="2019-07-16"
+        p0.data.text="2019-08-19"
         p0.inizio.text="12.00"
         p0.fine.text="20.00"
         p0.prezzo.text="40.00€"

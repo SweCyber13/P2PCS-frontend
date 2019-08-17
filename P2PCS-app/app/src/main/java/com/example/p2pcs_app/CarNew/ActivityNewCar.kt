@@ -1,5 +1,6 @@
 package com.example.p2pcs_app.CarNew
 
+
 import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -18,10 +19,8 @@ import com.google.android.libraries.places.widget.AutocompleteSupportFragment
 import com.google.android.libraries.places.widget.listener.PlaceSelectionListener
 import kotlinx.android.synthetic.main.activity_insert_car.*
 import java.util.*
-//import android.R
 import android.widget.LinearLayout
 import android.view.Gravity
-//import android.R
 import android.widget.ImageView
 
 

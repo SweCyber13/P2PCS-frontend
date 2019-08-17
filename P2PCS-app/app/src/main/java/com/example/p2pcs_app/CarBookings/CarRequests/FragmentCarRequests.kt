@@ -51,7 +51,7 @@ class FragmentCarRequests : Fragment() {
 
     fun load_data(data_list: ArrayList<MyData>) { //prova con 3 card
 
-        var myData1 = MyData("Elena", "Pontecchiani", "Fiat Punto", "PD000PD", "2019-07-16", "12.00", "20.00","40.00€")
+        var myData1 = MyData("Elena", "Pontecchiani", "Fiat Punto", "PD000PD", "2019-08-19", "12.00", "20.00","40.00€")
 
         data_list.add(myData1)
 
