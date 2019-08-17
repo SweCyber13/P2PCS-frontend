@@ -2,12 +2,8 @@ package com.example.p2pcs_app.Coupons
 
 import android.app.Activity
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
@@ -33,13 +29,15 @@ class ActivityCoupon : Activity() {
         data_list=  ArrayList<MyData>()
         loadrecycler(data_list)
         getCoupon()
+
+
     }
 
     fun loadrecycler(data_list:  ArrayList<MyData>){
 
         linearLayoutManager= LinearLayoutManager(this)
 
-        customAdapter= CustomAdapter(data_list)
+        customAdapter= CustomAdapter(data_list, this)
 
 
         recyclerView!!.apply {

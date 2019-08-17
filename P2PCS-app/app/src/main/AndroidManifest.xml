@@ -62,6 +62,10 @@
                 android:label="Classifiche">
         </activity>
         <activity
+                android:name=".CouponDetails.ActivityCouponsDetails"
+                android:label="Dettagli del coupon">
+        </activity>
+        <activity
                 android:name=".VisualizzaMacchinaActivity"
                 android:label="Visualizza Auto">
         </activity>

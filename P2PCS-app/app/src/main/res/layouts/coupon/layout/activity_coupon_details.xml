@@ -55,7 +55,7 @@
             android:layout_height="0dp"
             app:layout_constraintHeight_percent="0.58"
             android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@+id/requiredPoints"
+            app:layout_constraintTop_toBottomOf="@+id/punti"
             android:textSize="24dp"
             tools:layout_editor_absoluteX="0dp"/>
 

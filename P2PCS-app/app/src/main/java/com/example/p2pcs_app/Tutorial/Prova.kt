@@ -1,15 +1,17 @@
-package com.example.p2pcs_app.CouponDetails
+
+
+package com.example.p2pcs_app.Tutorial
+
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.example.p2pcs_app.R
 
-
-class ActivityCouponsDetails: AppCompatActivity(){
+class Prova: AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_coupon_details)
+        setContentView(R.layout.intro_sreen_1)
 
 
 
@@ -19,4 +21,3 @@ class ActivityCouponsDetails: AppCompatActivity(){
 
 
 }
-
