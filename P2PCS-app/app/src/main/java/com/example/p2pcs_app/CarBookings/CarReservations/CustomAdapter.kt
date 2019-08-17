@@ -37,7 +37,7 @@ class CustomAdapter(
     override fun onBindViewHolder(p0: MyViewHolder, p1: Int) {
         p0.username.text="SweCyber13"
         p0.targa.text="Fiat Punto"
-        p0.giorno.text="2019-07-16"
+        p0.giorno.text="2019-08-19"
         p0.contatta.visibility=View.INVISIBLE
 
     }

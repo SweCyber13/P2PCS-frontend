@@ -34,6 +34,24 @@ class FragmentSearchResultMap : Fragment(), OnMapReadyCallback{
             MarkerOptions().position(sydney)
                 .title("Fiat Punto di SweCyber13")
         )
+        val s = LatLng(45.412497, 11.889904)
+        p0.addMarker(
+            MarkerOptions().position(s)
+                .title("Fiat Panda di SweCyber13")
+        )
+
+        val t = LatLng(45.413687, 11.888520)
+        p0.addMarker(
+            MarkerOptions().position(t)
+                .title("Fiat Tipo di Elyss")
+        )
+
+        val q = LatLng(45.409560, 11.893037)
+        p0.addMarker(
+            MarkerOptions().position(q)
+                .title("Alfa Romeo 33 di Fanty")
+        )
+
         val cameraPosition = CameraPosition.Builder()
             .target(sydney)
             .zoom(17f).build()
