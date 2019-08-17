@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:layout_margin="5dp"
+                                             android:layout_marginTop="10dp"
+
+>
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+    >
+
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/first_part"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.50"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/home"
+                android:alpha="0.8"
+
+
+        >
+
+            <Button
+                    android:id="@+id/find_car"
+                    android:text="Trova un'auto"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/share_car"
+
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    style="@style/HomeMainButton"
+                    android:background="@drawable/menu_button_background"
+
+
+            />
+            <Button
+                    android:id="@+id/share_car"
+                    android:text="Condividi la tua auto"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/find_car"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    style="@style/HomeMainButton"
+                    android:background="@drawable/menu_button_background"
+
+
+            />
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/third_part"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.50"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@color/hint_color"
+        >
+
+            <TextView
+                    android:id="@+id/third_part_title"
+                    android:text="Sei il 3° in classifica!"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.15"
+
+                    android:gravity="center"
+
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+
+                    style="@style/HomeTitleTextView"
+
+                    android:fontFamily="sans-serif-light"
+
+
+            />
+            <android.support.constraint.ConstraintLayout
+                    android:id="@+id/third_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintHeight_percent="0.25"
+
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/third_part_title">
+
+                <ImageView
+                        android:id="@+id/imaget"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.2"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/prize"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+
+                />
+                <TextView
+                        android:id="@+id/tV_thirdLine"
+                        android:text="Scopri le classifiche di GaiaGo!"
+                        android:textSize="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.70"
+                        android:layout_marginRight="5dp"
+
+                        app:layout_constraintRight_toLeftOf="@+id/b_thirdLine"
+
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        style="@style/HomeTextView"
+
+                        android:fontFamily="sans-serif-light"
+
+
+                />
+                <Button
+                        android:id="@+id/b_thirdLine"
+                        android:text=""
+
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.40"
+
+
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.10"
+                        android:layout_marginRight="10dp"
+
+                        app:layout_constraintRight_toRightOf="parent"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:background="@drawable/ic_go"
+
+                />
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintHeight_percent="0.25"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/third_line"
+                    android:id="@+id/pointsLayout">
+
+
+                <ImageView
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.2"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/fireworks"
+                        android:padding="12dp"
+                        android:id="@+id/points"/>
+                <TextView
+                        android:layout_marginRight="5dp"
+
+                        app:layout_constraintRight_toLeftOf="@+id/b1"
+
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="Scopri missioni, coupon, eventi"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.7"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif-light"
+                        style="@style/HomeTextView"
+
+                        android:id="@+id/toPoints"/>
+                <Button
+                        android:id="@+id/b1"
+                        android:text=""
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.10"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.40"
+                        android:layout_marginRight="10dp"
+
+                        app:layout_constraintRight_toRightOf="parent"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+
+                        android:background="@drawable/ic_go"
+
+
+                />
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
