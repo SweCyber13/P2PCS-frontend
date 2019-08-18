@@ -1,17 +1,22 @@
 package com.example.p2pcs_app.CarBookings.CarReservations
 
+import android.content.Context
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.p2pcs_app.R
+import com.example.p2pcs_app.ReservationDetails.ActivityCarReservationDetails
 import kotlinx.android.synthetic.main.activity_car_reservation_card.view.*
 
 class CustomAdapter(
 
     private var myData: ArrayList<com.example.p2pcs_app.CarBookings.CarReservations.MyData>
+    , context: Context
 
 ) : RecyclerView.Adapter<CustomAdapter.MyViewHolder> () {
+    val mcontext= context
 
 
     class MyViewHolder(val view:View): RecyclerView.ViewHolder(view){
@@ -32,6 +37,16 @@ class CustomAdapter(
     }
 
     override fun onBindViewHolder(p0: MyViewHolder, p1: Int) {
+
+        p0.contatta.setOnClickListener{
+            val intent= Intent(mcontext, ActivityCarReservationDetails::class.java) //Activity dettagli coupon
+            //  intent.putExtra("Coupon", myData[p1].nome) //passo la nome coupon
+            mcontext.startActivity(intent)
+        }
+
+
+
+
         p0.username.text="Elyss"
         p0.targa.text="Fiat Tipo"
         p0.giorno.text="2019-08-19"
