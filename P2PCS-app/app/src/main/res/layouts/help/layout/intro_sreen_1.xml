@@ -12,7 +12,7 @@
                 android:layout_width="400dp"
                 android:layout_height="520dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/screen1"/>
+                android:src="@drawable/tutorial1"/>
         <View
                 android:id="@+id/sep_line"
                 android:layout_width="match_parent"

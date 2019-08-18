@@ -32,8 +32,7 @@ class CustomAdapter(
     override fun onBindViewHolder(p0: MyViewHolder, p1: Int) {
 
         //setto campi della card
-        p0.titolo.text=myData[p1].titolo
-        p0.descr.text=myData[p1].descr
+        p0.titolo.text=myData[p1].descr
         p0.puntiRank.text=myData[p1].puntiRank
         p0.puntiBuoni.text=myData[p1].puntiBuoni
 

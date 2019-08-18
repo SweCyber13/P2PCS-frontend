@@ -48,7 +48,11 @@ class FragmentProfile : Fragment(), FragmentProfileContract.View {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
         }
+view.edit_city.setOnClickListener{
+    val intent= Intent(context, ActivityEditCity::class.java)
+    startActivity(intent)
 
+}
 
         getuser()
 
