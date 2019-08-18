@@ -21,7 +21,7 @@
                     android:background="@drawable/green_gradient"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/offerta"
+                    android:src="@drawable/free_ticket"
                     android:id="@+id/imageoffer"
                     android:backgroundTint="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
