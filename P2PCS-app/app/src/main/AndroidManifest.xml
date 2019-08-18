@@ -69,6 +69,7 @@
                 android:name=".EventDetails.ActivityEventssDetails"
                 android:label="Dettagli dell'evento">
         </activity>
+
         <activity
                 android:name=".VisualizzaMacchinaActivity"
                 android:label="Visualizza Auto">
@@ -96,6 +97,10 @@
         </activity>
         <activity
                 android:name=".Coupons.ActivityCoupon"
+                android:label="Premi e Coupons">
+        </activity>
+        <activity
+                android:name=".ReservationDetails.ActivityCarReservationDetails"
                 android:label="Premi e Coupons">
         </activity>
         <activity

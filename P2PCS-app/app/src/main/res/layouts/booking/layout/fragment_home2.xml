@@ -76,7 +76,7 @@
 
             <TextView
                     android:id="@+id/third_part_title"
-                    android:text="Sei il 3° in classifica!"
+                    android:text="Sei il 11° in classifica!"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     app:layout_constraintHeight_percent="0.15"

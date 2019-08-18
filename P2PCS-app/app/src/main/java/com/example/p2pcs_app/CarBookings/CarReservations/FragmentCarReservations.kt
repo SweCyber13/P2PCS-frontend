@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.p2pcs_app.Explore.MyData
 import com.example.p2pcs_app.R
 
 class FragmentCarReservations : Fragment() {
@@ -35,7 +34,7 @@ class FragmentCarReservations : Fragment() {
 
             linearLayoutManager = LinearLayoutManager(requireContext())
 
-            customAdapter = CustomAdapter(data_list)
+            customAdapter = CustomAdapter(data_list, requireContext())
 
 
             recyclerView.apply {
