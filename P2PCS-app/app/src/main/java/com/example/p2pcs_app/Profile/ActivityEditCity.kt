@@ -20,48 +20,48 @@ class ActivityEditCity : Activity() {
         setContentView(R.layout.edit_city)
 
         update.setOnClickListener{
+            editCity()
+
 
         }
 
-editCity()
 
 
 
     }
 
     fun editCity(){
-        val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
-        val str_username=prefs.getString("username","")
-        val citta=citta.text
+            val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
+            val str_username=prefs.getString("username","")
+            val str_citta = citta.text
+            val queue = Volley.newRequestQueue(this)
+            val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/user/update.php?USERNAME="+str_username+"&CITTA="+str_citta
 
+            // Request a string response from the provided URL.
+            //object property needed to override getparams
+            val stringReq = StringRequest(
+                Request.Method.POST, url,
+                Response.Listener<String> { response ->
 
-        val queue = Volley.newRequestQueue(this)
-        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/user/update.php?CITTA="+citta+"&USERNAME="+str_username
-        // Request a string response from the provided URL.
-        //object property needed to override getparams
-        val stringReq = StringRequest(
-            Request.Method.POST, url,
-            Response.Listener<String> { response ->
+                    //risponde successo o no
+                    val strResp = response.toString()
+                    //Toast.makeText(this, "l'auto è stata aggiunta con successo" , Toast.LENGTH_LONG).show()
+                    val toast = Toast.makeText(applicationContext, "Città aggiornata", Toast.LENGTH_SHORT)
+                    toast.setGravity(Gravity.CENTER, 0, 0)
+                    val toastContentView = toast.view as LinearLayout
+                    val imageView = ImageView(applicationContext)
+                    imageView.setImageResource(R.drawable.aa)
+                    toastContentView.addView(imageView, 0)
+                    toast.show()
 
-                //risponde successo o no
-                val strResp = response.toString()
-                //Toast.makeText(this, "l'auto è stata aggiunta con successo" , Toast.LENGTH_LONG).show()
-                val toast = Toast.makeText(applicationContext, "Citta aggiornata", Toast.LENGTH_SHORT)
-                toast.setGravity(Gravity.CENTER, 0, 0)
-                val toastContentView = toast.view as LinearLayout
-                val imageView = ImageView(applicationContext)
-                imageView.setImageResource(R.drawable.aa)
-                toastContentView.addView(imageView, 0)
-                toast.show()
+                },
+                Response.ErrorListener {
+                    Toast.makeText(this, "errore nella creazione dell'auto" , Toast.LENGTH_LONG).show()
+                })
 
-            },
-            Response.ErrorListener {
-                Toast.makeText(this, "errore nella creazione dell'auto" , Toast.LENGTH_LONG).show()
-            })
+            queue.add(stringReq)
 
-        queue.add(stringReq)
-
-    }
+        }
 }
 
 
