@@ -16,14 +16,14 @@ class CustomAdapter(
 
     class MyViewHolder(val view:View): RecyclerView.ViewHolder(view){
 
-        var model=view.azienda
+        var model=view.luogo
         var marca=view.titolo
         var rate=view.rate //costo
         var city=view.city
         var username= view.username
         var prenota= view.reserve
         var targa=view.descrizione
-        var punti=view.punti
+        var punti=view.data
         var bottone=view.reserve
 
     }

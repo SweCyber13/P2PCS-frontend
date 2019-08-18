@@ -66,6 +66,10 @@
                 android:label="Dettagli del coupon">
         </activity>
         <activity
+                android:name=".EventDetails.ActivityEventssDetails"
+                android:label="Dettagli dell'evento">
+        </activity>
+        <activity
                 android:name=".VisualizzaMacchinaActivity"
                 android:label="Visualizza Auto">
         </activity>

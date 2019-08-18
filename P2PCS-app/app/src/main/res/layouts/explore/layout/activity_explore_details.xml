@@ -1,56 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:tools="http://schemas.android.com/tools"
-                                             android:layout_width="match_parent"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                              android:layout_height="match_parent"
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             android:layout_margin="5dp"
-                                             android:layout_marginTop="10dp"
->
+                                             android:id="@+id/container">
 
-    <ImageView
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/cardDisp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintHeight_percent="0.30"
-            android:id="@+id/image_explore"
-            tools:ignore="MissingConstraints"
-            android:src="@drawable/offerta"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"
+            android:background="@drawable/leaderboard_background"
+
+    >
+
+        <TextView
+                android:id="@+id/label1"
+                android:text="Luogo:"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/luogo"
+                style="@style/MyPersonalData1"
 
 
-    />
-
-    <TextView
-            android:text="Cinema" android:id="@+id/placeF"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintHeight_percent="0.06"
-            android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@+id/image_explore"
-            android:textSize="24dp"
-
-    />
-
-    <TextView
-            android:text="Biglietto gratuito" android:id="@+id/titleF"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintHeight_percent="0.06"
-            android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@+id/placeF"
-            android:textSize="24dp"
-    />
-    <TextView
-            android:text="Se vieni al cinema con il servizio di carsharing avrai un ingresso omaggio"
-            android:id="@+id/descriptionF"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintHeight_percent="0.58"
-            android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@+id/titleF"
-            android:textSize="24dp"
-            tools:layout_editor_absoluteX="0dp"/>
+        />
+        <TextView
+                android:id="@+id/luogo"
+                android:text="Cinema Verdi"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/label1"
+                style="@style/MyPersonalData2"
 
 
+        />
+        <TextView
+                android:id="@+id/label2"
+                android:text="Evento:"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/label1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/titolo"
+                style="@style/MyPersonalData1"
 
+
+        />
+        <TextView
+                android:id="@+id/titolo"
+                android:text="Biglietto ridotto"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/luogo"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/label2"
+                style="@style/MyPersonalData2"
+
+
+        />
+        <TextView
+                android:id="@+id/label"
+                android:text="Descrizione:"
+                android:layout_width="match_parent"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/puntiLabel"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                style="@style/MyPersonalData1"
+                android:gravity="center"
+
+        />
+        <TextView
+                android:id="@+id/descrizione"
+                android:text="Ottieni uno sconto del 15% sul biglietto infrasettimanale"
+                android:layout_width="match_parent"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/label"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:gravity="center"
+                style="@style/MyPersonalData2"
+
+
+        />
+        <TextView
+                android:text="Data evento:"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/label2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/puntiLabel"
+                style="@style/MyPersonalData1"
+        />
+        <TextView
+                android:text="20-08-2019"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content" android:id="@+id/data"
+                app:layout_constraintTop_toBottomOf="@+id/titolo"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/puntiLabel"
+                style="@style/MyPersonalData2"
+        />
+    </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
 

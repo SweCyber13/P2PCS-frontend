@@ -31,10 +31,10 @@ class ActivityAddAvaiability: AppCompatActivity() {
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
 
-        azienda.setOnClickListener {
+        luogo.setOnClickListener {
             val dpd = DatePickerDialog(this,
                 DatePickerDialog.OnDateSetListener { view: DatePicker?, mYear: Int, mMonth: Int, mDay: Int ->
-                    azienda.setText("" + mDay + "-" + (mMonth+1) + "-" + mYear)
+                    luogo.setText("" + mDay + "-" + (mMonth+1) + "-" + mYear)
                     //salvo data
                     var mon=""
                     if(mMonth+1<10){

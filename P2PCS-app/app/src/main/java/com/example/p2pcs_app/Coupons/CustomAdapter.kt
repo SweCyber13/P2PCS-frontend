@@ -23,7 +23,7 @@ class CustomAdapter(
 
         var nome=view.nome
         var titolo=view.titolo
-        var button= view.button_info
+        var button= view.info
 
     }
 

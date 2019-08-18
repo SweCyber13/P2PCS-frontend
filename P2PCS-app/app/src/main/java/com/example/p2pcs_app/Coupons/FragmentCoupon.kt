@@ -38,7 +38,7 @@ class FragmentCoupon : Fragment() {
         titolo = view.findViewById<TextView>(R.id.titolo)
         //tariffa = view.findViewById<TextView>(R.id.tariffaTx)
         //targa = view.findViewById<TextView>(R.id.textTarga)
-        val button = view.findViewById<Button>(R.id.button_info)
+        val button = view.findViewById<Button>(R.id.info)
         button.setOnClickListener{
             val intent= Intent(requireContext(), ActivityEditCar::class.java) //mettere nuova activity coupon details
             startActivity(intent)

@@ -29,13 +29,13 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@+id/azienda"
+                app:layout_constraintRight_toLeftOf="@+id/luogo"
                 style="@style/MyPersonalData1"
 
 
         />
         <TextView
-                android:id="@+id/azienda"
+                android:id="@+id/luogo"
                 android:text="Punto"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.3"
@@ -54,7 +54,7 @@
                 app:layout_constraintWidth_percent="0.3"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toRightOf="@+id/azienda"
+                app:layout_constraintLeft_toRightOf="@+id/luogo"
                 app:layout_constraintRight_toRightOf="parent"
                 style="@style/MyPersonalData2"
 
@@ -164,7 +164,7 @@
                 style="@style/MyPersonalData1"
         />
         <TextView
-                android:id="@+id/punti"
+                android:id="@+id/data"
                 android:text="123"
                 android:layout_width="wrap_content"
                 app:layout_constraintWidth_percent="0.15"

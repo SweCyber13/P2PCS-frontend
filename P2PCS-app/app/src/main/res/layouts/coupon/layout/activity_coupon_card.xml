@@ -41,7 +41,7 @@
                         android:text="info"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/button_info"
+                        android:id="@+id/info"
                         app:layout_constraintRight_toRightOf="@id/line_right_button"
                         app:layout_constraintBottom_toBottomOf="@id/line_bottom"
                         app:layout_constraintTop_toTopOf="@id/line_top"
@@ -79,10 +79,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:id="@+id/punti"
+                        android:id="@+id/data"
                         app:layout_constraintBottom_toBottomOf="@id/line_bottom"
                         android:layout_marginRight="50dp"
-                        app:layout_constraintEnd_toStartOf="@+id/button_info"
+                        app:layout_constraintEnd_toStartOf="@+id/info"
                 />
 
                 <android.support.constraint.Guideline
