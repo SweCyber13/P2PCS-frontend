@@ -341,7 +341,7 @@
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     android:id="@+id/eventLabel"
-                    android:text="Partecipa agli eventi convenzionati con P2PCS!"
+                    android:text="Partecipa agli eventi convenzionati con GaiaGo!"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     app:layout_constraintHeight_percent="0.5"
