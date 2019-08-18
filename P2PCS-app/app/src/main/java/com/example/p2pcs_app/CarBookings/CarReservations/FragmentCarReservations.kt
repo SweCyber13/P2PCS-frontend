@@ -16,6 +16,7 @@ class FragmentCarReservations : Fragment() {
     private var recyclerView: RecyclerView? = null
     private var linearLayoutManager: LinearLayoutManager? = null
     private var customAdapter: CustomAdapter? =null
+    private lateinit var str_mostra: String
 
 
 
@@ -25,11 +26,11 @@ class FragmentCarReservations : Fragment() {
 
 
         val recyclerView= view.findViewById<RecyclerView> (R.id.recycler_view)
-        val data_list=  ArrayList<MyData>()
+        val data_list=  ArrayList<com.example.p2pcs_app.CarBookings.CarReservations.MyData>()
         val prefs = requireContext().getSharedPreferences(R.string.shared_preferences.toString(), 0)
         val str_username=prefs.getString("username","")
-        val str_mostra=prefs.getString("mostraprenotazione","")
-        if(str_username=="SweElena"&&str_mostra=="si") {
+        str_mostra=prefs.getString("mostraprenotazione","")
+        if(str_username=="elena"&&str_mostra=="1"||str_mostra=="2") {
             load_data(data_list)
 
             linearLayoutManager = LinearLayoutManager(requireContext())
@@ -44,17 +45,26 @@ class FragmentCarReservations : Fragment() {
                 adapter = customAdapter
 
             }
+            prefs.edit().putString("mostraprenotazione","2").apply()
         }
 
         return view
     }
 
-    fun load_data (data_list: ArrayList<MyData>){ //prova con 3 card
+    fun load_data (data_list: ArrayList<com.example.p2pcs_app.CarBookings.CarReservations.MyData>){ //prova con 3 card
 
-        var myData1= MyData(1, "lol", "lol")
+        var stringa=""
+        if(str_mostra=="1")
+        {
+            stringa="In attesa"
+        }
+        else
+            stringa="Accettata"
 
 
-        //data_list.add(myData1)
+        var myData1= com.example.p2pcs_app.CarBookings.CarReservations.MyData(1, stringa, "lol")
+
+        data_list.add(myData1)
 
 
     }

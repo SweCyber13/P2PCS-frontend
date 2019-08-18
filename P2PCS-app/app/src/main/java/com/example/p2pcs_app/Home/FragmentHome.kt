@@ -91,11 +91,11 @@ class HomeFragment : Fragment() {
             }
 
 
-            if(str_username=="SweElena"){
+            if(str_username=="elena"){
                 view.third_part_title.text="Sei il 1° in classifica!"
             }
-            if(str_username=="SweCyber13"){
-                view.third_part_title.text="Sei il 14° in classifica!"
+            if(str_username=="sweRA"){
+                view.third_part_title.text="Sei ultimo in classifica!"
             }
 
 

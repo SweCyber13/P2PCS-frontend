@@ -28,8 +28,8 @@ class FragmentCarRequests : Fragment() {
 
         val prefs = requireContext().getSharedPreferences(R.string.shared_preferences.toString(), 0)
         val str_username=prefs.getString("username","")
-        val str_mostra=prefs.getString("mostrarichiesta","")
-        if(str_username=="SweCyber13"&&str_mostra=="si") {
+        //val str_mostra=prefs.getString("mostrarichiesta","")
+        if(str_username=="Elyss") {
             linearLayoutManager = LinearLayoutManager(requireContext())
 
             customAdapter = CustomAdapter(data_list)
@@ -43,15 +43,13 @@ class FragmentCarRequests : Fragment() {
 
             }
 
-            prefs.edit().putString("mostraaccettato","si").apply()
-
         }
         return view
     }
 
     fun load_data(data_list: ArrayList<MyData>) { //prova con 3 card
 
-        var myData1 = MyData("Elena", "Pontecchiani", "Fiat Punto", "PD000PD", "2019-08-19", "12.00", "20.00","40.00€")
+        var myData1 = MyData("Elena", "Rossi", "Fiat Tipo", "PD111PD", "2019-08-19", "12.00", "16.00","40.00€")
 
         data_list.add(myData1)
 

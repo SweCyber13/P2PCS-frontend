@@ -45,10 +45,10 @@ class ActivitySearch : AppCompatActivity() {
 
         val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
         val str_username=prefs.getString("username","")
-        if(str_username=="SweElena"){
+        if(str_username=="elena"){
             //sono sulla ricerca con il profilo che deve cercare
             prefs.edit().putString("mostrarichiesta","si").apply()
-            prefs.edit().putString("mostraprenotazione","si").apply()
+            prefs.edit().putString("mostraprenotazione","1").apply()
         }
 
 
