@@ -15,11 +15,11 @@
             android:layout_margin="10dp"
 
 
-            android:padding="10dp"
+            android:padding="5dp"
 
             android:background="@drawable/leaderboard_background"
 
-    >
+            tools:layout_editor_absoluteX="10dp">
 
         <TextView
                 android:id="@+id/label1"
@@ -101,8 +101,8 @@
         <TextView
                 android:text="elena"
                 android:id="@+id/username"
-                android:layout_width="0dp"
-                app:layout_constraintWidth_percent="0.25"
+                android:layout_width="wrap_content"
+                app:layout_constraintWidth_percent="0.3"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/InTarga"
 
@@ -155,7 +155,7 @@
         />
         <TextView
                 android:text="Pt:"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 app:layout_constraintWidth_percent="0.15"
                 android:layout_height="wrap_content"
                 android:id="@+id/puntiLabel"
@@ -165,9 +165,9 @@
         />
         <TextView
                 android:id="@+id/punti"
-                android:text="1234"
-                android:layout_width="0dp"
-                app:layout_constraintWidth_percent="0.2"
+                android:text="123"
+                android:layout_width="wrap_content"
+                app:layout_constraintWidth_percent="0.15"
                 android:layout_height="wrap_content"
                 app:layout_constraintLeft_toRightOf="@+id/puntiLabel"
                 app:layout_constraintTop_toBottomOf="@+id/InTarga"
