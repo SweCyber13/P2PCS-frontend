@@ -169,7 +169,6 @@
                             app:layout_constraintWidth_percent="0.4"
                             android:layout_height="wrap_content"
 
-                            app:layout_constraintRight_toLeftOf="@+id/tariffaTx"
                             app:layout_constraintLeft_toLeftOf="parent"
 
                             app:layout_constraintTop_toTopOf="parent"
@@ -181,9 +180,9 @@
                     <TextView
                             android:id="@+id/tariffaTx"
                             android:text="10,00"
-                            android:layout_width="0dp"
+                            android:layout_width="89dp"
                             app:layout_constraintWidth_percent="0.1"
-                            android:layout_height="wrap_content"
+                            android:layout_height="46dp"
 
 
                             app:layout_constraintLeft_toRightOf="@+id/label2"
@@ -199,9 +198,9 @@
                     <TextView
                             android:id="@+id/fix"
                             android:text="€/h"
-                            android:layout_width="0dp"
+                            android:layout_width="113dp"
                             app:layout_constraintWidth_percent="0.5"
-                            android:layout_height="wrap_content"
+                            android:layout_height="46dp"
 
 
                             app:layout_constraintLeft_toRightOf="@+id/tariffaTx"

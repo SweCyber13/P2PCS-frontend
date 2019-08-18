@@ -1,10 +1,8 @@
 package com.example.p2pcs_app.EditCar
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
@@ -72,8 +70,9 @@ class ActivityEditCar : AppCompatActivity() {
                 val jsonArray: JSONArray= jsonObj.getJSONArray("macchina")
                 for (i in 0 until jsonArray.length()) {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
-                   // Marca.text = "" + jsonInner.get("Marca")
-                  //  Modello.text = "" + jsonInner.get("Modello")
+                    Targa.text=targapassed
+                    Marcal.text = "" + jsonInner.get("Marca")
+                    Modello.text = "" + jsonInner.get("Modello")
                     AnnoProduzione.text = "" + jsonInner.get("Anno_produzione")
                     cavalliValue.text = "" + jsonInner.get("Cavalli")
                     cilindrataValue.text= "" + jsonInner.get("Cilindrata")

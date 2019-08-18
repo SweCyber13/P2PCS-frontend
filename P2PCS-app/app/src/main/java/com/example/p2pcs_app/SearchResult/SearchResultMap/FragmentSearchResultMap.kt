@@ -30,12 +30,12 @@ class FragmentSearchResultMap : Fragment(), OnMapReadyCallback{
     override fun onMapReady(p0: GoogleMap?) {
         //set pin torre archimede e zoom
         val sydney = LatLng(45.411559, 11.887451)
-        p0!!.addMarker(
+        /*p0!!.addMarker(
             MarkerOptions().position(sydney)
                 .title("Fiat Punto di SweCyber13")
-        )
+        )*/
         val s = LatLng(45.412497, 11.889904)
-        p0.addMarker(
+        p0!!.addMarker(
             MarkerOptions().position(s)
                 .title("Fiat Panda di SweCyber13")
         )

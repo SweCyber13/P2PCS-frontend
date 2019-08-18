@@ -12,7 +12,7 @@
                 android:layout_height="match_parent">
             <android.support.constraint.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/lol">
+                    android:layout_height="match_parent" android:id="@+id/Marca">
 
             <ImageView
                     android:layout_width="match_parent"

@@ -132,7 +132,7 @@ class ActivitySearch : AppCompatActivity() {
             DatePickerDialog.OnDateSetListener { view: DatePicker?, mYear: Int, mMonth: Int, mDay: Int ->
                 startDate.setText("" + mDay + "/" + (mMonth+1) + "/" + mYear)
                 //salvo data
-                dataarr="" + mYear + "-" + "07" + "-" + mDay
+                dataarr="" + mYear + "-" + "08" + "-" + mDay
             }, year, month, day )
 
         dpd.show()

@@ -66,9 +66,8 @@
                         android:text="Fiat"
                         android:layout_width="wrap_content"
                         app:layout_constraintWidth_percent="0.25"
-                        android:layout_height="wrap_content" android:id="@+id/lol"
+                        android:layout_height="wrap_content" android:id="@+id/Marcal"
                         app:layout_constraintLeft_toRightOf="@+id/car"
-                        app:layout_constraintRight_toLeftOf="@+id/Modello"
                         app:layout_constraintTop_toBottomOf="@+id/Marca"
                         android:layout_marginLeft="20dp"
 
