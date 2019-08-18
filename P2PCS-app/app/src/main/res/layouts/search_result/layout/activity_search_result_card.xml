@@ -102,15 +102,15 @@
                 android:text="elena"
                 android:id="@+id/username"
                 android:layout_width="0dp"
-                app:layout_constraintWidth_percent="0.6"
+                app:layout_constraintWidth_percent="0.25"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/InTarga"
-                app:layout_constraintRight_toRightOf="parent"
+
                 app:layout_constraintLeft_toRightOf="@+id/label4"
                 style="@style/MyPersonalData2"
         />
         <TextView
-                android:text="Tariffa:"
+                android:text="Costo:"
                 android:id="@+id/label5"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
@@ -151,6 +151,26 @@
                 app:layout_constraintTop_toBottomOf="@+id/rate"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/label6"
+                style="@style/MyPersonalData2"
+        />
+        <TextView
+                android:text="Pt:"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.15"
+                android:layout_height="wrap_content"
+                android:id="@+id/puntiLabel"
+                app:layout_constraintLeft_toRightOf="@+id/username"
+                app:layout_constraintTop_toBottomOf="@+id/InTarga"
+                style="@style/MyPersonalData1"
+        />
+        <TextView
+                android:id="@+id/punti"
+                android:text="1234"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.2"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@+id/puntiLabel"
+                app:layout_constraintTop_toBottomOf="@+id/InTarga"
                 style="@style/MyPersonalData2"
         />
         <Button
