@@ -36,7 +36,7 @@ class CustomAdapter(
         p0.targa.text="Fiat Tipo"
         p0.giorno.text="2019-08-19"
         p0.stato.text=myData[p1].str1
-        p0.contatta.visibility=View.INVISIBLE
+        //p0.contatta.visibility=View.INVISIBLE
 
     }
 
