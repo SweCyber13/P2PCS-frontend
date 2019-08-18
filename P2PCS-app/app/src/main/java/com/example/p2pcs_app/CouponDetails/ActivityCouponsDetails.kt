@@ -1,5 +1,6 @@
 package com.example.p2pcs_app.CouponDetails
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Gravity
@@ -10,6 +11,8 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.example.p2pcs_app.Coupons.ActivityCoupon
+import com.example.p2pcs_app.Profile.ActivityPrize
 import com.example.p2pcs_app.R
 import kotlinx.android.synthetic.main.activity_coupon_details.*
 
@@ -22,8 +25,11 @@ class ActivityCouponsDetails: AppCompatActivity(){
 
 
 
-        reserve.setOnClickListener(){
+        reserve.setOnClickListener{
             addPoints()
+            finish()
+            val intent= Intent(this, ActivityPrize::class.java)
+            startActivity(intent)
 
         }
     }

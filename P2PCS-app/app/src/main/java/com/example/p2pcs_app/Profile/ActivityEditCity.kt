@@ -1,6 +1,7 @@
 package com.example.p2pcs_app.Profile
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.ImageView
@@ -11,6 +12,7 @@ import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.R
 import com.android.volley.Request
 import com.android.volley.Response
+import com.example.p2pcs_app.MainActivity
 import kotlinx.android.synthetic.main.edit_city.*
 
 
@@ -21,7 +23,8 @@ class ActivityEditCity : Activity() {
 
         update.setOnClickListener{
             editCity()
-
+            val intent= Intent(this, MainActivity::class.java)
+            startActivity(intent)
 
         }
 

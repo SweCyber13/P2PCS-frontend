@@ -22,6 +22,7 @@ import java.util.*
 import android.widget.LinearLayout
 import android.view.Gravity
 import android.widget.ImageView
+import com.example.p2pcs_app.Profile.ActivityPrize
 
 
 class ActivityNewCar : AppCompatActivity() {
@@ -71,7 +72,9 @@ class ActivityNewCar : AppCompatActivity() {
             savecar()
             addPoints()
             deleteMission()
-
+            finish()
+            val intent= Intent(this, ActivityCars::class.java)
+            startActivity(intent)
             //salvo su database
             //ritorno indietro
         }
