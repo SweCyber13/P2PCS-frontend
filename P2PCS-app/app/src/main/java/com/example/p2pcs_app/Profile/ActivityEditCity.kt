@@ -11,9 +11,10 @@ import com.android.volley.toolbox.Volley
 import com.example.p2pcs_app.R
 import com.android.volley.Request
 import com.android.volley.Response
+import kotlinx.android.synthetic.main.edit_city.*
 
 
-class ActivityMission : Activity() {
+class ActivityEditCity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.edit_city)
@@ -22,13 +23,13 @@ class ActivityMission : Activity() {
 
         }
 
-
+editCity()
 
 
 
     }
 
-    fun savecar(){
+    fun editCity(){
         val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
         val str_username=prefs.getString("username","")
         val citta=citta.text

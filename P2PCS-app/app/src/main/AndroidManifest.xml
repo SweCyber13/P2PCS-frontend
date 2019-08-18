@@ -42,6 +42,10 @@
                 android:label="Disponibilità auto">
         </activity>
         <activity
+                android:name=".Profile.ActivityEditCity"
+                android:label="Disponibilità auto">
+        </activity>
+        <activity
                 android:name=".EditCarCalendar.ActivityAddAvaiability"
                 android:label="Aggiungi disponibilità">
         </activity>
