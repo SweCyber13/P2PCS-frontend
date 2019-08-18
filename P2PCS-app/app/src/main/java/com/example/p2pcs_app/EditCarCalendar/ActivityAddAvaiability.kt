@@ -36,7 +36,13 @@ class ActivityAddAvaiability: AppCompatActivity() {
                 DatePickerDialog.OnDateSetListener { view: DatePicker?, mYear: Int, mMonth: Int, mDay: Int ->
                     model.setText("" + mDay + "-" + (mMonth+1) + "-" + mYear)
                     //salvo data
-                    dataarr="" + mYear + "-" + "07" + "-" + mDay
+                    var mon=""
+                    if(mMonth+1<10){
+                        mon="0"+(mMonth+1)
+                    }
+                    else
+                    { mon=""+(mMonth+1)}
+                    dataarr="" + mYear + "-" + mon + "-" + mDay
                 }, year, month, day )
 
             dpd.show()
@@ -79,7 +85,7 @@ class ActivityAddAvaiability: AppCompatActivity() {
 
     fun save_avaiability(){
         val queue = Volley.newRequestQueue(this)
-        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/car/avaiability/update.php?TARGA="+targapassed+"&GIORNO=2019-08-19"+"&START="+minstart+"&END="+minend
+        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/car/avaiability/update.php?TARGA="+targapassed+"&GIORNO="+dataarr+"&START="+minstart+"&END="+minend
         val stringReq = StringRequest(
             Request.Method.POST, url,
             Response.Listener<String> { response ->

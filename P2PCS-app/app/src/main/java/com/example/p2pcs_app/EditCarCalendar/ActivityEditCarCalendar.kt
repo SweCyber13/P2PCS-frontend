@@ -65,7 +65,7 @@ class ActivityEditCarCalendar : AppCompatActivity() {
         //http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/car/avaiability/read.php?TARGA=AB455CD&GIORNO=2019-07-16
 
         val queue = Volley.newRequestQueue(this)
-        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/car/avaiability/read.php?TARGA="+targapassed+"&GIORNO=2019-08-19"
+        val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/car/avaiability/readall.php?TARGA="+targapassed
 
         val stringReq = StringRequest(
             Request.Method.POST, url,
@@ -79,6 +79,7 @@ class ActivityEditCarCalendar : AppCompatActivity() {
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
                     var str_inizio = "" + jsonInner.get("inizio")
                     var str_fine = "" + jsonInner.get("fine")
+                    var str_giorno="" + jsonInner.get("data")
 
 
                     //passo da minuti a ore
@@ -90,7 +91,7 @@ class ActivityEditCarCalendar : AppCompatActivity() {
                     str_fine=""+fine_ore+":"+fine_minuti
 
                     //creo mydata
-                    var myDatacar= MyData("2019-08-19", str_inizio, str_fine)
+                    var myDatacar= MyData(str_giorno, str_inizio, str_fine)
                     data_list.add(myDatacar)
                 }
                 //ho aggiunto tutte le disponibilità a datalist chiamo la recyclerview
