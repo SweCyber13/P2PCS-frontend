@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.fragment_profile.*
 import org.json.JSONArray
 import org.json.JSONObject
 
-class FragmentLocalLeaderboard : Fragment() {
+class  FragmentLocalLeaderboard : Fragment() {
 var str_citta=""
     //parametri per la recyclerView
     private var recyclerView: RecyclerView? = null
@@ -79,6 +79,7 @@ fun getBoard(){
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
 
                      str_citta = "" + jsonInner.get("Citta")
+                    get2()
 
 
 
@@ -90,13 +91,13 @@ fun getBoard(){
             })
 
         queue.add(stringReq)
+    }
 
-
-
-
-
-        // Instantiate the RequestQueue.
-        val queue2 = Volley.newRequestQueue(context)
+    fun get2(){
+        val prefs = requireContext().getSharedPreferences(R.string.shared_preferences.toString(), 0)
+        val str_username=prefs.getString("username","")
+        val queue = Volley.newRequestQueue(requireContext())
+        // Instantiate the RequestQueue
         val url2: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/leaderboard/globalLeaderboard.php"
 
 
@@ -108,17 +109,19 @@ fun getBoard(){
                 val strResp = response.toString()
                 val jsonObj: JSONObject = JSONObject(strResp)
                 val jsonArray: JSONArray = jsonObj.getJSONArray("globalleaderboard")
+                var contatore=0
                 for (i in 0 until jsonArray.length()) {
 
                     val jsonInner: JSONObject = jsonArray.getJSONObject(i)
                     if(jsonInner.get("Citta")==str_citta) {
-                        val str_posizione = "" + (i + 1)
+                        contatore=contatore+1
+                        val str_posizione = "" + (contatore)
                         val str_username = "" + jsonInner.get("Username")
                         val str_rank = "" + jsonInner.get("Punti_rank")
 
-                    //creo mydata
-                    var myDataLLeaderboard = MyData(str_posizione, str_username, str_rank)
-                    data_list.add(myDataLLeaderboard)}
+                        //creo mydata
+                        var myDataLLeaderboard = MyData(str_posizione, str_username, str_rank)
+                        data_list.add(myDataLLeaderboard)}
                 }
                 //ho aggiunto tutte le auto a datalist chiamo la recyclerview
                 loadrecycler(data_list)
@@ -128,8 +131,11 @@ fun getBoard(){
                 //throw(DatabaseException("errore"))
             })
 
-        queue2.add(stringReq2)
+        queue.add(stringReq2)
+
     }
 }
+
+
 
 
