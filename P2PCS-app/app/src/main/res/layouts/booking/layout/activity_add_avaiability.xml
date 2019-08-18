@@ -37,7 +37,7 @@
         />
         <TextView
                 android:id="@+id/luogo"
-                android:text="1/08/2019"
+                android:text="01/08/2019"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
@@ -45,7 +45,6 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toRightOf="@+id/label1"
                 style="@style/MyPersonalData2"
-
 
 
         />
@@ -64,7 +63,7 @@
         />
         <TextView
                 android:id="@+id/titolo"
-                android:text="11:15"
+                android:text="00:00"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
@@ -89,7 +88,7 @@
         />
         <TextView
                 android:id="@+id/descrizione"
-                android:text="13:45"
+                android:text="00:00"
                 android:layout_width="0dp"
                 app:layout_constraintWidth_percent="0.4"
                 android:layout_height="wrap_content"
