@@ -40,9 +40,9 @@ class CustomAdapter(
 
     override fun onBindViewHolder(p0: MyViewHolder, p1: Int) {
         p0.nome.text="Elena"
-        p0.cognome.text="Pontecchiani"
-        p0.modello.text="Fiat Punto"
-        p0.targa.text="PD000PD"
+        p0.cognome.text="Rossi"
+        p0.modello.text="Fiat Tipo"
+        p0.targa.text="PD111PD"
         p0.data.text="2019-08-19"
         p0.inizio.text="12.00"
         p0.fine.text="20.00"
