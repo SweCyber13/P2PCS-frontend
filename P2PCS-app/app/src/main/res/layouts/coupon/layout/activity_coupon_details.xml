@@ -1,65 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:tools="http://schemas.android.com/tools"
-                                             android:layout_width="match_parent"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                              android:layout_height="match_parent"
                                              xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             android:layout_margin="5dp"
-                                             android:layout_marginTop="10dp"
->
+                                             android:id="@+id/container">
 
-    <ImageView
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/cardDisp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintHeight_percent="0.30"
-            android:id="@+id/image_explore"
-            tools:ignore="MissingConstraints"
-            android:src="@drawable/coupon"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp"
+            android:background="@drawable/leaderboard_background"
+
+    >
+
+        <TextView
+                android:id="@+id/label1"
+                android:text="Azienda:"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/azienda"
+                style="@style/MyPersonalData1"
 
 
+        />
+        <TextView
+                android:id="@+id/azienda"
+                android:text="Amazon"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/label1"
+                style="@style/MyPersonalData2"
+
+
+        />
+        <TextView
+                android:id="@+id/label2"
+                android:text="Offerta coupon:"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/label1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/titolo"
+                style="@style/MyPersonalData1"
+
+
+        />
+        <TextView
+                android:id="@+id/titolo"
+                android:text="Sconto 5%"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/azienda"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/label2"
+                style="@style/MyPersonalData2"
+
+
+        />
+        <TextView
+                android:id="@+id/label"
+                android:text="Descrizione:"
+                android:layout_width="match_parent"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/puntiLabel"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                style="@style/MyPersonalData1"
+                android:gravity="center"
+
+        />
+        <TextView
+                android:id="@+id/descrizione"
+                android:text="Ottenendo 100 punti buoni ottieni un buono sconto del 5% sui prodotti selezionati"
+                android:layout_width="match_parent"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/label"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:gravity="center"
+                style="@style/MyPersonalData2"
+
+
+        />
+        <TextView
+                android:text="Punti necessari:"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.6"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/label2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/puntiLabel"
+                style="@style/MyPersonalData1"
+        />
+        <TextView
+                android:text="100"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.4"
+                android:layout_height="wrap_content" android:id="@+id/punti"
+                app:layout_constraintTop_toBottomOf="@+id/titolo"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/puntiLabel"
+                style="@style/MyPersonalData2"
+        />
+    </android.support.constraint.ConstraintLayout>
+    <Button
+            android:id="@+id/reserve"
+            android:text="Riscuoti coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardDisp"
+            android:textColor="@color/white"
+            android:background="@drawable/mycar_internal_button_background"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
     />
-
-    <TextView
-            android:text="Supermercato" android:id="@+id/placeF"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintHeight_percent="0.06"
-            android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@+id/image_explore"
-            android:textSize="24dp"
-    />
-
-    <TextView
-            android:text="30% di sconto " android:id="@+id/titleF"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintHeight_percent="0.06"
-            android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@+id/placeF"
-            android:textSize="24dp"
-    />
-    <TextView
-            android:text="15000pt"
-            android:layout_width="match_parent"
-            android:layout_height="0pt"
-            app:layout_constraintHeight_percent="0.06"
-            android:id="@+id/punti"
-            android:textAlignment="center"
-            android:textSize="24dp"
-            app:layout_constraintTop_toBottomOf="@id/titleF"
-    />
-    <TextView
-            android:text="Con 1500 punti ottieni uno sconto del 30% su una spesa minima 40€"
-            android:id="@+id/descriptionF"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintHeight_percent="0.58"
-            android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@+id/punti"
-            android:textSize="24dp"
-            tools:layout_editor_absoluteX="0dp"/>
-
-
-
 </android.support.constraint.ConstraintLayout>
-

@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_car_reservation_details.view.*
 
 class CustomAdapter(
 
-    private var myData: ArrayList<MyData>
+    private var myData: ArrayList<com.example.p2pcs_app.CarBookings.CarReservations.MyData>
 
 ) : RecyclerView.Adapter<CustomAdapter.MyViewHolder> () {
 
@@ -35,9 +35,10 @@ class CustomAdapter(
     }
 
     override fun onBindViewHolder(p0: MyViewHolder, p1: Int) {
-        p0.username.text="SweCyber13"
-        p0.targa.text="Fiat Punto"
+        p0.username.text="Elyss"
+        p0.targa.text="Fiat Tipo"
         p0.giorno.text="2019-08-19"
+        p0.stato.text=myData[p1].str1
         p0.contatta.visibility=View.INVISIBLE
 
     }
