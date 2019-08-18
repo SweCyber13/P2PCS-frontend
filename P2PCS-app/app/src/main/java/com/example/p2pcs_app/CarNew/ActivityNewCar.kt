@@ -68,8 +68,8 @@ class ActivityNewCar : AppCompatActivity() {
         })
 
         new_car_button.setOnClickListener{
-            //savecar()
-            //addPoints()
+            savecar()
+            addPoints()
             deleteMission()
 
             //salvo su database
@@ -159,7 +159,7 @@ class ActivityNewCar : AppCompatActivity() {
     fun deleteMission(){
         val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
         val str_username=prefs.getString("username","")
-        val str_titolo= "Inserisci prima auto"
+        val str_titolo= "1"
 
         val queue = Volley.newRequestQueue(this)
         val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/mission/delete.php?TITOLO="+str_titolo
@@ -171,13 +171,6 @@ class ActivityNewCar : AppCompatActivity() {
 
                 //risponde successo o no
                 val strResp = response.toString()
-                val toast = Toast.makeText(applicationContext, "Missione eliminata", Toast.LENGTH_SHORT)
-                toast.setGravity(Gravity.CENTER, 0, 0)
-                val toastContentView = toast.view as LinearLayout
-                val imageView = ImageView(applicationContext)
-                imageView.setImageResource(R.drawable.aa)
-                toastContentView.addView(imageView, 0)
-                toast.show()
 
 
 
