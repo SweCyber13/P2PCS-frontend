@@ -23,6 +23,7 @@ class CustomAdapter(
 
         var nome=view.nome
         var titolo=view.titolo
+        var punti= view.punti
         var button= view.info
 
     }
@@ -44,6 +45,7 @@ class CustomAdapter(
         //setto campi della card
         p0.nome.text=myData[p1].nome
         p0.titolo.text=myData[p1].titolo
+        p0.punti.text=myData[p1].punti
 
 
     }

@@ -32,8 +32,8 @@ class ActivityCouponsDetails: AppCompatActivity(){
     fun addPoints(){
         val prefs = this.getSharedPreferences(R.string.shared_preferences.toString(), 0)
         val str_username=prefs.getString("username","")
-        val str_rank="0"
-        val str_buoni=-10
+        val str_rank=0
+        val str_buoni=-100
 
         val queue = Volley.newRequestQueue(this)
         val url: String = "http://ec2-18-206-124-50.compute-1.amazonaws.com/Api/user/update.php?USERNAME="+str_username+"&RANK="+str_rank+"&BUONI="+str_buoni
