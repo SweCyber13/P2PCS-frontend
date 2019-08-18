@@ -29,7 +29,7 @@ class FragmentCarRequests : Fragment() {
         val prefs = requireContext().getSharedPreferences(R.string.shared_preferences.toString(), 0)
         val str_username=prefs.getString("username","")
         //val str_mostra=prefs.getString("mostrarichiesta","")
-        if(str_username=="Elyss") {
+        if(str_username=="Cyber13") {
             linearLayoutManager = LinearLayoutManager(requireContext())
 
             customAdapter = CustomAdapter(data_list)
