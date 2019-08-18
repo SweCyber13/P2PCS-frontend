@@ -4,9 +4,6 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
 import com.example.p2pcs_app.R
 import kotlinx.android.synthetic.main.activity_search_result_card.view.*
 
@@ -19,13 +16,13 @@ class CustomAdapter(
 
     class MyViewHolder(val view:View): RecyclerView.ViewHolder(view){
 
-        var model=view.model
-        var marca=view.marca
+        var model=view.azienda
+        var marca=view.titolo
         var rate=view.rate //costo
         var city=view.city
         var username= view.username
         var prenota= view.reserve
-        var targa=view.InTarga
+        var targa=view.descrizione
         var punti=view.punti
         var bottone=view.reserve
 

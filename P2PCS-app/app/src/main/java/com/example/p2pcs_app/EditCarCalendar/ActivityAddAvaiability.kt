@@ -31,10 +31,10 @@ class ActivityAddAvaiability: AppCompatActivity() {
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
 
-        model.setOnClickListener {
+        azienda.setOnClickListener {
             val dpd = DatePickerDialog(this,
                 DatePickerDialog.OnDateSetListener { view: DatePicker?, mYear: Int, mMonth: Int, mDay: Int ->
-                    model.setText("" + mDay + "-" + (mMonth+1) + "-" + mYear)
+                    azienda.setText("" + mDay + "-" + (mMonth+1) + "-" + mYear)
                     //salvo data
                     var mon=""
                     if(mMonth+1<10){
@@ -50,12 +50,12 @@ class ActivityAddAvaiability: AppCompatActivity() {
 
 
         //seleziona ora partenza
-        marca.setOnClickListener {
+        titolo.setOnClickListener {
             val cal = Calendar.getInstance()
             val timeSetListener = TimePickerDialog.OnTimeSetListener { view: TimePicker, hourOfDay:Int, minute:Int ->
                 cal.set(Calendar.HOUR_OF_DAY, hourOfDay)
                 cal.set(Calendar.MINUTE, minute)
-                marca.setText(""+hourOfDay+":"+minute)
+                titolo.setText(""+hourOfDay+":"+minute)
                 //salvo minuti
                 minstart=""+(hourOfDay*60+minute)
             }
@@ -65,12 +65,12 @@ class ActivityAddAvaiability: AppCompatActivity() {
 
 
         //seleziona ora arrivo
-        InTarga.setOnClickListener {
+        descrizione.setOnClickListener {
             val cal = Calendar.getInstance()
             val timeSetListener = TimePickerDialog.OnTimeSetListener { view: TimePicker, hourOfDay:Int, minute:Int ->
                 cal.set(Calendar.HOUR_OF_DAY, hourOfDay)
                 cal.set(Calendar.MINUTE, minute)
-                InTarga.setText(""+hourOfDay+":"+minute)
+                descrizione.setText(""+hourOfDay+":"+minute)
                 //salvo ora
                 minend=""+(hourOfDay*60+minute)
             }
