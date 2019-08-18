@@ -122,5 +122,14 @@
                 style="@style/MyPersonalData2"
         />
     </android.support.constraint.ConstraintLayout>
+    <TextView
+            android:id="@+id/tx"
+            android:text="Mostra questa schermata in biglietteria e partecipa all'evento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/cardDisp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+    />
 </android.support.constraint.ConstraintLayout>
 

@@ -4,11 +4,8 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import com.example.p2pcs_app.Explore.MyData
 import com.example.p2pcs_app.R
 import kotlinx.android.synthetic.main.activity_car_reservation_card.view.*
-import kotlinx.android.synthetic.main.activity_car_reservation_details.view.*
 
 class CustomAdapter(
 
@@ -23,7 +20,7 @@ class CustomAdapter(
         var targa=view.targa
         var giorno=view.giorno
         var stato=view.Stato
-        var contatta=view.Contatta
+        var contatta=view.lol
 
     }
 
@@ -39,7 +36,7 @@ class CustomAdapter(
         p0.targa.text="Fiat Tipo"
         p0.giorno.text="2019-08-19"
         p0.stato.text=myData[p1].str1
-        p0.contatta.visibility=View.INVISIBLE
+        //p0.contatta.visibility=View.INVISIBLE
 
     }
 

@@ -1,5 +1,6 @@
 package com.example.p2pcs_app.Home
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -9,13 +10,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import com.example.p2pcs_app.ActivityGamification.ActivityGamification
-import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
 import com.example.p2pcs_app.Cars.ActivityCars
-import com.example.p2pcs_app.Explore.ActivityExplore
-import com.example.p2pcs_app.Mission.ActivityMission
+import com.example.p2pcs_app.LeaderBoard.ActivityLeaderboard
 import com.example.p2pcs_app.Profile.ActivityPrize
-
-
 import com.example.p2pcs_app.R
 import com.example.p2pcs_app.Search.ActivitySearch
 import kotlinx.android.synthetic.main.fragment_home.view.*
@@ -165,8 +162,8 @@ class HomeFragment : Fragment() {
                 if(str_username=="SweElena"){
                     view.third_part_title.text="Sei il 1° in classifica!"
                 }
-                if(str_username=="SweCyber13"){
-                    view.third_part_title.text="Sei il 14° in classifica!"
+                if(str_username=="CyberRA"){
+                    view.third_part_title.text="Sei il 11° in classifica!"
                 }
 
                 FirstAccess.setFalse()
