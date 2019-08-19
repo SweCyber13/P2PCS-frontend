@@ -25,10 +25,7 @@ class ActivityCouponsDetails: AppCompatActivity(){
         reserve.setOnClickListener{
             addPoints()
 
-          //  val intent= Intent(this, ActivityPrize::class.java)
-          //  startActivity(intent)
-          //  finish()
-
+        
         }
 
     }
