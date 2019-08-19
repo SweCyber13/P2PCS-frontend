@@ -89,11 +89,11 @@ class HomeFragment : Fragment() {
 
 
             if(str_username=="elena"){
-                view.third_part_title.text="Sei il 11° in classifica!"
+                view.third_part_title.text="Sei il 1° in classifica!"
             }
-            if(str_username=="sweRA"){
+           /* if(str_username=="CyberRA"){
                 view.third_part_title.text="Sei ultimo in classifica!"
-            }
+            }*/
 
 
 
@@ -159,9 +159,9 @@ class HomeFragment : Fragment() {
                 }
 
 
-                if(str_username=="SweElena"){
+               /* if(str_username=="SweElena"){
                     view.third_part_title.text="Sei il 2° in classifica!"
-                }
+                }*/
                 if(str_username=="elena"){
                     view.third_part_title.text="Sei il 11° in classifica!"
                 }
